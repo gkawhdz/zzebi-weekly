@@ -1,0 +1,183 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Didone;src:url(file:///usr/share/texmf/fonts/opentype/public/lm/lmroman10-bold.otf)}
+:root{--bg:#F5F1EA;--ink:#141414;--muted:#5d5850;--brand:#00A8A8;--brandD:#007C7C;--soft:#DDF2F1;--sale:#D2382A;--paper:#FFFFFF}
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1920px;overflow:hidden;background:var(--bg);font-family:"Noto Sans CJK KR",sans-serif;color:var(--ink);position:relative;word-break:keep-all}
+.abs{position:absolute}
+.scene{position:absolute;inset:0;opacity:0}
+/* 공통 브랜드 바 */
+#brand{left:70px;top:96px;display:flex;align-items:center;gap:16px;z-index:20}
+#brand svg{width:86px}
+#brand .wm{font-family:Didone;font-size:54px;line-height:1;letter-spacing:-1px}
+#brand .wm b{color:var(--brand);font-weight:inherit}
+#brand .wk{font-size:24px;font-weight:700;letter-spacing:.16em;color:var(--brandD);margin-left:10px;padding:6px 14px;border:2px solid var(--brandD);border-radius:99px}
+/* A: 훅 */
+.hook{left:70px;font-weight:900;font-size:150px;line-height:1.08;letter-spacing:-4px}
+.hl{position:relative;display:inline-block}
+.hl i{position:absolute;left:0;bottom:12px;height:30px;background:var(--brand);opacity:.85;z-index:-1;border-radius:4px}
+#hsub{left:74px;top:1000px;font-size:44px;font-weight:700;color:var(--muted)}
+/* B/C: 룩 */
+.photo{width:600px;height:1240px;border-radius:36px;overflow:hidden;box-shadow:0 30px 60px rgba(0,0,0,.18)}
+.photo img{width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.chip{font-size:30px;font-weight:700;padding:10px 22px;border-radius:99px;background:var(--brandD);color:#fff;white-space:nowrap}
+.itemname{font-size:50px;font-weight:900;letter-spacing:-1.5px;line-height:1.15;background:var(--ink);color:#fff;border-radius:28px;padding:22px 28px 24px;box-shadow:0 18px 40px rgba(20,20,20,.2)}.itemname small{display:block;font-size:24px;font-weight:700;color:#7fd8d6;letter-spacing:.02em;margin-bottom:6px}
+.dot{width:46px;height:46px;border-radius:50%;background:var(--brand);border:6px solid #fff;box-shadow:0 0 0 10px rgba(0,168,168,.3)}
+.tier{width:470px;background:var(--paper);border-radius:28px;padding:24px 28px;box-shadow:0 18px 40px rgba(20,20,20,.16);display:flex;flex-direction:column;gap:4px}
+.tier .t{align-self:flex-start;font-size:24px;font-weight:900;padding:4px 16px;border-radius:99px;background:var(--soft);color:var(--brandD)}
+.tier.lux .t{background:var(--ink);color:#fff}
+.tier .b{font-size:24px;color:var(--muted);font-weight:700;margin-top:6px}
+.tier .p{font-size:54px;font-weight:900;letter-spacing:-1.5px;line-height:1.1}
+/* D: 랭킹·핫딜 */
+.dtitle{left:70px;top:260px;font-size:96px;font-weight:900;line-height:1.1;letter-spacing:-3px}
+.row{left:70px;width:860px;height:190px;background:var(--paper);border-radius:30px;box-shadow:0 14px 34px rgba(20,20,20,.1);display:flex;align-items:center;gap:28px;padding:0 34px}
+.row .src{width:150px;font-size:26px;font-weight:900;color:var(--brandD)}
+.row .nm{flex:1;min-width:0;font-size:34px;font-weight:700;line-height:1.3}
+.row .nm small{display:block;font-size:24px;color:var(--muted);font-weight:500}
+.row .pr{text-align:right;white-space:nowrap}
+.row .off{display:block;font-size:44px;font-weight:900;color:var(--sale);line-height:1}
+.row .won{font-size:30px;font-weight:700}
+/* E: 카톡 */
+.phone{left:190px;top:290px;width:700px;height:1040px;border-radius:70px;background:#1d1f1f;padding:26px}
+.screen{width:100%;height:100%;border-radius:48px;background:#A9BFCF;position:relative;overflow:hidden}
+.screen .top{height:120px;background:#9FB5C6;display:flex;align-items:flex-end;padding:0 34px 20px;font-size:30px;font-weight:700;color:#1d1f1f;gap:14px}
+.screen .top span{width:56px;height:56px;border-radius:18px;background:#EFE8DC;display:grid;place-items:center}
+.bub{position:absolute;left:34px;width:560px;background:#fff;border-radius:8px 30px 30px 30px;padding:0 0 22px;overflow:hidden;box-shadow:0 8px 20px rgba(0,0,0,.12)}
+.bub .hd{height:260px;background:#F5F1EA;display:flex;align-items:center;justify-content:center;gap:12px}
+.bub .hd .wm2{font-family:Didone;font-size:56px}
+.bub .hd .wm2 b{color:var(--brand);font-weight:inherit}
+.bub .tx{padding:22px 26px 6px;font-size:31px;line-height:1.5}
+.bub .tx b{font-size:32px}
+.bub .bt{margin:10px 26px 0;height:70px;border-radius:12px;background:#F2F2F2;display:grid;place-items:center;font-size:28px;font-weight:700}
+.time{position:absolute;font-size:22px;color:#33414d}
+#ecap{left:0;right:0;top:1370px;text-align:center;font-size:40px;font-weight:900}
+/* F: 엔딩 */
+#el svg{width:300px;display:block}
+.price{font-size:120px;font-weight:900;letter-spacing:-4px;color:var(--ink)}
+.price small{font-size:52px;letter-spacing:-1px;margin-left:6px}
+.cta{font-size:44px;font-weight:900;padding:28px 48px;border-radius:99px;background:var(--brandD);color:#fff;white-space:nowrap}
+.ad{position:absolute;right:160px;top:110px;font-size:22px;color:var(--muted);z-index:21}
+#prog{left:0;top:0;height:10px;background:var(--brand);z-index:30}
+</style></head><body>
+<div id="prog" class="abs"></div>
+<div class="ad">광고</div>
+<div id="brand" class="abs">
+ <svg viewBox="20 0 580 360"><path d="M310 150 L40 300 c-22 12-14 40 10 40 h520 c24 0 32-28 10-40 L310 150" fill="none" stroke="#141414" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/><path d="M310 70 c0-34 26-50 46-50 s44 18 44 44 c0 30-26 38-44 52 L310 150" fill="none" stroke="#141414" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/><path d="M310 150 Q296 186 306 214" fill="none" stroke="#141414" stroke-width="7"/><g transform="rotate(-10 310 262)"><path d="M246 214 h104 l36 34 v70 h-176 v-70 Z" fill="#00A8A8"/><circle cx="310" cy="240" r="11" fill="#F5F1EA"/></g></svg>
+ <span class="wm">zzebi<b>.st</b></span><span class="wk">WEEKLY</span>
+</div>
+
+<!-- A 훅 -->
+<div class="scene" id="A">
+ <div class="hook abs" id="h1" style="top:420px">셀럽 룩,</div>
+ <div class="hook abs" id="h2" style="top:600px"><span class="hl">얼마면<i id="hlbar"></i></span></div>
+ <div class="hook abs" id="h3" style="top:780px">따라 입지?</div>
+ <div class="abs" id="hsub">명품부터 가성비까지, 매주 정리해 드려요</div>
+</div>
+
+<!-- B 여성 룩 -->
+<div class="scene" id="B">
+ <div class="photo abs" id="bp" style="left:70px;top:300px"><img src="w1.jpg"></div>
+ <div class="dot abs" id="bd" style="left:150px;top:560px"></div>
+ <div class="chip abs" id="bc" style="left:100px;top:330px">여성 · 아이리스 로 무드</div>
+ <div class="abs" id="bi" style="left:440px;top:330px;width:470px"><div class="itemname"><small>핵심 아이템 · 가격대별로</small>블랙 퀼팅<br>호보백</div></div>
+ <div class="tier lux abs" id="bt1" style="left:440px;top:590px"><span class="t">명품</span><span class="b">CHANEL</span><span class="p">약 900만원</span></div>
+ <div class="tier abs" id="bt2" style="left:440px;top:840px"><span class="t">중가</span><span class="b">헤지스 ACC</span><span class="p">329,560원</span></div>
+ <div class="tier abs" id="bt3" style="left:440px;top:1090px"><span class="t">가성비</span><span class="b">오호스</span><span class="p">94,400원</span></div>
+</div>
+
+<!-- C 남성 룩 -->
+<div class="scene" id="C">
+ <div class="photo abs" id="cp" style="left:70px;top:300px"><img src="m1.jpg"></div>
+ <div class="dot abs" id="cd" style="left:250px;top:540px"></div>
+ <div class="chip abs" id="cc" style="left:100px;top:330px">남성 · 브래드 피트 무드</div>
+ <div class="abs" id="ci" style="left:440px;top:330px;width:470px"><div class="itemname"><small>핵심 아이템 · 가격대별로</small>그린 스웨이드<br>셔츠재킷</div></div>
+ <div class="tier lux abs" id="ct1" style="left:440px;top:590px"><span class="t">명품</span><span class="b">TOM FORD</span><span class="p">약 1,260만원</span></div>
+ <div class="tier abs" id="ct2" style="left:440px;top:840px"><span class="t">중가</span><span class="b">헨리코튼</span><span class="p">390,000원</span></div>
+ <div class="tier abs" id="ct3" style="left:440px;top:1090px"><span class="t">가성비</span><span class="b">에잇세컨즈</span><span class="p">41,900원</span></div>
+</div>
+
+<!-- D 랭킹·핫딜·크림 -->
+<div class="scene" id="D">
+ <div class="dtitle abs" id="dt">이번 주 랭킹·핫딜<br><span style="color:var(--brandD)">크림 신발까지</span></div>
+ <div class="row abs" id="r1" style="top:540px"><span class="src">무신사</span><span class="nm">스웻 후드 경량 패딩<small>마리끌레르</small></span><span class="pr"><span class="off">74%</span><span class="won">36,250원</span></span></div>
+ <div class="row abs" id="r2" style="top:745px"><span class="src">지그재그</span><span class="nm">오버핏 피코트 네이비<small>에잇세컨즈</small></span><span class="pr"><span class="off">72%</span><span class="won">44,320원</span></span></div>
+ <div class="row abs" id="r3" style="top:950px"><span class="src">29CM</span><span class="nm">에어리 라이트 패딩<small>로시로우</small></span><span class="pr"><span class="off">59%</span><span class="won">61,180원</span></span></div>
+ <div class="row abs" id="r4" style="top:1155px"><span class="src">KREAM</span><span class="nm">에어포스 1 '07 로우 화이트<small>Nike · 크림 인기순 1위</small></span><span class="pr"><span class="off">34%</span><span class="won">98,000원</span></span></div>
+<div class="abs" id="dn" style="left:70px;top:1375px;font-size:28px;color:var(--muted);font-weight:500">가격·할인율은 10월 4주 기준이며 바뀔 수 있어요</div>
+</div>
+
+<!-- E 카톡 -->
+<div class="scene" id="E">
+ <div class="phone abs" id="ph"><div class="screen">
+  <div class="top"><span><svg viewBox="20 0 580 360" width="40"><path d="M310 150 L40 300 c-22 12-14 40 10 40 h520 c24 0 32-28 10-40 L310 150" fill="none" stroke="#141414" stroke-width="30" stroke-linejoin="round"/><g transform="rotate(-10 310 262)"><path d="M246 214 h104 l36 34 v70 h-176 v-70 Z" fill="#00A8A8"/></g></svg></span>Zzebi.St 위클리</div>
+  <div class="time" id="tm" style="left:34px;top:150px">월요일 오후 12:00</div>
+  <div class="bub" id="bub" style="top:200px">
+   <div class="hd"><span class="wm2">zzebi<b>.st</b></span></div>
+   <div class="tx"><b>Zzebi.St 위클리 | 10월 4주</b><br>여성: 카모 팬츠 시크 캐주얼 외 3룩<br>남성: 그린 스웨이드 × 퍼플 팬츠 외 2룩<br>랭킹·핫딜·크림 인기 신발까지</div>
+   <div class="bt">여성 리포트</div><div class="bt">남성 리포트</div>
+  </div>
+ </div></div>
+ <div class="abs" id="ecap">매주 월요일 낮 12시, 카톡으로 도착</div>
+</div>
+
+<!-- F 엔딩 -->
+<div class="scene" id="F">
+ <div class="abs logo" id="el" style="left:390px;top:300px"><svg viewBox="20 0 580 360"><path d="M310 150 L40 300 c-22 12-14 40 10 40 h520 c24 0 32-28 10-40 L310 150" fill="none" stroke="#141414" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/><path d="M310 70 c0-34 26-50 46-50 s44 18 44 44 c0 30-26 38-44 52 L310 150" fill="none" stroke="#141414" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/><path d="M310 150 Q296 186 306 214" fill="none" stroke="#141414" stroke-width="7"/><g transform="rotate(-10 310 262)"><path d="M246 214 h104 l36 34 v70 h-176 v-70 Z" fill="#00A8A8"/><circle cx="310" cy="240" r="11" fill="#F5F1EA"/></g></svg></div>
+ <div class="abs" id="ew" style="left:0;right:0;top:520px;text-align:center;font-family:Didone;font-size:130px;letter-spacing:-3px;line-height:1">zzebi<b style="color:#00A8A8;font-weight:inherit">.st</b></div>
+ <div class="abs" id="et" style="left:0;right:0;top:690px;text-align:center;font-size:54px;font-weight:900">위클리 쇼핑 리포트</div>
+ <div class="abs" id="ep" style="left:0;right:0;top:820px;text-align:center"><span class="price">월 3,900<small>원</small></span></div>
+ <div class="abs" id="eb" style="left:0;right:0;top:990px;text-align:center;font-size:36px;font-weight:700;color:var(--muted);line-height:1.6">셀럽 룩 3단 가격 · 랭킹 · 핫딜 · 크림 신발<br>매주 월요일 낮 12시 카톡 발송</div>
+ <div class="abs" id="ec" style="left:0;right:0;top:1180px;display:flex;justify-content:center"><span class="cta">구독 신청 · 인스타 @zzebi.st DM</span></div>
+ <div class="abs" id="en" style="left:0;right:0;top:1330px;text-align:center;font-size:26px;color:var(--muted)">룩 사진은 AI 재현 이미지 · 소개 브랜드와 제휴 관계 없음</div>
+</div>
+
+<script>
+const $=id=>document.getElementById(id);
+const cl=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
+const eo=t=>1-Math.pow(1-cl(t),3);
+const eb=t=>{t=cl(t);const c1=1.70158,c3=c1+1;return 1+c3*Math.pow(t-1,3)+c1*Math.pow(t-1,2)};
+const span=(t,a,b)=>cl((t-a)/(b-a));
+function set(id,o,x=0,y=0,s=1){const e=$(id);e.style.opacity=o;e.style.transform=`translate(${x}px,${y}px) scale(${s})`}
+// 장면 구간(초)
+const SC={A:[0,2.8],B:[2.8,7.4],C:[7.4,11.8],D:[11.8,16.2],E:[16.2,19.4],F:[19.4,23.5]};
+const DUR=23.5;
+function scene(id,t){const [a,b]=SC[id];const fi=span(t,a,a+.25),fo=1-span(t,b-.25,b);const o=(id==='A'?1:fi)*(id==='F'?1:fo);$(id).style.opacity=(t>=a&&t<=b)?o:0;return t-a}
+function render(t){
+  $('prog').style.width=(t/DUR*1080)+'px';
+  // A
+  let a=scene('A',t);
+  ['h1','h2','h3'].forEach((id,i)=>{set(id,1,0,0,1+.03*(1-eo(span(a,0,.8))))});
+  $('hlbar').style.width=(eo(span(a,.2,.8))*100)+'%';
+  {const p=eo(span(a,.6,1.1));set('hsub',p,0,(1-p)*30)}
+  // B,C 룩
+  for(const k of ['B','C']){
+    let b=scene(k,t),L=k.toLowerCase();
+    const pp=eo(span(b,0,.6)); set(L+'p',pp,(1-pp)*-120,0,1+(1-pp)*.05);
+    const z=1+span(b,0,4.4)*.06; $(L+'p').querySelector('img').style.transform=`scale(${z})`;
+    const cc=eo(span(b,.4,.8)); set(L+'c',cc,0,(1-cc)*-20);
+    const dd=eb(span(b,.7,1.1)); set(L+'d',dd>0?1:0,0,0,dd);
+    const ii=eo(span(b,.8,1.3)); set(L+'i',ii,(1-ii)*60,0);
+    [1,2,3].forEach(n=>{const q=eb(span(b,1.2+n*.42,1.65+n*.42)); set(L+'t'+n,cl(q*1.5),(1-q)*160,0,.9+.1*q)});
+  }
+  // D
+  let d=scene('D',t);
+  {const p=eo(span(d,0,.5));set('dt',p,0,(1-p)*40)}
+  [1,2,3,4].forEach(n=>{const q=eb(span(d,.2+n*.25,.6+n*.25));set('r'+n,cl(q*1.4),(1-q)*300,0)});{const p=eo(span(d,1.4,1.8));set('dn',p)}
+  // E
+  let e=scene('E',t);
+  {const p=eo(span(e,0,.5));set('ph',p,0,(1-p)*120)}
+  {const p=eb(span(e,.6,1.1));set('bub',cl(p*1.5),0,(1-p)*40,.85+.15*p);set('tm',cl(p*2))}
+  {const p=eo(span(e,1.2,1.7));set('ecap',p,0,(1-p)*30)}
+  // F
+  let f=scene('F',t);
+  {const p=eb(span(f,0,.5));set('el',cl(p*1.4),0,0,.6+.4*p)}
+  {const p=eo(span(f,.3,.8));set('ew',p,0,(1-p)*30)}
+  {const p=eo(span(f,.5,1));set('et',p,0,(1-p)*30)}
+  {const p=eb(span(f,.6,1.0));set('ep',cl(p*1.4),0,0,.8+.2*p)}
+  {const p=eo(span(f,.9,1.3));set('eb',p,0,(1-p)*20);set('en',p)}
+  {const p=eb(span(f,.9,1.3));const pulse=1+Math.max(0,Math.sin((f-1.3)*5))*.03*(f>1.3);set('ec',cl(p*1.4),0,(1-p)*30,(.9+.1*p)*pulse)}
+  // 엔딩에서는 상단 브랜드 바 숨김(로고가 크게 나오므로)
+  $('brand').style.opacity=1-span(t,SC.F[0],SC.F[0]+.3);
+}
+render(0);
+</script>
+</body></html>
