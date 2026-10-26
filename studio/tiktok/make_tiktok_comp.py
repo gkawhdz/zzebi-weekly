@@ -118,7 +118,39 @@ def card_outro(out):
     im.save(out, quality=95)
 
 
-def main(spec_path, out):
+def sub_png(text, out):
+    """영어 자막 한 줄(또는 두 줄) — 화면 아래 안전영역 바로 위, 작고 반투명한 띠"""
+    f = font(40, False); maxw = 900
+    words, lines, cur = text.split(), [], ""
+    for w_ in words:
+        t = (cur + " " + w_).strip()
+        if ImageDraw.Draw(Image.new("L", (1, 1))).textlength(t, font=f) > maxw and cur:
+            lines.append(cur); cur = w_
+        else:
+            cur = t
+    lines.append(cur); lines = lines[:2]
+    if len(lines) == 2:  # 두 줄이면 길이를 비슷하게 나눠서 한 단어만 남는 줄이 없게
+        ms = ImageDraw.Draw(Image.new("L", (1, 1)))
+        best = None
+        for k in range(1, len(words)):
+            a, b = " ".join(words[:k]), " ".join(words[k:])
+            wa, wb = ms.textlength(a, font=f), ms.textlength(b, font=f)
+            if max(wa, wb) <= maxw and (best is None or abs(wa - wb) < best[0]):
+                best = (abs(wa - wb), [a, b])
+        if best: lines = best[1]
+    im = Image.new("RGBA", (W, 160), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
+    lh = 54; bh = lh * len(lines) + 26; bw = max(d.textlength(l, font=f) for l in lines) + 56
+    y0 = 160 - bh
+    d.rounded_rectangle(((W - bw) / 2, y0, (W + bw) / 2, 160), 22, fill=(18, 18, 18, 165))
+    for i, l in enumerate(lines):
+        d.text(((W - d.textlength(l, font=f)) / 2, y0 + 10 + i * lh), l, font=f, fill=(255, 255, 255, 255))
+    im.save(out)
+
+
+SUB_Y = 1570 - 160  # 띠 아래 끝 y=1570: 한글 카드(~1450) 바로 아래, 유튜브·틱톡 하단 제목 영역 위
+
+
+def main(spec_path, out, en=False):
     spec = json.load(open(spec_path)); base = os.path.dirname(os.path.abspath(spec_path))
     tmp = tempfile.mkdtemp(); segs = spec["segments"]
     for s in segs:
@@ -140,6 +172,31 @@ def main(spec_path, out):
     card_outro(f"{tmp}/outro.jpg"); parts.append(("img", f"{tmp}/outro.jpg", outro_s))
     total = sum(p[2] for p in parts)
 
+    # 영어 자막 시간표 만들기 (--en)
+    subs = []  # (시작, 끝, 문장)
+    if en:
+        t = 0.0; seg_i = 0; recap_done = False
+        for k, p, s in parts:
+            name = os.path.basename(p)
+            if name == "intro.jpg" and spec.get("intro_en"):
+                subs.append((t + 0.1, t + s, spec["intro_en"]))
+            elif name.startswith("ch") and k == "img":
+                sg = segs[int(name[2:-4]) - 1]
+                if sg.get("chapter_en"): subs.append((t, t + s, sg["chapter_en"]))
+            elif k == "vid":
+                sg = segs[seg_i]; seg_i += 1
+                for a, b, txt in sg.get("en", []):
+                    subs.append((t + a, t + min(b, s), txt))
+            elif name.startswith("rc") and spec.get("recap_en"):
+                if not recap_done:
+                    n_rc = sum(1 for q in parts if os.path.basename(q[1]).startswith("rc"))
+                    subs.append((t, t + s * n_rc, spec["recap_en"])); recap_done = True
+            elif name == "vote.jpg" and spec.get("vote_en"):
+                subs.append((t, t + s, spec["vote_en"]))
+            elif name == "outro.jpg":
+                subs.append((t, t + s, spec.get("outro_en", "Save & follow @zzebi.st for daily 1-min style tips")))
+            t += s
+
     inputs, fl = [], []
     for i, (k, p, s) in enumerate(parts):
         if k == "img":
@@ -149,7 +206,14 @@ def main(spec_path, out):
         else:
             inputs += ["-i", p]
             fl.append(f"[{i}:v]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},fps={FPS},setsar=1,format=yuv420p[v{i}]")
-    fl.append("".join(f"[v{i}]" for i in range(len(parts))) + f"concat=n={len(parts)}:v=1:a=0[v]")
+    fl.append("".join(f"[v{i}]" for i in range(len(parts))) + f"concat=n={len(parts)}:v=1:a=0[v0s]")
+    last = "v0s"
+    for j, (a, b, txt) in enumerate(subs):
+        png = f"{tmp}/sub{j}.png"; sub_png(txt, png)
+        idx = len(parts) + j; inputs += ["-i", png]
+        nxt = f"vs{j}"
+        fl.append(f"[{last}][{idx}:v]overlay=0:{SUB_Y}:enable='between(t,{a:.2f},{b:.2f})'[{nxt}]"); last = nxt
+    fl.append(f"[{last}]null[v]")
     silent = f"{tmp}/silent.mp4"
     subprocess.run(["ffmpeg", "-y", *inputs, "-filter_complex", ";".join(fl), "-map", "[v]", "-c:v", "libx264",
                     "-preset", "veryfast", "-crf", "21", "-pix_fmt", "yuv420p", "-r", str(FPS), silent],
@@ -164,4 +228,7 @@ def main(spec_path, out):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1], sys.argv[2])
+    # 사용: python3 make_tiktok_comp.py spec.json out.mp4 [--en]
+    #  --en : 유튜브용. spec의 intro_en / segments[].chapter_en / segments[].en=[[시작초,끝초,"문장"],…](영상 안 상대 시각)
+    #         / recap_en / vote_en / outro_en 을 화면 아래(안전영역 위)에 작은 영어 자막으로 넣음
+    main(sys.argv[1], sys.argv[2], en="--en" in sys.argv[3:])

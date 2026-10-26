@@ -1,0 +1,86 @@
+{
+ "kicker": "겨울 코디 몰아보기",
+ "title": [
+  "찬바람 부는 날",
+  "예뻐 보이는 법"
+ ],
+ "sub": "소개팅룩 2벌 + 퍼 입는 법 4가지 →",
+ "segments": [
+  {
+   "file": "07_sogae.mp4",
+   "label": "소개팅 첫인상 코디",
+   "sub": "여자 · 남자 2벌",
+   "thumb_t": 1.0,
+   "chapter_en": "01 · First-date outfits (her & him)",
+   "en": [
+    [
+     0,
+     3.8,
+     "First impressions? Change them with color — one look for her, one for him"
+    ],
+    [
+     3.8,
+     14.5,
+     "Her: butter-white bouclé coat, deep purple top, black satin skirt, suede boots"
+    ],
+    [
+     14.5,
+     25.8,
+     "Him: black leather jacket, dusty pink knit, cotton beige pants, black loafers"
+    ],
+    [
+     25.8,
+     30.2,
+     "Formula: soft colors near the face, warm neck, one shiny piece only"
+    ],
+    [
+     30.2,
+     32.8,
+     "Save it before your date"
+    ]
+   ]
+  },
+  {
+   "file": "08_fur.mp4",
+   "label": "퍼 '한 점' 코디",
+   "sub": "올겨울 퍼 입는 법 4가지",
+   "thumb_t": 1.0,
+   "chapter_en": "02 · Just one fur touch",
+   "en": [
+    [
+     0,
+     3.4,
+     "Skip the full fur coat — add just one fur touch"
+    ],
+    [
+     3.4,
+     11,
+     "01 Fur trim on collars & cuffs of leather or denim jackets — men too"
+    ],
+    [
+     11,
+     16.3,
+     "02 One pastel fur piece on an all-neutral outfit"
+    ],
+    [
+     16.3,
+     23.9,
+     "03 Easiest start: a fur bag or beanie on a simple coat"
+    ],
+    [
+     23.9,
+     31.5,
+     "04 Short fur jacket: above the waist + tone-on-tone"
+    ],
+    [
+     31.5,
+     34.3,
+     "Sources: Allure Korea, Vogue Korea, Harper's Bazaar"
+    ]
+   ]
+  }
+ ],
+ "seed": 13,
+ "min_total": 62,
+ "intro_en": "Look good on chilly days: 2 first-date outfits + 4 ways to wear fur"
+}

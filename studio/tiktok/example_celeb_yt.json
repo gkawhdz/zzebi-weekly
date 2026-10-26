@@ -1,0 +1,137 @@
+{
+ "kicker": "셀럽 스냅 해부 몰아보기",
+ "title": [
+  "셀럽 3명",
+  "스트릿룩 해부"
+ ],
+ "sub": "끝까지 보고 투표해 주세요 ↓",
+ "segments": [
+  {
+   "file": "c08.mp4",
+   "label": "BELLA HADID",
+   "sub": "그레이 레깅스 공항룩",
+   "thumb_t": 1.0,
+   "chapter_en": "01 · Bella Hadid — gray leggings airport look",
+   "en": [
+    [
+     0,
+     2.4,
+     "Celeb Snap Breakdown #08 — Bella Hadid's airport look"
+    ],
+    [
+     2.4,
+     4.8,
+     "01 Gray ribbed knit — tone-on-tone with the leggings"
+    ],
+    [
+     4.8,
+     7.2,
+     "02 Black knit tied at the waist — loose knot in front"
+    ],
+    [
+     7.2,
+     9.4,
+     "03 Charcoal gray leggings — matching tones look longer"
+    ],
+    [
+     9.4,
+     11,
+     "04 Black knee-high heel boots — pointed toe, longer legs"
+    ],
+    [
+     11,
+     14,
+     "Today's 4 key points — save it & copy the look"
+    ]
+   ]
+  },
+  {
+   "file": "c09.mp4",
+   "label": "JENNIFER LAWRENCE",
+   "sub": "크롭 블레이저 시폰 룩",
+   "thumb_t": 1.0,
+   "chapter_en": "02 · Jennifer Lawrence — cropped blazer & chiffon",
+   "en": [
+    [
+     0,
+     2.4,
+     "Celeb Snap Breakdown #09 — Jennifer Lawrence in New York"
+    ],
+    [
+     2.4,
+     4.8,
+     "01 Black button blazer — buttoned all the way up"
+    ],
+    [
+     4.8,
+     7.2,
+     "02 Slouchy shoulder bag — tossed over the shoulder"
+    ],
+    [
+     7.2,
+     9.4,
+     "03 Lavender chiffon skirt — midi that flows as you walk"
+    ],
+    [
+     9.4,
+     11,
+     "04 Satin mules — soft, muted tone"
+    ],
+    [
+     11,
+     14,
+     "Today's 4 key points — save it & copy the look"
+    ]
+   ]
+  },
+  {
+   "file": "c10.mp4",
+   "label": "OLIVIA RODRIGO",
+   "sub": "니트 판초 × 아미 스커트",
+   "thumb_t": 1.0,
+   "chapter_en": "03 · Olivia Rodrigo — knit poncho & army skirt",
+   "en": [
+    [
+     0,
+     2.4,
+     "Celeb Snap Breakdown #10 — Olivia Rodrigo in New York"
+    ],
+    [
+     2.4,
+     4.8,
+     "01 Black knit poncho — draped instead of a coat"
+    ],
+    [
+     4.8,
+     7.2,
+     "02 Black mini shoulder bag — worn short over the poncho"
+    ],
+    [
+     7.2,
+     9.4,
+     "03 Army green flare skirt — below-the-knee midi"
+    ],
+    [
+     9.4,
+     11,
+     "04 Black campus boots — overlapping the skirt hem"
+    ],
+    [
+     11,
+     14,
+     "Today's 4 key points — save it & copy the look"
+    ]
+   ]
+  }
+ ],
+ "recap_t": 13.0,
+ "recap_s": 3.0,
+ "vote": true,
+ "vote_q": "제일 따라 입고 싶은 룩은?",
+ "seed": 7,
+ "min_total": 62,
+ "intro_en": "3 celebs, 3 street looks broken down — vote at the end",
+ "recap_en": "Recap: the 4 key items from each look",
+ "vote_en": "Which look would you copy? Comment 1, 2 or 3",
+ "outro_en": "Save & follow @zzebi.st for daily celeb street style"
+}
