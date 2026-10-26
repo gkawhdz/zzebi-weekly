@@ -147,6 +147,13 @@ footer{font-size:12px;color:var(--muted);display:flex;flex-direction:column;gap:
 .rk-item .pr,.hot-item .pr{font-size:14px;align-self:center}
 .rk-h{font-size:16px}
 @media (max-width:460px){.rk-item,.hot-item{grid-template-columns:22px 1fr}.rk-item .pr,.hot-item .pr{grid-column:2;text-align:left;margin-top:2px}}
+/* v1.2 쇼핑 꿀팁 카드 */
+.tip{margin:4px 0 28px;padding:18px 18px 16px;border-radius:16px;background:var(--surface);border:1.5px solid var(--lime);box-shadow:0 0 0 4px color-mix(in srgb,var(--lime) 14%,transparent)}
+.tip-tag{display:inline-block;margin:0 0 8px;padding:3px 9px;border-radius:999px;background:var(--chip);color:var(--chip-ink);font-size:11.5px;font-weight:700;letter-spacing:.02em}
+.tip-h{margin:0 0 10px;font-size:18px;font-weight:800;color:var(--ink)}
+.tip-list{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.tip-list li{font-size:14.5px;line-height:1.55;color:var(--ink);padding-left:0}
+.tip-list b{display:block;font-size:12.5px;font-weight:700;color:var(--lime-ink);margin-bottom:1px}
 </style>
 
 </head>
@@ -673,6 +680,15 @@ footer{font-size:12px;color:var(--muted);display:flex;flex-direction:column;gap:
   </section>
   <section class="panel" id="deals" aria-label="핫딜">
     <div class="panel-head"><h2 class="panel-h">이번 주 핫딜</h2><p class="hot-lead">랭킹·인기 상품 중 할인율이 큰 순서로 골랐어요.</p></div>
+    <aside class="tip" aria-labelledby="cal">
+      <p class="tip-tag">사기 전에 꼭 보세요</p>
+      <h3 id="cal" class="tip-h">이번 주 쇼핑 꿀팁</h3>
+      <ul class="tip-list">
+        <li><b>지금 사도 좋아요</b> 무신사 '아우터 페스티벌' 기간이라 국내 아우터 대부분이 할인 중이에요.</li>
+        <li><b>조금 기다려요</b> 20만 원 넘는 헤비 아우터는 미뤄도 좋아요. 작년 무신사 겨울 블랙프라이데이는 11월 16일에 시작했어요.</li>
+        <li><b>직구는 주의</b> 해외 직구 가격은 대략 환산한 금액이라 관부가세·배송비가 따로 붙을 수 있어요.</li>
+      </ul>
+    </aside>
     <div class="hot">
       <h3 class="rk-h">여성 핫딜 TOP 10</h3>
       <ol class="hot-list">
@@ -764,14 +780,6 @@ footer{font-size:12px;color:var(--muted);display:flex;flex-direction:column;gap:
       </ol>
     </div>
     <p class="hot-note">10/26 새벽 기준이에요. 타임 특가는 몇 시간 만에도 바뀌어요. 지그재그는 여성 위주 플랫폼이라 남성 핫딜은 무신사·29CM에서 골랐어요.</p>
-    <section class="box" aria-labelledby="cal">
-    <h2 id="cal">이번 주 쇼핑 메모</h2>
-    <ul>
-      <li>무신사는 '아우터 페스티벌' 기간이라 국내 아우터 대부분이 할인 중이에요.</li>
-      <li>해외 직구 가격은 대략 환산한 금액이고 관부가세와 배송비가 따로 붙을 수 있어요.</li>
-      <li>20만 원 넘는 헤비 아우터는 조금 기다려도 좋아요. 작년 무신사 겨울 블랙프라이데이는 11월 16일에 시작했어요.</li>
-    </ul>
-  </section>
 
   
   </section>
