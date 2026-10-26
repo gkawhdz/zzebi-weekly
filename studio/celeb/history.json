@@ -1,0 +1,114 @@
+{
+ "rule": "하루 여자, 하루 남자 번갈아. 마지막 날짜의 gender 반대로.",
+ "posts": [
+  {
+   "date": "2026-10-26",
+   "ep": "10",
+   "gender": "여자",
+   "celeb": "Olivia Rodrigo",
+   "look": "니트 판초 × 아미 스커트",
+   "slot": "17:00",
+   "music": "오리지널 배경음(라이브러리 곡 연결 실패: Authorization Error), seed 20261040",
+   "design_version": "v3",
+   "status": "예약됨"
+  },
+  {
+   "date": "2026-10-26",
+   "ep": "09",
+   "gender": "여자",
+   "celeb": "Jennifer Lawrence",
+   "look": "크롭 블레이저 시폰 룩",
+   "slot": "14:00",
+   "music": "오리지널 배경음(라이브러리 곡 연결 실패: Authorization Error), seed 20261033",
+   "design_version": "v3",
+   "status": "예약됨"
+  },
+  {
+   "date": "2026-10-26",
+   "ep": "08",
+   "gender": "여자",
+   "celeb": "Bella Hadid",
+   "look": "그레이 레깅스 공항룩",
+   "slot": "11:00",
+   "music": "오리지널 배경음(라이브러리 곡 연결 실패: Authorization Error), seed 20261026",
+   "design_version": "v3",
+   "status": "예약됨"
+  },
+  {
+   "date": "2026-10-25",
+   "ep": "07",
+   "gender": "남자",
+   "celeb": "Justin Bieber",
+   "look": "그레이 후디 × 농구 쇼츠",
+   "slot": "17:00",
+   "design_version": "v1(다른 실행분)",
+   "status": "예약됨"
+  },
+  {
+   "date": "2026-10-25",
+   "ep": "06",
+   "gender": "남자",
+   "celeb": "Harry Styles",
+   "look": "펀넬넥 집업 미니멀 룩",
+   "slot": "14:00",
+   "design_version": "v1(다른 실행분)",
+   "status": "예약됨"
+  },
+  {
+   "date": "2026-10-25",
+   "ep": "05",
+   "gender": "남자",
+   "celeb": "Brad Pitt",
+   "look": "그린 스웨이드 × 퍼플 팬츠",
+   "slot": "11:00",
+   "design_version": "v1(다른 실행분)",
+   "status": "예약됨"
+  },
+  {
+   "date": "2026-10-25",
+   "ep": "-",
+   "gender": "남자",
+   "celeb": "Jacob Elordi / Harry Styles / Brad Pitt",
+   "look": "v2 디자인 대체본 3개(베이지 재킷·레오파드 백·핑크 팬츠)",
+   "slot": "11:00/14:00/17:00",
+   "design_version": "v2",
+   "status": "초안(중복 방지로 보류)"
+  },
+  {
+   "date": "2026-10-24",
+   "ep": "04",
+   "gender": "여자",
+   "celeb": "Sienna Miller",
+   "look": "레더 페플럼 테일러링",
+   "slot": "17:00",
+   "status": "예약됨"
+  },
+  {
+   "date": "2026-10-24",
+   "ep": "03",
+   "gender": "여자",
+   "celeb": "Daisy Edgar-Jones",
+   "look": "화이트 밀리터리 재킷 + 블루 진",
+   "slot": "14:00",
+   "status": "예약됨"
+  },
+  {
+   "date": "2026-10-24",
+   "ep": "02",
+   "gender": "여자",
+   "celeb": "Camila Morrone",
+   "look": "레이스 LBD + 퍼 코트",
+   "slot": "11:00",
+   "status": "게시됨"
+  },
+  {
+   "date": "2026-10-24",
+   "ep": "01",
+   "gender": "여자",
+   "celeb": "Iris Law",
+   "look": "화이트 롱슬리브 + 카모 카고 + 새틴 플랫",
+   "slot": "09:28",
+   "status": "게시됨"
+  }
+ ]
+}

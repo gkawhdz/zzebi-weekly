@@ -1,0 +1,6 @@
+{"episode":"09","celeb":"JENNIFER LAWRENCE","city":"NEW YORK","date":"2026.10","title":"크롭 블레이저 시폰 룩","image":"img09.jpg","accent":"#B9A6D3",
+"items":[
+{"cat":"JACKET · 자켓","brand":"실착: DISSH","name":"블랙 버튼 블레이저","pt":"단추 끝까지 잠가 단정하게","find":"블랙 싱글 블레이저","pt_xy":[420,330],"crop":[480,380,560]},
+{"cat":"BAG · 가방","brand":"실착: Phoebe Philo Gig Bag","name":"슬라우치 숄더백","pt":"어깨에 툭 걸치기","find":"블랙 스웨이드 숄더백","pt_xy":[740,360],"crop":[740,370,420]},
+{"cat":"SKIRT · 스커트","brand":"실착: Pauline Dujancourt","name":"라벤더 시폰 스커트","pt":"걸을 때 흩날리는 미디 길이","find":"라벤더 시폰 미디스커트","pt_xy":[560,880],"crop":[600,860,520]},
+{"cat":"SHOES · 신발","brand":"실착: Chloé","name":"새틴 뮬","pt":"뮤트 톤으로 은은하게","find":"새틴 블로퍼 뮬","pt_xy":[640,1260],"crop":[530,1290,380]}]}
