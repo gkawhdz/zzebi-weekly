@@ -2,6 +2,63 @@
  "rule": "하루 여자, 하루 남자 번갈아. 마지막 날짜의 gender 반대로.",
  "posts": [
   {
+   "date": "2026-10-27",
+   "gender": "남자",
+   "music": "오리지널 배경음(인스타 라이브러리 곡 연결 실패: Authorization Error)",
+   "channels": [
+    "instagram",
+    "tiktok_comp",
+    "youtube_comp"
+   ],
+   "design_version": "v4.2",
+   "status": "예약됨",
+   "ep": "13",
+   "celeb": "Hugh Jackman",
+   "look": "그레이 후디 × 올리브 조거",
+   "slot": "16:00",
+   "image_file": "20261027_13.jpg.jpeg",
+   "image_id": "1yKJJ8qFEJ7Zyp0ytiWkRSlw7GkGnV8nQ",
+   "source": "https://www.justjared.com/2026/10/22/hugh-jackman-girlfriend-sutton-foster-step-out-for-lunch-date-in-pasadena/"
+  },
+  {
+   "date": "2026-10-27",
+   "gender": "남자",
+   "music": "오리지널 배경음(인스타 라이브러리 곡 연결 실패: Authorization Error)",
+   "channels": [
+    "instagram",
+    "tiktok_comp",
+    "youtube_comp"
+   ],
+   "design_version": "v4.2",
+   "status": "예약됨",
+   "ep": "12",
+   "celeb": "Kit Connor",
+   "look": "네이비 블레이저 프레피룩",
+   "slot": "10:00",
+   "image_file": "20261027_12.jpg.jpeg",
+   "image_id": "1nI7rCMXGup65vYxQhEQ0DDw1GCJ-MDPT",
+   "source": "https://www.justjared.com/2026/10/20/kit-connor-diana-silvers-film-1986-set-thriller-preppy-together-in-new-york-city/"
+  },
+  {
+   "date": "2026-10-27",
+   "gender": "남자",
+   "music": "오리지널 배경음(인스타 라이브러리 곡 연결 실패: Authorization Error)",
+   "channels": [
+    "instagram",
+    "tiktok_comp",
+    "youtube_comp"
+   ],
+   "design_version": "v4.2",
+   "status": "예약됨",
+   "ep": "11",
+   "celeb": "Jeremy Allen White",
+   "look": "화이트 탱크 × 브라운 팬츠",
+   "slot": "09:00",
+   "image_file": "20261027_11.jpg.jpeg",
+   "image_id": "1Gl_Jlts3Mv1P51G5TEXh98TS3oqz6qrR",
+   "source": "https://www.justjared.com/2026/10/26/jeremy-allen-shows-off-his-muscles-in-tight-tank-as-he-meets-up-with-friends-in-l-a-photos/"
+  },
+  {
    "date": "2026-10-26",
    "ep": "10",
    "gender": "여자",

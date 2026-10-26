@@ -80,14 +80,16 @@ def card_intro(spec, thumbs, out):
     th = min(th, 1820 - (y + 140)); ty = y + 130
     for i, t in enumerate(thumbs):
         x = 90 + i * (tw + gap); tm, m = rounded_thumb(t, tw, th); im.paste(tm, (x, ty), m)
-        pill(d, x + 18, ty + 18, f"{i + 1:02d}", font(44), INK, "white", (20, 8))
+        pill(d, x + 18, ty + th - 88, f"{i + 1:02d}", font(44), INK, "white", (20, 8))  # 썸네일 속 이름을 가리지 않게 아래쪽으로
     im.save(out, quality=95)
 
 
 def card_chapter(i, n, seg, out):
     im = Image.new("RGB", (W, H), DARK); d = ImageDraw.Draw(im)
     text_c(d, 700, f"{i:02d} / {n:02d}", font(64), TEAL)
-    f = font(120 if len(seg["label"]) <= 12 else 92)
+    fs = 120
+    while d.textlength(seg["label"], font=font(fs)) > 760 and fs > 56: fs -= 4  # 금지구역(오른쪽 140px) 보호
+    f = font(fs)
     text_c(d, 800, seg["label"], f, "white")
     if seg.get("sub"):
         text_c(d, 800 + f.size + 50, seg["sub"], font(56, False), "#e8e2da")
@@ -100,7 +102,9 @@ def card_vote(spec, thumbs, out):
     pill(d, 90, 170, "댓글 투표", font(46), TEAL, "white")
     y = 270
     for ln in [spec.get("vote_q", "제일 따라 입고 싶은 룩은?")]:
-        d.text((86, y), ln, font=font(88), fill=INK); y += 120
+        fs = 88
+        while d.textlength(ln, font=font(fs)) > 820 and fs > 56: fs -= 4
+        d.text((86, y), ln, font=font(fs), fill=INK); y += 120
     n = len(thumbs); gap = 24; tw = (W - 180 - gap * (n - 1)) // n; th = int(tw * 16 / 9); ty = y + 60
     for i, t in enumerate(thumbs):
         x = 90 + i * (tw + gap); tm, m = rounded_thumb(t, tw, th); im.paste(tm, (x, ty), m)
@@ -110,10 +114,10 @@ def card_vote(spec, thumbs, out):
     im.save(out, quality=95)
 
 
-def card_outro(out):
+def card_outro(out, sub="매일 1분 셀럽룩 · 날씨 코디"):
     im = Image.new("RGB", (W, H), TEAL); d = ImageDraw.Draw(im)
     text_c(d, 760, "저장 & 팔로우", font(130), "white")
-    text_c(d, 940, "매일 1분 셀럽룩 · 날씨 코디", font(58, False), "white")
+    text_c(d, 940, sub, font(58, False), "white")
     text_c(d, 1060, "@zzebi.st", font(76), "white")
     im.save(out, quality=95)
 
@@ -169,7 +173,7 @@ def main(spec_path, out, en=False):
         card_vote(spec, thumbs, f"{tmp}/vote.jpg"); parts.append(("img", f"{tmp}/vote.jpg", 4.0))
     total = sum(p[2] for p in parts) + 3.0
     outro_s = max(3.0, spec.get("min_total", 62) - (total - 3.0))
-    card_outro(f"{tmp}/outro.jpg"); parts.append(("img", f"{tmp}/outro.jpg", outro_s))
+    card_outro(f"{tmp}/outro.jpg", spec.get("outro_sub", "매일 1분 셀럽룩 · 날씨 코디")); parts.append(("img", f"{tmp}/outro.jpg", outro_s))
     total = sum(p[2] for p in parts)
 
     # 영어 자막 시간표 만들기 (--en)

@@ -1,4 +1,4 @@
-"""셀럽 스냅 해부 릴스 (v4.1 — 브랜드 틸 #00A8A8 적용) — 9:16 화면을 꽉 채우는 네이티브 레이아웃
+"""셀럽 스냅 해부 릴스 (v4.2 — 큰 글씨 요약 리스트 + 카드 보조글씨 30px, 브랜드 틸 #00A8A8) — 9:16 화면을 꽉 채우는 네이티브 레이아웃
 사용: python3 make_reel.py look.json out_silent.mp4 [cover_out.jpg]
 look.json: episode, celeb, city, date, title, image, accent(옵션 HEX), source(옵션),
            items[4]: cat, brand, name, pt, find, pt_xy[x,y](원본 픽셀), crop[cx,cy,size]
@@ -85,12 +85,12 @@ def info_card(i):
     card.alpha_composite(ph, (30, 30))
     d = ImageDraw.Draw(card)
     txt(d, (360, 28), f"{i + 1:02d}", SF(64), ACC_D)
-    txt(d, (455, 48), it["cat"], F(28, "Bold"), (120, 116, 110))
+    txt(d, (455, 46), it["cat"], F(30, "Bold"), (120, 116, 110))
     txt(d, (360, 128), it["name"], F(48), INK)
     txt(d, (360, 196), it["pt"], F(31, "Medium"), (70, 68, 64))
     br = it["brand"]
-    txt(d, (360, 246), br, F(26, "Medium"), (140, 136, 128))
-    f = F(27, "Bold"); s = "검색  " + it["find"]
+    txt(d, (360, 244), br, F(30, "Medium"), (130, 126, 118))
+    f = F(30, "Bold"); s = "검색  " + it["find"]
     w = d.textlength(s, font=f)
     d.rounded_rectangle([360, 290, 360 + w + 36, 340], 25, fill=BRAND)
     txt(d, (378, 315), s, f, WHITE, "lm")
@@ -123,7 +123,9 @@ for kind, dur in segs:
             a = ease(t * 3)
             txt(d, (60, 140), f"셀럽 스냅 해부  #{L['episode']}", F(40, "Bold"), WHITE + (int(255 * a),))
             d.line([(60, 200), (60 + 120 * a, 200)], fill=BRAND, width=6)
-            txt(d, (60, 232), L["celeb"], F(88), WHITE + (int(255 * ease(t * 3 - .3)),))
+            fs_c = 88
+            while d.textlength(L["celeb"], font=F(fs_c)) > 820 and fs_c > 60: fs_c -= 2  # 이름이 길면 줄여서 오른쪽 140px 금지구역 보호
+            txt(d, (60, 232 + (88 - fs_c) // 2), L["celeb"], F(fs_c), WHITE + (int(255 * ease(t * 3 - .3)),))
             txt(d, (60, 352), L["title"], F(52, "Bold"), (240, 236, 228, int(255 * ease(t * 3 - .5))))
             b = ease(t * 2.5 - .8)
             if b > 0:
@@ -138,38 +140,47 @@ for kind, dur in segs:
             fr = fr.convert("RGBA"); fr.alpha_composite(Image.new("RGBA", (W, H), (12, 12, 14, int(150 * ease(t * 2)))))
             d = ImageDraw.Draw(fr)
             a = ease(t * 2.5)
-            txt(d, (60, 150), "오늘의 포인트 4", F(64), WHITE + (int(255 * a),))
-            txt(d, (60, 240), f"{L['celeb']} · {L['title']}", F(32, "Medium"), (230, 230, 230, int(255 * a)))
+            txt(d, (60, 120), "오늘의 포인트 4", F(64), WHITE + (int(255 * a),))
+            d.line([(60, 214), (60 + 120 * a, 214)], fill=BRAND + (int(255 * a),), width=6)
+            txt(d, (60, 236), f"{L['celeb']} · {L['title']}", F(32, "Medium"), (230, 230, 230, int(255 * a)))
             for i in range(4):
                 p = ease(t * 3 - i * 0.18)
                 if p <= 0: continue
-                gx = 60 + (i % 2) * 420; gy = 330 + (i // 2) * 520 + int((1 - p) * 40)
-                tile = Image.new("RGBA", (400, 500), PAPER + (255,)); tile.putalpha(rr((400, 500), 26))
-                ph = crops[i].resize((360, 360), Image.LANCZOS).convert("RGBA"); ph.putalpha(rr((360, 360), 18))
-                tile.alpha_composite(ph, (20, 20))
-                td = ImageDraw.Draw(tile)
-                txt(td, (24, 392), f"{i + 1:02d}", SF(44), ACC_D)
-                nm = L["items"][i]["name"]; fs = 34 if len(nm) <= 9 else 30
-                txt(td, (92, 404), nm, F(fs), INK)
-                txt(td, (24, 452), "검색 · " + L["items"][i]["find"], F(23, "Medium"), (110, 106, 100))
-                tile.putalpha(tile.getchannel("A").point(lambda v: int(v * p)))
-                fr.alpha_composite(tile, (gx, gy))
+                gx = 60 + int((1 - p) * 60); gy = 300 + i * 252
+                row = Image.new("RGBA", (880, 236), PAPER + (255,)); row.putalpha(rr((880, 236), 26))
+                ph = crops[i].resize((204, 204), Image.LANCZOS).convert("RGBA"); ph.putalpha(rr((204, 204), 18))
+                row.alpha_composite(ph, (16, 16))
+                td = ImageDraw.Draw(row)
+                txt(td, (246, 20), f"{i + 1:02d}", SF(46), ACC_D)
+                txt(td, (324, 30), L["items"][i]["cat"], F(30, "Bold"), (120, 116, 110))
+                nm = L["items"][i]["name"]
+                txt(td, (246, 84), nm, F(48 if len(nm) <= 10 else 44), INK)
+                if "추천" in L["items"][i]["brand"]:
+                    tg = F(30, "Bold"); tw_ = td.textlength("추천", font=tg)
+                    td.rounded_rectangle([840 - tw_ - 30, 26, 852, 72], 23, outline=(120, 116, 110), width=2)
+                    txt(td, (846 - tw_ - 12, 49), "추천", tg, (110, 106, 100), "lm")
+                fs = F(30, "Bold"); sch = "검색  " + L["items"][i]["find"]
+                w2 = td.textlength(sch, font=fs)
+                td.rounded_rectangle([246, 160, 246 + w2 + 36, 212], 26, fill=BRAND)
+                txt(td, (264, 186), sch, fs, WHITE, "lm")
+                row.putalpha(row.getchannel("A").point(lambda v: int(v * p)))
+                fr.alpha_composite(row, (gx, gy))
             b = ease(t * 2.5 - 1.2)
             if b > 0:
                 f = F(42); s = "저장하고 따라 입기"
                 w = d.textlength(s, font=f)
-                d.rounded_rectangle([60, 1385, 60 + w + 64, 1475], 45, fill=BRAND + (int(255 * b),))
-                txt(d, (92, 1430), s, f, WHITE + (int(255 * b),), "lm")
-                txt(d, (60 + w + 96, 1430), "@zzebi.st", F(36, "Bold"), WHITE + (int(255 * b),), "lm")
+                d.rounded_rectangle([60, 1326, 60 + w + 64, 1414], 44, fill=BRAND + (int(255 * b),))
+                txt(d, (92, 1370), s, f, WHITE + (int(255 * b),), "lm")
+                txt(d, (60 + w + 96, 1370), "@zzebi.st", F(38, "Bold"), WHITE + (int(255 * b),), "lm")
         else:
             i = kind; it = L["items"][i]
             tx, ty = it["pt_xy"]
             m = eio(min(1, t / 0.45))
             cx = lerp(prev[0], tx, m); cy = lerp(prev[1], ty, m); z = lerp(prev[2], 1.32, m)
             fr, (x0, y0, s) = view(cx, cy, z)
-            fr = shade(fr, 170, 120, 420, 520)
-            header(fr)
+            fr = shade(fr, 195, 120, 440, 520)  # v4.2: 헤더 보조글씨 대비 강화
             sx, sy = (tx - x0) * s, (ty - y0) * s
+            if sy > 340: header(fr)  # 점이 헤더 영역에 올 때는 헤더를 숨겨 겹침 방지
             da = ease((t - 0.3) / 0.15)
             if da > 0:
                 ca = ease((t - 0.38) / 0.18)
