@@ -166,6 +166,13 @@ footer{font-size:12.5px;color:var(--muted);display:flex;flex-direction:column;ga
   .rk-item,.hot-item{grid-template-columns:22px 1fr;row-gap:4px}
   .rk-item .pr,.hot-item .pr{grid-column:2;text-align:left;margin-top:2px}
 }
+
+/* v2.0 검수 반영 */
+#tabs-top{margin-bottom:-40px}
+.look-no{background:var(--brand-strong)}
+.look-photo{max-width:480px;margin-inline:auto}
+.look-photo figcaption{padding-top:40px;background:linear-gradient(to top,rgba(0,0,0,.82) 0%,rgba(0,0,0,.55) 35%,rgba(0,0,0,0) 100%)}
+.rk-dot::before{content:"";display:block;width:6px;height:6px;border-radius:50%;background:var(--brand);margin-top:6px}
 </style>
 
 </head>
@@ -704,23 +711,23 @@ footer{font-size:12.5px;color:var(--muted);display:flex;flex-direction:column;ga
       <h3 class="rk-h">지그재그 인기 상품</h3>
       <ol class="rk-list">
         <li><a class="rk-item" href="https://zigzag.kr/catalog/products/129826097" target="_blank" rel="noopener">
-          <span class="rk-no">·</span>
+          <span class="rk-no rk-dot" aria-hidden="true"></span>
           <span class="hot-body"><span class="hot-where">리뷰 8천+</span><span class="nm"><span class="br">디어먼트</span> 블리스 프리미엄 웰론 하이넥 숏 패딩</span></span>
           <span class="pr"><span class="off">36%</span><span class="won">56,730원</span></span></a></li>
         <li><a class="rk-item" href="https://zigzag.kr/catalog/products/139610160" target="_blank" rel="noopener">
-          <span class="rk-no">·</span>
+          <span class="rk-no rk-dot" aria-hidden="true"></span>
           <span class="hot-body"><span class="hot-where">리뷰 2천+</span><span class="nm"><span class="br">프렌치오브</span> 노드 보트넥 루즈핏 니트 6컬러</span></span>
           <span class="pr"><span class="off">28%</span><span class="won">20,940원</span></span></a></li>
         <li><a class="rk-item" href="https://zigzag.kr/catalog/products/165595335" target="_blank" rel="noopener">
-          <span class="rk-no">·</span>
+          <span class="rk-no rk-dot" aria-hidden="true"></span>
           <span class="hot-body"><span class="hot-where">리뷰 852</span><span class="nm"><span class="br">메리어라운드</span> 소프트 스탠다드 데일리 니트</span></span>
           <span class="pr"><span class="off">41%</span><span class="won">22,270원</span></span></a></li>
         <li><a class="rk-item" href="https://zigzag.kr/catalog/products/171633743" target="_blank" rel="noopener">
-          <span class="rk-no">·</span>
+          <span class="rk-no rk-dot" aria-hidden="true"></span>
           <span class="hot-body"><span class="hot-where">관심 4.8만</span><span class="nm"><span class="br">후아유</span> 여성형 경량 패딩 자켓</span></span>
           <span class="pr"><span class="off">37%</span><span class="won">50,330원</span></span></a></li>
         <li><a class="rk-item" href="https://zigzag.kr/catalog/products/164875313" target="_blank" rel="noopener">
-          <span class="rk-no">·</span>
+          <span class="rk-no rk-dot" aria-hidden="true"></span>
           <span class="hot-body"><span class="hot-where">리뷰 359</span><span class="nm"><span class="br">모렌트</span> 레온 오버핏 스웨이드 하프 코트</span></span>
           <span class="pr"><span class="off">47%</span><span class="won">72,200원</span></span></a></li>
       </ol>
@@ -884,46 +891,46 @@ footer{font-size:12.5px;color:var(--muted);display:flex;flex-direction:column;ga
       <h3 class="rk-h">남성 추천 인기 신발</h3>
       <ol class="rk-list">
         <li><a class="rk-item" href="https://kream.co.kr/products/25785" target="_blank" rel="noopener">
-          <span class="rk-no">·</span>
+          <span class="rk-no rk-dot" aria-hidden="true"></span>
           <span class="hot-body"><span class="hot-where">관심 10만+</span><span class="nm"><span class="br">New Balance</span> 2002R 그레이</span></span>
           <span class="pr"><span class="off">31%</span><span class="won">123,000원</span></span></a></li>
         <li><a class="rk-item" href="https://kream.co.kr/products/28260" target="_blank" rel="noopener">
-          <span class="rk-no">·</span>
+          <span class="rk-no rk-dot" aria-hidden="true"></span>
           <span class="hot-body"><span class="hot-where">관심 12만+</span><span class="nm"><span class="br">New Balance</span> 530 스틸 그레이</span></span>
           <span class="pr"><span class="off">37%</span><span class="won">80,000원</span></span></a></li>
         <li><a class="rk-item" href="https://kream.co.kr/products/227052" target="_blank" rel="noopener">
-          <span class="rk-no">·</span>
+          <span class="rk-no rk-dot" aria-hidden="true"></span>
           <span class="hot-body"><span class="hot-where">관심 6.8만</span><span class="nm"><span class="br">Asics</span> 젤 카야노 14 블랙 퓨어 실버</span></span>
           <span class="pr"><span class="off">11%</span><span class="won">158,000원</span></span></a></li>
         <li><a class="rk-item" href="https://kream.co.kr/products/25673" target="_blank" rel="noopener">
-          <span class="rk-no">·</span>
+          <span class="rk-no rk-dot" aria-hidden="true"></span>
           <span class="hot-body"><span class="hot-where">관심 6.7만</span><span class="nm"><span class="br">Salomon</span> XT-6 ADV 블랙</span></span>
           <span class="pr"><span class="off">30%</span><span class="won">195,000원</span></span></a></li>
         <li><a class="rk-item" href="https://kream.co.kr/products/18871" target="_blank" rel="noopener">
-          <span class="rk-no">·</span>
+          <span class="rk-no rk-dot" aria-hidden="true"></span>
           <span class="hot-body"><span class="hot-where">관심 6.5만</span><span class="nm"><span class="br">Timberland</span> 프리미엄 6인치 워터프루프 부츠 위트</span></span>
           <span class="pr"><span class="off">39%</span><span class="won">168,000원</span></span></a></li>
       </ol>
       <h3 class="rk-h" style="margin-top:20px">여성 추천 인기 신발</h3>
       <ol class="rk-list">
         <li><a class="rk-item" href="https://kream.co.kr/products/179981" target="_blank" rel="noopener">
-          <span class="rk-no">·</span>
+          <span class="rk-no rk-dot" aria-hidden="true"></span>
           <span class="hot-body"><span class="hot-where">관심 9.5만</span><span class="nm"><span class="br">Nike</span> (W) 에어포스 1 '07 카카오 와우</span></span>
           <span class="pr"><span class="off">38%</span><span class="won">104,000원</span></span></a></li>
         <li><a class="rk-item" href="https://kream.co.kr/products/250825" target="_blank" rel="noopener">
-          <span class="rk-no">·</span>
+          <span class="rk-no rk-dot" aria-hidden="true"></span>
           <span class="hot-body"><span class="hot-where">관심 4.8만</span><span class="nm"><span class="br">Nike</span> (W) 샥스 R4 블랙</span></span>
           <span class="pr"><span class="off">55%</span><span class="won">79,000원</span></span></a></li>
         <li><a class="rk-item" href="https://kream.co.kr/products/112762" target="_blank" rel="noopener">
-          <span class="rk-no">·</span>
+          <span class="rk-no rk-dot" aria-hidden="true"></span>
           <span class="hot-body"><span class="hot-where">관심 3.7만</span><span class="nm"><span class="br">Crocs</span> (W) 클래식 플랫폼 클로그 블랙</span></span>
           <span class="pr"><span class="off">51%</span><span class="won">39,000원</span></span></a></li>
         <li><a class="rk-item" href="https://kream.co.kr/products/218041" target="_blank" rel="noopener">
-          <span class="rk-no">·</span>
+          <span class="rk-no rk-dot" aria-hidden="true"></span>
           <span class="hot-body"><span class="hot-where">관심 3.1만</span><span class="nm"><span class="br">Adidas</span> (W) 오즈가이아 코어 블랙</span></span>
           <span class="pr"><span class="off">30%</span><span class="won">83,000원</span></span></a></li>
         <li><a class="rk-item" href="https://kream.co.kr/products/219423" target="_blank" rel="noopener">
-          <span class="rk-no">·</span>
+          <span class="rk-no rk-dot" aria-hidden="true"></span>
           <span class="hot-body"><span class="hot-where">관심 6만</span><span class="nm"><span class="br">Nike</span> (W) 에어포스 1 '07 WB 플랙스 위트</span></span>
           <span class="pr"><span class="off">28%</span><span class="won">115,000원</span></span></a></li>
       </ol>
