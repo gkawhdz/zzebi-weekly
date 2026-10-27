@@ -1,0 +1,82 @@
+{
+ "kicker": "오늘의 패션 몰아보기",
+ "title": [
+  "1분 만에 끝내는",
+  "겨울 아침 옷 고민"
+ ],
+ "sub": "니트 정전기 3가지 + 출근룩 2벌 →",
+ "segments": [
+  {
+   "file": "A.mp4",
+   "label": "니트 정전기 줄이기",
+   "sub": "옷으로 줄이는 법 3가지",
+   "thumb_t": 1.0,
+   "chapter_en": "01 · Less static with knits",
+   "en": [
+    [
+     0,
+     3.4,
+     "Does your hair stick to your knit? 3 outfit fixes for static"
+    ],
+    [
+     3.4,
+     11.0,
+     "01 Swap acrylic knits for cotton — synthetics build up more static"
+    ],
+    [
+     11.0,
+     18.6,
+     "02 Skirt clinging? A little lotion on your legs or tights helps"
+    ],
+    [
+     18.6,
+     26.2,
+     "03 Pull a cotton shirt collar out over your knit at the neckline"
+    ],
+    [
+     26.2,
+     29.0,
+     "Sources: Science Times, Samsung Newsroom, Allure Korea, News1"
+    ]
+   ]
+  },
+  {
+   "file": "B.mp4",
+   "label": "짧은 아우터 출근룩",
+   "sub": "여자 · 남자 2벌",
+   "thumb_t": 1.0,
+   "chapter_en": "02 · Short-outer commute looks (her & him)",
+   "en": [
+    [
+     0,
+     3.2,
+     "Skip the long coat — it's all about this one length"
+    ],
+    [
+     3.2,
+     14.5,
+     "Her: cropped cream tweed jacket, charcoal shift dress, mustard scarf, ankle boots"
+    ],
+    [
+     14.5,
+     25.8,
+     "Him: short green duffle coat, Nordic ski sweater, flannel wide pants, derbies"
+    ],
+    [
+     25.8,
+     30.2,
+     "Formula: short on top, long below, one pop of color near the neck"
+    ],
+    [
+     30.2,
+     32.8,
+     "Save it for tomorrow's commute. Sources: Vogue Korea, News1"
+    ]
+   ]
+  }
+ ],
+ "seed": 31,
+ "min_total": 62,
+ "intro_en": "Sort your winter-morning outfit in 1 minute: static-free knits + 2 commute looks",
+ "outro_en": "Save & follow @zzebi.st for daily 1-min style tips"
+}
