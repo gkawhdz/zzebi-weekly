@@ -1,0 +1,34 @@
+{
+ "kicker": "셀럽 스냅 해부 몰아보기",
+ "title": [
+  "세 룩의 비결은",
+  "블랙에 색 얹기"
+ ],
+ "sub": "끝까지 보고 투표해 주세요 ↓",
+ "segments": [
+  {
+   "file": "reel_14.mp4",
+   "label": "NAOMI WATTS",
+   "sub": "레더 봄버 공항룩",
+   "thumb_t": 1.0
+  },
+  {
+   "file": "reel_15.mp4",
+   "label": "HAILEY BIEBER",
+   "sub": "코발트 트렌치 올블랙룩",
+   "thumb_t": 1.0
+  },
+  {
+   "file": "reel_16.mp4",
+   "label": "LOLA TUNG",
+   "sub": "올블랙 레더 × 브라운 백",
+   "thumb_t": 1.0
+  }
+ ],
+ "recap_t": 13.5,
+ "recap_s": 3.0,
+ "vote": true,
+ "vote_q": "제일 따라 입고 싶은 룩은?",
+ "seed": 20261028,
+ "min_total": 62
+}

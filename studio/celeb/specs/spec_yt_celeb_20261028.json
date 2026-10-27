@@ -1,0 +1,137 @@
+{
+ "kicker": "셀럽 스냅 해부 몰아보기",
+ "title": [
+  "세 룩의 비결은",
+  "블랙에 색 얹기"
+ ],
+ "sub": "끝까지 보고 투표해 주세요 ↓",
+ "segments": [
+  {
+   "file": "reel_14.mp4",
+   "label": "NAOMI WATTS",
+   "sub": "레더 봄버 공항룩",
+   "thumb_t": 1.0,
+   "chapter_en": "01 · Naomi Watts — leather bomber airport look",
+   "en": [
+    [
+     0,
+     2.4,
+     "Gray track pants can look this polished?"
+    ],
+    [
+     2.4,
+     4.7,
+     "01 Black leather bomber — glossy leather does the work"
+    ],
+    [
+     4.7,
+     7.0,
+     "02 Black crewneck tee — keep the inner plain black"
+    ],
+    [
+     7.0,
+     9.3,
+     "03 Gray track pants — relaxed and comfy fit"
+    ],
+    [
+     9.3,
+     11.6,
+     "04 Red sneakers — red instead of white sneakers"
+    ],
+    [
+     11.6,
+     14.6,
+     "Today's 4 key points — save it & copy the look"
+    ]
+   ]
+  },
+  {
+   "file": "reel_15.mp4",
+   "label": "HAILEY BIEBER",
+   "sub": "코발트 트렌치 올블랙룩",
+   "thumb_t": 1.0,
+   "chapter_en": "02 · Hailey Bieber — cobalt trench over all black",
+   "en": [
+    [
+     0,
+     2.4,
+     "Just swap your trench for a blue one"
+    ],
+    [
+     2.4,
+     4.7,
+     "01 Cobalt trench — one layer of color over all black"
+    ],
+    [
+     4.7,
+     7.0,
+     "02 Burgundy flap bag — blue and burgundy contrast"
+    ],
+    [
+     7.0,
+     9.3,
+     "03 Black wide trousers — same black as the inner"
+    ],
+    [
+     9.3,
+     11.6,
+     "04 Black slipper mules — finish with easy flat mules"
+    ],
+    [
+     11.6,
+     14.6,
+     "Today's 4 key points — save it & copy the look"
+    ]
+   ]
+  },
+  {
+   "file": "reel_16.mp4",
+   "label": "LOLA TUNG",
+   "sub": "올블랙 레더 × 브라운 백",
+   "thumb_t": 1.0,
+   "chapter_en": "03 · Lola Tung — all-black leather & brown bag",
+   "en": [
+    [
+     0,
+     2.4,
+     "All black feeling flat? Just change your bag"
+    ],
+    [
+     2.4,
+     4.7,
+     "01 Black leather tang jacket — knot buttons as the accent"
+    ],
+    [
+     4.7,
+     7.0,
+     "02 Patchwork hobo bag — one touch of brown on all black"
+    ],
+    [
+     7.0,
+     9.3,
+     "03 Black straight pants — tuck them into the boots"
+    ],
+    [
+     9.3,
+     11.6,
+     "04 Black knee-high boots — tall, just below the knee"
+    ],
+    [
+     11.6,
+     14.6,
+     "Today's 4 key points — save it & copy the look"
+    ]
+   ]
+  }
+ ],
+ "recap_t": 13.5,
+ "recap_s": 3.0,
+ "vote": true,
+ "vote_q": "제일 따라 입고 싶은 룩은?",
+ "seed": 20261028,
+ "min_total": 62,
+ "intro_en": "The secret behind all 3 looks? A black base + a pop of color",
+ "recap_en": "Recap: the 4 key items from each look",
+ "vote_en": "Which look would you copy? Comment 1, 2 or 3",
+ "outro_en": "Save & follow @zzebi.st for daily celeb street style"
+}

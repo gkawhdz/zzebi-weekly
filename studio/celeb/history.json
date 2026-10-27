@@ -2,6 +2,70 @@
  "rule": "하루 여자, 하루 남자 번갈아. 마지막 날짜의 gender 반대로.",
  "posts": [
   {
+   "date": "2026-10-28",
+   "ep": "14",
+   "gender": "여자",
+   "celeb": "Naomi Watts",
+   "look": "레더 봄버 공항룩",
+   "slot": "09:00",
+   "hook": "회색 트레이닝 바지가\n이렇게 세련돼진다고?",
+   "hook_type": "01 결과 강조형",
+   "music": "오리지널 배경음(인스타 라이브러리 곡 연결 실패: Authorization Error), seed 20261028",
+   "channels": [
+    "instagram",
+    "tiktok_comp",
+    "youtube_comp"
+   ],
+   "design_version": "v4.3",
+   "image_file": "20261028_14.jpg.jpeg",
+   "image_id": "1Gv6BVDAb5Wg200C98nxw8PLBAdfhnzM8",
+   "source": "https://www.whowhatwear.com/fashion/celebrity-style/track-pants-red-trainers-airport-outfit-naomi-watts-2026",
+   "status": "예약됨"
+  },
+  {
+   "date": "2026-10-28",
+   "ep": "15",
+   "gender": "여자",
+   "celeb": "Hailey Bieber",
+   "look": "코발트 트렌치 올블랙룩",
+   "slot": "10:00",
+   "hook": "트렌치를 파랑으로\n바꿨을 뿐인데",
+   "hook_type": "21 작은 행동 큰 결과형",
+   "music": "오리지널 배경음(인스타 라이브러리 곡 연결 실패: Authorization Error), seed 20261029",
+   "channels": [
+    "instagram",
+    "tiktok_comp",
+    "youtube_comp"
+   ],
+   "design_version": "v4.3",
+   "image_file": "20261028_15.jpg.jpeg",
+   "image_id": "1soYt-788cxVm4CRTipbWD-01YyNlcVLX",
+   "source": "https://www.marieclaire.com/fashion/celebrity-style/best-celebrity-outfits-week-of-october-18-2026/",
+   "status": "예약됨"
+  },
+  {
+   "date": "2026-10-28",
+   "ep": "16",
+   "gender": "여자",
+   "celeb": "Lola Tung",
+   "look": "올블랙 레더 × 브라운 백",
+   "slot": "16:00",
+   "hook": "올블랙이 밋밋하다면\n가방 하나만 바꾸세요",
+   "hook_type": "06 해결책 제시형",
+   "music": "오리지널 배경음(인스타 라이브러리 곡 연결 실패: Authorization Error), seed 20261030",
+   "channels": [
+    "instagram",
+    "tiktok_comp",
+    "youtube_comp"
+   ],
+   "design_version": "v4.3",
+   "image_file": "20261028_16.jpg.jpeg",
+   "image_id": "1QsHiv1LooUH6-WMn0w2kiWRBml52-w5r",
+   "source": "https://www.marieclaire.com/fashion/celebrity-style/best-celebrity-outfits-week-of-october-18-2026/",
+   "status": "예약됨",
+   "comp_hook": "세 룩의 비결은 / 블랙에 색 얹기 (17 디테일 분석형) — 틱톡·유튜브 21:43"
+  },
+  {
    "date": "2026-10-27",
    "gender": "남자",
    "music": "오리지널 배경음(인스타 라이브러리 곡 연결 실패: Authorization Error)",
