@@ -1,4 +1,4 @@
-"""셀럽 스냅 해부 릴스 (v4.2 — 큰 글씨 요약 리스트 + 카드 보조글씨 30px, 브랜드 틸 #00A8A8) — 9:16 화면을 꽉 채우는 네이티브 레이아웃
+"""셀럽 스냅 해부 릴스 (v4.3 — 첫 화면 후킹 문구(hook·hook_cta) + 0초부터 글자 표시, v4.2 — 큰 글씨 요약 리스트 + 카드 보조글씨 30px, 브랜드 틸 #00A8A8) — 9:16 화면을 꽉 채우는 네이티브 레이아웃
 사용: python3 make_reel.py look.json out_silent.mp4 [cover_out.jpg]
 look.json: episode, celeb, city, date, title, image, accent(옵션 HEX), source(옵션),
            items[4]: cat, brand, name, pt, find, pt_xy[x,y](원본 픽셀), crop[cx,cy,size]
@@ -107,6 +107,25 @@ def dot(img, x, y, a, n):
 
 # 타임라인
 T_COVER, T_ITEM, T_END = 1.8, 2.3, 3.0
+HOOK = L.get("hook")  # v4.3: 첫 화면 후킹 문구(2줄까지). 있으면 커버 2.4초로 늘려 읽을 시간 확보
+if HOOK: T_COVER = 2.4
+
+def wrap_hook(d, s, maxw=820):
+    """후킹 문구를 최대 2줄로 — '\\n'이 있으면 그대로, 없으면 폭에 맞춰 자르고 글씨 크기 자동 조절"""
+    for fs in range(70, 52, -2):
+        f = F(fs)
+        if "\n" in s:
+            lines = s.split("\n")[:2]
+        else:
+            words, lines, cur = s.split(), [], ""
+            for w_ in words:
+                t_ = (cur + " " + w_).strip()
+                if d.textlength(t_, font=f) > maxw and cur: lines.append(cur); cur = w_
+                else: cur = t_
+            lines.append(cur)
+        if len(lines) <= 2 and all(d.textlength(l_, font=f) <= maxw for l_ in lines):
+            return lines, f
+    return lines[:2], F(54)
 segs = [("cover", T_COVER)] + [(i, T_ITEM) for i in range(4)] + [("end", T_END)]
 FR = OUT + "_frames"; shutil.rmtree(FR, ignore_errors=True); os.makedirs(FR)
 full_c = (IW / 2, IH * 0.48)
@@ -120,16 +139,29 @@ for kind, dur in segs:
             fr, _ = view(full_c[0], full_c[1], z)
             fr = shade(fr, 200, 210, 640, 760)
             d = ImageDraw.Draw(fr)
-            a = ease(t * 3)
-            txt(d, (60, 140), f"셀럽 스냅 해부  #{L['episode']}", F(40, "Bold"), WHITE + (int(255 * a),))
-            d.line([(60, 200), (60 + 120 * a, 200)], fill=BRAND, width=6)
+            # v4.3: 0초 첫 프레임부터 글자가 다 보이게(페이드인 없음) — 스크롤 멈추게 하는 건 첫 화면
+            txt(d, (60, 140), f"셀럽 스냅 해부  #{L['episode']}", F(40, "Bold"), WHITE + (255,))
+            d.line([(60, 200), (180, 200)], fill=BRAND, width=6)
             fs_c = 88
             while d.textlength(L["celeb"], font=F(fs_c)) > 820 and fs_c > 60: fs_c -= 2  # 이름이 길면 줄여서 오른쪽 140px 금지구역 보호
-            txt(d, (60, 232 + (88 - fs_c) // 2), L["celeb"], F(fs_c), WHITE + (int(255 * ease(t * 3 - .3)),))
-            txt(d, (60, 352), L["title"], F(52, "Bold"), (240, 236, 228, int(255 * ease(t * 3 - .5))))
-            b = ease(t * 2.5 - .8)
+            txt(d, (60, 232 + (88 - fs_c) // 2), L["celeb"], F(fs_c), WHITE + (255,))
+            if HOOK:
+                hl, hf = wrap_hook(d, HOOK, 790)
+                lh = int(hf.size * 1.24); bw = max(d.textlength(l_, font=hf) for l_ in hl)
+                hy0 = 362; hy1 = hy0 + lh * len(hl) + 70
+                fr = fr.convert("RGBA"); ov = Image.new("RGBA", (W, H), (0, 0, 0, 0)); od = ImageDraw.Draw(ov)
+                od.rounded_rectangle([40, hy0 - 18, 40 + bw + 64, hy1], 22, fill=(12, 12, 14, 175))  # 사진 위에서도 잘 읽히게 어두운 판
+                od.rectangle([40, hy0 - 18, 50, hy1], fill=BRAND + (255,))  # 브랜드 틸 세로 막대
+                fr.alpha_composite(ov); d = ImageDraw.Draw(fr)
+                hy = hy0
+                for ln in hl:
+                    txt(d, (70, hy), ln, hf, WHITE + (255,)); hy += lh
+                txt(d, (70, hy + 4), L["title"], F(36, "Bold"), (190, 228, 226, 255))
+            else:
+                txt(d, (60, 352), L["title"], F(52, "Bold"), (240, 236, 228, 255))
+            b = 1.0 if HOOK else ease(t * 2.5 - .8)
             if b > 0:
-                f = F(40, "Bold"); s = "포인트 4개만 기억하세요 →"
+                f = F(40, "Bold"); s = L.get("hook_cta", "포인트 4개만 기억하세요 →")
                 w = d.textlength(s, font=f)
                 d.rounded_rectangle([60, 1250, 60 + w + 56, 1340], 45, fill=BRAND + (int(255 * b),))
                 txt(d, (88, 1295), s, f, WHITE + (int(255 * b),), "lm")
