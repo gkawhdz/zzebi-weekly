@@ -1,0 +1,83 @@
+{
+ "kicker": "오늘의 패션 몰아보기",
+ "title": [
+  "비 오는 날",
+  "흔한 출근룩 실수"
+ ],
+ "sub": "출근룩 3가지 + 2개로 4가지 코디 →",
+ "segments": [
+  {
+   "file": "20261029_A.mp4",
+   "label": "비 오는 날 출근룩",
+   "sub": "스웨이드 대신 3가지",
+   "thumb_t": 1.0,
+   "chapter_en": "01 · Rainy-day commute: 3 swaps",
+   "en": [
+    [
+     0,
+     3.4,
+     "Rain this afternoon? Don't wear suede today"
+    ],
+    [
+     3.4,
+     11.0,
+     "01 Outerwear: skip wool — nylon anoraks and waxed cotton shed water"
+    ],
+    [
+     11.0,
+     18.6,
+     "02 Easiest fix: rest the suede, wear rubber Chelsea boots instead"
+    ],
+    [
+     18.6,
+     26.2,
+     "03 Hems: end trousers above the ankle — wet hems soak up water"
+    ],
+    [
+     26.2,
+     29.6,
+     "Rewatch before the rain — Sources: KMA forecast, Vogue Korea"
+    ]
+   ]
+  },
+  {
+   "file": "20261029_B.mp4",
+   "label": "2개로 4가지 코디",
+   "sub": "여자 · 남자 2세트",
+   "thumb_t": 1.0,
+   "chapter_en": "02 · 2 pieces, 4 looks (her & him)",
+   "en": [
+    [
+     0,
+     3.4,
+     "Own just these 2 pieces? You can wear them 4 ways"
+    ],
+    [
+     3.4,
+     14.7,
+     "Her: olive field jacket + black knit maxi skirt — hoodie, belt, or scarf"
+    ],
+    [
+     14.7,
+     26.0,
+     "Him: red check shacket + cream corduroy pants — beanie, turtleneck, or vest"
+    ],
+    [
+     26.0,
+     30.4,
+     "Formula: keep the 2 pieces, switch shoes, inner layer and accessories"
+    ],
+    [
+     30.4,
+     33.6,
+     "Rewatch before you get dressed — save & follow @zzebi.st"
+    ]
+   ]
+  }
+ ],
+ "seed": 32,
+ "min_total": 62,
+ "intro_en": "Rainy days: common outfit mistakes + 2 pieces, 4 looks",
+ "outro_en": "Save & follow @zzebi.st for daily 1-min style tips",
+ "outro_sub": "매일 1분 패션 · 날씨 코디"
+}
