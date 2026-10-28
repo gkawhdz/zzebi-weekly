@@ -1,0 +1,34 @@
+{
+ "kicker": "셀럽 스냅 해부 몰아보기",
+ "title": [
+  "수트부터 청바지",
+  "남자 3룩 해부"
+ ],
+ "sub": "몇 번이 제일 쉬울까? 끝까지 보고 투표 ↓",
+ "recap_t": 13.5,
+ "recap_s": 3.0,
+ "vote": true,
+ "vote_q": "제일 따라 입고 싶은 룩은?",
+ "seed": 20261029,
+ "min_total": 62,
+ "segments": [
+  {
+   "file": "/home/claude/work/reel_17.mp4",
+   "label": "PATRICK MAHOMES",
+   "sub": "버건디 핀스트라이프 수트",
+   "thumb_t": 1.0
+  },
+  {
+   "file": "/home/claude/work/reel_18.mp4",
+   "label": "JARED MCCAIN",
+   "sub": "크림 니트 × 화이트 데님",
+   "thumb_t": 1.0
+  },
+  {
+   "file": "/home/claude/work/reel_19.mp4",
+   "label": "JOE ALWYN",
+   "sub": "블루 티 × 청바지 산책룩",
+   "thumb_t": 1.0
+  }
+ ]
+}

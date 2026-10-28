@@ -1,235 +1,299 @@
 {
- "rule": "하루 여자, 하루 남자 번갈아. 마지막 날짜의 gender 반대로.",
- "posts": [
-  {
-   "date": "2026-10-28",
-   "ep": "14",
-   "gender": "여자",
-   "celeb": "Naomi Watts",
-   "look": "레더 봄버 공항룩",
-   "slot": "09:00",
-   "hook": "회색 트레이닝 바지가\n이렇게 세련돼진다고?",
-   "hook_type": "01 결과 강조형",
-   "music": "오리지널 배경음(인스타 라이브러리 곡 연결 실패: Authorization Error), seed 20261028",
-   "channels": [
-    "instagram",
-    "tiktok_comp",
-    "youtube_comp"
-   ],
-   "design_version": "v4.3",
-   "image_file": "20261028_14.jpg.jpeg",
-   "image_id": "1Gv6BVDAb5Wg200C98nxw8PLBAdfhnzM8",
-   "source": "https://www.whowhatwear.com/fashion/celebrity-style/track-pants-red-trainers-airport-outfit-naomi-watts-2026",
-   "status": "예약됨"
-  },
-  {
-   "date": "2026-10-28",
-   "ep": "15",
-   "gender": "여자",
-   "celeb": "Hailey Bieber",
-   "look": "코발트 트렌치 올블랙룩",
-   "slot": "10:00",
-   "hook": "트렌치를 파랑으로\n바꿨을 뿐인데",
-   "hook_type": "21 작은 행동 큰 결과형",
-   "music": "오리지널 배경음(인스타 라이브러리 곡 연결 실패: Authorization Error), seed 20261029",
-   "channels": [
-    "instagram",
-    "tiktok_comp",
-    "youtube_comp"
-   ],
-   "design_version": "v4.3",
-   "image_file": "20261028_15.jpg.jpeg",
-   "image_id": "1soYt-788cxVm4CRTipbWD-01YyNlcVLX",
-   "source": "https://www.marieclaire.com/fashion/celebrity-style/best-celebrity-outfits-week-of-october-18-2026/",
-   "status": "예약됨"
-  },
-  {
-   "date": "2026-10-28",
-   "ep": "16",
-   "gender": "여자",
-   "celeb": "Lola Tung",
-   "look": "올블랙 레더 × 브라운 백",
-   "slot": "16:00",
-   "hook": "올블랙이 밋밋하다면\n가방 하나만 바꾸세요",
-   "hook_type": "06 해결책 제시형",
-   "music": "오리지널 배경음(인스타 라이브러리 곡 연결 실패: Authorization Error), seed 20261030",
-   "channels": [
-    "instagram",
-    "tiktok_comp",
-    "youtube_comp"
-   ],
-   "design_version": "v4.3",
-   "image_file": "20261028_16.jpg.jpeg",
-   "image_id": "1QsHiv1LooUH6-WMn0w2kiWRBml52-w5r",
-   "source": "https://www.marieclaire.com/fashion/celebrity-style/best-celebrity-outfits-week-of-october-18-2026/",
-   "status": "예약됨",
-   "comp_hook": "세 룩의 비결은 / 블랙에 색 얹기 (17 디테일 분석형) — 틱톡·유튜브 21:43"
-  },
-  {
-   "date": "2026-10-27",
-   "gender": "남자",
-   "music": "오리지널 배경음(인스타 라이브러리 곡 연결 실패: Authorization Error)",
-   "channels": [
-    "instagram",
-    "tiktok_comp",
-    "youtube_comp"
-   ],
-   "design_version": "v4.2",
-   "status": "예약됨",
-   "ep": "13",
-   "celeb": "Hugh Jackman",
-   "look": "그레이 후디 × 올리브 조거",
-   "slot": "16:00",
-   "image_file": "20261027_13.jpg.jpeg",
-   "image_id": "1yKJJ8qFEJ7Zyp0ytiWkRSlw7GkGnV8nQ",
-   "source": "https://www.justjared.com/2026/10/22/hugh-jackman-girlfriend-sutton-foster-step-out-for-lunch-date-in-pasadena/"
-  },
-  {
-   "date": "2026-10-27",
-   "gender": "남자",
-   "music": "오리지널 배경음(인스타 라이브러리 곡 연결 실패: Authorization Error)",
-   "channels": [
-    "instagram",
-    "tiktok_comp",
-    "youtube_comp"
-   ],
-   "design_version": "v4.2",
-   "status": "예약됨",
-   "ep": "12",
-   "celeb": "Kit Connor",
-   "look": "네이비 블레이저 프레피룩",
-   "slot": "10:00",
-   "image_file": "20261027_12.jpg.jpeg",
-   "image_id": "1nI7rCMXGup65vYxQhEQ0DDw1GCJ-MDPT",
-   "source": "https://www.justjared.com/2026/10/20/kit-connor-diana-silvers-film-1986-set-thriller-preppy-together-in-new-york-city/"
-  },
-  {
-   "date": "2026-10-27",
-   "gender": "남자",
-   "music": "오리지널 배경음(인스타 라이브러리 곡 연결 실패: Authorization Error)",
-   "channels": [
-    "instagram",
-    "tiktok_comp",
-    "youtube_comp"
-   ],
-   "design_version": "v4.2",
-   "status": "예약됨",
-   "ep": "11",
-   "celeb": "Jeremy Allen White",
-   "look": "화이트 탱크 × 브라운 팬츠",
-   "slot": "09:00",
-   "image_file": "20261027_11.jpg.jpeg",
-   "image_id": "1Gl_Jlts3Mv1P51G5TEXh98TS3oqz6qrR",
-   "source": "https://www.justjared.com/2026/10/26/jeremy-allen-shows-off-his-muscles-in-tight-tank-as-he-meets-up-with-friends-in-l-a-photos/"
-  },
-  {
-   "date": "2026-10-26",
-   "ep": "10",
-   "gender": "여자",
-   "celeb": "Olivia Rodrigo",
-   "look": "니트 판초 × 아미 스커트",
-   "slot": "17:00",
-   "music": "오리지널 배경음(라이브러리 곡 연결 실패: Authorization Error), seed 20261040",
-   "design_version": "v3",
-   "status": "예약됨"
-  },
-  {
-   "date": "2026-10-26",
-   "ep": "09",
-   "gender": "여자",
-   "celeb": "Jennifer Lawrence",
-   "look": "크롭 블레이저 시폰 룩",
-   "slot": "14:00",
-   "music": "오리지널 배경음(라이브러리 곡 연결 실패: Authorization Error), seed 20261033",
-   "design_version": "v3",
-   "status": "예약됨"
-  },
-  {
-   "date": "2026-10-26",
-   "ep": "08",
-   "gender": "여자",
-   "celeb": "Bella Hadid",
-   "look": "그레이 레깅스 공항룩",
-   "slot": "11:00",
-   "music": "오리지널 배경음(라이브러리 곡 연결 실패: Authorization Error), seed 20261026",
-   "design_version": "v3",
-   "status": "예약됨"
-  },
-  {
-   "date": "2026-10-25",
-   "ep": "07",
-   "gender": "남자",
-   "celeb": "Justin Bieber",
-   "look": "그레이 후디 × 농구 쇼츠",
-   "slot": "17:00",
-   "design_version": "v1(다른 실행분)",
-   "status": "예약됨"
-  },
-  {
-   "date": "2026-10-25",
-   "ep": "06",
-   "gender": "남자",
-   "celeb": "Harry Styles",
-   "look": "펀넬넥 집업 미니멀 룩",
-   "slot": "14:00",
-   "design_version": "v1(다른 실행분)",
-   "status": "예약됨"
-  },
-  {
-   "date": "2026-10-25",
-   "ep": "05",
-   "gender": "남자",
-   "celeb": "Brad Pitt",
-   "look": "그린 스웨이드 × 퍼플 팬츠",
-   "slot": "11:00",
-   "design_version": "v1(다른 실행분)",
-   "status": "예약됨"
-  },
-  {
-   "date": "2026-10-25",
-   "ep": "-",
-   "gender": "남자",
-   "celeb": "Jacob Elordi / Harry Styles / Brad Pitt",
-   "look": "v2 디자인 대체본 3개(베이지 재킷·레오파드 백·핑크 팬츠)",
-   "slot": "11:00/14:00/17:00",
-   "design_version": "v2",
-   "status": "초안(중복 방지로 보류)"
-  },
-  {
-   "date": "2026-10-24",
-   "ep": "04",
-   "gender": "여자",
-   "celeb": "Sienna Miller",
-   "look": "레더 페플럼 테일러링",
-   "slot": "17:00",
-   "status": "예약됨"
-  },
-  {
-   "date": "2026-10-24",
-   "ep": "03",
-   "gender": "여자",
-   "celeb": "Daisy Edgar-Jones",
-   "look": "화이트 밀리터리 재킷 + 블루 진",
-   "slot": "14:00",
-   "status": "예약됨"
-  },
-  {
-   "date": "2026-10-24",
-   "ep": "02",
-   "gender": "여자",
-   "celeb": "Camila Morrone",
-   "look": "레이스 LBD + 퍼 코트",
-   "slot": "11:00",
-   "status": "게시됨"
-  },
-  {
-   "date": "2026-10-24",
-   "ep": "01",
-   "gender": "여자",
-   "celeb": "Iris Law",
-   "look": "화이트 롱슬리브 + 카모 카고 + 새틴 플랫",
-   "slot": "09:28",
-   "status": "게시됨"
-  }
- ]
+"rule": "하루 여자, 하루 남자 번갈아. 마지막 날짜의 gender 반대로.",
+"posts": [
+{
+"date": "2026-10-29",
+"ep": "17",
+"gender": "남자",
+"celeb": "Patrick Mahomes",
+"look": "버건디 핀스트라이프 수트",
+"slot": "09:00",
+"hook": "수트엔 구두만?\n마홈스는 로퍼 골랐다",
+"hook_type": "05 상식 파괴형",
+"music": "오리지널 배경음(인스타 라이브러리 곡 연결 실패: Authorization Error), seed 20261029",
+"channels": [
+"instagram",
+"tiktok_comp",
+"youtube_comp"
+],
+"design_version": "v4.3",
+"image_file": "20261029_17.jpg.jpeg",
+"image_id": "1Z2FgDbMz-2fTr6nCOmqhPedmJ5nAJBQQ",
+"source": "https://andscape.com/features/october-tunnel-fits-athletes-fashion-lebron-james-patrick-mahomes/",
+"status": "예약됨"
+},
+{
+"date": "2026-10-29",
+"ep": "18",
+"gender": "남자",
+"celeb": "Jared McCain",
+"look": "크림 니트 × 화이트 데님",
+"slot": "10:00",
+"hook": "다들 검정 입을 때\n흰 데님 꺼낸 남자",
+"hook_type": "20 시장 기회형",
+"music": "오리지널 배경음(인스타 라이브러리 곡 연결 실패: Authorization Error), seed 20261030",
+"channels": [
+"instagram",
+"tiktok_comp",
+"youtube_comp"
+],
+"design_version": "v4.3",
+"image_file": "20261029_18.jpg.jpeg",
+"image_id": "1S5VVVz9-Ys2IWnyzY8azW7xmuGR86V_9",
+"source": "https://andscape.com/features/october-tunnel-fits-athletes-fashion-lebron-james-patrick-mahomes/",
+"status": "예약됨"
+},
+{
+"date": "2026-10-29",
+"ep": "19",
+"gender": "남자",
+"celeb": "Joe Alwyn",
+"look": "블루 티 × 청바지 산책룩",
+"slot": "16:00",
+"hook": "제일 쉬운 남친룩 공식\n티+청바지+'이것'",
+"hook_type": "26 쉬운 방법 제시형",
+"music": "오리지널 배경음(인스타 라이브러리 곡 연결 실패: Authorization Error), seed 20261031",
+"channels": [
+"instagram",
+"tiktok_comp",
+"youtube_comp"
+],
+"design_version": "v4.3",
+"image_file": "20261029_19.jpg.jpeg",
+"image_id": "1wRuOQO_kJU-LC1We4UmIjNayT-k9aYQq",
+"source": "https://www.justjared.com/2026/10/26/joe-alwyn-mary-beth-barone-bond-in-nyc-amid-production-on-their-rom-com-still-we-met/",
+"status": "예약됨",
+"comp_hook": "수트부터 청바지 / 남자 3룩 해부 (19 변화 스토리형), 틱톡·유튜브 21:43"
+},
+{
+"date": "2026-10-28",
+"ep": "14",
+"gender": "여자",
+"celeb": "Naomi Watts",
+"look": "레더 봄버 공항룩",
+"slot": "09:00",
+"hook": "회색 트레이닝 바지가\n이렇게 세련돼진다고?",
+"hook_type": "01 결과 강조형",
+"music": "오리지널 배경음(인스타 라이브러리 곡 연결 실패: Authorization Error), seed 20261028",
+"channels": [
+"instagram",
+"tiktok_comp",
+"youtube_comp"
+],
+"design_version": "v4.3",
+"image_file": "20261028_14.jpg.jpeg",
+"image_id": "1Gv6BVDAb5Wg200C98nxw8PLBAdfhnzM8",
+"source": "https://www.whowhatwear.com/fashion/celebrity-style/track-pants-red-trainers-airport-outfit-naomi-watts-2026",
+"status": "예약됨"
+},
+{
+"date": "2026-10-28",
+"ep": "15",
+"gender": "여자",
+"celeb": "Hailey Bieber",
+"look": "코발트 트렌치 올블랙룩",
+"slot": "10:00",
+"hook": "트렌치를 파랑으로\n바꿨을 뿐인데",
+"hook_type": "21 작은 행동 큰 결과형",
+"music": "오리지널 배경음(인스타 라이브러리 곡 연결 실패: Authorization Error), seed 20261029",
+"channels": [
+"instagram",
+"tiktok_comp",
+"youtube_comp"
+],
+"design_version": "v4.3",
+"image_file": "20261028_15.jpg.jpeg",
+"image_id": "1soYt-788cxVm4CRTipbWD-01YyNlcVLX",
+"source": "https://www.marieclaire.com/fashion/celebrity-style/best-celebrity-outfits-week-of-october-18-2026/",
+"status": "예약됨"
+},
+{
+"date": "2026-10-28",
+"ep": "16",
+"gender": "여자",
+"celeb": "Lola Tung",
+"look": "올블랙 레더 × 브라운 백",
+"slot": "16:00",
+"hook": "올블랙이 밋밋하다면\n가방 하나만 바꾸세요",
+"hook_type": "06 해결책 제시형",
+"music": "오리지널 배경음(인스타 라이브러리 곡 연결 실패: Authorization Error), seed 20261030",
+"channels": [
+"instagram",
+"tiktok_comp",
+"youtube_comp"
+],
+"design_version": "v4.3",
+"image_file": "20261028_16.jpg.jpeg",
+"image_id": "1QsHiv1LooUH6-WMn0w2kiWRBml52-w5r",
+"source": "https://www.marieclaire.com/fashion/celebrity-style/best-celebrity-outfits-week-of-october-18-2026/",
+"status": "예약됨",
+"comp_hook": "세 룩의 비결은 / 블랙에 색 얹기 (17 디테일 분석형) — 틱톡·유튜브 21:43"
+},
+{
+"date": "2026-10-27",
+"gender": "남자",
+"music": "오리지널 배경음(인스타 라이브러리 곡 연결 실패: Authorization Error)",
+"channels": [
+"instagram",
+"tiktok_comp",
+"youtube_comp"
+],
+"design_version": "v4.2",
+"status": "예약됨",
+"ep": "13",
+"celeb": "Hugh Jackman",
+"look": "그레이 후디 × 올리브 조거",
+"slot": "16:00",
+"image_file": "20261027_13.jpg.jpeg",
+"image_id": "1yKJJ8qFEJ7Zyp0ytiWkRSlw7GkGnV8nQ",
+"source": "https://www.justjared.com/2026/10/22/hugh-jackman-girlfriend-sutton-foster-step-out-for-lunch-date-in-pasadena/"
+},
+{
+"date": "2026-10-27",
+"gender": "남자",
+"music": "오리지널 배경음(인스타 라이브러리 곡 연결 실패: Authorization Error)",
+"channels": [
+"instagram",
+"tiktok_comp",
+"youtube_comp"
+],
+"design_version": "v4.2",
+"status": "예약됨",
+"ep": "12",
+"celeb": "Kit Connor",
+"look": "네이비 블레이저 프레피룩",
+"slot": "10:00",
+"image_file": "20261027_12.jpg.jpeg",
+"image_id": "1nI7rCMXGup65vYxQhEQ0DDw1GCJ-MDPT",
+"source": "https://www.justjared.com/2026/10/20/kit-connor-diana-silvers-film-1986-set-thriller-preppy-together-in-new-york-city/"
+},
+{
+"date": "2026-10-27",
+"gender": "남자",
+"music": "오리지널 배경음(인스타 라이브러리 곡 연결 실패: Authorization Error)",
+"channels": [
+"instagram",
+"tiktok_comp",
+"youtube_comp"
+],
+"design_version": "v4.2",
+"status": "예약됨",
+"ep": "11",
+"celeb": "Jeremy Allen White",
+"look": "화이트 탱크 × 브라운 팬츠",
+"slot": "09:00",
+"image_file": "20261027_11.jpg.jpeg",
+"image_id": "1Gl_Jlts3Mv1P51G5TEXh98TS3oqz6qrR",
+"source": "https://www.justjared.com/2026/10/26/jeremy-allen-shows-off-his-muscles-in-tight-tank-as-he-meets-up-with-friends-in-l-a-photos/"
+},
+{
+"date": "2026-10-26",
+"ep": "10",
+"gender": "여자",
+"celeb": "Olivia Rodrigo",
+"look": "니트 판초 × 아미 스커트",
+"slot": "17:00",
+"music": "오리지널 배경음(라이브러리 곡 연결 실패: Authorization Error), seed 20261040",
+"design_version": "v3",
+"status": "예약됨"
+},
+{
+"date": "2026-10-26",
+"ep": "09",
+"gender": "여자",
+"celeb": "Jennifer Lawrence",
+"look": "크롭 블레이저 시폰 룩",
+"slot": "14:00",
+"music": "오리지널 배경음(라이브러리 곡 연결 실패: Authorization Error), seed 20261033",
+"design_version": "v3",
+"status": "예약됨"
+},
+{
+"date": "2026-10-26",
+"ep": "08",
+"gender": "여자",
+"celeb": "Bella Hadid",
+"look": "그레이 레깅스 공항룩",
+"slot": "11:00",
+"music": "오리지널 배경음(라이브러리 곡 연결 실패: Authorization Error), seed 20261026",
+"design_version": "v3",
+"status": "예약됨"
+},
+{
+"date": "2026-10-25",
+"ep": "07",
+"gender": "남자",
+"celeb": "Justin Bieber",
+"look": "그레이 후디 × 농구 쇼츠",
+"slot": "17:00",
+"design_version": "v1(다른 실행분)",
+"status": "예약됨"
+},
+{
+"date": "2026-10-25",
+"ep": "06",
+"gender": "남자",
+"celeb": "Harry Styles",
+"look": "펀넬넥 집업 미니멀 룩",
+"slot": "14:00",
+"design_version": "v1(다른 실행분)",
+"status": "예약됨"
+},
+{
+"date": "2026-10-25",
+"ep": "05",
+"gender": "남자",
+"celeb": "Brad Pitt",
+"look": "그린 스웨이드 × 퍼플 팬츠",
+"slot": "11:00",
+"design_version": "v1(다른 실행분)",
+"status": "예약됨"
+},
+{
+"date": "2026-10-25",
+"ep": "-",
+"gender": "남자",
+"celeb": "Jacob Elordi / Harry Styles / Brad Pitt",
+"look": "v2 디자인 대체본 3개(베이지 재킷·레오파드 백·핑크 팬츠)",
+"slot": "11:00/14:00/17:00",
+"design_version": "v2",
+"status": "초안(중복 방지로 보류)"
+},
+{
+"date": "2026-10-24",
+"ep": "04",
+"gender": "여자",
+"celeb": "Sienna Miller",
+"look": "레더 페플럼 테일러링",
+"slot": "17:00",
+"status": "예약됨"
+},
+{
+"date": "2026-10-24",
+"ep": "03",
+"gender": "여자",
+"celeb": "Daisy Edgar-Jones",
+"look": "화이트 밀리터리 재킷 + 블루 진",
+"slot": "14:00",
+"status": "예약됨"
+},
+{
+"date": "2026-10-24",
+"ep": "02",
+"gender": "여자",
+"celeb": "Camila Morrone",
+"look": "레이스 LBD + 퍼 코트",
+"slot": "11:00",
+"status": "게시됨"
+},
+{
+"date": "2026-10-24",
+"ep": "01",
+"gender": "여자",
+"celeb": "Iris Law",
+"look": "화이트 롱슬리브 + 카모 카고 + 새틴 플랫",
+"slot": "09:28",
+"status": "게시됨"
+}
+]
 }

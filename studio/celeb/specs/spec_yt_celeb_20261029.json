@@ -1,0 +1,137 @@
+{
+ "kicker": "셀럽 스냅 해부 몰아보기",
+ "title": [
+  "수트부터 청바지",
+  "남자 3룩 해부"
+ ],
+ "sub": "몇 번이 제일 쉬울까? 끝까지 보고 투표 ↓",
+ "recap_t": 13.5,
+ "recap_s": 3.0,
+ "vote": true,
+ "vote_q": "제일 따라 입고 싶은 룩은?",
+ "seed": 20261029,
+ "min_total": 62,
+ "segments": [
+  {
+   "file": "/home/claude/work/reel_17.mp4",
+   "label": "PATRICK MAHOMES",
+   "sub": "버건디 핀스트라이프 수트",
+   "thumb_t": 1.0,
+   "chapter_en": "01 · Patrick Mahomes — burgundy pinstripe suit",
+   "en": [
+    [
+     0,
+     2.4,
+     "Suits only go with dress shoes? Mahomes picked loafers"
+    ],
+    [
+     2.4,
+     4.7,
+     "01 Patterned tie — a small print in the suit's color"
+    ],
+    [
+     4.7,
+     7.0,
+     "02 Pinstripe jacket — cream stripes lighten the look"
+    ],
+    [
+     7.0,
+     9.3,
+     "03 Three-piece vest — buttoned up for a clean line"
+    ],
+    [
+     9.3,
+     11.6,
+     "04 Dark horsebit loafers — loafers instead of dress shoes"
+    ],
+    [
+     11.6,
+     14.6,
+     "Today's 4 key points — save it & copy the look"
+    ]
+   ]
+  },
+  {
+   "file": "/home/claude/work/reel_18.mp4",
+   "label": "JARED MCCAIN",
+   "sub": "크림 니트 × 화이트 데님",
+   "thumb_t": 1.0,
+   "chapter_en": "02 · Jared McCain — cream knit & white denim",
+   "en": [
+    [
+     0,
+     2.4,
+     "Everyone wears black — he pulled out white denim"
+    ],
+    [
+     2.4,
+     4.7,
+     "01 Cream textured cardigan — chunky knit adds volume"
+    ],
+    [
+     4.7,
+     7.0,
+     "02 Brown crossbody bag — worn short, high on the chest"
+    ],
+    [
+     7.0,
+     9.3,
+     "03 White wide-leg denim — relaxed fit that drapes"
+    ],
+    [
+     9.3,
+     11.6,
+     "04 Square-toe boots — brown ties the tones together"
+    ],
+    [
+     11.6,
+     14.6,
+     "Today's 4 key points — save it & copy the look"
+    ]
+   ]
+  },
+  {
+   "file": "/home/claude/work/reel_19.mp4",
+   "label": "JOE ALWYN",
+   "sub": "블루 티 × 청바지 산책룩",
+   "thumb_t": 1.0,
+   "chapter_en": "03 · Joe Alwyn — blue tee & jeans city walk",
+   "en": [
+    [
+     0,
+     2.4,
+     "The easiest boyfriend look: tee + jeans + one thing"
+    ],
+    [
+     2.4,
+     4.7,
+     "01 Blue ringer tee — team colors keep it upbeat"
+    ],
+    [
+     4.7,
+     7.0,
+     "02 Canvas tote bag — tossed over one shoulder"
+    ],
+    [
+     7.0,
+     9.3,
+     "03 Mid-blue jeans — roll the hem once"
+    ],
+    [
+     9.3,
+     11.6,
+     "04 Black canvas sneakers — white soles keep it light"
+    ],
+    [
+     11.6,
+     14.6,
+     "Today's 4 key points — save it & copy the look"
+    ]
+   ]
+  }
+ ],
+ "intro_en": "From a suit to jeans — 3 men's looks broken down",
+ "recap_en": "Recap: the 4 key items from each look",
+ "vote_en": "Which look would you copy? Comment 1, 2 or 3",
+ "outro_en": "Save & follow @zzebi.st for daily celeb street style"
+}
