@@ -72,10 +72,19 @@ def card_intro(spec, thumbs, out):
     d.rectangle((90, 150, 330, 158), fill=INK)
     d.text((90, 180), "zzebi.st · 1분 몰아보기", font=font(40, False), fill=INK)
     pill(d, 90, 300, spec.get("kicker", "몰아보기"), font(46), TEAL, "white")
-    y = 410
+    # 썸네일 겸용(10/29 사장님 지시: 글씨 잘 보이게) — 후킹 제목을 화면 폭에 맞춰 최대한 크게
+    y = 400
+    fs = 168
+    while fs > 110 and max(d.textlength(ln, font=font(fs)) for ln in spec["title"]) > 900: fs -= 4
     for ln in spec["title"]:
-        d.text((86, y), ln, font=font(132), fill=INK); y += 162
-    d.text((90, y + 20), spec.get("sub", ""), font=font(52, False), fill=TEAL)
+        d.text((86, y), ln, font=font(fs), fill=INK); y += int(fs * 1.2)
+    sub = spec.get("sub", "")
+    if sub:
+        ss = 60
+        while ss > 44 and d.textlength(sub, font=font(ss)) > 900: ss -= 2
+        d.rounded_rectangle((80, y + 18, 104 + d.textlength(sub, font=font(ss)), y + 30 + ss + 18), 14, fill=TEAL)
+        d.text((92, y + 28), sub, font=font(ss), fill="white")
+        y += ss + 30
     n = len(thumbs); gap = 24; tw = (W - 180 - gap * (n - 1)) // n; th = int(tw * 16 / 9)
     th = min(th, 1820 - (y + 140)); ty = y + 130
     for i, t in enumerate(thumbs):
