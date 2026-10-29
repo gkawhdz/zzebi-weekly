@@ -12,7 +12,7 @@
   python3 tools/build_report.py newkey                         # 새 키(base64url 32바이트)와 새 slug 출력
 
 DATA_DIR 구성: meta.json, look_<id>.json, market.json, img/<id>.jpg, i18n.json({"한국어 문구":{"en":..,"zh":..}})
-링크 형식: https://zzebi-weekly.netlify.app/r/<slug>/#k=<KEY>  (키는 # 뒤라 서버·저장소에 남지 않음)
+링크 형식: https://gkawhdz.github.io/zzebi-weekly/r/<slug>/#k=<KEY>  (키는 # 뒤라 서버·저장소에 남지 않음)
 """
 import sys, os, json, re, html, base64, io, glob, secrets, tarfile
 

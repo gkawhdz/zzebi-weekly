@@ -12,7 +12,7 @@ import sys, os, json, shutil, subprocess, secrets, base64
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, 'tools'))
 import build_report as B
-SITE = 'https://zzebi-weekly.netlify.app'
+SITE = 'https://gkawhdz.github.io/zzebi-weekly'
 
 def build(data_dir, slug, key, og):
     meta = json.load(open(os.path.join(data_dir, 'meta.json')))
