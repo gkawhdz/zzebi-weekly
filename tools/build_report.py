@@ -107,6 +107,7 @@ def render_look(L, n, T, data_dir, eager):
     cores = L.get('cores', [])
     for i, c in enumerate(cores):
         mk = marks[i] if len(cores) > 1 else '·'
+        if not any(c['tiers'].get(k) for k in ('lux', 'mid', 'value')): continue
         h.append(f'    <h3>{T("핵심 아이템")} {mk} {T(c["h"])}</h3>')
         h.append('    <div class="tiers">')
         for k in ('lux', 'mid', 'value'):
@@ -121,12 +122,15 @@ def render_look(L, n, T, data_dir, eager):
     if L.get('with'):
         h.append('    <div class="with">')
         for w in L['with']:
-            p = w['p']
+            p = w.get('p')
+            if not p: continue
             h.append(f'      <a class="item" {A(p["url"])}>')
             h.append(f'        <span class="role">{T(w.get("role",""))}</span>')
             h.append(f'        {brand_name(p, T, br_break=False)}')
             h.append(f'        {price(p, T)}</a>')
         h.append('    </div>')
+    if L.get('note'):
+        h.append(f'    <p class="note-m">{T(L["note"])}</p>')
     h.append('  </section>')
     return '\n'.join(h)
 
