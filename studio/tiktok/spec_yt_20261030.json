@@ -1,10 +1,10 @@
 {
  "kicker": "오늘의 패션 몰아보기",
  "title": [
-  "2분이면 끝",
+  "한 번에 몰아보기",
   "코디 공식 3개"
  ],
- "sub": "핼러윈 · 두 색 · 하체 코디 →",
+ "sub": "핼러윈 · 두 색 · 하체 4룩 →",
  "segments": [
   {
    "file": "20261030_A.mp4",
@@ -76,35 +76,45 @@
   },
   {
    "file": "20261030_C.mp4",
-   "label": "하체 고민 2룩",
-   "sub": "밝은 색은 위, 아래는 한 톤",
+   "label": "하체 고민 4룩",
+   "sub": "위는 짧게, 아래는 한 톤",
    "thumb_t": 1.0,
-   "chapter_en": "03 · Lower-body styling: 2 looks",
+   "chapter_en": "03 · Lower-body styling: 4 looks",
    "en": [
     [
      0,
      3.2,
-     "Self-conscious about your lower half? Start with your tights color"
+     "Self-conscious about your lower half? Keep the top short"
     ],
     [
      3.2,
      15.4,
-     "Look 1: butter-yellow cropped cardigan, navy A-line skirt, navy tights and shoes"
+     "Look 1: cropped black leather jacket, charcoal maxi pleated skirt, chunky sneakers"
     ],
     [
      15.4,
      27.6,
-     "Look 2: ivory short puffer, indigo wide jeans long enough to reach the shoes"
+     "Look 2: cream cropped knit, charcoal wide trousers, dark grey loafers"
     ],
     [
      27.6,
-     32.2,
+     39.8,
+     "Look 3: ivory short puffer, indigo wide jeans long enough to reach the shoes"
+    ],
+    [
+     39.8,
+     52.0,
+     "Look 4: butter-yellow cropped cardigan, navy A-line skirt, navy tights and shoes"
+    ],
+    [
+     52.0,
+     56.6,
      "Formula: light on top, one tone below, short on top and long below"
     ],
     [
-     32.2,
-     35.6,
-     "Save it before you shop — Source (Look 2): Allure Korea"
+     56.6,
+     60.0,
+     "Save it before you shop — Source (Look 3): Allure Korea"
     ]
    ]
   }
@@ -112,7 +122,7 @@
  "seed": 33,
  "min_total": 62,
  "outro_sub": "매일 1분 패션 · 날씨 코디",
- "intro_en": "3 outfit formulas in 2 minutes",
+ "intro_en": "3 outfit formulas, all in one",
  "outro_en": "Save & follow @zzebi.st for daily 1-min style tips",
  "brand_line": "@zzebi.st · 몰아보기"
 }
