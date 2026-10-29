@@ -228,7 +228,16 @@ def main(spec_path, out, en=False):
         "-af", f"afade=t=out:st={total - 1.5:.2f}:d=1.5,loudnorm=I=-14:TP=-1.5:LRA=11,aresample=44100,alimiter=limit=0.6:level=false,volume=0.8",
         "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", out])
     sh(["ffmpeg", "-y", "-ss", "0.5", "-i", out, "-frames:v", "1", out.rsplit(".", 1)[0] + "_cover.jpg"])
+    # 제목·첫 화면·썸네일 일치(10/29 사장님 지시): 썸네일 = 0초 첫 화면(인트로 카드) 그대로, 제목 = 인트로 큰 제목 그대로
+    stem = out.rsplit(".", 1)[0]
+    Image.open(f"{tmp}/intro.jpg").convert("RGB").save(stem + "_thumb.jpg", quality=92)
+    ko = " ".join(spec["title"]).strip()
+    title = ko + (f" | {spec['intro_en']}" if en and spec.get("intro_en") else "") + (" #shorts" if en else "")
+    if len(title) > 100:  # 유튜브 제목 100자 제한 — 영어 부분부터 줄임
+        title = ko + " #shorts" if en else ko
+    open(stem + "_title.txt", "w").write(title)
     print(f"{out} {dur(out):.1f}s")
+    print(f"썸네일 {stem}_thumb.jpg · 제목 {title}")
 
 
 if __name__ == "__main__":

@@ -11,3 +11,9 @@ python3 make_tiktok_comp.py spec_yt.json out_yt.mp4 --en
 - 자막은 한글 카드 바로 아래(띠 아래 끝 y=1570)에 작은 반투명 띠로 들어감. 한 장면당 한 문장, 90자 이내 권장.
 - 예시: example_celeb_yt.json, example_trend_yt.json
 - 유튜브 설명란은 한글 단락 → 빈 줄 → 같은 내용 영어 단락 순서. 채널 핸들은 @zzebi_st (인스타·틱톡은 @zzebi.st).
+
+## ★ 유튜브 제목 = 첫 화면 = 썸네일 (2026-10-29 사장님 지시)
+- 렌더하면 `<출력>_thumb.jpg`(0초 첫 화면 인트로 카드와 똑같은 그림, 자막 없음)와 `<출력>_title.txt`(유튜브 제목)가 함께 나온다.
+- 유튜브 제목은 **반드시 `_title.txt` 그대로** 쓴다 = 인트로 큰 제목(spec.title 두 줄을 이어 붙인 것) + " | " + intro_en + " #shorts". 제목을 따로 새로 짓지 말 것. 제목을 바꾸고 싶으면 spec.title을 고쳐 다시 렌더.
+- 설명 첫 줄·틱톡 title도 같은 한글 제목으로 시작.
+- 업로드: `_thumb.jpg`를 media_push로 올려 Metricool `videoThumbnailUrl`로 지정. VIDEO_THUMBNAIL_NOT_APPLICABLE 오류면 videoThumbnailUrl을 빼고 `videoCoverMilliseconds: 0`으로(첫 화면이 곧 썸네일), 그것도 거부되면 둘 다 빼고 예약.
