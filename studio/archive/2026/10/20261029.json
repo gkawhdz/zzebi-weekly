@@ -1,0 +1,825 @@
+{
+ "date": "2026-10-29",
+ "posts": [
+  {
+   "date": "2026-10-29",
+   "season": "가을",
+   "transition": false,
+   "metrics": {},
+   "series": "trend",
+   "format": "정보형",
+   "gender": "공용",
+   "title": "비 오는 날 출근룩 3가지(겉옷·신발·밑단)",
+   "hook": "오늘 스웨이드 신지 마세요",
+   "hook_type": "13 경고형",
+   "situation": "출근·비 오는 날",
+   "weather": "29일(목) 서울 아침 5℃·낮 13℃, 오후부터 비(5~10mm)",
+   "looks": [
+    {
+     "name": "비 오는 날 출근 핵심 아이템",
+     "items": [
+      {
+       "part": "아우터",
+       "desc": "후드 나일론 아노락",
+       "color_hex": "",
+       "tip": "울 코트 대신 물 튕기는 소재"
+      },
+      {
+       "part": "아우터",
+       "desc": "왁스 코튼 필드 재킷",
+       "color_hex": "",
+       "tip": "울 코트 대신 물 튕기는 소재"
+      },
+      {
+       "part": "신발",
+       "desc": "러버 첼시 부츠",
+       "color_hex": "",
+       "tip": "스웨이드 대신"
+      },
+      {
+       "part": "신발",
+       "desc": "가죽 페니 로퍼",
+       "color_hex": "",
+       "tip": "매끈한 가죽으로"
+      },
+      {
+       "part": "하의",
+       "desc": "9부 기장 슬랙스",
+       "color_hex": "",
+       "tip": "밑단은 발목 위로"
+      },
+      {
+       "part": "액세서리",
+       "desc": "장우산",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "아우터",
+       "desc": "숏 퀼팅 재킷",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "상의",
+       "desc": "울 오버셔츠",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "하의",
+       "desc": "커프 생지 데님",
+       "color_hex": "",
+       "tip": "밑단은 발목 위로"
+      }
+     ],
+     "palette": [],
+     "formula": "물 튕기는 겉옷 + 러버 부츠/가죽 로퍼 + 발목 위 기장 바지"
+    }
+   ],
+   "caption": "아침엔 멀쩡해도 퇴근길엔 비, 오늘은 신발 하나로 하루가 갈려요.\n\n서울 아침 5℃·낮 13℃, 오후부터 수도권에 비, 서울은 30일까지 5~10mm 예보예요(기상청 예보 인용 보도, 10.29). 비 오는 목요일 출근룩, 3가지만 기억하세요.\n\n01 겉옷: 울 코트 대신 나일론 아노락·왁스 코튼 재킷처럼 물 튕기는 소재\n02 신발: 스웨이드는 쉬는 날. 물 얼룩이 잘 생겨 비 오는 날엔 피하는 게 안전해요. 러버 첼시 부츠나 매끈한 가죽 로퍼로\n03 밑단: 바지는 발목 위로 끝나게. 땅에 끌리는 밑단은 젖으면 물을 빨아올려요\n\n이미 젖은 스웨이드는 키친타월로 물기를 빼고 그늘에서 말리세요(드라이어는 금지).\n\n저장해두고 비 예보 뜬 아침에 다시 꺼내 보기. 매일 1분 패션은 @zzebi.st\n\n참고: 기상청 예보(더페어·미디어파인 10.29 보도), 보그 코리아 '스웨이드 신발 관리'(2025.10.17)\n\n#비오는날코디 #출근룩 #가을코디 #레인부츠 #첼시부츠 #데일리룩 #패션정보 #코디추천 #오늘뭐입지 #zzebist",
+   "sources": [
+    "기상청 예보(더페어·미디어파인 10.29 보도)",
+    "보그 코리아 '스웨이드 신발 관리'(2025.10.17)"
+   ],
+   "theme": "날씨·비 오는 날 출근룩(소재·신발·밑단)",
+   "colors": "샌드 베이지+차콜 / 올리브+네이비 / 네이비+차콜+블랙 / 차콜+인디고",
+   "tips": [
+    "젖은 스웨이드는 키친타월로 물기 빼고 그늘에서 말리기(드라이어 금지)"
+   ],
+   "book_notes": "",
+   "time": "07:30",
+   "status": "게시됨",
+   "images": [
+    {
+     "drive_id": "1VDV6Yvkth7XbZNImlzkR2QjSypnHT6k3",
+     "name": "20261029_trend_ah1.jpg",
+     "kind": "원본일러스트"
+    },
+    {
+     "drive_id": "1wyoFI7aMeHWAKTos3y6CfhFkSoeTeujZ",
+     "name": "20261029_trend_ah2.jpg",
+     "kind": "원본일러스트"
+    },
+    {
+     "drive_id": "1FJfRO1rUzPxWDiYivdqAJpd_V3Tao-Jz",
+     "name": "20261029_trend_ap1.jpg",
+     "kind": "원본일러스트"
+    },
+    {
+     "drive_id": "17NBFtbrBWGy4-xQ21XTMU-xewszoOr5d",
+     "name": "20261029_trend_ap2.jpg",
+     "kind": "원본일러스트"
+    },
+    {
+     "drive_id": "1aQlC8p-nxND8pmS9KldDEMcVw0N4MzXk",
+     "name": "20261029_trend_ap3.jpg",
+     "kind": "원본일러스트"
+    }
+   ],
+   "media": [
+    "https://static.metricool.com/planner/202610/7607527-file-4673127235939688031.mp4"
+   ],
+   "video": "4673127235939688031.mp4",
+   "video_comp": "7607527-file-15898836144679140798.mp4",
+   "instagram_url": "https://www.instagram.com/reel/DfDgoQuFFvN/"
+  },
+  {
+   "date": "2026-10-29",
+   "season": "가을",
+   "transition": false,
+   "metrics": {},
+   "series": "celeb",
+   "format": "셀럽스냅",
+   "gender": "남자",
+   "title": "셀럽 스냅 해부 #17 버건디 핀스트라이프 수트",
+   "hook": "수트엔 구두만? 마홈스는 로퍼 골랐다",
+   "hook_type": "05 상식 파괴형",
+   "situation": "출근·격식",
+   "weather": "",
+   "looks": [
+    {
+     "name": "버건디 핀스트라이프 수트",
+     "items": [
+      {
+       "part": "액세서리",
+       "desc": "패턴 타이",
+       "color_hex": "",
+       "tip": "수트 색 잔무늬로 맞추기"
+      },
+      {
+       "part": "아우터",
+       "desc": "버건디 크림 스트라이프 재킷",
+       "color_hex": "",
+       "tip": "크림 줄무늬로 무게 덜기"
+      },
+      {
+       "part": "상의",
+       "desc": "쓰리피스 조끼",
+       "color_hex": "",
+       "tip": "단추 잠가 라인 정돈"
+      },
+      {
+       "part": "신발",
+       "desc": "다크 홀스빗 로퍼",
+       "color_hex": "",
+       "tip": "구두 대신 로퍼로 힘 빼기"
+      }
+     ],
+     "palette": [],
+     "formula": "쓰리피스 수트 + 구두 대신 로퍼"
+    }
+   ],
+   "caption": "셀럽 스냅 해부 #17 | Patrick Mahomes in Las Vegas 🇺🇸\n쓰리피스 수트에 구두 대신 로퍼, 출근 수트에도 바로 써먹을 수 있을까요? 버건디 핀스트라이프 수트, 포인트 4개만 기억하세요\n\n01 패턴 타이 – 수트 색 잔무늬로 맞추기 (실착: 브랜드 미상)\n02 스트라이프 재킷 – 크림 줄무늬로 무게 덜기 (실착: Richards Bespoke)\n03 쓰리피스 조끼 – 단추 잠가 라인 정돈 (실착: Richards Bespoke)\n04 다크 홀스빗 로퍼 – 구두 대신 로퍼로 힘 빼기 (실착: 브랜드 미상)\n\n저장해두고 따라 입기 🔖\n※ 실제 착장을 바탕으로 AI로 재현한 이미지예요\n\n#셀럽패션 #수트코디 #쓰리피스수트 #핀스트라이프 #로퍼코디 #남자수트 #남자가을코디 #셀럽룩 #남자패션 #스트릿패션 #ootd #streetstyle #zzebi",
+   "sources": [
+    "https://andscape.com/features/october-tunnel-fits-athletes-fashion-lebron-james-patrick-mahomes/"
+   ],
+   "celeb": "Patrick Mahomes",
+   "ep": "17",
+   "book_notes": "셀럽 이름·닮은 이미지는 책에 그대로 쓰지 말고 스타일 공식만 활용",
+   "time": "09:00",
+   "status": "게시됨",
+   "images": [
+    {
+     "drive_id": "1hFhT_2PqU0IX6lqfUaqs-5f1Ur27vklg",
+     "name": "20261029_celeb_17.jpg",
+     "kind": "원본일러스트"
+    }
+   ],
+   "media": [
+    "https://static.metricool.com/planner/202610/7607527-file-10537327915116457225.mp4"
+   ],
+   "video": "10537327915116457225.mp4",
+   "video_comp": "7607527-file-3560905907491969363.mp4",
+   "instagram_url": "https://www.instagram.com/reel/DfDrLsakmgR/"
+  },
+  {
+   "date": "2026-10-29",
+   "season": "가을",
+   "transition": false,
+   "metrics": {},
+   "series": "celeb",
+   "format": "셀럽스냅",
+   "gender": "남자",
+   "title": "셀럽 스냅 해부 #18 크림 니트 × 화이트 데님",
+   "hook": "다들 검정 입을 때 흰 데님 꺼낸 남자",
+   "hook_type": "20 시장 기회형",
+   "situation": "데일리",
+   "weather": "",
+   "looks": [
+    {
+     "name": "크림 니트 × 화이트 데님",
+     "items": [
+      {
+       "part": "상의",
+       "desc": "크림 텍스처 카디건",
+       "color_hex": "",
+       "tip": "도톰한 짜임으로 볼륨"
+      },
+      {
+       "part": "가방",
+       "desc": "브라운 크로스백",
+       "color_hex": "",
+       "tip": "가슴 위로 짧게 메기"
+      },
+      {
+       "part": "하의",
+       "desc": "화이트 와이드 데님",
+       "color_hex": "",
+       "tip": "여유 핏으로 툭 떨어지게"
+      },
+      {
+       "part": "신발",
+       "desc": "브라운 스퀘어토 부츠",
+       "color_hex": "",
+       "tip": "브라운으로 톤 이어주기"
+      }
+     ],
+     "palette": [],
+     "formula": "크림 니트 + 화이트 데님 + 브라운 소품으로 톤 잇기"
+    }
+   ],
+   "caption": "셀럽 스냅 해부 #18 | Jared McCain in Oklahoma City 🇺🇸\n쌀쌀할 때도 흰 바지가 따뜻해 보이는 건 니트와 부츠 덕분이에요. 크림 니트 × 화이트 데님, 포인트 4개만 기억하세요\n\n01 크림 텍스처 카디건 – 도톰한 짜임으로 볼륨 (실착: Bode)\n02 브라운 크로스백 – 가슴 위로 짧게 메기 (실착: Louis Vuitton 모노그램)\n03 화이트 와이드 데님 – 여유 핏으로 툭 떨어지게 (실착: Our Legacy)\n04 스퀘어토 부츠 – 브라운으로 톤 이어주기 (실착: 브랜드 미상)\n\n저장해두고 따라 입기 🔖\n※ 실제 착장을 바탕으로 AI로 재현한 이미지예요\n\n#셀럽패션 #화이트데님 #크림코디 #니트가디건 #톤온톤코디 #남자가을코디 #남자니트코디 #셀럽룩 #남자패션 #스트릿패션 #ootd #streetstyle #zzebi",
+   "sources": [
+    "https://andscape.com/features/october-tunnel-fits-athletes-fashion-lebron-james-patrick-mahomes/"
+   ],
+   "celeb": "Jared McCain",
+   "ep": "18",
+   "book_notes": "셀럽 이름·닮은 이미지는 책에 그대로 쓰지 말고 스타일 공식만 활용",
+   "time": "10:00",
+   "status": "게시됨",
+   "images": [
+    {
+     "drive_id": "1jvXe4opBNbEfhu-sf3HXeJFRo7lmKEaT",
+     "name": "20261029_celeb_18.jpg",
+     "kind": "원본일러스트"
+    }
+   ],
+   "media": [
+    "https://static.metricool.com/planner/202610/7607527-file-7692950457498657863.mp4"
+   ],
+   "video": "7692950457498657863.mp4",
+   "video_comp": "7607527-file-3560905907491969363.mp4",
+   "instagram_url": "https://www.instagram.com/reel/DfDx_kVDtBu/"
+  },
+  {
+   "date": "2026-10-29",
+   "season": "가을",
+   "transition": false,
+   "metrics": {},
+   "series": "trend",
+   "format": "코디룩북",
+   "gender": "남자",
+   "title": "키 160 이하 남자 코디 PART 1",
+   "hook": "키 작아도 비율은 바꿀 수 있어요",
+   "hook_type": "",
+   "situation": "데일리·출근·데이트",
+   "weather": "",
+   "looks": [
+    {
+     "name": "LOOK 1 · 데일리",
+     "items": [
+      {
+       "part": "아우터",
+       "desc": "네이비 숏 블루종",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "상의",
+       "desc": "화이트 티",
+       "color_hex": "",
+       "tip": "넣어 입기 + 벨트"
+      },
+      {
+       "part": "하의",
+       "desc": "롤업 데님",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "신발",
+       "desc": "흰 스니커즈",
+       "color_hex": "",
+       "tip": ""
+      }
+     ],
+     "palette": [],
+     "formula": "숏 아우터 + 넣어 입기 + 발목 정리"
+    },
+    {
+     "name": "LOOK 2 · 출근·데이트",
+     "items": [
+      {
+       "part": "아우터",
+       "desc": "차콜 숏 재킷",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "상의",
+       "desc": "차콜 니트",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "하의",
+       "desc": "복숭아뼈 기장 슬랙스",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "신발",
+       "desc": "첼시부츠",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "액세서리",
+       "desc": "버건디 머플러",
+       "color_hex": "",
+       "tip": ""
+      }
+     ],
+     "palette": [],
+     "formula": "상의·하의·신발 같은 톤 + 복숭아뼈 기장"
+    }
+   ],
+   "caption": "[키 160 이하 남자 코디 PART 1] 키 작아도 비율은 바꿀 수 있어요 📏\n\n△ 롱코트 + 통 큰 바지 = 옷에 묻혀서 더 작아 보여요\n⭕ 숏 아우터 + 넣어 입기 + 발목 정리 = 비율 UP\n\nLOOK 1 · 데일리\n네이비 숏 블루종 + 화이트 티(넣어 입기 + 벨트) + 롤업 데님 + 흰 스니커즈\n\nLOOK 2 · 출근·데이트\n차콜 숏 재킷 + 차콜 니트 + 복숭아뼈 기장 슬랙스 + 첼시부츠 + 버건디 머플러\n\n키 작은 남자 비율 공식\n① 아우터는 엉덩이 위 기장\n② 상의·하의·신발 같은 톤\n③ 바지는 복숭아뼈 기장\n\nPART 2에서 코디 2벌 더 보여드릴게요. 놓치지 않게 저장 📌 + 팔로우 @zzebi.st\n\n참고: GQ 코리아(24.01.23 · 26.04.01)\n\n#키작남코디 #키작남 #남자코디 #남친룩 #데일리룩 #비율코디 #남자패션 #가을코디 #겨울코디 #오늘의코디 #zzebist",
+   "sources": [
+    "GQ 코리아(24.01.23 · 26.04.01)"
+   ],
+   "tips": [
+    "아우터는 엉덩이 위 기장",
+    "상의·하의·신발 같은 톤",
+    "바지는 복숭아뼈 기장"
+   ],
+   "book_notes": "Trend Daily 기록(history)에 없는 추가 게시물. 원본은 이름 td1029s_* 파일을 게시 시각으로 매칭",
+   "time": "10:50",
+   "status": "게시됨",
+   "images": [
+    {
+     "drive_id": "12jsA3NHiTadih1DqW3OmrDgYZhOdTGYN",
+     "name": "20261029_trend_s_h1.jpg",
+     "kind": "원본일러스트"
+    },
+    {
+     "drive_id": "1GR4nKslcUDq9RlQXa5pbLzHvnNcmqSs2",
+     "name": "20261029_trend_s_h2.jpg",
+     "kind": "원본일러스트"
+    },
+    {
+     "drive_id": "182SO-4J8mlorVRlQha84tYx7Flts09o-",
+     "name": "20261029_trend_s_b1.jpg",
+     "kind": "원본일러스트"
+    },
+    {
+     "drive_id": "1XbaSmn9LeNs_ByaLRrWlhpBQb6a6ymTF",
+     "name": "20261029_trend_s_b2.jpg",
+     "kind": "원본일러스트"
+    }
+   ],
+   "media": [
+    "https://static.metricool.com/planner/202610/7607527-file-4069475455531961628.mp4"
+   ],
+   "video": "4069475455531961628.mp4",
+   "instagram_url": "https://www.instagram.com/reel/DfD3e2Gmov3/",
+   "video_comp": null
+  },
+  {
+   "date": "2026-10-29",
+   "season": "가을",
+   "transition": false,
+   "metrics": {},
+   "series": "trend",
+   "format": "코디룩북",
+   "gender": "남자",
+   "title": "키 160 이하 남자 코디 PART 2 겨울 아우터 편",
+   "hook": "무릎 아래 롱패딩은 침낭처럼 보여요",
+   "hook_type": "",
+   "situation": "겨울 데일리·주말",
+   "weather": "",
+   "looks": [
+    {
+     "name": "LOOK 3 · 겨울 데일리",
+     "items": [
+      {
+       "part": "아우터",
+       "desc": "블랙 숏 패딩",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "상의",
+       "desc": "블랙 하프집 니트",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "하의",
+       "desc": "블랙 스트레이트 팬츠",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "신발",
+       "desc": "블랙 더비",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "액세서리",
+       "desc": "그레이 비니",
+       "color_hex": "",
+       "tip": ""
+      }
+     ],
+     "palette": [],
+     "formula": "허리에서 끝나는 숏 패딩 + 올블랙 세로선"
+    },
+    {
+     "name": "LOOK 4 · 주말 캐주얼",
+     "items": [
+      {
+       "part": "아우터",
+       "desc": "올리브 MA-1 항공점퍼",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "상의",
+       "desc": "크림 케이블 니트",
+       "color_hex": "",
+       "tip": "넣어 입기"
+      },
+      {
+       "part": "하의",
+       "desc": "베이지 치노",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "신발",
+       "desc": "스웨이드 로퍼",
+       "color_hex": "",
+       "tip": ""
+      }
+     ],
+     "palette": [],
+     "formula": "짧은 항공점퍼 + 니트 넣어 입기"
+    }
+   ],
+   "caption": "[키 160 이하 남자 코디 PART 2] 겨울 아우터 편 🧥\n\n△ 무릎 아래 롱패딩 = 침낭처럼 보여서 더 작아 보여요\n⭕ 허리에서 끝나는 숏 패딩 = 비율 UP\n\nLOOK 3 · 겨울 데일리\n블랙 숏 패딩 + 블랙 하프집 니트 + 블랙 스트레이트 팬츠 + 블랙 더비 + 그레이 비니\n\nLOOK 4 · 주말 캐주얼\n올리브 MA-1 항공점퍼 + 크림 케이블 니트(넣어 입기) + 베이지 치노 + 스웨이드 로퍼\n\n세로로 길어 보이는 법\n① 아우터 앞을 열어 세로선 만들기\n② 바지와 신발 같은 색\n③ 깔창은 2cm까지만\n\nPART 1도 함께 보고 저장 📌 + 팔로우 @zzebi.st\n\n참고: GQ 코리아(24.01.23)\n\n#키작남코디 #키작남 #남자코디 #겨울코디 #숏패딩 #항공점퍼코디 #남자패션 #비율코디 #데일리룩 #오늘의코디 #zzebist",
+   "sources": [
+    "GQ 코리아(24.01.23)"
+   ],
+   "tips": [
+    "아우터 앞을 열어 세로선 만들기",
+    "바지와 신발 같은 색",
+    "깔창은 2cm까지만"
+   ],
+   "book_notes": "Trend Daily 기록(history)에 없는 추가 게시물. 원본은 이름 td1029s2_* 파일을 게시 시각으로 매칭",
+   "time": "11:00",
+   "status": "게시됨",
+   "images": [
+    {
+     "drive_id": "1nLV-E4W-hw_srLXQlv6AyQnA_JfMUuDw",
+     "name": "20261029_trend_s2_h1.jpg",
+     "kind": "원본일러스트"
+    },
+    {
+     "drive_id": "1_ZJP8tZsXRfau3ks3NM3fi9sjbc9FClW",
+     "name": "20261029_trend_s2_h2.jpg",
+     "kind": "원본일러스트"
+    },
+    {
+     "drive_id": "1psXSaIYC-QeiT-VhJ3cmmgHJOrf7402C",
+     "name": "20261029_trend_s2_b3.jpg",
+     "kind": "원본일러스트"
+    },
+    {
+     "drive_id": "1Qm6OtPKzUM7BkqBLFFpC6gI3td-meci0",
+     "name": "20261029_trend_s2_b4.jpg",
+     "kind": "원본일러스트"
+    }
+   ],
+   "media": [
+    "https://static.metricool.com/planner/202610/7607527-file-10572195837665002552.mp4"
+   ],
+   "video": "10572195837665002552.mp4",
+   "instagram_url": "https://www.instagram.com/reel/DfD40KXlZZL/",
+   "video_comp": null
+  },
+  {
+   "date": "2026-10-29",
+   "season": "가을",
+   "transition": false,
+   "metrics": {},
+   "series": "trend",
+   "format": "코디룩북",
+   "gender": "공용",
+   "title": "아이템 2개로 4가지 코디(돌려 입기)",
+   "hook": "이 2개만 있으면 4가지로 입어요",
+   "hook_type": "01 결과 강조형",
+   "situation": "출근·주말·데이트·비 오는 퇴근·캠핑",
+   "weather": "",
+   "looks": [
+    {
+     "name": "세트 1(여) 올리브 필드 재킷 + 블랙 니트 롱스커트",
+     "items": [
+      {
+       "part": "아우터",
+       "desc": "올리브 필드 재킷",
+       "color_hex": "",
+       "tip": "고정"
+      },
+      {
+       "part": "하의",
+       "desc": "블랙 니트 롱스커트",
+       "color_hex": "",
+       "tip": "고정"
+      },
+      {
+       "part": "상의",
+       "desc": "블랙 터틀넥",
+       "color_hex": "",
+       "tip": "① 출근: + 가죽 로퍼 + 레더 토트"
+      },
+      {
+       "part": "상의",
+       "desc": "그레이 후드",
+       "color_hex": "",
+       "tip": "② 주말: 꺼내 입기 + 볼캡 + 스니커즈"
+      },
+      {
+       "part": "액세서리",
+       "desc": "브라운 가죽 벨트",
+       "color_hex": "",
+       "tip": "③ 데이트: 허리 잡기 + 롱부츠"
+      },
+      {
+       "part": "액세서리",
+       "desc": "그레이 울 머플러",
+       "color_hex": "",
+       "tip": "④ 비 오는 퇴근: + 러버 첼시 부츠 + 장우산"
+      }
+     ],
+     "palette": [],
+     "formula": "아이템 2개 고정 + 이너·신발·소품만 바꾸기"
+    },
+    {
+     "name": "세트 2(남) 레드 체크 셔켓 + 크림 코듀로이 팬츠",
+     "items": [
+      {
+       "part": "아우터",
+       "desc": "레드 버펄로 체크 셔켓",
+       "color_hex": "",
+       "tip": "고정"
+      },
+      {
+       "part": "하의",
+       "desc": "크림 코듀로이 와이드 팬츠",
+       "color_hex": "",
+       "tip": "고정"
+      },
+      {
+       "part": "상의",
+       "desc": "네이비 니트",
+       "color_hex": "",
+       "tip": "① 출근: + 브라운 더비 + 서류 가방"
+      },
+      {
+       "part": "상의",
+       "desc": "흰 티",
+       "color_hex": "",
+       "tip": "② 주말: + 차콜 비니 + 백팩"
+      },
+      {
+       "part": "상의",
+       "desc": "차콜 터틀넥",
+       "color_hex": "",
+       "tip": "③ 데이트: + 첼시 부츠"
+      },
+      {
+       "part": "아우터",
+       "desc": "카키 유틸리티 베스트",
+       "color_hex": "",
+       "tip": "④ 캠핑: + 버킷햇"
+      }
+     ],
+     "palette": [],
+     "formula": "아이템 2개 고정 + 이너·신발·소품만 바꾸기"
+    }
+   ],
+   "caption": "같은 재킷인데 ③번만 데이트룩처럼 보이는 건 벨트 하나 때문이에요. 1~4번 중 내 스타일은?\n\n옷장 앞에서 매일 고민된다면, 오늘은 '두 개 고정' 공식으로 가 보세요. 아이템 2개는 그대로 두고 이너·신발·소품만 바꾸면 4가지로 입을 수 있어요.\n\n세트 1 · 올리브 필드 재킷 + 블랙 니트 롱스커트\n① 출근: 블랙 터틀넥 + 가죽 로퍼 + 레더 토트\n② 주말: 그레이 후드 꺼내 입기 + 볼캡 + 스니커즈\n③ 데이트: 브라운 벨트로 허리 잡기 + 롱부츠\n④ 비 오는 퇴근: 그레이 머플러 + 러버 첼시 부츠 + 장우산\n\n세트 2 · 레드 체크 셔켓 + 크림 코듀로이 팬츠\n① 출근: 네이비 니트 + 브라운 더비 + 서류 가방\n② 주말: 흰 티 + 차콜 비니 + 백팩\n③ 데이트: 차콜 터틀넥 + 첼시 부츠\n④ 캠핑: 카키 유틸리티 베스트 + 버킷햇\n\n국방색·버펄로 체크는 보그 코리아가 꼽은 올가을·겨울 남성복 트렌드('숲으로 간다')예요.\n\n저장해두고 아침마다 번호 하나씩 골라 입기. 매일 1분 코디는 @zzebi.st\n\n참고: 보그 코리아 '2026 가을/겨울 남성복 트렌드 12'(2026.09.08), 미디어파인 날씨(10.28 보도)\n\n#코디추천 #가을코디 #필드재킷 #롱스커트코디 #체크셔켓 #데일리룩 #출근룩 #주말룩 #돌려입기 #zzebist",
+   "sources": [
+    "보그 코리아 '2026 가을/겨울 남성복 트렌드 12'(2026.09.08)",
+    "미디어파인 날씨(10.28 보도)"
+   ],
+   "theme": "아이템 2개로 4가지 코디(돌려 입기)",
+   "colors": "올리브+블랙 / 레드 체크+크림",
+   "book_notes": "",
+   "time": "12:30",
+   "status": "게시됨",
+   "images": [
+    {
+     "drive_id": "1U-N4XnG-rh_88mEJ_aRYCXAj6zgwxG04",
+     "name": "20261029_trend_b1.jpg",
+     "kind": "원본일러스트"
+    },
+    {
+     "drive_id": "1zHHEzm2oqkTlwgeyK-2tyPReEPi_a9Oq",
+     "name": "20261029_trend_b2.jpg",
+     "kind": "원본일러스트"
+    }
+   ],
+   "media": [
+    "https://static.metricool.com/planner/202610/7607527-file-17542721898606820309.mp4"
+   ],
+   "video": "17542721898606820309.mp4",
+   "video_comp": "7607527-file-15898836144679140798.mp4",
+   "instagram_url": "https://www.instagram.com/reel/DfEC9IwDtL8/"
+  },
+  {
+   "date": "2026-10-29",
+   "season": "가을",
+   "transition": false,
+   "metrics": {},
+   "series": "trend",
+   "format": "코디룩북",
+   "gender": "공용",
+   "title": "구릿빛 피부에 어울리는 색 코디 2벌",
+   "hook": "구릿빛 피부라면 이 색부터 입어보세요",
+   "hook_type": "",
+   "situation": "데일리",
+   "weather": "",
+   "looks": [
+    {
+     "name": "LOOK 1 · 여자 데일리",
+     "items": [
+      {
+       "part": "상의",
+       "desc": "코발트 블루 케이블 니트",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "하의",
+       "desc": "크림 플리츠 미디스커트",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "신발",
+       "desc": "탠 스웨이드 롱부츠",
+       "color_hex": "",
+       "tip": ""
+      }
+     ],
+     "palette": [],
+     "formula": "화이트·크림 + 선명한 코발트"
+    },
+    {
+     "name": "LOOK 2 · 남자 데일리",
+     "items": [
+      {
+       "part": "아우터",
+       "desc": "카키 초어 재킷",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "상의",
+       "desc": "레드 크루넥 니트",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "하의",
+       "desc": "화이트 데님",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "신발",
+       "desc": "브라운 로퍼",
+       "color_hex": "",
+       "tip": ""
+      }
+     ],
+     "palette": [],
+     "formula": "흙빛 카키 + 선명한 레드 + 화이트"
+    }
+   ],
+   "caption": "구릿빛 피부라면 이 색부터 입어보세요 ✨\n\n△ 피부색과 비슷한 베이지로만 입으면 밋밋해 보일 수 있어요\n⭕ 화이트 + 선명한 색을 더하면 피부가 환해 보여요\n\nLOOK 1 · 여자 데일리\n코발트 블루 케이블 니트 + 크림 플리츠 미디스커트 + 탠 스웨이드 롱부츠\n\nLOOK 2 · 남자 데일리\n카키 초어 재킷 + 레드 크루넥 니트 + 화이트 데님 + 브라운 로퍼\n\n구릿빛 피부 컬러 공식\n① 화이트·크림으로 피부를 환하게\n② 코발트·레드처럼 선명한 색\n③ 카키·올리브 같은 흙빛 색\n\n옷 사기 전에 다시 보려면 저장 📌 + 팔로우 @zzebi.st\n\n참고: Who What Wear 'The Best Colors to Wear for Your Skin Tone'(2022.04.09 업데이트)\n\n#구릿빛피부 #웜톤코디 #피부톤별컬러 #컬러조합 #코디추천 #데일리룩 #남자코디 #여자코디 #가을코디 #zzebist",
+   "sources": [
+    "Who What Wear 'The Best Colors to Wear for Your Skin Tone'(2022.04.09 업데이트)"
+   ],
+   "tips": [
+    "화이트·크림으로 피부를 환하게",
+    "코발트·레드처럼 선명한 색",
+    "카키·올리브 같은 흙빛 색"
+   ],
+   "book_notes": "Trend Daily 기록(history)에 없는 추가 게시물. 원본은 이름 td20261029_rush_* 파일을 게시 시각으로 매칭",
+   "time": "14:07",
+   "status": "게시됨",
+   "images": [
+    {
+     "drive_id": "1J6ZOBSjvWMQtp5dDQ8JwS_QuO9xLPd_K",
+     "name": "20261029_trend_rush_h1.jpg",
+     "kind": "원본일러스트"
+    },
+    {
+     "drive_id": "1idckCcpE0e6RMufuoBC_axZF9Kvc2-29",
+     "name": "20261029_trend_rush_h2.jpg",
+     "kind": "원본일러스트"
+    },
+    {
+     "drive_id": "1wASxyiVWrBCMa07kHs9GDP1_Iz3-AZsJ",
+     "name": "20261029_trend_rush_b1.jpg",
+     "kind": "원본일러스트"
+    },
+    {
+     "drive_id": "104GG1saKcZ-FGALYvn8zlekttefajh2T",
+     "name": "20261029_trend_rush_b2.jpg",
+     "kind": "원본일러스트"
+    }
+   ],
+   "media": [
+    "https://static.metricool.com/planner/202610/7607527-file-15897393955819533089.mp4"
+   ],
+   "video": "15897393955819533089.mp4",
+   "instagram_url": "https://www.instagram.com/reel/DfEOBUViUIH/",
+   "video_comp": null
+  },
+  {
+   "date": "2026-10-29",
+   "season": "가을",
+   "transition": false,
+   "metrics": {},
+   "series": "celeb",
+   "format": "셀럽스냅",
+   "gender": "남자",
+   "title": "셀럽 스냅 해부 #19 블루 티 × 청바지 산책룩",
+   "hook": "제일 쉬운 남친룩 공식 티+청바지+'이것'",
+   "hook_type": "26 쉬운 방법 제시형",
+   "situation": "산책·데일리",
+   "weather": "",
+   "looks": [
+    {
+     "name": "블루 티 × 청바지 산책룩",
+     "items": [
+      {
+       "part": "상의",
+       "desc": "블루 링거 티",
+       "color_hex": "",
+       "tip": "팀 컬러로 경쾌하게"
+      },
+      {
+       "part": "가방",
+       "desc": "캔버스 토트백",
+       "color_hex": "",
+       "tip": "어깨에 툭 걸치기"
+      },
+      {
+       "part": "하의",
+       "desc": "미드블루 청바지",
+       "color_hex": "",
+       "tip": "밑단 한 번 롤업"
+      },
+      {
+       "part": "신발",
+       "desc": "블랙 캔버스 스니커즈",
+       "color_hex": "",
+       "tip": "흰 밑창으로 가볍게"
+      }
+     ],
+     "palette": [],
+     "formula": "티 + 청바지 + 캔버스 토트백"
+    }
+   ],
+   "caption": "셀럽 스냅 해부 #19 | Joe Alwyn in New York 🇺🇸\n티+청바지가 심심해 보였다면, 손에 든 게 문제였을지도요. 블루 티 × 청바지 산책룩, 포인트 4개만 기억하세요\n\n01 블루 링거 티 – 팀 컬러로 경쾌하게 (실착: 뉴욕 닉스 티)\n02 캔버스 토트백 – 어깨에 툭 걸치기 (실착: 브랜드 미상)\n03 미드블루 청바지 – 밑단 한 번 롤업 (실착: 브랜드 미상)\n04 블랙 캔버스 스니커즈 – 흰 밑창으로 가볍게 (실착: 브랜드 미상)\n\n저장해두고 따라 입기 🔖\n※ 실제 착장을 바탕으로 AI로 재현한 이미지예요\n\n#셀럽패션 #남친룩 #청바지코디 #토트백코디 #반팔티코디 #캔버스스니커즈 #남자데일리룩 #셀럽룩 #남자패션 #스트릿패션 #ootd #streetstyle #zzebi",
+   "sources": [
+    "https://www.justjared.com/2026/10/26/joe-alwyn-mary-beth-barone-bond-in-nyc-amid-production-on-their-rom-com-still-we-met/"
+   ],
+   "celeb": "Joe Alwyn",
+   "ep": "19",
+   "book_notes": "셀럽 이름·닮은 이미지는 책에 그대로 쓰지 말고 스타일 공식만 활용",
+   "time": "16:00",
+   "status": "게시됨",
+   "images": [
+    {
+     "drive_id": "1BiFu4CzxfI1YLJ1QqtMFKsOZrkPIFUEH",
+     "name": "20261029_celeb_19.jpg",
+     "kind": "원본일러스트"
+    }
+   ],
+   "media": [
+    "https://static.metricool.com/planner/202610/7607527-file-11504264140042249541.mp4"
+   ],
+   "video": "11504264140042249541.mp4",
+   "video_comp": "7607527-file-3560905907491969363.mp4",
+   "instagram_url": "https://www.instagram.com/reel/DfEbLIdFJOF/"
+  }
+ ]
+}
