@@ -134,10 +134,16 @@ def render_list(items, T, cls='rk'):
     out = [f'      <ol class="{cls}-list">' if cls == 'rk' else '      <ol class="hot-list">']
     for i, p in enumerate(items, 1):
         it, no = ('rk-item', 'rk-no') if cls == 'rk' else ('hot-item', 'hot-rank')
-        where = f'<span class="hot-where">{T(p["where"])}</span>' if p.get('where') else ''
+        w = p.get('where') or ''
+        num = i
+        if cls == 'rk':   # 랭킹은 사이트의 실제 순위를 번호로 (예: '무신사 · 여성 랭킹 2위' → 2)
+            m = re.search(r'(\d+)위', w)
+            if m:
+                num = int(m.group(1)); w = re.sub(r'\s*·?\s*[^·]*\d+위', '', w).strip(' ·')
+        where = f'<span class="hot-where">{T(w)}</span>' if w else ''
         b = f'<span class="br">{T(p.get("brand",""))}</span>' if p.get('brand') else ''
         out.append(f'        <li><a class="{it}" {A(p["url"])}>'
-                   f'<span class="{no}">{i}</span>'
+                   f'<span class="{no}">{num}</span>'
                    f'<span class="hot-body">{where}<span class="nm">{b}{T(p.get("name",""))}</span></span>'
                    f'{price(p, T)}</a></li>')
     out.append('      </ol>')
@@ -159,9 +165,10 @@ EXTRA_CSS = '''
 .fresh{display:flex;align-items:flex-start;gap:10px;margin:4px 0 0;padding:11px 14px;border-radius:12px;background:var(--surface);border:1px solid var(--line);font-size:13.5px;line-height:1.5;color:var(--muted)}
 .fresh::before{content:"";flex:0 0 auto;width:9px;height:9px;margin-top:6px;border-radius:50%;background:var(--brand);box-shadow:0 0 0 4px var(--brand-soft)}
 .fresh b{color:var(--ink);font-weight:700}
-html[lang="en"] body{word-break:normal}
-html[lang="zh"] body{font-family:"PingFang SC","Noto Sans SC","Microsoft YaHei",var(--body)}
+html[lang="zh-CN"] body{word-break:normal;line-break:strict;font-family:"PingFang SC","Noto Sans SC","Microsoft YaHei",var(--body)}
 @media (max-width:460px){.brandbar{flex-wrap:wrap}.adtag{display:none}}
+.tabs{position:sticky}.tabs::after{content:"";position:absolute;top:0;right:0;bottom:1px;width:36px;pointer-events:none;background:linear-gradient(to right,transparent,var(--bg))}
+.tabs.end::after{opacity:0}
 '''
 
 JS = r'''
@@ -205,6 +212,7 @@ JS = r'''
   [].forEach.call(document.querySelectorAll('.lang button'),function(b){b.addEventListener('click',function(){var l=b.getAttribute('data-lang');lang(l);var o=hp();o.l=l==='ko'?'':l;setHash(o)})});
   var o=hp(), saved=null; try{saved=localStorage.getItem('zz_lang')}catch(_){}
   lang(o.l||saved||'ko');
+  var ti=document.querySelector('.tabs-in'),tb=document.querySelector('.tabs');function ed(){if(ti&&tb)tb.classList.toggle('end',ti.scrollLeft+ti.clientWidth>=ti.scrollWidth-4)}if(ti){ti.addEventListener('scroll',ed,{passive:true});ed()}
   show(o.t||'',false);
   window.addEventListener('hashchange',function(){var o=hp();show(o.t||'',true)});
 })();
