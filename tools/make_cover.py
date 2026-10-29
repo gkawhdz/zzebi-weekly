@@ -36,6 +36,7 @@ def main():
     ap.add_argument('--period', required=True)
     ap.add_argument('--hero', required=True)
     ap.add_argument('--feature', required=True)
+    ap.add_argument('--cta', choices=['profile','dm'], default='profile', help='profile=프로필 링크 안내(2026-11-02~), dm=댓글 리포트→DM')
     a = ap.parse_args()
     D = a.data
     meta = json.load(open(os.path.join(D, 'meta.json')))
@@ -140,6 +141,14 @@ body{{background:#222;word-break:keep-all}}
 .c5 .foot{{color:#CFEFEC}}
 '''
     vol = f'VOL. {a.vol:02d}'
+    if a.cta == 'profile':
+        pill = '프로필 링크에서 바로 보기'
+        steps = '<li>@zzebi.st 프로필 방문</li><li>프로필 링크 누르기</li><li>이번 주 리포트 바로 보기</li>'
+        how = '이번 주 리포트,<br>프로필 링크에서 보세요'
+    else:
+        pill = '댓글 ‘리포트’ → DM으로 받기'
+        steps = '<li>@zzebi.st 팔로우</li><li>이 게시물에 ‘리포트’ 댓글</li><li>DM으로 이번 주 링크 도착</li>'
+        how = '이번 주 리포트,<br>DM으로 받아 보세요'
     hd = lambda r: f'<div class="hd"><span class="m">zzebi<em>.st</em> weekly</span><span class="r">{esc(r)}</span></div>'
     foot = lambda n: f'<div class="foot"><span>@zzebi.st · {esc(per_en)}</span><span>{n} / 5</span></div>'
     bars = ''.join(f'<i style="width:{w}px;height:{h}%"></i>' for w, h in [(4,100),(2,100),(6,100),(2,80),(3,100),(5,100),(2,100),(4,90),(2,100),(6,100),(3,100),(2,85),(5,100),(2,100),(4,100)])
@@ -150,7 +159,7 @@ body{{background:#222;word-break:keep-all}}
 <div class="ai">AI 재현 이미지</div>
 <div class="lines"><div class="kick">The Celeb Edit</div><div class="hl">셀럽 {n_look}룩,<br>명품부터<br>가성비까지</div></div>
 <div class="cl"><small>INSIDE</small><span>명품→가성비 3단 가격</span><span>무신사·29CM·지그재그 랭킹</span><span>핫딜 TOP 10 · 크림 신발</span></div>
-<div class="bot"><span class="pill">댓글 ‘리포트’ → DM으로 받기</span><span class="bar">{bars}</span></div></section>'''
+<div class="bot"><span class="pill">{pill}</span><span class="bar">{bars}</span></div></section>'''
     g = ''.join(f'<div class="g" style="background-image:url({imgs[i]})"><em>{esc(looks[i]["ep"])}</em><span>{esc(looks[i]["who"].replace(" 무드 재현",""))}</span></div>' for i in order[:6])
     s2 = f'''<section class="s c2">{hd(vol + " · CONTENTS")}<h2>This Week<b>{esc(per_ko)}</b></h2>
 <div class="grid">{g}</div>
@@ -165,8 +174,8 @@ body{{background:#222;word-break:keep-all}}
 <div class="foot" style="left:580px"><span>@zzebi.st · {esc(per_en)}</span><span>3 / 5</span></div></section>'''
     its = ''.join(f'<div class="it"><span class="o">{int(p.get("off") or 0)}<small>%</small></span><div><div class="w">{esc((p.get("where") or "").split("·")[0].strip())}</div><div class="n">{esc(p.get("brand"))} {esc(p.get("name"))}</div><div class="pr">{esc(won(p["won"]))}</div></div></div>' for p in deals)
     s4 = f'''<section class="s c4">{hd("HOT DEALS")}<h2>Hot Deals<b>이번 주 할인 TOP 4</b></h2><div class="list">{its}</div>{foot(4)}</section>'''
-    s5 = f'''<section class="s c5">{hd("HOW TO GET")}<h2>이번 주 리포트,<br>DM으로 받아 보세요</h2>
-<ol><li>@zzebi.st 팔로우</li><li>이 게시물에 ‘리포트’ 댓글</li><li>DM으로 이번 주 링크 도착</li></ol>
+    s5 = f'''<section class="s c5">{hd("HOW TO GET")}<h2>{how}</h2>
+<ol>{steps}</ol>
 <div class="per"><b>THIS WEEK</b>{esc(per_ko)} · 한국어 · EN · 中文<br>매주 월요일 새 리포트 · 수·금 가격 점검</div>{foot(5)}</section>'''
     os.makedirs(a.out, exist_ok=True)
     page = f'<!doctype html><html><head><meta charset="utf-8"><style>{css}</style></head><body>{s1}{s2}{s3}{s4}{s5}</body></html>'

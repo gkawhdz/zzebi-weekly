@@ -369,10 +369,16 @@ __OGIMG__<meta name="twitter:card" content="summary_large_image">
 </script></body></html>
 '''
 
-def seal(plain_path, out_path, key, title='Zzebi.St 위클리', og=None):
+def seal(plain_path, out_path, key, title='Zzebi.St 위클리', og=None, profile=False):
     ct = encrypt(open(plain_path, 'rb').read(), key)
     ogt = f'<meta property="og:image" content="{esc(og)}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">\n' if og else ''
-    page = (SEAL.replace('__TITLE__', esc(title)).replace('__OGIMG__', ogt)
+    src = SEAL
+    if profile:
+        src = (src.replace("인스타그램 <a href=\"https://www.instagram.com/zzebi.st/\">@zzebi.st</a> 최신 게시물에 \\'리포트\\' 댓글을 남기면 DM으로 이번 주 링크를 보내드려요.",
+                           "인스타그램 <a href=\"https://www.instagram.com/zzebi.st/\">@zzebi.st</a> 프로필 링크에서 이번 주 리포트를 볼 수 있어요.")
+                  .replace("Comment “리포트” on @zzebi.st’s latest post to get this week’s link by DM.", "This week’s report is in @zzebi.st’s Instagram profile link.")
+                  .replace("请在 @zzebi.st 最新帖子下评论“리포트”，通过私信获取本周链接。", "请在 @zzebi.st 的 Instagram 主页链接查看本周报告。"))
+    page = (src.replace('__TITLE__', esc(title)).replace('__OGIMG__', ogt)
                 .replace('__CT__', base64.b64encode(ct).decode()))
     os.makedirs(os.path.dirname(os.path.abspath(out_path)), exist_ok=True)
     open(out_path, 'w').write(page)
