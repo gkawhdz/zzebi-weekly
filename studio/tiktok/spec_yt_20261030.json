@@ -1,0 +1,118 @@
+{
+ "kicker": "오늘의 패션 몰아보기",
+ "title": [
+  "2분이면 끝",
+  "코디 공식 3개"
+ ],
+ "sub": "핼러윈 · 두 색 · 하체 코디 →",
+ "segments": [
+  {
+   "file": "20261030_A.mp4",
+   "label": "핼러윈 데일리룩",
+   "sub": "오렌지 한 점 3가지",
+   "thumb_t": 1.0,
+   "chapter_en": "01 · Halloween without a costume",
+   "en": [
+    [
+     0,
+     3.4,
+     "Halloween's tomorrow — I just added one orange piece"
+    ],
+    [
+     3.4,
+     11.0,
+     "01 Black outfit + a pumpkin-orange beanie (a scarf or socks work too)"
+    ],
+    [
+     11.0,
+     18.6,
+     "02 Easiest one: a leopard satin skirt, everything else black"
+    ],
+    [
+     18.6,
+     28.5,
+     "03 Guys in all black: mix knit, satin and leather textures"
+    ],
+    [
+     28.5,
+     31.9,
+     "Save it before your weekend plans — Sources: KMA forecast, Dazed"
+    ]
+   ]
+  },
+  {
+   "file": "20261030_B.mp4",
+   "label": "두 색 코디 6벌",
+   "sub": "초콜릿·하늘 / 버건디·그레이",
+   "thumb_t": 1.0,
+   "chapter_en": "02 · Two colors, six outfits",
+   "en": [
+    [
+     0,
+     3.2,
+     "The easiest way to dress: remember just two colors"
+    ],
+    [
+     3.2,
+     15.4,
+     "Chocolate & sky blue: work blazer (easiest), date cardigan, weekend trucker"
+    ],
+    [
+     15.4,
+     27.6,
+     "Burgundy & grey: double blazer, cable knit, quilted jacket"
+    ],
+    [
+     27.6,
+     32.0,
+     "Formula: split two colors top and bottom; dark outside, light inside"
+    ],
+    [
+     32.0,
+     35.4,
+     "Save it for weekend mornings — Source: KMA forecast"
+    ]
+   ]
+  },
+  {
+   "file": "20261030_C.mp4",
+   "label": "하체 고민 2룩",
+   "sub": "밝은 색은 위, 아래는 한 톤",
+   "thumb_t": 1.0,
+   "chapter_en": "03 · Lower-body styling: 2 looks",
+   "en": [
+    [
+     0,
+     3.2,
+     "Self-conscious about your lower half? Start with your tights color"
+    ],
+    [
+     3.2,
+     15.4,
+     "Look 1: butter-yellow cropped cardigan, navy A-line skirt, navy tights and shoes"
+    ],
+    [
+     15.4,
+     27.6,
+     "Look 2: ivory short puffer, indigo wide jeans long enough to reach the shoes"
+    ],
+    [
+     27.6,
+     32.2,
+     "Formula: light on top, one tone below, short on top and long below"
+    ],
+    [
+     32.2,
+     35.6,
+     "Save it before you shop — Source (Look 2): Allure Korea"
+    ]
+   ]
+  }
+ ],
+ "seed": 33,
+ "min_total": 62,
+ "outro_sub": "매일 1분 패션 · 날씨 코디",
+ "intro_en": "3 outfit formulas in 2 minutes",
+ "outro_en": "Save & follow @zzebi.st for daily 1-min style tips",
+ "brand_line": "@zzebi.st · 몰아보기"
+}

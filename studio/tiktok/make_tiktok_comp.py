@@ -70,7 +70,7 @@ def pill(d, x, y, s, f, bg, fg, pad=(28, 14)):
 def card_intro(spec, thumbs, out):
     im = Image.new("RGB", (W, H), BG); d = ImageDraw.Draw(im)
     d.rectangle((90, 150, 330, 158), fill=INK)
-    d.text((90, 180), "zzebi.st · 1분 몰아보기", font=font(40, False), fill=INK)
+    d.text((90, 180), spec.get("brand_line", "zzebi.st · 1분 몰아보기"), font=font(40, False), fill=INK)
     pill(d, 90, 300, spec.get("kicker", "몰아보기"), font(46), TEAL, "white")
     # 썸네일 겸용(10/29 사장님 지시: 글씨 잘 보이게) — 후킹 제목을 화면 폭에 맞춰 최대한 크게
     y = 400
