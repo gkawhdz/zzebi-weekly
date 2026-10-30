@@ -1,0 +1,590 @@
+{
+ "date": "2026-10-30",
+ "posts": [
+  {
+   "date": "2026-10-30",
+   "season": "가을",
+   "transition": false,
+   "metrics": {},
+   "series": "trend",
+   "format": "정보형",
+   "gender": "공용",
+   "title": "핼러윈 데일리룩, 코스튬 없이 '한 점' 3가지",
+   "hook": "오렌지 하나 더했을 뿐인데",
+   "hook_type": "21 작은 행동 큰 결과형",
+   "situation": "핼러윈·주말 약속",
+   "weather": "30일(금) 서울 아침 9℃·낮 18℃",
+   "looks": [
+    {
+     "name": "블랙 룩 + 펌킨 오렌지 한 점",
+     "items": [
+      {
+       "part": "액세서리",
+       "desc": "펌킨 오렌지 비니",
+       "color_hex": "",
+       "tip": "머플러·양말 한 점도 OK"
+      },
+      {
+       "part": "액세서리",
+       "desc": "오렌지 니트 머플러",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "아우터",
+       "desc": "블랙 크롭 울 재킷",
+       "color_hex": "",
+       "tip": ""
+      }
+     ],
+     "palette": [],
+     "formula": "블랙 룩 + 오렌지 소품 한 점"
+    },
+    {
+     "name": "레오파드 스커트 + 올블랙",
+     "items": [
+      {
+       "part": "하의",
+       "desc": "레오파드 새틴 미디스커트",
+       "color_hex": "",
+       "tip": "나머지는 전부 블랙"
+      },
+      {
+       "part": "신발",
+       "desc": "블랙 앵클부츠",
+       "color_hex": "",
+       "tip": ""
+      }
+     ],
+     "palette": [],
+     "formula": "레오파드 하나 + 나머지 블랙"
+    },
+    {
+     "name": "남자 올블랙 소재 믹스",
+     "items": [
+      {
+       "part": "아우터",
+       "desc": "블랙 케이블 롱 카디건",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "상의",
+       "desc": "블랙 새틴 셔츠",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "하의",
+       "desc": "블랙 레더 스트레이트 팬츠",
+       "color_hex": "",
+       "tip": ""
+      }
+     ],
+     "palette": [],
+     "formula": "올블랙은 니트·새틴·가죽 소재 3가지 섞기"
+    }
+   ],
+   "caption": "오렌지로 끝이 아니에요 — 3번은 남자 올블랙 버전이에요\n\n내일(31일 토) 핼러윈, 코스튬 없이 평소 룩에 '한 점'만 바꿔 무드 내는 법 3가지\n01 블랙 룩 + 펌킨 오렌지 비니 (머플러·양말 한 점도 OK)\n02 레오파드 스커트 하나 + 나머지는 전부 블랙\n03 남자 올블랙은 니트·새틴·가죽, 소재 3가지 섞기\n\n오늘 서울 아침 9℃ · 낮 18℃. 주말 약속 전에 저장해두고 꺼내 보세요.\n매일 1분 패션은 @zzebi.st 팔로우!\n\n참고: 기상청 예보(뉴스핌 10.29), 데이즈드(2026.10.19 핼러윈 코스튬 기사)\n\n#핼러윈 #핼러윈코디 #데일리룩 #올블랙코디 #레오파드스커트 #오렌지비니 #주말코디 #패션정보 #코디추천 #zzebist",
+   "sources": [
+    "기상청 예보(뉴스핌 10.29)",
+    "데이즈드(2026.10.19 핼러윈 코스튬 기사)"
+   ],
+   "theme": "시즌 이벤트·핼러윈 데일리룩(코스튬 없이 한 점)",
+   "colors": "블랙+펌킨 오렌지 / 블랙+레오파드 / 올블랙 소재 믹스",
+   "tips": [],
+   "book_notes": "",
+   "time": "07:30",
+   "status": "게시됨",
+   "images": [
+    {
+     "drive_id": "1pt3YylaSh8e501JWBKDiFydL1ZpasfY_",
+     "name": "20261030_trend_ah1.jpg",
+     "kind": "원본일러스트"
+    },
+    {
+     "drive_id": "130MSAzDg1X0qGsDab8r-gRZ7WJPWFJjs",
+     "name": "20261030_trend_ah2.jpg",
+     "kind": "원본일러스트"
+    },
+    {
+     "drive_id": "1XS6XZWjgI4uat4oRxrzdrXLThQ0uQ0ur",
+     "name": "20261030_trend_ap1.jpg",
+     "kind": "원본일러스트"
+    },
+    {
+     "drive_id": "1dhHhXrNAIKJ9qMLNE3iGf_30Nzz2DasV",
+     "name": "20261030_trend_ap2.jpg",
+     "kind": "원본일러스트"
+    },
+    {
+     "drive_id": "1KMKp3ItsMrwsfhqmClHYkpBE27AiPQ-e",
+     "name": "20261030_trend_ap3.jpg",
+     "kind": "원본일러스트"
+    }
+   ],
+   "media": [
+    "https://static.metricool.com/planner/202610/7607527-file-8453756612366951691.mp4"
+   ],
+   "video": "8453756612366951691.mp4",
+   "video_comp": "tiktok 7607527-file-2268187613981772379.mp4 · youtube 7607527-file-7745945256325617274.mp4",
+   "instagram_url": "https://www.instagram.com/reel/DfGFcqpk99H/"
+  },
+  {
+   "date": "2026-10-30",
+   "season": "가을",
+   "transition": false,
+   "metrics": {},
+   "series": "trend",
+   "format": "컬러조합",
+   "gender": "여자",
+   "title": "두 색 코디 6벌(초콜릿&하늘색 / 버건디&그레이)",
+   "hook": "제일 쉬운 코디, 두 색만 기억",
+   "hook_type": "26 쉬운 방법 제시형",
+   "situation": "출근·데이트·주말",
+   "weather": "30일(금) 서울 아침 9℃·낮 18℃",
+   "looks": [
+    {
+     "name": "CHOCOLATE & SKY BLUE",
+     "items": [
+      {
+       "part": "아우터",
+       "desc": "초콜릿 울 블레이저",
+       "color_hex": "",
+       "tip": "①출근"
+      },
+      {
+       "part": "상의",
+       "desc": "하늘색 포플린 셔츠",
+       "color_hex": "",
+       "tip": "①출근"
+      },
+      {
+       "part": "상의",
+       "desc": "하늘색 모헤어 카디건",
+       "color_hex": "",
+       "tip": "②데이트"
+      },
+      {
+       "part": "하의",
+       "desc": "초콜릿 새틴 미디스커트",
+       "color_hex": "",
+       "tip": "②데이트"
+      },
+      {
+       "part": "아우터",
+       "desc": "초콜릿 스웨이드 트러커 재킷",
+       "color_hex": "",
+       "tip": "③주말"
+      },
+      {
+       "part": "상의",
+       "desc": "하늘색 터틀넥",
+       "color_hex": "",
+       "tip": "③주말"
+      }
+     ],
+     "palette": [],
+     "formula": "초콜릿+하늘색 두 색을 위아래로"
+    },
+    {
+     "name": "BURGUNDY & GREY",
+     "items": [
+      {
+       "part": "아우터",
+       "desc": "그레이 더블 블레이저",
+       "color_hex": "",
+       "tip": "①출근"
+      },
+      {
+       "part": "상의",
+       "desc": "버건디 실크 블라우스",
+       "color_hex": "",
+       "tip": "①출근"
+      },
+      {
+       "part": "상의",
+       "desc": "버건디 케이블 니트",
+       "color_hex": "",
+       "tip": "②데이트"
+      },
+      {
+       "part": "하의",
+       "desc": "그레이 플리츠 미디스커트",
+       "color_hex": "",
+       "tip": "②데이트"
+      },
+      {
+       "part": "아우터",
+       "desc": "버건디 퀼팅 크롭 재킷",
+       "color_hex": "",
+       "tip": "③주말"
+      },
+      {
+       "part": "상의",
+       "desc": "그레이 맨투맨",
+       "color_hex": "",
+       "tip": "③주말"
+      },
+      {
+       "part": "하의",
+       "desc": "그레이 데님",
+       "color_hex": "",
+       "tip": "③주말"
+      }
+     ],
+     "palette": [],
+     "formula": "버건디+그레이 두 색을 위아래로"
+    }
+   ],
+   "caption": "3벌씩, 쓴 색은 딱 2개 — 6벌 중 제일 쉬운 건 ①번이에요\n\n오늘(30일 금) 서울 아침 9℃ · 낮 18℃. 일교차 큰 날 고민 없이 입는 두 색 코디\nCHOCOLATE & SKY BLUE (초콜릿 & 하늘색)\n①출근 초콜릿 블레이저 + 하늘색 셔츠 ②데이트 하늘색 모헤어 카디건 + 초콜릿 새틴 스커트 ③주말 초콜릿 트러커 재킷 + 하늘색 터틀넥\nBURGUNDY & GREY (버건디 & 그레이)\n①출근 그레이 더블 블레이저 + 버건디 블라우스 ②데이트 버건디 케이블 니트 + 그레이 플리츠 스커트 ③주말 버건디 퀼팅 재킷 + 그레이 맨투맨·데님\n\n두 색 공식: 한 벌 안에서 두 색을 위아래로 · 진한 색이 겉이면 밝은 색은 안에 · 가방·신발도 두 색 안에서\n저장해두고 아침에 꺼내 보기 · 매일 1분 코디 @zzebi.st\n\n참고: 기상청 예보(뉴스핌 10.29)\n\n#컬러조합 #두색코디 #가을코디 #데일리룩 #출근룩 #데이트룩 #초콜릿브라운 #버건디코디 #코디추천 #zzebist",
+   "sources": [
+    "기상청 예보(뉴스핌 10.29)"
+   ],
+   "theme": "두 색 공식 컬러 조합 플랫레이(첫 회)",
+   "colors": "초콜릿+스카이 블루 / 버건디+헤더 그레이",
+   "tips": [
+    "한 벌 안에서 두 색을 위아래로",
+    "진한 색이 겉이면 밝은 색은 안에",
+    "가방·신발도 두 색 안에서"
+   ],
+   "book_notes": "",
+   "time": "09:00",
+   "status": "게시됨",
+   "images": [
+    {
+     "drive_id": "1HQsxEYyvmqvl8PZvRZLzwpFICCV7tweg",
+     "name": "20261030_trend_c1.jpg",
+     "kind": "원본일러스트"
+    },
+    {
+     "drive_id": "1ayujpoJ4bAcOefGAc-duBUa3SYrqVUms",
+     "name": "20261030_trend_c2.jpg",
+     "kind": "원본일러스트"
+    }
+   ],
+   "media": [
+    "https://static.metricool.com/planner/202610/7607527-file-9173374078969306030.mp4"
+   ],
+   "video": "9173374078969306030.mp4",
+   "video_comp": "tiktok 7607527-file-2268187613981772379.mp4 · youtube 7607527-file-7745945256325617274.mp4",
+   "instagram_url": "https://www.instagram.com/reel/DfGP_X2Fii8/"
+  },
+  {
+   "date": "2026-10-30",
+   "season": "가을",
+   "transition": false,
+   "metrics": {},
+   "series": "trend",
+   "format": "코디룩북",
+   "gender": "여자",
+   "title": "하체가 신경 쓰일 때 4룩(색 끊기는 위치)",
+   "hook": "하체 신경 쓰이면 위를 짧게",
+   "hook_type": "06 해결책 제시형",
+   "situation": "데이트·금요일·주말·출근",
+   "weather": "",
+   "looks": [
+    {
+     "name": "LOOK 1 데이트",
+     "items": [
+      {
+       "part": "아우터",
+       "desc": "크롭 블랙 레더 재킷",
+       "color_hex": "",
+       "tip": "위는 짧게"
+      },
+      {
+       "part": "상의",
+       "desc": "화이트 티",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "하의",
+       "desc": "차콜 맥시 플리츠 스커트",
+       "color_hex": "",
+       "tip": "아래는 한 톤으로 길게"
+      },
+      {
+       "part": "신발",
+       "desc": "블랙 청키 스니커즈",
+       "color_hex": "",
+       "tip": ""
+      }
+     ],
+     "palette": [],
+     "formula": "크롭 재킷 + 맥시 스커트"
+    },
+    {
+     "name": "LOOK 2 금요일",
+     "items": [
+      {
+       "part": "상의",
+       "desc": "크림 크롭 니트",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "하의",
+       "desc": "차콜 하이웨이스트 와이드 슬랙스",
+       "color_hex": "",
+       "tip": "바지와 신발을 같은 톤으로"
+      },
+      {
+       "part": "신발",
+       "desc": "다크 그레이 스웨이드 로퍼",
+       "color_hex": "",
+       "tip": ""
+      }
+     ],
+     "palette": [],
+     "formula": "밝은 크롭 상의 + 바지·신발 같은 톤"
+    },
+    {
+     "name": "LOOK 3 주말",
+     "items": [
+      {
+       "part": "아우터",
+       "desc": "아이보리 숏 패딩",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "상의",
+       "desc": "아이보리 터틀넥",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "하의",
+       "desc": "인디고 와이드 데님",
+       "color_hex": "",
+       "tip": "밑단은 자르거나 접지 말고 신발 위까지 길게"
+      }
+     ],
+     "palette": [],
+     "formula": "숏 아우터 + 신발 덮는 와이드 데님"
+    },
+    {
+     "name": "LOOK 4 출근",
+     "items": [
+      {
+       "part": "상의",
+       "desc": "버터 옐로 크롭 카디건",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "하의",
+       "desc": "네이비 A라인 미디스커트",
+       "color_hex": "",
+       "tip": "아래를 한 색으로 이어 주기"
+      },
+      {
+       "part": "하의",
+       "desc": "네이비 타이츠",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "신발",
+       "desc": "네이비 메리제인",
+       "color_hex": "",
+       "tip": ""
+      }
+     ],
+     "palette": [],
+     "formula": "스커트·타이츠·신발 한 색"
+    }
+   ],
+   "caption": "다리보다 먼저 볼 건 '색이 끊기는 위치'예요\n\n하체가 신경 쓰일 때 바로 써먹는 4룩\nLOOK 1 데이트 — 크롭 블랙 레더 재킷 + 화이트 티 + 차콜 맥시 플리츠 스커트 + 블랙 청키 스니커즈 (위는 짧게, 아래는 한 톤으로 길게)\nLOOK 2 금요일 — 크림 크롭 니트 + 차콜 하이웨이스트 와이드 슬랙스 + 다크 그레이 로퍼 (바지와 신발을 같은 톤으로)\nLOOK 3 주말 — 아이보리 숏 패딩·터틀넥 + 인디고 와이드 데님 (밑단은 자르거나 접지 말고 신발 위까지 길게)\nLOOK 4 출근 — 버터 옐로 크롭 카디건 + 네이비 A라인 미디스커트 + 네이비 타이츠·메리제인 (아래를 한 색으로 이어 주기)\n\n공식: 밝은 색은 위 · 하의·타이츠·신발은 같은 색 · 위는 짧게, 아래는 길게\n옷 사기 전에 저장해두고 비교해 보세요 · 매일 1분 코디 @zzebi.st\n\n참고(LOOK 3): 얼루어 코리아(2025.04.07 와이드 데님 스타일링)\n\n#하체코디 #레더재킷 #플리츠스커트 #와이드슬랙스 #와이드데님 #A라인코디 #데이트룩 #출근룩 #주말코디 #데일리룩 #zzebist",
+   "sources": [
+    "얼루어 코리아(2025.04.07 와이드 데님 스타일링)"
+   ],
+   "theme": "체형 고민·하체가 신경 쓰일 때 색 배치(사장님 지정)",
+   "colors": "블랙+차콜 / 크림+차콜 / 아이보리+다크 인디고 / 버터 옐로+네이비",
+   "tips": [
+    "밝은 색은 위",
+    "하의·타이츠·신발은 같은 색",
+    "위는 짧게, 아래는 길게"
+   ],
+   "book_notes": "",
+   "time": "10:00",
+   "status": "게시됨",
+   "images": [
+    {
+     "drive_id": "1put8hVRxOP4_l5z_f7JvJ6ocFchvUxMA",
+     "name": "20261030_trend_bf1.jpg",
+     "kind": "원본일러스트"
+    },
+    {
+     "drive_id": "13ob8c0c3YdC-5WZ0-kQmQgcSSHC8NDBz",
+     "name": "20261030_trend_bf2.jpg",
+     "kind": "원본일러스트"
+    },
+    {
+     "drive_id": "1Jq8VfdqeLapJply2vkMa1S8ljKUJKsXt",
+     "name": "20261030_trend_add_look3.jpg",
+     "kind": "원본일러스트"
+    },
+    {
+     "drive_id": "1K59s9nqaYTuhK3Uu_bo99mAnBETtmXYo",
+     "name": "20261030_trend_add_look3b.jpg",
+     "kind": "원본일러스트"
+    },
+    {
+     "drive_id": "1u8EQCTGxuaprI26giUWkwWSanii9UJ9n",
+     "name": "20261030_trend_add_look4.jpg",
+     "kind": "원본일러스트"
+    },
+    {
+     "drive_id": "1LzZGpud3FmjQ7rimd2Wn87-U_rvcUCJB",
+     "name": "20261030_trend_add_look4b.jpg",
+     "kind": "원본일러스트"
+    }
+   ],
+   "media": [
+    "https://static.metricool.com/planner/202610/7607527-file-13954246734478230969.mp4"
+   ],
+   "video": "13954246734478230969.mp4",
+   "video_comp": "tiktok 7607527-file-2268187613981772379.mp4 · youtube 7607527-file-7745945256325617274.mp4",
+   "instagram_url": "https://www.instagram.com/reel/DfGW3icD9Qc/"
+  },
+  {
+   "date": "2026-10-30",
+   "season": "가을",
+   "transition": false,
+   "metrics": {},
+   "series": "celeb",
+   "format": "셀럽스냅",
+   "gender": "여자",
+   "title": "셀럽 스냅 해부 #20 버건디 원컬러 코트룩",
+   "hook": "5초면 이해되는 원컬러 코트룩 공식",
+   "hook_type": "22 빠른 이해형",
+   "situation": "출근·도심",
+   "weather": "",
+   "looks": [
+    {
+     "name": "버건디 원컬러 코트룩",
+     "items": [
+      {
+       "part": "액세서리",
+       "desc": "버건디 니트 머플러",
+       "color_hex": "",
+       "tip": "니트·코트와 같은 색으로"
+      },
+      {
+       "part": "아우터",
+       "desc": "버건디 롱 코트",
+       "color_hex": "",
+       "tip": "단추 풀고 길게 툭"
+      },
+      {
+       "part": "가방",
+       "desc": "블랙 서류가방",
+       "color_hex": "",
+       "tip": "손잡이로 들어 단정하게"
+      },
+      {
+       "part": "신발",
+       "desc": "삼바 스니커즈",
+       "color_hex": "",
+       "tip": "코트에 운동화로 힘 빼기"
+      }
+     ],
+     "palette": [],
+     "formula": "같은 색 3번(머플러·니트·코트) + 운동화로 힘 빼기"
+    }
+   ],
+   "caption": "셀럽 스냅 해부 #20 | Zoë Kravitz in New York 🇺🇸\n공식은 '같은 색 3번', 그런데 신발은 왜 운동화였을까? 버건디 원컬러 코트룩, 포인트 4개만 기억하세요\n\n01 버건디 니트 머플러 – 니트·코트와 같은 색으로\n02 버건디 롱 코트 – 단추 풀고 길게 툭\n03 블랙 서류가방 – 손잡이로 들어 단정하게 (실착: Prada)\n04 삼바 스니커즈 – 코트에 운동화로 힘 빼기 (실착: Adidas Samba)\n\n저장해두고 따라 입기 🔖\n※ 실제 착장을 바탕으로 AI로 재현한 이미지예요\n\n#셀럽패션 #조이크라비츠 #버건디코디 #원컬러코디 #롱코트코디 #삼바코디 #가을코디 #출근룩 #뉴욕스트릿 #셀럽스냅 #streetstyle #zzebi",
+   "sources": [
+    "Marie Claire 2026-10-25 (week of Oct 18)"
+   ],
+   "celeb": "Zoë Kravitz",
+   "ep": "20",
+   "book_notes": "셀럽 이름·닮은 이미지는 책에 그대로 쓰지 말고 스타일 공식만 활용",
+   "time": "12:30",
+   "status": "게시됨",
+   "images": [
+    {
+     "drive_id": "1oXPpQJzJWiyAlzhb6Qk3CNPbSpu01898",
+     "name": "20261030_celeb_20.jpg",
+     "kind": "원본일러스트"
+    }
+   ],
+   "media": [
+    "https://static.metricool.com/planner/202610/7607527-file-2623782500556445622.mp4"
+   ],
+   "video": "2623782500556445622.mp4",
+   "instagram_url": "https://www.instagram.com/reel/DfGnupHiRq5/"
+  },
+  {
+   "date": "2026-10-30",
+   "season": "가을",
+   "transition": false,
+   "metrics": {},
+   "series": "celeb",
+   "format": "셀럽스냅",
+   "gender": "여자",
+   "title": "셀럽 스냅 해부 #21 레오파드 니트 × 레더 팬츠",
+   "hook": "호피는 코트 말고 반팔 니트로 입으세요",
+   "hook_type": "25 기능 활용형",
+   "situation": "데이트",
+   "weather": "",
+   "looks": [
+    {
+     "name": "레오파드 니트 × 레더 팬츠",
+     "items": [
+      {
+       "part": "상의",
+       "desc": "레오파드 반팔 니트",
+       "color_hex": "",
+       "tip": "하의에 넣어 허리 살리기"
+      },
+      {
+       "part": "하의",
+       "desc": "레더 트라우저",
+       "color_hex": "",
+       "tip": "하이웨이스트로 길게"
+      },
+      {
+       "part": "가방",
+       "desc": "블랙 핸드백",
+       "color_hex": "",
+       "tip": "가방은 블랙으로 깔끔하게"
+      },
+      {
+       "part": "신발",
+       "desc": "블랙 포인티드 펌프스",
+       "color_hex": "",
+       "tip": "앞코 뾰족하게 길어 보이게"
+      }
+     ],
+     "palette": [],
+     "formula": "호피는 니트로 작게 + 블랙 레더 하의·소품"
+    }
+   ],
+   "caption": "셀럽 스냅 해부 #21 | Elizabeth Debicki in Street Style 🖤\n호피가 부담스럽지 않았던 진짜 이유는 니트 아래 조합에 있어요. 레오파드 니트 × 레더 팬츠, 포인트 4개만 기억하세요\n\n01 레오파드 반팔 니트 – 하의에 넣어 허리 살리기 (실착: Adam Lippes)\n02 레더 트라우저 – 하이웨이스트로 길게 (실착: Adam Lippes)\n03 블랙 핸드백 – 가방은 블랙으로 깔끔하게 (실착: Kallmeyer)\n04 블랙 포인티드 펌프스 – 앞코 뾰족하게 길어 보이게 (스타일링 추천)\n\n저장해두고 따라 입기 🔖\n※ 실제 착장을 바탕으로 AI로 재현한 이미지예요\n\n#셀럽패션 #엘리자베스데비키 #레오파드코디 #호피코디 #레더팬츠코디 #가죽바지코디 #반팔니트 #가을코디 #데이트룩 #셀럽스냅 #streetstyle #zzebi",
+   "sources": [
+    "Marie Claire (week of Oct 11, 2026)"
+   ],
+   "celeb": "Elizabeth Debicki",
+   "ep": "21",
+   "book_notes": "셀럽 이름·닮은 이미지는 책에 그대로 쓰지 말고 스타일 공식만 활용",
+   "time": "16:00",
+   "status": "게시됨",
+   "images": [
+    {
+     "drive_id": "1vgRMhD0JO5h5UJFWAAosAfIaBmiGXcdr",
+     "name": "20261030_celeb_21.jpg",
+     "kind": "원본일러스트"
+    }
+   ],
+   "media": [
+    "https://static.metricool.com/planner/202610/7607527-file-15252731005082273525.mp4"
+   ],
+   "video": "15252731005082273525.mp4",
+   "instagram_url": "https://www.instagram.com/reel/DfHABWWk45G/"
+  }
+ ]
+}
