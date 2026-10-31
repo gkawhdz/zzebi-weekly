@@ -1,0 +1,643 @@
+{
+ "date": "2026-10-31",
+ "posts": [
+  {
+   "date": "2026-10-31",
+   "season": "가을",
+   "transition": false,
+   "metrics": {},
+   "series": "trend",
+   "format": "정보형",
+   "gender": "여자",
+   "title": "머플러 하나로 3가지 두르기(출근·데이트·주말)",
+   "hook": "머플러, 목에만 두르면 손해",
+   "hook_type": "25 기능 활용형",
+   "situation": "출근·데이트·주말 나들이",
+   "weather": "31일(토) 서울 아침 9℃·낮 14℃",
+   "looks": [
+    {
+     "name": "출근길 파리지앵 매듭",
+     "items": [
+      {
+       "part": "액세서리",
+       "desc": "카멜 프린지 울 머플러",
+       "color_hex": "",
+       "tip": "반 접어 목에 걸고 고리에 두 끝을 넣기(목 앞이 단정)"
+      },
+      {
+       "part": "아우터",
+       "desc": "차콜 박시 울 재킷",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "상의",
+       "desc": "화이트 크루넥 니트",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "하의",
+       "desc": "라이트 블루 스트레이트 진",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "신발",
+       "desc": "다크 브라운 페니 로퍼",
+       "color_hex": "",
+       "tip": ""
+      }
+     ],
+     "palette": [],
+     "formula": "파리지앵 매듭으로 목 앞 단정하게"
+    },
+    {
+     "name": "데이트 숄+가는 벨트",
+     "items": [
+      {
+       "part": "액세서리",
+       "desc": "카멜 프린지 울 머플러",
+       "color_hex": "",
+       "tip": "어깨에 숄처럼 펼치기"
+      },
+      {
+       "part": "액세서리",
+       "desc": "브라운 가는 가죽 벨트",
+       "color_hex": "",
+       "tip": "허리 고정"
+      }
+     ],
+     "palette": [],
+     "formula": "머플러를 숄처럼 펼치고 가는 벨트로 허리 고정"
+    },
+    {
+     "name": "주말 후드 두르기",
+     "items": [
+      {
+       "part": "액세서리",
+       "desc": "카멜 프린지 울 머플러",
+       "color_hex": "",
+       "tip": "머리까지 후드처럼 덮고 목에 한 바퀴"
+      }
+     ],
+     "palette": [],
+     "formula": "머리까지 덮고 목에 한 바퀴"
+    }
+   ],
+   "caption": "같은 머플러인데 두르는 법만 바꾸면 출근·데이트·주말이 다 달라져요 🧣\n\n토요일 아침 9℃, 낮 14℃ — 아우터는 그대로 두고 머플러만 바꿔 보세요.\n01 출근길: 반 접어 목에 걸고 고리에 두 끝을 넣는 파리지앵 매듭 (목 앞이 단정)\n02 데이트: 어깨에 숄처럼 펼치고 가는 벨트로 허리 고정\n03 주말 나들이: 머리까지 후드처럼 덮고 목에 한 바퀴\n\n머플러 하나 공식: 길고 넓은 울 머플러 · 매듭은 얼굴 가까이 작게 · 아우터는 무채색 그대로\n주말 외출 전에 저장해 두고, 매일 1분 코디는 @zzebi.st 팔로우!\n\n참고: 날씨 — 기상청 예보(아주경제·시대일보 10.30 보도)\n\n#머플러코디 #머플러매는법 #가을코디 #데일리룩 #출근룩 #주말코디 #여자코디 #스카프코디 #패션팁 #zzebist",
+   "sources": [
+    "기상청 예보(아주경제·시대일보 10.30 보도)"
+   ],
+   "theme": "아이템 활용·머플러 하나로 3가지 두르기",
+   "colors": "카멜+차콜+라이트 블루",
+   "tips": [
+    "길고 넓은 울 머플러",
+    "매듭은 얼굴 가까이 작게",
+    "아우터는 무채색 그대로"
+   ],
+   "book_notes": "",
+   "time": "07:30",
+   "status": "게시됨",
+   "images": [
+    {
+     "drive_id": "1smYlsXNDNTAAiEbKG8FjIRw_2eUaJBh-",
+     "name": "20261031_trend_a1.jpg",
+     "kind": "원본일러스트"
+    },
+    {
+     "drive_id": "1An405TTcYX7D6ZdUC3X-ZK1CI7Ze0ptL",
+     "name": "20261031_trend_a2.jpg",
+     "kind": "원본일러스트"
+    },
+    {
+     "drive_id": "1LMp3VrWhcoAQ795vRZ2k8NUajpJ-rUkJ",
+     "name": "20261031_trend_a3.jpg",
+     "kind": "원본일러스트"
+    }
+   ],
+   "media": [
+    "https://static.metricool.com/planner/202610/7607527-file-8275473511596002155.mp4"
+   ],
+   "video": "20261031_A.mp4",
+   "video_comp": "tiktok 7607527-file-5881757120836350930.mp4 · youtube 7607527-file-11982758469180717760.mp4",
+   "instagram_url": "https://www.instagram.com/reel/DfIqPf4AYXi/"
+  },
+  {
+   "date": "2026-10-31",
+   "season": "가을",
+   "transition": false,
+   "metrics": {},
+   "series": "trend",
+   "format": "컬러조합",
+   "gender": "남자",
+   "title": "남자 두 색 코디 6벌(슬레이트 블루&스톤 / 테라코타&세이지)",
+   "hook": "10초 만에 끝내는 남자 두 색 코디",
+   "hook_type": "22 빠른 이해형",
+   "situation": "출근·데이트·주말",
+   "weather": "",
+   "looks": [
+    {
+     "name": "SLATE BLUE & STONE",
+     "items": [
+      {
+       "part": "아우터",
+       "desc": "스톤 스웨이드 블루종",
+       "color_hex": "",
+       "tip": "①출근"
+      },
+      {
+       "part": "상의",
+       "desc": "블루 옥스퍼드 셔츠",
+       "color_hex": "",
+       "tip": "①출근"
+      },
+      {
+       "part": "하의",
+       "desc": "스톤 치노",
+       "color_hex": "",
+       "tip": "①출근"
+      },
+      {
+       "part": "상의",
+       "desc": "슬레이트 블루 크루넥 니트",
+       "color_hex": "",
+       "tip": "②데이트"
+      },
+      {
+       "part": "하의",
+       "desc": "스톤 코듀로이 팬츠",
+       "color_hex": "",
+       "tip": "②데이트"
+      },
+      {
+       "part": "아우터",
+       "desc": "슬레이트 초어 재킷",
+       "color_hex": "",
+       "tip": "③주말(제일 쉬움)"
+      },
+      {
+       "part": "상의",
+       "desc": "스톤 스웻셔츠",
+       "color_hex": "",
+       "tip": "③주말"
+      },
+      {
+       "part": "하의",
+       "desc": "데님",
+       "color_hex": "",
+       "tip": "③주말"
+      }
+     ],
+     "palette": [],
+     "formula": "슬레이트 블루+스톤 베이지 두 색을 위아래로"
+    },
+    {
+     "name": "TERRACOTTA & SAGE",
+     "items": [
+      {
+       "part": "아우터",
+       "desc": "세이지 코듀로이 블레이저",
+       "color_hex": "",
+       "tip": "④출근"
+      },
+      {
+       "part": "상의",
+       "desc": "테라코타 크루넥 니트",
+       "color_hex": "",
+       "tip": "④출근"
+      },
+      {
+       "part": "상의",
+       "desc": "세이지 케이블 니트",
+       "color_hex": "",
+       "tip": "⑤데이트"
+      },
+      {
+       "part": "하의",
+       "desc": "테라코타 와이드 팬츠",
+       "color_hex": "",
+       "tip": "⑤데이트"
+      },
+      {
+       "part": "아우터",
+       "desc": "테라코타 코치 재킷",
+       "color_hex": "",
+       "tip": "⑥주말"
+      },
+      {
+       "part": "상의",
+       "desc": "세이지 후디",
+       "color_hex": "",
+       "tip": "⑥주말"
+      },
+      {
+       "part": "하의",
+       "desc": "세이지 카고 팬츠",
+       "color_hex": "",
+       "tip": "⑥주말"
+      }
+     ],
+     "palette": [],
+     "formula": "테라코타+세이지 그린 두 색을 위아래로"
+    }
+   ],
+   "caption": "6벌 중 제일 쉬운 건 ③번(슬레이트 초어 재킷) — 맨투맨 위에 재킷 하나만 걸치면 끝.\n\n출근·데이트·주말, 두 색만 정하면 고민이 줄어요.\n[조합 1] SLATE BLUE & STONE (슬레이트 블루 + 스톤 베이지)\n ① 출근: 스톤 스웨이드 블루종 + 블루 옥스퍼드 셔츠 + 스톤 치노\n ② 데이트: 슬레이트 블루 니트 + 스톤 코듀로이 팬츠\n ③ 주말: 슬레이트 초어 재킷 + 스톤 스웻셔츠 + 데님\n[조합 2] TERRACOTTA & SAGE (테라코타 + 세이지 그린)\n ④ 출근: 세이지 코듀로이 블레이저 + 테라코타 니트\n ⑤ 데이트: 세이지 케이블 니트 + 테라코타 와이드 팬츠\n ⑥ 주말: 테라코타 코치 재킷 + 세이지 후디·카고 팬츠\n\n두 색 공식: 큰 옷은 한 색 · 이너·모자로 두 번째 색 · 가방·신발로 한 번 더\n저장해두고 아침에 꺼내 보기 📌 매일 1분 코디는 @zzebi.st\n\n#남자코디 #남자데일리룩 #컬러조합 #두색코디 #주말코디 #남친룩 #가을코디 #남자패션 #코디공식 #zzebist",
+   "sources": [],
+   "theme": "두 색 공식 컬러 조합 플랫레이(남성복)",
+   "colors": "슬레이트 블루+스톤 베이지 / 테라코타+세이지 그린",
+   "tips": [
+    "큰 옷은 한 색",
+    "이너·모자로 두 번째 색",
+    "가방·신발로 한 번 더"
+   ],
+   "book_notes": "b2v2는 b2 수정본(둘 다 보관)",
+   "time": "09:00",
+   "status": "게시됨",
+   "images": [
+    {
+     "drive_id": "1G9QAmhy-io44uSLL84C0-PURgFiIgxig",
+     "name": "20261031_trend_b1.jpg",
+     "kind": "원본일러스트"
+    },
+    {
+     "drive_id": "1DDBLwAY4AXGz-SFOXj_iERC_TTEAMn0n",
+     "name": "20261031_trend_b2.jpg",
+     "kind": "원본일러스트"
+    },
+    {
+     "drive_id": "1mzJ5Ta8lf6A4lkzyg4crop5zbgQDepp3",
+     "name": "20261031_trend_b2v2.jpg",
+     "kind": "원본일러스트"
+    }
+   ],
+   "media": [
+    "https://static.metricool.com/planner/202610/7607527-file-367313681174621582.mp4"
+   ],
+   "video": "20261031_B.mp4",
+   "video_comp": "tiktok 7607527-file-5881757120836350930.mp4 · youtube 7607527-file-11982758469180717760.mp4",
+   "instagram_url": "https://www.instagram.com/reel/DfI0xWSlQCz/"
+  },
+  {
+   "date": "2026-10-31",
+   "season": "가을",
+   "transition": false,
+   "metrics": {},
+   "series": "trend",
+   "format": "4가지코디",
+   "gender": "여자",
+   "title": "아이템 2개로 4가지 코디(무스탕+체크 스커트 / 카디건+배럴 진)",
+   "hook": "아이템 2개, 4번 바꿔 입혀봤어요",
+   "hook_type": "14 실험 결과형",
+   "situation": "주말 나들이·데이트·출근·카페·산책",
+   "weather": "31일(토) 낮 14℃",
+   "looks": [
+    {
+     "name": "세트1 블랙 숏 무스탕 + 그레이 체크 플리츠 스커트",
+     "items": [
+      {
+       "part": "아우터",
+       "desc": "블랙 숏 무스탕",
+       "color_hex": "",
+       "tip": "고정"
+      },
+      {
+       "part": "하의",
+       "desc": "그레이 글렌체크 플리츠 미니스커트",
+       "color_hex": "",
+       "tip": "고정"
+      },
+      {
+       "part": "상의",
+       "desc": "크림 터틀넥",
+       "color_hex": "",
+       "tip": "①데이트"
+      },
+      {
+       "part": "신발",
+       "desc": "블랙 롱부츠",
+       "color_hex": "",
+       "tip": "①데이트"
+      },
+      {
+       "part": "상의",
+       "desc": "그레이 후디",
+       "color_hex": "",
+       "tip": "②주말"
+      },
+      {
+       "part": "액세서리",
+       "desc": "볼캡",
+       "color_hex": "",
+       "tip": "②주말"
+      },
+      {
+       "part": "신발",
+       "desc": "흰 양말·스니커즈",
+       "color_hex": "",
+       "tip": "②주말"
+      },
+      {
+       "part": "상의",
+       "desc": "흰 셔츠",
+       "color_hex": "",
+       "tip": "③출근"
+      },
+      {
+       "part": "액세서리",
+       "desc": "블랙 스타킹",
+       "color_hex": "",
+       "tip": "③출근"
+      },
+      {
+       "part": "신발",
+       "desc": "레이스업 슈즈",
+       "color_hex": "",
+       "tip": "③출근"
+      },
+      {
+       "part": "상의",
+       "desc": "블랙 니트",
+       "color_hex": "",
+       "tip": "④카페"
+      },
+      {
+       "part": "신발",
+       "desc": "블랙 앵클부츠",
+       "color_hex": "",
+       "tip": "④카페"
+      },
+      {
+       "part": "액세서리",
+       "desc": "헤드폰",
+       "color_hex": "",
+       "tip": "④카페"
+      }
+     ],
+     "palette": [],
+     "formula": "두 개는 그대로, 신발·이너·소품만 바꾸기"
+    },
+    {
+     "name": "세트2 에크루 케이블 카디건 + 인디고 배럴 진",
+     "items": [
+      {
+       "part": "상의",
+       "desc": "에크루 케이블 롱 카디건",
+       "color_hex": "",
+       "tip": "고정"
+      },
+      {
+       "part": "하의",
+       "desc": "인디고 배럴 진",
+       "color_hex": "",
+       "tip": "고정"
+      },
+      {
+       "part": "액세서리",
+       "desc": "브라운 가죽 벨트",
+       "color_hex": "",
+       "tip": "⑤출근: 카디건 잠그고"
+      },
+      {
+       "part": "신발",
+       "desc": "브라운 롱부츠",
+       "color_hex": "",
+       "tip": "⑤출근"
+      },
+      {
+       "part": "상의",
+       "desc": "흰 티",
+       "color_hex": "",
+       "tip": "⑥산책"
+      },
+      {
+       "part": "신발",
+       "desc": "흰 스니커즈",
+       "color_hex": "",
+       "tip": "⑥산책"
+      },
+      {
+       "part": "가방",
+       "desc": "캔버스 토트",
+       "color_hex": "",
+       "tip": "⑥산책"
+      },
+      {
+       "part": "상의",
+       "desc": "네이비 스트라이프 티",
+       "color_hex": "",
+       "tip": "⑦주말"
+      },
+      {
+       "part": "신발",
+       "desc": "블랙 플랫",
+       "color_hex": "",
+       "tip": "⑦주말"
+      },
+      {
+       "part": "가방",
+       "desc": "미니 숄더백",
+       "color_hex": "",
+       "tip": "⑦주말"
+      },
+      {
+       "part": "상의",
+       "desc": "블랙 터틀넥",
+       "color_hex": "",
+       "tip": "⑧데이트"
+      },
+      {
+       "part": "액세서리",
+       "desc": "레드 울 머플러",
+       "color_hex": "",
+       "tip": "⑧데이트"
+      },
+      {
+       "part": "신발",
+       "desc": "블랙 청키 로퍼",
+       "color_hex": "",
+       "tip": "⑧데이트"
+      }
+     ],
+     "palette": [],
+     "formula": "두 개는 그대로, 신발·이너·소품만 바꾸기"
+    }
+   ],
+   "caption": "아이템 2개로 4번 바꿔 입혀봤는데, 제일 의외였던 건 ②번 후디 레이어드예요.\n\n토요일 낮 14℃ 나들이, 아이템 2개만 정하고 나머지만 바꿔 보세요.\n[세트 1] 블랙 숏 무스탕 + 그레이 체크 플리츠 스커트\n ① 데이트: 크림 터틀넥 + 블랙 롱부츠\n ② 주말: 그레이 후디 + 볼캡 + 흰 양말·스니커즈\n ③ 출근: 흰 셔츠 + 블랙 스타킹 + 레이스업 슈즈\n ④ 카페: 블랙 니트 + 블랙 앵클부츠 + 헤드폰\n[세트 2] 에크루 케이블 카디건 + 인디고 배럴 진\n ⑤ 출근: 카디건을 잠그고 가죽 벨트 + 브라운 롱부츠\n ⑥ 산책: 흰 티 + 흰 스니커즈 + 캔버스 토트\n ⑦ 주말: 스트라이프 티 + 블랙 플랫 + 미니 숄더백\n ⑧ 데이트: 블랙 터틀넥 + 레드 머플러 + 블랙 청키 로퍼\n\n4가지 코디 공식: 두 개는 그대로, 신발·이너·소품만 바꾸기\n저장해두고 옷장 앞에서 꺼내 보기 📌 매일 1분 코디는 @zzebi.st\n참고: 날씨 — 기상청 예보(아주경제·시대일보 10.30 보도)\n\n#무스탕코디 #체크스커트 #카디건코디 #배럴진 #주말코디 #데일리룩 #여자코디 #돌려입기 #가을코디 #zzebist",
+   "sources": [
+    "기상청 예보(아주경제·시대일보 10.30 보도)"
+   ],
+   "theme": "아이템 2개로 4가지 코디·주말 나들이",
+   "colors": "블랙+그레이 체크 / 에크루+인디고",
+   "tips": [
+    "②번 후디 레이어드가 제일 의외"
+   ],
+   "book_notes": "",
+   "time": "10:00",
+   "status": "게시됨",
+   "images": [
+    {
+     "drive_id": "1SS7GkmxOkyix_cFhVZeDdDRgUbYG3Ghi",
+     "name": "20261031_trend_c1.jpg",
+     "kind": "원본일러스트"
+    },
+    {
+     "drive_id": "1fWlr33zU-LQ4-Q3X77GVBR3vLU49OXgK",
+     "name": "20261031_trend_c2.jpg",
+     "kind": "원본일러스트"
+    }
+   ],
+   "media": [
+    "https://static.metricool.com/planner/202610/7607527-file-66165876036599119.mp4"
+   ],
+   "video": "20261031_C.mp4",
+   "video_comp": "tiktok 7607527-file-5881757120836350930.mp4 · youtube 7607527-file-11982758469180717760.mp4",
+   "instagram_url": "https://www.instagram.com/reel/DfI7r-sgXK2/"
+  },
+  {
+   "date": "2026-10-31",
+   "season": "가을",
+   "transition": false,
+   "metrics": {},
+   "series": "celeb",
+   "format": "셀럽스냅",
+   "gender": "여자",
+   "title": "셀럽 스냅 해부 #22 가죽재킷 핏 대결(붙게 vs 헐렁하게)",
+   "hook": "가죽재킷, 붙게? 헐렁하게?",
+   "hook_type": "양자택일형",
+   "situation": "데일리",
+   "weather": "",
+   "looks": [
+    {
+     "name": "딱 붙는 가죽재킷",
+     "items": [
+      {
+       "part": "아우터",
+       "desc": "크롭 기장 가죽재킷",
+       "color_hex": "",
+       "tip": "기장이 짧은 게 핵심"
+      },
+      {
+       "part": "하의",
+       "desc": "하이라이즈 스트레이트 청바지",
+       "color_hex": "",
+       "tip": "다리가 길어 보이게"
+      }
+     ],
+     "palette": [],
+     "formula": "크롭 가죽재킷 + 하이라이즈 스트레이트 진 (어깨 좁으면)"
+    },
+    {
+     "name": "헐렁한 가죽재킷",
+     "items": [
+      {
+       "part": "아우터",
+       "desc": "드롭숄더 오버사이즈 가죽재킷",
+       "color_hex": "",
+       "tip": "두 치수 크게"
+      },
+      {
+       "part": "하의",
+       "desc": "와이드 청바지",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "신발",
+       "desc": "포인티드 부츠",
+       "color_hex": "",
+       "tip": "와이드 진과 균형"
+      }
+     ],
+     "palette": [],
+     "formula": "오버사이즈 가죽재킷 + 와이드 진 + 뾰족 부츠 (어깨 넓으면)"
+    }
+   ],
+   "caption": "댓글에 1(딱 붙게) 아니면 2(헐렁하게). 어깨 넓으면 2, 좁으면 1.\n\n셀럽 스냅 해부 #22 | 핏 대결 편\n가죽재킷 하나를 두고 벨라 하디드는 몸에 붙게, 아멜리아 그레이는 두 치수 크게 입었다. 보그 코리아 10/29 기사가 이번 주 나란히 세운 두 스냅을 해부했다.\n재킷 기장, 청바지 핏, 신발 앞코까지 갈리는 공식이 다른데 결론은 어깨선 하나로 정리된다.\n※ 스냅을 바탕으로 AI로 재현한 이미지입니다.\n\n#가죽재킷 #레더자켓 #셀럽패션 #셀럽스냅해부 #가을코디 #청바지코디 #벨라하디드 #아멜리아그레이 #데일리룩 #leatherjacket #celebstyle #bellahadid #ameliagray #fallfit #streetstyle #zzebi",
+   "sources": [
+    "보그 코리아 2026-10-29"
+   ],
+   "celeb": "Bella Hadid vs Amelia Gray",
+   "ep": "22",
+   "book_notes": "셀럽 이름·닮은 이미지는 책에 그대로 쓰지 말고 스타일 공식만 활용 / 원본 없음(드라이브에서 원본 일러스트를 찾지 못함)",
+   "time": "12:30",
+   "status": "게시됨",
+   "images": [],
+   "media": [
+    "https://static.metricool.com/planner/202610/7607527-file-5884005009447623207.mp4"
+   ],
+   "video": "5884005009447623207.mp4",
+   "video_comp": "tiktok 7607527-file-13356291898416554620.mp4 · youtube 7607527-file-8836881465068180284.mp4",
+   "instagram_url": "https://www.instagram.com/reel/DfJMhabDSIk/"
+  },
+  {
+   "date": "2026-10-31",
+   "season": "가을",
+   "transition": false,
+   "metrics": {},
+   "series": "celeb",
+   "format": "셀럽스냅",
+   "gender": "여자",
+   "title": "셀럽 스냅 해부 #23 체크 코트 공항룩",
+   "hook": "흰 셔츠+청바지에 무지 코트 걸치지 마세요",
+   "hook_type": "13 경고형",
+   "situation": "공항·여행",
+   "weather": "",
+   "looks": [
+    {
+     "name": "체크 코트 공항룩",
+     "items": [
+      {
+       "part": "아우터",
+       "desc": "흑백 체크 크롭 코트",
+       "color_hex": "",
+       "tip": "엉덩이 위 짧은 기장으로"
+      },
+      {
+       "part": "상의",
+       "desc": "흰 버튼다운 셔츠",
+       "color_hex": "",
+       "tip": "단추 두 개 풀고 빼 입기"
+      },
+      {
+       "part": "하의",
+       "desc": "와이드 데님 팬츠",
+       "color_hex": "",
+       "tip": "밑단이 신발 위에 쌓이게"
+      },
+      {
+       "part": "신발",
+       "desc": "블랙 페니 로퍼",
+       "color_hex": "",
+       "tip": "광택 가죽으로 마무리"
+      }
+     ],
+     "palette": [],
+     "formula": "셔츠·청바지·로퍼는 그대로, 코트만 체크로"
+    }
+   ],
+   "caption": "셀럽 스냅 해부 #23 | Katie Holmes in New York 🇺🇸\n셔츠·청바지·로퍼는 그대로, 바뀐 건 딱 하나 — 체크 코트 공항룩, 포인트 4개만 기억하세요\n\n01 흑백 체크 크롭 코트 – 엉덩이 위 짧은 기장으로 (실착 · 브랜드 미상)\n02 흰 버튼다운 셔츠 – 단추 두 개 풀고 빼 입기 (실착 · 브랜드 미상)\n03 와이드 데님 팬츠 – 밑단이 신발 위에 쌓이게 (실착 · 브랜드 미상)\n04 블랙 페니 로퍼 – 광택 가죽으로 마무리 (실착 · 브랜드 미상)\n\n저장해두고 따라 입기 🔖\n※ 실제 착장을 바탕으로 AI로 재현한 이미지예요\n참고: Who What Wear 10/28 (뉴욕 JFK 공항 스냅)\n\n#셀럽패션 #공항패션 #체크코트 #하운드투스 #크롭자켓 #셔츠코디 #와이드데님 #로퍼코디 #가을코디 #데일리룩 #케이티홈즈 #streetstyle #zzebi",
+   "sources": [
+    "Who What Wear 2026-10-28 (JFK airport)"
+   ],
+   "celeb": "Katie Holmes",
+   "ep": "23",
+   "book_notes": "셀럽 이름·닮은 이미지는 책에 그대로 쓰지 말고 스타일 공식만 활용",
+   "time": "18:00",
+   "status": "게시됨",
+   "images": [
+    {
+     "drive_id": "1gQ1zkoP1qdHYtbb7RjGMwZToK0CE74uN",
+     "name": "20261031_celeb_23.jpg",
+     "kind": "원본일러스트"
+    }
+   ],
+   "media": [
+    "https://static.metricool.com/planner/202610/7607527-file-5705244097269618305.mp4"
+   ],
+   "video": "5705244097269618305.mp4",
+   "video_comp": "tiktok 7607527-file-13356291898416554620.mp4 · youtube 7607527-file-8836881465068180284.mp4",
+   "instagram_url": "https://www.instagram.com/reel/DfJyveajz4q/"
+  }
+ ]
+}
