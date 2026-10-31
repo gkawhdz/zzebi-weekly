@@ -1,0 +1,190 @@
+{
+ "kicker": "셀럽 스냅 해부 몰아보기",
+ "title": [
+  "딱 한 끗 차이",
+  "셀럽 4룩 해부"
+ ],
+ "sub": "제일 입고 싶은 룩, 끝에서 투표 ↓",
+ "segments": [
+  {
+   "file": "/home/claude/work/comp/20261030_01.mp4",
+   "label": "ZOË KRAVITZ",
+   "sub": "버건디 원컬러 코트룩",
+   "thumb_t": 1.0,
+   "chapter_en": "01 · Zoë Kravitz — burgundy one-color coat look",
+   "en": [
+    [
+     0,
+     2.4,
+     "The one-color coat formula, explained in 5 seconds"
+    ],
+    [
+     2.4,
+     4.7,
+     "01 Burgundy knit scarf — same color as the knit and coat"
+    ],
+    [
+     4.699999999999999,
+     7.0,
+     "02 Burgundy long coat — unbuttoned, worn long and loose"
+    ],
+    [
+     7.0,
+     9.3,
+     "03 Black briefcase — carried by the handle for a neat line"
+    ],
+    [
+     9.299999999999999,
+     11.6,
+     "04 Samba sneakers — sneakers with a coat to keep it relaxed"
+    ],
+    [
+     11.6,
+     14.6,
+     "Today's 4 key points — save it & copy the look"
+    ]
+   ]
+  },
+  {
+   "file": "/home/claude/work/comp/20261030_02.mp4",
+   "label": "ELIZABETH DEBICKI",
+   "sub": "레오파드 니트 × 레더 팬츠",
+   "thumb_t": 1.0,
+   "chapter_en": "02 · Elizabeth Debicki — leopard knit & leather pants",
+   "en": [
+    [
+     0,
+     2.4,
+     "Wear leopard as a short-sleeve knit, not a coat"
+    ],
+    [
+     2.4,
+     4.7,
+     "01 Leopard short-sleeve knit — tucked in to show the waist"
+    ],
+    [
+     4.699999999999999,
+     7.0,
+     "02 Leather trousers — high-waisted for a long line"
+    ],
+    [
+     7.0,
+     9.3,
+     "03 Black handbag — keep the bag simple in black"
+    ],
+    [
+     9.299999999999999,
+     11.6,
+     "04 Black pointed pumps — pointed toes lengthen the legs"
+    ],
+    [
+     11.6,
+     14.6,
+     "Today's 4 key points — save it & copy the look"
+    ]
+   ]
+  },
+  {
+   "file": "/home/claude/work/comp/20261031_22c.mp4",
+   "label": "BELLA HADID vs AMELIA GRAY",
+   "sub": "가죽재킷 핏 대결",
+   "thumb_t": 1.0,
+   "recap_t": 16.5,
+   "chapter_en": "03 · Bella Hadid vs Amelia Gray — leather jacket fit battle",
+   "en": [
+    [
+     0,
+     1.7,
+     "Leather jacket: fitted or oversized?"
+    ],
+    [
+     1.7,
+     3.2,
+     "Both celebs wore one — and split on the answer"
+    ],
+    [
+     3.2,
+     5.6,
+     "But both are right"
+    ],
+    [
+     5.6,
+     8.2,
+     "Fitted: the cropped length is key"
+    ],
+    [
+     8.2,
+     10.6,
+     "High-rise straight jeans make legs look longer"
+    ],
+    [
+     10.6,
+     13.2,
+     "Oversized: dropped shoulders"
+    ],
+    [
+     13.2,
+     15.6,
+     "Pointed boots balance wide jeans"
+    ],
+    [
+     15.6,
+     18.2,
+     "Broad shoulders? Go oversized. Narrow? Go fitted"
+    ]
+   ],
+   "en_y": 980
+  },
+  {
+   "file": "/home/claude/work/comp/20261031_23.mp4",
+   "label": "KATIE HOLMES",
+   "sub": "체크 코트 공항룩",
+   "thumb_t": 3.0,
+   "chapter_en": "04 · Katie Holmes — check coat airport look",
+   "en": [
+    [
+     0,
+     2.4,
+     "White shirt + jeans? Don't throw on a plain coat"
+    ],
+    [
+     2.4,
+     4.7,
+     "01 Black-and-white check cropped coat — hip-length"
+    ],
+    [
+     4.699999999999999,
+     7.0,
+     "02 White button-down — two buttons open, untucked"
+    ],
+    [
+     7.0,
+     9.3,
+     "03 Wide-leg jeans — let the hem stack on your shoes"
+    ],
+    [
+     9.299999999999999,
+     11.6,
+     "04 Black penny loafers — finish with polished leather"
+    ],
+    [
+     11.6,
+     14.6,
+     "Today's 4 key points — save it & copy the look"
+    ]
+   ]
+  }
+ ],
+ "recap_t": 13.5,
+ "recap_s": 3.0,
+ "vote": true,
+ "vote_q": "제일 따라 입고 싶은 룩은?",
+ "seed": 20261031,
+ "min_total": 62,
+ "intro_en": "Just one small detail — 4 celeb looks broken down",
+ "vote_en": "Which look would you copy? Comment 1, 2, 3 or 4",
+ "outro_en": "Save & follow @zzebi_st for daily celeb street style",
+ "brand_line": "zzebi.st · 몰아보기",
+ "ai_label": "AI 재현 이미지",
+ "outro_handle": "@zzebi_st"
+}

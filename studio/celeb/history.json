@@ -2,6 +2,49 @@
   "rule": "하루 여자, 하루 남자 번갈아. 마지막 날짜의 gender 반대로.",
   "posts": [
     {
+      "date": "2026-10-31",
+      "ep": "23",
+      "gender": "여자",
+      "celeb": "Katie Holmes",
+      "look": "체크 코트 공항룩",
+      "slot": "18:00",
+      "hook": "흰 셔츠+청바지에\n무지 코트 걸치지 마세요",
+      "hook_type": "13 경고형",
+      "music": "오리지널 배경음(인스타 라이브러리 곡 연결 실패: Authorization Error), seed 2026103123",
+      "channels": [
+        "instagram",
+        "story",
+        "tiktok_comp",
+        "youtube_comp"
+      ],
+      "design_version": "v4.4",
+      "story_format": "돋보기 확대 + 대체 팁 카드(릴스에 없는 한 가지)",
+      "image_file": "20261031_23.jpg.jpeg",
+      "image_id": "1Z2vBwp8B4Q8rBSLeAQ_o1fqwfSguP6Yy",
+      "image_off_file": "20261031_23b.jpg.jpeg",
+      "image_off_id": "15Fnzi8cQ4CCTWWYlDVdGTiRRiizBTa2B",
+      "source": "Who What Wear 2026-10-28 (JFK airport)",
+      "status": "예약됨"
+    },
+    {
+      "date": "2026-10-31",
+      "ep": "22",
+      "gender": "여성",
+      "celeb": "BELLA HADID vs AMELIA GRAY",
+      "look": "가죽재킷 핏 대결",
+      "slot": "12:30",
+      "hook": "가죽재킷, 붙게? 헐렁하게?",
+      "hook_type": "양자택일형",
+      "channels": [
+        "instagram",
+        "tiktok_comp",
+        "youtube_comp"
+      ],
+      "design_version": "v5-split",
+      "status": "예약됨",
+      "by": "hq"
+    },
+    {
       "date": "2026-10-30",
       "ep": "20",
       "gender": "여자",
@@ -13,7 +56,8 @@
       "music": "오리지널 배경음(인스타 라이브러리 곡 연결 실패: Authorization Error), seed 2026103020",
       "channels": [
         "instagram",
-        "tiktok_comp_pending"
+        "tiktok_comp",
+        "youtube_comp"
       ],
       "design_version": "v4.3",
       "image_file": "20261030_20.jpg.jpeg",
@@ -33,7 +77,8 @@
       "music": "오리지널 배경음(인스타 라이브러리 곡 연결 실패: Authorization Error), seed 2026103021",
       "channels": [
         "instagram",
-        "tiktok_comp_pending"
+        "tiktok_comp",
+        "youtube_comp"
       ],
       "design_version": "v4.3",
       "image_file": "20261030_21.jpg.jpeg",

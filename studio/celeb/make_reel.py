@@ -1,4 +1,4 @@
-"""셀럽 스냅 해부 릴스 (v4.3 — 첫 화면 후킹 문구(hook·hook_cta) + 0초부터 글자 표시, v4.2 — 큰 글씨 요약 리스트 + 카드 보조글씨 30px, 브랜드 틸 #00A8A8) — 9:16 화면을 꽉 채우는 네이티브 레이아웃
+"""셀럽 스냅 해부 릴스 (v4.4 — 첫 화면 ON/OFF 분할 슬라이더(split) + 커버에서 셀럽 이름 제거(훅 규칙 10/30), v4.3 — 첫 화면 후킹 문구(hook·hook_cta) + 0초부터 글자 표시, v4.2 — 큰 글씨 요약 리스트 + 카드 보조글씨 30px, 브랜드 틸 #00A8A8) — 9:16 화면을 꽉 채우는 네이티브 레이아웃
 사용: python3 make_reel.py look.json out_silent.mp4 [cover_out.jpg]
 look.json: episode, celeb, city, date, title, image, accent(옵션 HEX), source(옵션),
            items[4]: cat, brand, name, pt, find, pt_xy[x,y](원본 픽셀), crop[cx,cy,size]
@@ -27,20 +27,25 @@ IW, IH = src.size
 BASE = H / IH * 1.0
 stage = src.resize((int(IW * BASE * 1.35), int(IH * BASE * 1.35)), Image.LANCZOS)
 SS = BASE * 1.35  # 원본 → stage 배율
+SPLIT = L.get("split")  # v4.4: {"image_off": 비교용(문제) 이미지, "off_label": "무지 코트", "on_label": "체크 코트"}
+if SPLIT:
+    src_off = Image.open(SPLIT["image_off"]).convert("RGB").resize((IW, IH), Image.LANCZOS)
+    stage_off = src_off.resize(stage.size, Image.LANCZOS)
 
 def ease(t): t = max(0, min(1, t)); return 1 - (1 - t) ** 3
 def eio(t): t = max(0, min(1, t)); return 4 * t ** 3 if t < .5 else 1 - (-2 * t + 2) ** 3 / 2
 def lerp(a, b, t): return a + (b - a) * t
 
-def view(cx, cy, z):
+def view(cx, cy, z, stg=None):
     """원본 좌표 (cx,cy)를 화면 (540, 760)에 두고 배율 z(1=화면높이 맞춤)로 보여줌"""
+    stg = stg or stage
     s = BASE * z
     vw, vh = W / s, H / s
     x0 = cx - 540 / s; y0 = cy - 760 / s
     x0 = max(0, min(IW - vw, x0)) if vw < IW else (IW - vw) / 2
     y0 = max(0, min(IH - vh, y0)) if vh < IH else (IH - vh) / 2
     box = tuple(int(v * SS) for v in (x0, y0, x0 + vw, y0 + vh))
-    return stage.crop(box).resize((W, H), Image.BILINEAR), (x0, y0, s)
+    return stg.crop(box).resize((W, H), Image.BILINEAR), (x0, y0, s)
 
 def grad(h, top=True, a0=170):
     g = Image.new("L", (1, h))
@@ -62,7 +67,9 @@ def header(img, a=1.0):
     txt(d, (60, 118), f"셀럽 스냅 해부  #{L['episode']}", F(34, "Bold"), c(WHITE))
     d.line([(60, 168), (140, 168)], fill=c(BRAND), width=5)
     txt(d, (60, 190), L["celeb"], F(58), c(WHITE))
-    txt(d, (60, 268), f"{L['city']} · {L['date']}  |  {L['title']}", F(30, "Medium"), c((235, 235, 235)))
+    sub = f"{L['city']} · {L['date']}  |  {L['title']}"; fs_ = F(30, "Bold")
+    for ox, oy in ((2, 2), (-1, 1), (1, -1), (2, 0)): txt(d, (60 + ox, 268 + oy), sub, fs_, (0, 0, 0, int(200 * a)))  # v4.4: 무늬 위에서도 읽히게 그림자
+    txt(d, (60, 268), sub, fs_, c(WHITE))
 
 crops = []
 for it in L["items"]:
@@ -137,18 +144,38 @@ for kind, dur in segs:
         if kind == "cover":
             z = lerp(1.06, 1.0, ease(t))
             fr, _ = view(full_c[0], full_c[1], z)
+            tsec = k / FPS
+            if SPLIT:  # v4.4: 같은 룩 ON/OFF 비교 슬라이더 — 0초부터 분할, 1초 안에 경계선이 움직이고 끝에 ON으로 닦아내며 본편 시작
+                fo, _ = view(full_c[0], full_c[1], z, stage_off)
+                wipe = ease((tsec - (dur - 0.55)) / 0.5)
+                dx = int((540 + 70 * math.sin(2 * math.pi * min(tsec, 1.6) / 1.6)) * (1 - wipe))
+                if dx > 0: fr.paste(fo.crop((0, 0, dx, H)), (0, 0))
             fr = shade(fr, 200, 210, 640, 760)
             d = ImageDraw.Draw(fr)
+            if SPLIT and dx > 0:
+                ca = int(255 * (1 - wipe))
+                d.line([(dx, 0), (dx, H)], fill=WHITE + (ca,), width=6)
+                d.ellipse([dx - 34, 1010 - 34, dx + 34, 1010 + 34], fill=BRAND + (ca,), outline=WHITE + (ca,), width=4)
+                txt(d, (dx, 1010), "◀▶", F(22, "Bold"), WHITE + (ca,), "mm")
+                fl = F(42)
+                for lab, x_, col in ((SPLIT["off_label"], 60, (40, 40, 44)), (SPLIT["on_label"], 600, BRAND)):
+                    w_ = d.textlength(lab, font=fl)
+                    if x_ == 60 and 60 + w_ + 48 > dx - 50: continue  # 경계선에 가리면 숨김
+                    if x_ == 600 and dx > 560: x_ = max(x_, dx + 40)
+                    if x_ + w_ + 48 > 930: continue
+                    d.rounded_rectangle([x_, 1120, x_ + w_ + 48, 1196], 38, fill=col + (ca,))
+                    txt(d, (x_ + 24, 1158), lab, fl, WHITE + (ca,), "lm")
             # v4.3: 0초 첫 프레임부터 글자가 다 보이게(페이드인 없음) — 스크롤 멈추게 하는 건 첫 화면
             txt(d, (60, 140), f"셀럽 스냅 해부  #{L['episode']}", F(40, "Bold"), WHITE + (255,))
             d.line([(60, 200), (180, 200)], fill=BRAND, width=6)
-            fs_c = 88
-            while d.textlength(L["celeb"], font=F(fs_c)) > 820 and fs_c > 60: fs_c -= 2  # 이름이 길면 줄여서 오른쪽 140px 금지구역 보호
-            txt(d, (60, 232 + (88 - fs_c) // 2), L["celeb"], F(fs_c), WHITE + (255,))
+            if not L.get("cover_no_celeb"):
+                fs_c = 88
+                while d.textlength(L["celeb"], font=F(fs_c)) > 820 and fs_c > 60: fs_c -= 2  # 이름이 길면 줄여서 오른쪽 140px 금지구역 보호
+                txt(d, (60, 232 + (88 - fs_c) // 2), L["celeb"], F(fs_c), WHITE + (255,))
             if HOOK:
                 hl, hf = wrap_hook(d, HOOK, 790)
                 lh = int(hf.size * 1.24); bw = max(d.textlength(l_, font=hf) for l_ in hl)
-                hy0 = 362; hy1 = hy0 + lh * len(hl) + 70
+                hy0 = 250 if L.get("cover_no_celeb") else 362; hy1 = hy0 + lh * len(hl) + 70
                 fr = fr.convert("RGBA"); ov = Image.new("RGBA", (W, H), (0, 0, 0, 0)); od = ImageDraw.Draw(ov)
                 od.rounded_rectangle([40, hy0 - 18, 40 + bw + 64, hy1], 22, fill=(12, 12, 14, 175))  # 사진 위에서도 잘 읽히게 어두운 판
                 od.rectangle([40, hy0 - 18, 50, hy1], fill=BRAND + (255,))  # 브랜드 틸 세로 막대
@@ -156,7 +183,7 @@ for kind, dur in segs:
                 hy = hy0
                 for ln in hl:
                     txt(d, (70, hy), ln, hf, WHITE + (255,)); hy += lh
-                txt(d, (70, hy + 4), L["title"], F(36, "Bold"), (190, 228, 226, 255))
+                txt(d, (70, hy + 4), L.get("cover_sub", L["title"]), F(36, "Bold"), (190, 228, 226, 255))
             else:
                 txt(d, (60, 352), L["title"], F(52, "Bold"), (240, 236, 228, 255))
             b = 1.0 if HOOK else ease(t * 2.5 - .8)
@@ -226,7 +253,7 @@ for kind, dur in segs:
                 dot(fr, sx, sy, da, i + 1)
             if t > 0.9: prev = (tx, ty, 1.32)
         fr.convert("RGB").save(os.path.join(FR, f"{n:04d}.jpg"), quality=92)
-        if kind == "cover" and k == N - 1 and COVER_OUT: fr.convert("RGB").save(COVER_OUT, quality=94)
+        if kind == "cover" and COVER_OUT and k == (min(N - 1, int(L.get("cover_t", 99) * FPS)) if SPLIT else N - 1): fr.convert("RGB").save(COVER_OUT, quality=94)
         n += 1
 subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-framerate", str(FPS), "-i", os.path.join(FR, "%04d.jpg"),
                 "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", "-pix_fmt", "yuv420p", "-movflags", "+faststart", OUT], check=True)

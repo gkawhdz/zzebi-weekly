@@ -123,11 +123,11 @@ def card_vote(spec, thumbs, out):
     im.save(out, quality=95)
 
 
-def card_outro(out, sub="매일 1분 셀럽룩 · 날씨 코디"):
+def card_outro(out, sub="매일 1분 셀럽룩 · 날씨 코디", handle="@zzebi.st"):
     im = Image.new("RGB", (W, H), TEAL); d = ImageDraw.Draw(im)
     text_c(d, 760, "저장 & 팔로우", font(130), "white")
     text_c(d, 940, sub, font(58, False), "white")
-    text_c(d, 1060, "@zzebi.st", font(76), "white")
+    text_c(d, 1060, handle, font(76), "white")
     im.save(out, quality=95)
 
 
@@ -176,13 +176,13 @@ def main(spec_path, out, en=False):
         parts.append(("vid", s["file"], dur(s["file"])))
     if spec.get("recap_t") is not None:
         for i, s in enumerate(segs):
-            r = frame(s["file"], spec["recap_t"], f"{tmp}/rc{i}.jpg").resize((W, H)); r.save(f"{tmp}/rc{i}.jpg")
+            r = frame(s["file"], s.get("recap_t", spec["recap_t"]), f"{tmp}/rc{i}.jpg").resize((W, H)); r.save(f"{tmp}/rc{i}.jpg")  # 10/31: 영상별 recap_t 지정 가능
             parts.append(("img", f"{tmp}/rc{i}.jpg", spec.get("recap_s", 3.0)))
     if spec.get("vote"):
         card_vote(spec, thumbs, f"{tmp}/vote.jpg"); parts.append(("img", f"{tmp}/vote.jpg", 4.0))
     total = sum(p[2] for p in parts) + 3.0
     outro_s = max(3.0, spec.get("min_total", 62) - (total - 3.0))
-    card_outro(f"{tmp}/outro.jpg", spec.get("outro_sub", "매일 1분 셀럽룩 · 날씨 코디")); parts.append(("img", f"{tmp}/outro.jpg", outro_s))
+    card_outro(f"{tmp}/outro.jpg", spec.get("outro_sub", "매일 1분 셀럽룩 · 날씨 코디"), spec.get("outro_handle", "@zzebi.st")); parts.append(("img", f"{tmp}/outro.jpg", outro_s))
     total = sum(p[2] for p in parts)
 
     # 영어 자막 시간표 만들기 (--en)
@@ -199,7 +199,7 @@ def main(spec_path, out, en=False):
             elif k == "vid":
                 sg = segs[seg_i]; seg_i += 1
                 for a, b, txt in sg.get("en", []):
-                    subs.append((t + a, t + min(b, s), txt))
+                    subs.append((t + a, t + min(b, s), txt, sg.get("en_y")))  # 10/31: 영상 속 글자가 자막 띠 자리에 있으면 en_y 로 자막 위치 변경
             elif name.startswith("rc") and spec.get("recap_en"):
                 if not recap_done:
                     n_rc = sum(1 for q in parts if os.path.basename(q[1]).startswith("rc"))
@@ -221,11 +221,18 @@ def main(spec_path, out, en=False):
             fl.append(f"[{i}:v]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},fps={FPS},setsar=1,format=yuv420p[v{i}]")
     fl.append("".join(f"[v{i}]" for i in range(len(parts))) + f"concat=n={len(parts)}:v=1:a=0[v0s]")
     last = "v0s"
-    for j, (a, b, txt) in enumerate(subs):
+    for j, sb in enumerate(subs):
+        a, b, txt = sb[:3]; sy = sb[3] if len(sb) > 3 and sb[3] is not None else SUB_Y
         png = f"{tmp}/sub{j}.png"; sub_png(txt, png)
         idx = len(parts) + j; inputs += ["-i", png]
         nxt = f"vs{j}"
-        fl.append(f"[{last}][{idx}:v]overlay=0:{SUB_Y}:enable='between(t,{a:.2f},{b:.2f})'[{nxt}]"); last = nxt
+        fl.append(f"[{last}][{idx}:v]overlay=0:{sy}:enable='between(t,{a:.2f},{b:.2f})'[{nxt}]"); last = nxt
+    if spec.get("ai_label"):  # 10/31: 화면에 작은 'AI 재현 이미지' 상시 표기(인트로·엔딩 카드 제외)
+        lab = Image.new("RGBA", (300, 56), (0, 0, 0, 0)); ld = ImageDraw.Draw(lab)
+        ld.rounded_rectangle([0, 0, 299, 55], 28, fill=(0, 0, 0, 140)); ld.text((150, 28), spec["ai_label"], font=font(30, False), fill="white", anchor="mm")
+        lab.save(f"{tmp}/ailab.png"); inputs += ["-i", f"{tmp}/ailab.png"]
+        a0 = parts[0][2]; a1 = total - outro_s
+        fl.append(f"[{last}][{len(parts) + len(subs)}:v]overlay=40:40:enable='between(t,{a0:.2f},{a1:.2f})'[vai]"); last = "vai"
     fl.append(f"[{last}]null[v]")
     silent = f"{tmp}/silent.mp4"
     subprocess.run(["ffmpeg", "-y", *inputs, "-filter_complex", ";".join(fl), "-map", "[v]", "-c:v", "libx264",
