@@ -1,0 +1,119 @@
+{
+ "kicker": "오늘의 패션 몰아보기",
+ "title": [
+  "패션지 공식,",
+  "한 번에 요약"
+ ],
+ "sub": "올드머니 3규칙 · 두 색 6벌 · 집콕 2룩 →",
+ "segments": [
+  {
+   "file": "20261101_A_comp.mp4",
+   "label": "올드머니 3규칙",
+   "sub": "브랜드보다 어깨선·기장·가방",
+   "thumb_t": 1.0,
+   "chapter_en": "01 · Old money, 3 rules",
+   "en": [
+    [
+     0,
+     3.4,
+     "Pricey brands? Check the shoulder line first"
+    ],
+    [
+     3.4,
+     11.0,
+     "01 Keep colors calm: navy and grey in one tone"
+    ],
+    [
+     11.0,
+     18.6,
+     "02 Skip logos, show texture: cable knit, flannel, suede"
+    ],
+    [
+     18.6,
+     26.2,
+     "03 Easiest rule: just one accessory, a well-shaped bag"
+    ],
+    [
+     26.2,
+     28.8,
+     "Answer: shoulders, hem, bag. Sources: Harper's Bazaar, W, Vogue Korea"
+    ]
+   ]
+  },
+  {
+   "file": "20261101_B.mp4",
+   "label": "올드머니 두 색 6벌",
+   "sub": "브라운·크림 / 네이비·그레이",
+   "thumb_t": 1.0,
+   "chapter_en": "02 · Old money in two colors",
+   "en": [
+    [
+     0,
+     3.2,
+     "Know two colors and you have the old-money look"
+    ],
+    [
+     3.2,
+     15.4,
+     "Brown & cream: double blazer, suede skirt, cream cropped jacket"
+    ],
+    [
+     15.4,
+     27.6,
+     "Navy & grey: navy blazer, pleated midi skirt, quilted cropped jacket"
+    ],
+    [
+     27.6,
+     32.2,
+     "Formula: one dark color, one light color, gold only on small earrings"
+    ],
+    [
+     32.2,
+     34.8,
+     "Easiest is No. 3: cropped jacket + basic trousers"
+    ]
+   ]
+  },
+  {
+   "file": "20261101_C.mp4",
+   "label": "비 오는 날 집콕 2룩",
+   "sub": "핵심은 닦이는 신발",
+   "thumb_t": 1.0,
+   "chapter_en": "03 · Rainy Sunday at home",
+   "en": [
+    [
+     0,
+     3.2,
+     "From under the blanket to the corner store, the key is your shoes"
+    ],
+    [
+     3.2,
+     12.8,
+     "Look 1: oatmeal rib-knit set with dusty pink bed socks"
+    ],
+    [
+     12.8,
+     22.4,
+     "Look 2: sage fleece zip-up, charcoal joggers, black rubber clogs"
+    ],
+    [
+     22.4,
+     27.0,
+     "Match top and bottom, one color on socks, wipeable shoes for rain"
+    ],
+    [
+     27.0,
+     29.6,
+     "Key shoe: wipe-clean rubber clogs"
+    ]
+   ]
+  }
+ ],
+ "seed": 20261104,
+ "min_total": 62,
+ "outro_sub": "매일 패션 · 날씨 코디",
+ "brand_line": "@zzebi.st · 몰아보기",
+ "intro_en": "Fashion-magazine style rules, all in one",
+ "outro_en": "Save & follow @zzebi_st for daily style tips",
+ "outro_handle": "@zzebi_st"
+}
