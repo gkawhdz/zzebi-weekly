@@ -1,0 +1,838 @@
+{
+ "date": "2026-11-01",
+ "posts": [
+  {
+   "date": "2026-11-01",
+   "season": "가을",
+   "transition": true,
+   "metrics": {},
+   "status": "게시됨",
+   "series": "trend",
+   "format": "정보형",
+   "gender": "공용",
+   "title": "올드머니 PART 1 · 로고 없이 있어 보이는 3규칙",
+   "hook": "비싼 브랜드요? 어깨선이 먼저예요",
+   "hook_type": "05 상식 파괴형",
+   "situation": "출근·일상",
+   "weather": "",
+   "theme": "올드머니 PART 1·로고 없이 있어 보이는 3규칙(사장님 지정)",
+   "looks": [
+    {
+     "name": "네이비+차콜",
+     "items": [
+      {
+       "part": "아우터",
+       "desc": "차콜 테일러드 울 블레이저",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "상의",
+       "desc": "네이비 크루넥 니트",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "하의",
+       "desc": "차콜 와이드 울 슬랙스",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "신발",
+       "desc": "블랙 페니 로퍼",
+       "color_hex": "",
+       "tip": ""
+      }
+     ],
+     "palette": [],
+     "formula": "색은 차분하게 통일(네이비·그레이·블랙·브라운 안에서)"
+    },
+    {
+     "name": "크림+그레이+브라운",
+     "items": [
+      {
+       "part": "상의",
+       "desc": "크림 케이블 니트",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "하의",
+       "desc": "그레이 플란넬 플리츠 팬츠",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "신발",
+       "desc": "브라운 스웨이드 로퍼",
+       "color_hex": "",
+       "tip": ""
+      }
+     ],
+     "palette": [],
+     "formula": "로고 대신 소재 — 케이블 니트·플란넬·스웨이드처럼 질감이 보이게"
+    },
+    {
+     "name": "블랙+버건디",
+     "items": [
+      {
+       "part": "상의",
+       "desc": "블랙 터틀넥",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "하의",
+       "desc": "블랙 펜슬 스커트",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "가방",
+       "desc": "버건디 사각 탑핸들 백",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "신발",
+       "desc": "블랙 슬링백 펌프스",
+       "color_hex": "",
+       "tip": ""
+      }
+     ],
+     "palette": [],
+     "formula": "액세서리는 하나만 — 브랜드보다 가방 형태·재킷 어깨선·바지 기장"
+    }
+   ],
+   "caption": "[올드머니 PART 1] 어깨선 다음으로 꼭 보는 곳 두 군데, 영상 끝까지 보면 나와요.\n\n올가을 패션 매거진이 꼽은 '있어 보이는' 룩의 공통점 3가지\n01 색은 차분하게 통일 — 네이비·그레이·블랙·브라운 안에서\n02 로고 대신 소재 — 케이블 니트, 플란넬, 스웨이드처럼 질감이 보이게\n03 액세서리는 하나만 — 브랜드보다 가방 형태, 재킷 어깨선, 바지 기장\n\n오전 9시 PART 2에서 이 규칙 그대로 입은 '두 색 코디 6벌'이 올라가요.\n저장해두고 쇼핑 전에 꺼내 보세요. 매일 1분 코디는 팔로우 @zzebi.st\n\n참고: 하퍼스 바자 코리아(2026.10.18 · 2026.02.05), W 코리아(2026.10.15), 보그 코리아(2026.02.13)\nAI로 그린 일러스트예요.\n\n#올드머니룩 #올드머니 #조용한럭셔리 #가을코디 #출근룩 #데일리룩 #코디추천 #패션정보 #미니멀룩 #zzebist",
+   "sources": [
+    "하퍼스 바자 코리아(2026.10.18 · 2026.02.05)",
+    "W 코리아(2026.10.15)",
+    "보그 코리아(2026.02.13)"
+   ],
+   "colors": "네이비+차콜 / 크림+그레이+브라운 / 블랙+버건디",
+   "tips": [
+    "색은 차분하게 통일",
+    "로고 대신 소재",
+    "액세서리는 하나만"
+   ],
+   "book_notes": "",
+   "time": "07:30",
+   "images": [
+    {
+     "drive_id": "1c6QfRps_JIq0Ky0zvBhx9eEmeDRE-lmV",
+     "name": "20261101_trend_a1.jpg",
+     "kind": "원본일러스트"
+    },
+    {
+     "drive_id": "1_1-lh810WglfsgsvKTauMFZgjD2wtZFN",
+     "name": "20261101_trend_a2.jpg",
+     "kind": "원본일러스트"
+    },
+    {
+     "drive_id": "1yoXV9zr9JldCcqvoMYT00pnDRyKt4lE4",
+     "name": "20261101_trend_a3.jpg",
+     "kind": "원본일러스트"
+    }
+   ],
+   "media": [
+    "https://static.metricool.com/planner/202610/7607527-file-13723316228559869664.mp4"
+   ],
+   "video": "7607527-file-13723316228559869664.mp4",
+   "video_comp": "tiktok 7607527-file-16895387017759344255.mp4 · youtube 7607527-file-16878630045796218824.mp4",
+   "instagram_url": "https://www.instagram.com/reel/DfLPA_nEd8L/"
+  },
+  {
+   "date": "2026-11-01",
+   "season": "가을",
+   "transition": true,
+   "metrics": {},
+   "status": "게시됨",
+   "series": "trend",
+   "format": "컬러조합",
+   "gender": "여자",
+   "title": "올드머니 PART 2 · 두 색 코디 6벌(브라운&크림 / 네이비&그레이)",
+   "hook": "두 색만 알면 올드머니룩",
+   "hook_type": "12 필수 개념 강조형",
+   "situation": "출근·데이트·주말",
+   "weather": "",
+   "theme": "올드머니 PART 2·두 색 플랫레이(사장님 지정)",
+   "looks": [
+    {
+     "name": "초콜릿 브라운 & 크림",
+     "items": [
+      {
+       "part": "아우터",
+       "desc": "브라운 더블 블레이저",
+       "color_hex": "",
+       "tip": "①출근"
+      },
+      {
+       "part": "상의",
+       "desc": "크림 실크 블라우스",
+       "color_hex": "",
+       "tip": "①출근"
+      },
+      {
+       "part": "하의",
+       "desc": "브라운 와이드 울 팬츠",
+       "color_hex": "",
+       "tip": "①출근"
+      },
+      {
+       "part": "상의",
+       "desc": "크림 케이블 카디건",
+       "color_hex": "",
+       "tip": "②데이트"
+      },
+      {
+       "part": "하의",
+       "desc": "브라운 스웨이드 A라인 미디스커트",
+       "color_hex": "",
+       "tip": "②데이트"
+      },
+      {
+       "part": "신발",
+       "desc": "크림 니하이 부츠",
+       "color_hex": "",
+       "tip": "②데이트"
+      },
+      {
+       "part": "아우터",
+       "desc": "크림 부클 크롭 재킷",
+       "color_hex": "",
+       "tip": "③주말(제일 쉬움)"
+      },
+      {
+       "part": "상의",
+       "desc": "브라운 터틀넥",
+       "color_hex": "",
+       "tip": "③주말"
+      },
+      {
+       "part": "하의",
+       "desc": "크림 스트레이트 팬츠",
+       "color_hex": "",
+       "tip": "③주말"
+      }
+     ],
+     "palette": [],
+     "formula": "진한 색은 아우터나 하의 한 곳에, 밝은 색은 얼굴 가까이"
+    },
+    {
+     "name": "딥 네이비 & 헤더 그레이",
+     "items": [
+      {
+       "part": "아우터",
+       "desc": "네이비 블레이저",
+       "color_hex": "",
+       "tip": "①출근"
+      },
+      {
+       "part": "상의",
+       "desc": "그레이 크루넥 니트",
+       "color_hex": "",
+       "tip": "①출근"
+      },
+      {
+       "part": "하의",
+       "desc": "그레이 플란넬 와이드 팬츠",
+       "color_hex": "",
+       "tip": "①출근"
+      },
+      {
+       "part": "상의",
+       "desc": "그레이 캐시미어 카디건",
+       "color_hex": "",
+       "tip": "②데이트"
+      },
+      {
+       "part": "하의",
+       "desc": "네이비 플리츠 미디스커트",
+       "color_hex": "",
+       "tip": "②데이트"
+      },
+      {
+       "part": "신발",
+       "desc": "네이비 니하이 부츠",
+       "color_hex": "",
+       "tip": "②데이트"
+      },
+      {
+       "part": "아우터",
+       "desc": "네이비 퀼팅 크롭 재킷",
+       "color_hex": "",
+       "tip": "③주말(제일 쉬움)"
+      },
+      {
+       "part": "상의",
+       "desc": "그레이 옥스퍼드 셔츠",
+       "color_hex": "",
+       "tip": "③주말"
+      },
+      {
+       "part": "하의",
+       "desc": "생지 스트레이트 데님",
+       "color_hex": "",
+       "tip": "③주말"
+      }
+     ],
+     "palette": [],
+     "formula": "숏 재킷 + 기본 바지에 이너만 반대 색"
+    }
+   ],
+   "caption": "[올드머니 PART 2] ③번이 제일 쉬운 이유는 '바지'에 있어요.\n\n1편 3규칙(차분한 색 · 로고 대신 소재 · 액세서리 하나)을 두 색으로 바로 입어봤어요.\n① 초콜릿 브라운 & 크림 — 더블 블레이저 출근 / 스웨이드 스커트+크림 롱부츠 데이트 / 크림 숏 재킷 주말\n② 딥 네이비 & 헤더 그레이 — 네이비 블레이저 출근 / 플리츠 미디스커트 데이트 / 퀼팅 숏 재킷+생지 데님 주말\n③번은 숏 재킷 + 기본 바지에 이너만 반대 색이라, 가진 옷으로 바로 따라 하기 쉬워요.\n\n두 색 공식: 진한 색은 아우터나 하의 한 곳에, 밝은 색은 얼굴 가까이, 금 액세서리는 작은 귀걸이 하나만.\n저장해두고 아침에 꺼내 보기. 매일 1분 코디 @zzebi.st\n\n참고: 보그 코리아(2026.02.13 '결국 브라운'), 하퍼스 바자 코리아(2026.10.18)\nAI로 만든 플랫레이 이미지예요.\n\n#올드머니룩 #컬러조합 #두색코디 #브라운코디 #네이비코디 #가을코디 #출근룩 #데이트룩 #코디추천 #zzebist",
+   "sources": [
+    "보그 코리아(2026.02.13 '결국 브라운')",
+    "하퍼스 바자 코리아(2026.10.18)"
+   ],
+   "colors": "브라운+크림 / 딥 네이비+헤더 그레이",
+   "tips": [
+    "진한 색은 아우터나 하의 한 곳에",
+    "밝은 색은 얼굴 가까이",
+    "금 액세서리는 작은 귀걸이 하나만"
+   ],
+   "book_notes": "",
+   "time": "09:00",
+   "images": [
+    {
+     "drive_id": "1RtMIO8WLa57IbEv-Pe5NGlUI_y2vOm5O",
+     "name": "20261101_trend_b1.jpg",
+     "kind": "원본일러스트"
+    },
+    {
+     "drive_id": "1PwcAe7zyBAxtJ7VgYeR1q7VcldBqbDlo",
+     "name": "20261101_trend_b2.jpg",
+     "kind": "원본일러스트"
+    }
+   ],
+   "media": [
+    "https://static.metricool.com/planner/202610/7607527-file-15939016935012387822.mp4"
+   ],
+   "video": "7607527-file-15939016935012387822.mp4",
+   "video_comp": "tiktok 7607527-file-16895387017759344255.mp4 · youtube 7607527-file-16878630045796218824.mp4",
+   "instagram_url": "https://www.instagram.com/reel/DfLZmRXlH4i/"
+  },
+  {
+   "date": "2026-11-01",
+   "season": "가을",
+   "transition": true,
+   "metrics": {},
+   "status": "게시됨",
+   "series": "trend",
+   "format": "코디룩북",
+   "gender": "공용",
+   "title": "비 오는 일요일 집콕룩 2(니트 셋업 / 편의점 플리스)",
+   "hook": "이불 속에서 편의점까지",
+   "hook_type": "19 변화 스토리형",
+   "situation": "집콕·편의점(원마일웨어)",
+   "weather": "1일(일) 서울 낮 최고 13℃, 밤부터 비(수도권 5mm 미만)",
+   "theme": "날씨·비 오는 일요일 집콕룩(기획실 채택 아이디어)",
+   "looks": [
+    {
+     "name": "집콕 니트 셋업(여)",
+     "items": [
+      {
+       "part": "상의",
+       "desc": "오트밀 골지 카디건",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "상의",
+       "desc": "오트밀 골지 탑",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "하의",
+       "desc": "오트밀 골지 와이드 라운지 팬츠",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "액세서리",
+       "desc": "더스티 핑크 수면양말",
+       "color_hex": "",
+       "tip": "포인트 색은 양말 한 곳"
+      },
+      {
+       "part": "신발",
+       "desc": "크림 퍼 슬리퍼",
+       "color_hex": "",
+       "tip": ""
+      }
+     ],
+     "palette": [],
+     "formula": "위아래는 같은 색 + 포인트 색은 양말 한 곳"
+    },
+    {
+     "name": "편의점 플리스(남)",
+     "items": [
+      {
+       "part": "아우터",
+       "desc": "세이지 플리스 집업",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "상의",
+       "desc": "화이트 티셔츠",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "하의",
+       "desc": "차콜 와이드 조거",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "액세서리",
+       "desc": "흰 크루 양말",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "신발",
+       "desc": "블랙 러버 클로그",
+       "color_hex": "",
+       "tip": "비 오는 날 신발은 닦이는 소재"
+      }
+     ],
+     "palette": [],
+     "formula": "비 오는 날은 바지보다 신발 먼저 — 닦이는 소재"
+    }
+   ],
+   "caption": "비 오는 날 편의점 갈 때, 바지보다 먼저 바꿀 건 신발이에요.\n\nLOOK 1 집콕 니트 셋업 — 오트밀 골지 카디건 + 같은 색 와이드 팬츠 + 더스티 핑크 수면양말\nLOOK 2 편의점 플리스 — 세이지 플리스 집업 + 차콜 조거 + 흰 양말 + 블랙 러버 클로그\n\n집콕 공식: 위아래는 같은 색으로 · 포인트 색은 양말 한 곳 · 비 오는 날 신발은 닦이는 소재\n오늘 서울 낮 최고 13℃, 밤부터 비(수도권 5mm 미만). 저장해두고 비 오는 주말마다 꺼내 보세요.\n매일 1분 코디 @zzebi.st\n\n참고: 파이낸셜뉴스(2026.10.30) 일요일 날씨 예보\nAI로 그린 일러스트예요.\n\n#집콕룩 #홈웨어 #원마일웨어 #비오는날코디 #일요일코디 #편의점룩 #데일리룩 #코디추천 #남자코디 #zzebist",
+   "sources": [
+    "파이낸셜뉴스(2026.10.30) 일요일 날씨 예보"
+   ],
+   "colors": "오트밀+더스티 핑크 / 세이지+차콜+블랙",
+   "tips": [
+    "위아래는 같은 색으로",
+    "포인트 색은 양말 한 곳",
+    "비 오는 날 신발은 닦이는 소재"
+   ],
+   "book_notes": "",
+   "time": "10:00",
+   "images": [
+    {
+     "drive_id": "1q1B67ewWDTk5IsyLPAlXaa59TsaoztvS",
+     "name": "20261101_trend_c1.jpg",
+     "kind": "원본일러스트"
+    },
+    {
+     "drive_id": "1Iz2gzpEBFTOOqIa-wXEynDTxD2otpEmI",
+     "name": "20261101_trend_c2.jpg",
+     "kind": "원본일러스트"
+    },
+    {
+     "drive_id": "14fhzcZCoq11q7HrzVns29Mx65X2IE7-g",
+     "name": "20261101_trend_c1b.jpg",
+     "kind": "원본일러스트"
+    },
+    {
+     "drive_id": "1H2XZ73gTpURys3oX_GUFGm1kEVRxYLaz",
+     "name": "20261101_trend_c2b.jpg",
+     "kind": "원본일러스트"
+    }
+   ],
+   "media": [
+    "https://static.metricool.com/planner/202610/7607527-file-14500418401094481745.mp4"
+   ],
+   "video": "7607527-file-14500418401094481745.mp4",
+   "video_comp": "tiktok 7607527-file-16895387017759344255.mp4 · youtube 7607527-file-16878630045796218824.mp4",
+   "instagram_url": "https://www.instagram.com/reel/DfLgXWbAHgV/"
+  },
+  {
+   "date": "2026-11-01",
+   "season": "가을",
+   "transition": true,
+   "metrics": {},
+   "status": "게시됨",
+   "series": "trend",
+   "format": "정보형",
+   "gender": "공용",
+   "title": "아이돌식 새깅 3단계(순한맛·중간맛·매운맛)",
+   "hook": "새깅은 바지 말고 '밴드'를 보여주는 거예요",
+   "hook_type": "",
+   "situation": "주말 외출",
+   "weather": "",
+   "looks": [
+    {
+     "name": "01 순한맛 · 바지 안에 바지",
+     "items": [
+      {
+       "part": "하의",
+       "desc": "회색 트랙 팬츠(밴드만 보이게)",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "하의",
+       "desc": "라이트 블루 와이드 데님",
+       "color_hex": "",
+       "tip": "노출 걱정 0"
+      }
+     ],
+     "palette": [],
+     "formula": "바지 안에 바지 — 처음엔 여기부터"
+    },
+    {
+     "name": "02 중간맛 · 리본 밴드 한 줄",
+     "items": [
+      {
+       "part": "상의",
+       "desc": "베이지 크롭 톱",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "하의",
+       "desc": "베이지 스커트",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "액세서리",
+       "desc": "블랙 리본 밴드",
+       "color_hex": "",
+       "tip": "살짝만 보이게"
+      }
+     ],
+     "palette": [],
+     "formula": "같은 색 상하의 + 리본 밴드 한 줄만"
+    },
+    {
+     "name": "03 매운맛 · 밴드 3겹 레이어드",
+     "items": [
+      {
+       "part": "하의",
+       "desc": "회색·체크·흰색 밴드 3겹",
+       "color_hex": "",
+       "tip": "층층이"
+      },
+      {
+       "part": "액세서리",
+       "desc": "굵은 블랙 벨트",
+       "color_hex": "",
+       "tip": "바지 고정"
+      }
+     ],
+     "palette": [],
+     "formula": "밴드 3겹 + 굵은 벨트로 고정"
+    }
+   ],
+   "caption": "새깅은 바지 말고 '밴드'를 보여주는 거예요 👀\n\n△ 긴 티 + 그냥 흘러내린 바지 = 칠칠맞아 보여요\n⭕ 짧은 상의 + 골반에 걸친 바지 + 밴드 살짝 = 요즘 아이돌식 새깅\n\n01 순한맛 · 바지 안에 바지 (제니처럼)\n회색 트랙 팬츠 밴드 + 라이트 블루 와이드 데님 · 노출 걱정 0\n\n02 중간맛 · 리본 밴드 한 줄만 (장원영처럼)\n베이지 크롭 톱 + 같은 색 스커트, 블랙 리본 밴드만 살짝\n\n03 매운맛 · 밴드 3겹 레이어드 (올데이 프로젝트 타잔처럼)\n회색·체크·흰색 밴드를 층층이 + 굵은 블랙 벨트로 고정\n\n아이돌 새깅 공식\n1. 상의는 짧게, 허리선이 보이게\n2. 벨트로 바지는 꼭 고정\n3. 처음엔 '바지 안에 바지'부터\n\n주말 외출 전에 저장해 두고, 매일 1분 코디는 @zzebi.st 팔로우 ✔️\n\n참고: 얼루어 코리아(2025.07.30 · 2026.02.02) · GQ 코리아(2025.08.10) · 스포츠경향(2026.05.15)\n\n#새깅 #새깅패션 #아이돌패션 #아이돌코디 #레이어드 #로우라이즈 #와이드데님 #스트릿패션 #Y2K패션 #데일리룩 #zzebist",
+   "sources": [
+    "얼루어 코리아(2025.07.30 · 2026.02.02)",
+    "GQ 코리아(2025.08.10)",
+    "스포츠경향(2026.05.15)"
+   ],
+   "tips": [
+    "상의는 짧게, 허리선이 보이게",
+    "벨트로 바지는 꼭 고정",
+    "처음엔 '바지 안에 바지'부터"
+   ],
+   "book_notes": "캡션에 실존 아이돌 이름(제니·장원영·타잔) 언급 — 책에는 이름 빼고 단계별 공식만 활용. Trend Daily history에 항목 없음(속보·추가 편). 원본 그림은 td20261031_rush_idol_* 4장(h1 없음)",
+   "time": "11:00",
+   "images": [
+    {
+     "drive_id": "1zzkqhMrFGqubbMjn2EPTjvdzci-YCVEw",
+     "name": "20261101_trend_idol_h2.jpg",
+     "kind": "원본일러스트"
+    },
+    {
+     "drive_id": "1NeMs4fWYQjDvxlfE-IHq7G5pgXlnyhoo",
+     "name": "20261101_trend_idol_l1.jpg",
+     "kind": "원본일러스트"
+    },
+    {
+     "drive_id": "1Bas9b3SIz0Wt0YOYW_LY_yWX6y2AKEnG",
+     "name": "20261101_trend_idol_l2.jpg",
+     "kind": "원본일러스트"
+    },
+    {
+     "drive_id": "1EiHNPinWiSxaT7T_E-twXenh9fIqBiM0",
+     "name": "20261101_trend_idol_l3.jpg",
+     "kind": "원본일러스트"
+    }
+   ],
+   "media": [
+    "https://static.metricool.com/planner/202610/7607527-file-2025814746261785173.mp4"
+   ],
+   "video": "7607527-file-2025814746261785173.mp4",
+   "instagram_url": "https://www.instagram.com/reel/DfLnNkMEvUw/"
+  },
+  {
+   "date": "2026-11-01",
+   "season": "가을",
+   "transition": true,
+   "metrics": {},
+   "status": "게시됨",
+   "series": "trend",
+   "format": "코디룩북",
+   "gender": "남자",
+   "title": "키 작은 남자 겨울 코디 2룩(레더 봄버 / 크림 숏다운)",
+   "hook": "키 작은 남자라면, 패딩 종류보다 '기장'부터 보세요",
+   "hook_type": "",
+   "situation": "겨울 일상(팔로워 요청)",
+   "weather": "",
+   "looks": [
+    {
+     "name": "LOOK 1 · 키작남 레더 봄버",
+     "items": [
+      {
+       "part": "아우터",
+       "desc": "블랙 레더 봄버",
+       "color_hex": "",
+       "tip": "허리 기장"
+      },
+      {
+       "part": "상의",
+       "desc": "그레이 하프집업 니트",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "하의",
+       "desc": "생지 세미와이드 데님",
+       "color_hex": "",
+       "tip": "신발에 살짝 닿게"
+      },
+      {
+       "part": "액세서리",
+       "desc": "흰 양말",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "신발",
+       "desc": "청키 로퍼",
+       "color_hex": "",
+       "tip": "굽 있는 신발"
+      },
+      {
+       "part": "액세서리",
+       "desc": "비니",
+       "color_hex": "",
+       "tip": ""
+      }
+     ],
+     "palette": [],
+     "formula": "허리 기장 아우터 + 아래(바지·신발) 같은 톤"
+    },
+    {
+     "name": "LOOK 2 · 키작남 크림 숏다운",
+     "items": [
+      {
+       "part": "아우터",
+       "desc": "크림 숏다운",
+       "color_hex": "",
+       "tip": "허리 기장"
+      },
+      {
+       "part": "상의",
+       "desc": "차콜 후디",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "하의",
+       "desc": "차콜 카고 팬츠",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "신발",
+       "desc": "두툼한 그레이 스니커즈",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "액세서리",
+       "desc": "볼캡",
+       "color_hex": "",
+       "tip": ""
+      }
+     ],
+     "palette": [],
+     "formula": "숏다운 + 차콜 톤 하의·신발로 다리 길게"
+    }
+   ],
+   "caption": "키 작은 남자라면, 패딩 종류보다 '기장'부터 보세요 👀\n(팔로워분 요청으로 만들었어요)\n\n△ 무릎까지 오는 롱패딩 + 통 넓은 연청 = 키가 묻혀요\n⭕ 허리선 레더 봄버 + 생지 데님 = 다리가 길어 보여요\n\nLOOK 1 · 키작남 레더 봄버\n블랙 레더 봄버 + 그레이 하프집업 니트 + 생지 세미와이드 데님 + 흰 양말 + 청키 로퍼 + 비니\n\nLOOK 2 · 키작남 크림 숏다운\n크림 숏다운 + 차콜 후디 + 차콜 카고 팬츠 + 두툼한 그레이 스니커즈 + 볼캡\n\n키 작은 남자 겨울 공식\n1. 아우터는 허리 기장\n2. 아래(바지·신발)는 같은 톤\n3. 굽 있는 신발 + 바지는 살짝 닿게\n\n쇼핑 전에 저장해 두고, 매일 1분 코디는 @zzebi.st 팔로우 ✔️\n\n참고: Mr Porter 저널(키 작은 남자 롱코트 가이드) · Effortless Gent(키 작은 남자 겨울 옷) · 얼루어 코리아(2025.11.28 올겨울 패딩 트렌드)\n\n#키작남 #키작남코디 #남자겨울코디 #레더자켓 #숏패딩 #남자코디 #스트릿패션 #2030남자패션 #데일리룩 #zzebist",
+   "sources": [
+    "Mr Porter 저널(키 작은 남자 롱코트 가이드)",
+    "Effortless Gent(키 작은 남자 겨울 옷)",
+    "얼루어 코리아(2025.11.28 올겨울 패딩 트렌드)"
+   ],
+   "tips": [
+    "아우터는 허리 기장",
+    "아래(바지·신발)는 같은 톤",
+    "굽 있는 신발 + 바지는 살짝 닿게"
+   ],
+   "book_notes": "게시본은 v2(레더 봄버·크림 숏다운). 11:45 초안(숏패딩 올블랙·무스탕, td20261101_rush_h1/h2/b1/b2)은 미게시라 보관 안 함. v2 원본 h1 없음(h2·b1·b2만). 계절상 겨울 챕터용 자료",
+   "time": "11:55",
+   "images": [
+    {
+     "drive_id": "1jK1ZwpzGJPWTnUZWGcrcNx9Jtq4jNfU_",
+     "name": "20261101_trend_short_h2.jpg",
+     "kind": "원본일러스트"
+    },
+    {
+     "drive_id": "1nENWrqUTC1mnh_rqwXPbJLz_bvewyLFs",
+     "name": "20261101_trend_short_b1.jpg",
+     "kind": "원본일러스트"
+    },
+    {
+     "drive_id": "1p73s4RFeKbSVyw88-eTMJ3m8ibxgqSxp",
+     "name": "20261101_trend_short_b2.jpg",
+     "kind": "원본일러스트"
+    }
+   ],
+   "media": [
+    "https://static.metricool.com/planner/202611/7607527-file-8901893579928741102.mp4"
+   ],
+   "video": "7607527-file-8901893579928741102.mp4",
+   "instagram_url": "https://www.instagram.com/reel/DfLtS97lfLt/"
+  },
+  {
+   "date": "2026-11-01",
+   "season": "가을",
+   "transition": true,
+   "metrics": {},
+   "status": "게시됨",
+   "series": "celeb",
+   "format": "셀럽스냅",
+   "gender": "남자",
+   "title": "셀럽 스냅 해부 #24 올블랙 레더 터틀넥룩",
+   "celeb": "Jaylen Brown",
+   "ep": "24",
+   "hook": "가죽재킷 안에\n뭐 입었어요?",
+   "hook_type": "17 디테일 분석형(질문 문법)",
+   "situation": "도착룩(뉴욕 매디슨 스퀘어 가든)",
+   "weather": "",
+   "looks": [
+    {
+     "name": "올블랙 레더 터틀넥룩",
+     "items": [
+      {
+       "part": "아우터",
+       "desc": "블랙 오버핏 레더 재킷(레드 배색선)",
+       "color_hex": "",
+       "tip": "레드 배색선이 포인트 (실착)"
+      },
+      {
+       "part": "하의",
+       "desc": "블랙 와이드 팬츠",
+       "color_hex": "",
+       "tip": "발등 덮는 넉넉한 기장 (실착)"
+      },
+      {
+       "part": "상의",
+       "desc": "블랙 골지 터틀넥",
+       "color_hex": "",
+       "tip": "목까지 올려 V존 채우기 (실착)"
+      },
+      {
+       "part": "신발",
+       "desc": "실버 메탈릭 스니커즈",
+       "color_hex": "",
+       "tip": "올블랙에 빛 한 점 (실착)"
+      }
+     ],
+     "palette": [],
+     "formula": "올블랙 레더 + 터틀넥으로 V존 채우고 신발로 빛 한 점"
+    }
+   ],
+   "caption": "셀럽 스냅 해부 #24 | JAYLEN BROWN in New York 🇺🇸\n같은 재킷인데 한쪽이 더 비싸 보이는 이유, 3번에 있어요. 올블랙 레더 터틀넥룩, 포인트 4개만 기억하세요\n\n01 오버핏 레더 재킷 – 레드 배색선이 포인트 (실착)\n02 블랙 와이드 팬츠 – 발등 덮는 넉넉한 기장 (실착)\n03 블랙 골지 터틀넥 – 목까지 올려 V존 채우기 (실착)\n04 실버 메탈릭 스니커즈 – 올블랙에 빛 한 점 (실착)\n\n저장해두고 따라 입기 🔖\n※ 실제 착장을 바탕으로 AI로 재현한 이미지예요\n참고: Andscape(2026.10.27) — 10/20 뉴욕 매디슨 스퀘어 가든 도착룩, 브랜드는 기사에 없어 표기하지 않았어요\n\n#남자코디 #가죽재킷코디 #레더자켓 #터틀넥코디 #올블랙코디 #남자가을코디 #와이드팬츠 #실버스니커즈 #셀럽패션 #스트릿패션 #ootd #streetstyle #zzebi",
+   "sources": [
+    "Andscape(2026.10.27) — 10/20 뉴욕 매디슨 스퀘어 가든 도착룩"
+   ],
+   "book_notes": "셀럽 이름·닮은 이미지는 책에 그대로 쓰지 말고 스타일 공식만 활용",
+   "time": "12:30",
+   "images": [
+    {
+     "drive_id": "1o9UOhVALalMRNBMveaqT-iX7Zz-qZpXv",
+     "name": "20261101_celeb_24.jpg",
+     "kind": "원본일러스트"
+    }
+   ],
+   "media": [
+    "https://static.metricool.com/planner/202611/7607527-file-9675198370560616980.mp4"
+   ],
+   "video": "7607527-file-9675198370560616980.mp4",
+   "instagram_url": "https://www.instagram.com/reel/DfLxUWnAtv1/"
+  },
+  {
+   "date": "2026-11-01",
+   "season": "가을",
+   "transition": true,
+   "metrics": {},
+   "status": "게시됨",
+   "series": "celeb",
+   "format": "셀럽스냅",
+   "gender": "남자",
+   "title": "셀럽 스냅 해부 #25 블랙 소매 청청룩",
+   "celeb": "Paul Pogba",
+   "ep": "25",
+   "hook": "청청 입을 때\n이 실수 하고 있나요?",
+   "hook_type": "15 흔한 실수형",
+   "situation": "도착룩(파리 스타드 드 프랑스)",
+   "weather": "",
+   "looks": [
+    {
+     "name": "블랙 소매 청청룩",
+     "items": [
+      {
+       "part": "상의",
+       "desc": "블랙 니트 터틀넥",
+       "color_hex": "",
+       "tip": "청 사이 검정 한 줄 (실착)"
+      },
+      {
+       "part": "하의",
+       "desc": "진청 스트레이트 진",
+       "color_hex": "",
+       "tip": "재킷과 같은 진청으로 (실착)"
+      },
+      {
+       "part": "아우터",
+       "desc": "블랙 소매 데님 재킷",
+       "color_hex": "",
+       "tip": "소매만 검정으로 끊기 (실착)"
+      },
+      {
+       "part": "신발",
+       "desc": "블랙 첼시 부츠",
+       "color_hex": "",
+       "tip": "발목 덮어 깔끔하게 (스타일링 추천)"
+      }
+     ],
+     "palette": [],
+     "formula": "청청은 같은 진청 + 검정 한 줄로 끊기"
+    }
+   ],
+   "caption": "셀럽 스냅 해부 #25 | PAUL POGBA in Paris 🇫🇷\n청청이 작업복처럼 보였다면, 데님이 너무 많아서일 수도 있어요. 블랙 소매 청청룩, 포인트 4개만 기억하세요\n\n01 블랙 니트 터틀넥 – 청 사이 검정 한 줄 (실착)\n02 진청 스트레이트 진 – 재킷과 같은 진청으로 (실착)\n03 블랙 소매 데님 재킷 – 소매만 검정으로 끊기 (실착)\n04 블랙 첼시 부츠 – 발목 덮어 깔끔하게 (스타일링 추천)\n\n저장해두고 따라 입기 🔖\n※ 실제 착장을 바탕으로 AI로 재현한 이미지예요\n참고: Andscape(2026.10.27) — 10/25 파리 스타드 드 프랑스 NFL 경기 도착룩, 신발은 기사에 없어 추천 아이템이에요\n\n#청청패션 #청청코디 #데님자켓 #데님코디 #남자코디 #남자가을코디 #터틀넥코디 #첼시부츠 #셀럽패션 #스트릿패션 #ootd #streetstyle #zzebi",
+   "sources": [
+    "Andscape(2026.10.27) — 10/25 파리 스타드 드 프랑스 NFL 경기 도착룩"
+   ],
+   "book_notes": "셀럽 이름·닮은 이미지는 책에 그대로 쓰지 말고 스타일 공식만 활용",
+   "time": "18:00",
+   "images": [
+    {
+     "drive_id": "1OI_WcVA6ByfrEgwk1Es6AbDr_fA4NS-K",
+     "name": "20261101_celeb_25.jpg",
+     "kind": "원본일러스트"
+    }
+   ],
+   "media": [
+    "https://static.metricool.com/planner/202611/7607527-file-5083838213949066725.mp4"
+   ],
+   "video": "7607527-file-5083838213949066725.mp4",
+   "instagram_url": "https://www.instagram.com/reel/DfMXgVcjdJg/"
+  }
+ ]
+}
