@@ -104,7 +104,7 @@ def render_look(L, n, T, data_dir, eager):
         h.append(f'        <p class="real"><b>{T("실착 포인트")}</b> {T(L["real"])}</p>')
     h += ['      </div>', '    </div>']
     marks = ['①', '②', '③']
-    cores = L.get('cores', [])
+    cores = [c for c in L.get('cores', []) if any(c['tiers'].get(k) for k in ('lux', 'mid', 'value'))]   # 빈 코어는 번호에서 제외
     for i, c in enumerate(cores):
         mk = marks[i] if len(cores) > 1 else '·'
         if not any(c['tiers'].get(k) for k in ('lux', 'mid', 'value')): continue
@@ -117,6 +117,7 @@ def render_look(L, n, T, data_dir, eager):
             h.append(f'      <a class="tier{" lux" if k=="lux" else ""}" {A(p["url"])}>')
             h.append(f'        <span class="tag">{T(TIER_TAG[k])}</span>{brand_name(p, T)}')
             if shop: h.append(f'        <span class="shop">{T(shop)}</span>')
+            if p.get('match'): h.append(f'        <span class="mt" title="{esc(str(p["match"]))}/5">{T("사진 일치")} {esc(str(p["match"]))}/5</span>')
             h.append(f'        {price(p, T)}' + (f'<span class="ovs">{T(p["ovs"])}</span>' if p.get('ovs') else '') + '</a>')
         h.append('    </div>')
     if L.get('with'):
@@ -127,10 +128,11 @@ def render_look(L, n, T, data_dir, eager):
             h.append(f'      <a class="item" {A(p["url"])}>')
             h.append(f'        <span class="role">{T(w.get("role",""))}</span>')
             h.append(f'        {brand_name(p, T, br_break=False)}')
+            if p.get('match'): h.append(f'        <span class="mt">{T("사진 일치")} {esc(str(p["match"]))}/5</span>')
             h.append(f'        {price(p, T)}</a>')
         h.append('    </div>')
-    if L.get('note'):
-        h.append(f'    <p class="note-m">{T(L["note"])}</p>')
+    if L.get('note'):   # v3.1: 비워 둔 칸 안내 카드
+        h.append(f'    <aside class="gap"><b class="gap-h">{T("비워 둔 칸")}</b><p class="note-m">{T(L["note"])}</p></aside>')
     h.append('  </section>')
     return '\n'.join(h)
 
@@ -173,6 +175,12 @@ html[lang="zh-CN"] body{word-break:normal;line-break:strict;font-family:"PingFan
 @media (max-width:460px){.brandbar{flex-wrap:wrap}.adtag{display:none}}
 .tabs{position:sticky}.tabs::after{content:"";position:absolute;top:0;right:0;bottom:1px;width:36px;pointer-events:none;background:linear-gradient(to right,transparent,var(--bg))}
 .tabs.end::after{opacity:0}
+/* v3.1 · 사진 일치 배지 + 비워 둔 칸 카드 (2026-11-02) */
+.mt{display:inline-flex;align-items:center;gap:4px;align-self:flex-start;margin-top:4px;padding:2px 8px;border-radius:999px;font-size:11.5px;font-weight:700;line-height:1.5;color:var(--brand-ink);background:var(--brand-soft);white-space:nowrap}
+.mt::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--brand-ink)}
+.gap{margin:14px 0 0;padding:12px 14px;border:1.5px dashed var(--line);border-radius:12px;background:var(--surface)}
+.gap-h{display:block;font-size:12.5px;letter-spacing:.04em;color:var(--muted);margin-bottom:4px}
+.gap .note-m{margin:0;padding:0;border:0;background:none;box-shadow:none}
 '''
 
 JS = r'''

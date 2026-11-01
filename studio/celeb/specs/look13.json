@@ -1,0 +1,14 @@
+{
+ "episode": "13",
+ "celeb": "HUGH JACKMAN",
+ "city": "PASADENA",
+ "title": "그레이 후디 × 올리브 조거",
+ "image": "img13.jpg",
+ "note": "2026-11-02 위클리 작업 중 확대 좌표만 추가(릴스 제작 spec 아님)",
+ "items": [
+  {"cat": "HOODIE · 후디", "brand": "브랜드 미상", "name": "그레이 후드티", "crop": [510, 300, 620]},
+  {"cat": "PANTS · 바지", "brand": "브랜드 미상", "name": "올리브 조거팬츠", "crop": [495, 880, 700]},
+  {"cat": "SNEAKERS · 신발", "brand": "스타일링 추천", "name": "청키 러닝화", "crop": [525, 1275, 420]},
+  {"cat": "SUNGLASSES · 선글라스", "brand": "브랜드 미상", "name": "블랙 선글라스", "crop": [450, 120, 220]}
+ ]
+}

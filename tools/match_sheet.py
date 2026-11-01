@@ -65,6 +65,8 @@ def main_look(data, lid, out, spec):
             if c['tiers'].get(k): row.append(get(c['tiers'][k], lab))
         rows.append(row)
     for w in L.get('with', []):
+        if not w.get('p'):   # 4점 이상 상품이 없어 비운 칸
+            rows.append([tile(crop_from_spec(look, items, w.get('role', '')), '룩: ' + w.get('role', '')[:14], '(비운 칸)')]); continue
         rows.append([tile(crop_from_spec(look, items, w['p'].get('name', '')), '룩: ' + w.get('role', '')[:14], '← 이것과 비교'), get(w['p'], '함께')])
     W = max(len(r) for r in rows) * (CELL + 10) + 10
     H = len(rows) * (CELL + 80) + 10
