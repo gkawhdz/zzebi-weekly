@@ -57,8 +57,9 @@ def build(ns):
     for j, s in enumerate(boards, 1):  # 번호를 1/N 으로 새로 매겨 '한 편'처럼
         if s.get("type") == "wboard":
             if s.get("head"):
-                s["head"]["num"] = f"{j:02d}"; s["head"]["total"] = f"{n:02d}"
-                s["chip"] = f"{j:02d} · " + s.get("chip", "").split("·", 1)[-1].strip()
+                # 11/2: 번호 형식을 보드 칩과 같은 'N / 총' 하나로 통일(01/05 · 1 / 5 혼용 금지)
+                s["head"]["num"] = f"{j}"; s["head"]["total"] = f"{n}"
+                s["chip"] = f"{j} / {n} · " + s.get("chip", "").split("·", 1)[-1].strip()
             else:
                 lab = s.get("label", "")
                 lab = lab.split("·", 1)[-1].strip() if "·" in lab else lab
