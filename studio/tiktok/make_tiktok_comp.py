@@ -93,6 +93,51 @@ def card_intro(spec, thumbs, out):
     im.save(out, quality=95)
 
 
+def card_intro_native(spec, seg_frame, out):
+    """네이티브 인트로(=썸네일): 첫 셀럽 사진을 화면 꽉 + 위쪽 어둡게 + 아주 큰 후킹 제목. 썸네일 격자·로고 줄 없음."""
+    src = seg_frame
+    if spec.get("intro_img") and os.path.exists(spec["intro_img"]):  # 글자 없는 원본 그림(권장) — 영상 프레임엔 릴스 자체 글자가 겹쳐 보임
+        src = Image.open(spec["intro_img"]).convert("RGB")
+    r = max(W / src.width, H / src.height); src = src.resize((int(src.width * r) + 1, int(src.height * r) + 1), Image.LANCZOS)
+    l = (src.width - W) // 2; tp = int((src.height - H) * spec.get("intro_y", 0.5))
+    im = src.crop((l, tp, l + W, tp + H)).convert("RGBA")
+    g = Image.new("L", (1, H))
+    for y in range(H):
+        a = 235 if y < 760 else max(0, int(235 * (1 - (y - 760) / 520)))
+        g.putpixel((0, y), a)
+    shade = Image.new("RGBA", (W, H), (14, 12, 12, 255)); shade.putalpha(g.resize((W, H)))
+    im.alpha_composite(shade); d = ImageDraw.Draw(im)
+    pill(d, 80, 210, spec.get("kicker", "끝까지 보기"), font(46), TEAL, "white")
+    fs = 176
+    while fs > 110 and max(d.textlength(l, font=font(fs)) for l in spec["title"]) > 920: fs -= 4
+    y = 330
+    for ln in spec["title"]:
+        d.text((76, y), ln, font=font(fs), fill="white"); y += int(fs * 1.18)
+    if spec.get("sub"):
+        ss = 58
+        while ss > 44 and d.textlength(spec["sub"], font=font(ss)) > 900: ss -= 2
+        d.rounded_rectangle((70, y + 16, 98 + d.textlength(spec["sub"], font=font(ss)), y + 28 + ss + 18), 14, fill=TEAL)
+        d.text((84, y + 26), spec["sub"], font=font(ss), fill="white")
+    im.convert("RGB").save(out, quality=95)
+
+
+def counter_png(i, n, label, out):
+    """네이티브: 영상 사이 챕터 카드 대신, 다음 영상 처음 1.6초 동안 위쪽에 작은 번호 칩"""
+    im = Image.new("RGBA", (W, 140), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
+    s = f"{i} / {n}" + (f" · {label}" if label else "")
+    pill(d, 80, 30, s, font(48), TEAL, "white", (30, 16))
+    im.save(out)
+
+
+def card_cta_native(out, spec):
+    im = Image.new("RGB", (W, H), TEAL); d = ImageDraw.Draw(im)
+    d.text((90, 700), spec.get("cta_kicker", "내일 저녁에도 셀럽 룩 해부"), font=font(52, False), fill="white")
+    d.text((86, 790), "팔로우하고", font=font(140), fill="white")
+    d.text((86, 960), "내일도 보기", font=font(140), fill="white")
+    d.text((90, 1160), "@zzebi.st", font=font(72), fill="white")
+    im.save(out, quality=95)
+
+
 def card_chapter(i, n, seg, out):
     im = Image.new("RGB", (W, H), DARK); d = ImageDraw.Draw(im)
     text_c(d, 700, f"{i:02d} / {n:02d}", font(64), TEAL)
@@ -170,6 +215,8 @@ def main(spec_path, out, en=False):
         s["file"] = s["file"] if os.path.isabs(s["file"]) else os.path.join(base, s["file"])
     thumbs = [frame(s["file"], s.get("thumb_t", 1.0), f"{tmp}/th{i}.jpg") for i, s in enumerate(segs)]
     parts = []  # (kind, path, seconds)
+    if spec.get("native"):
+        return main_native(spec, segs, thumbs, tmp, out, en)
     card_intro(spec, thumbs, f"{tmp}/intro.jpg"); parts.append(("img", f"{tmp}/intro.jpg", spec.get("intro_s", 2.6)))
     for i, s in enumerate(segs, 1):
         card_chapter(i, len(segs), s, f"{tmp}/ch{i}.jpg"); parts.append(("img", f"{tmp}/ch{i}.jpg", 1.3))
@@ -253,6 +300,64 @@ def main(spec_path, out, en=False):
         title = ko + " #shorts" if en else ko
     open(stem + "_title.txt", "w").write(title)
     print(f"{out} {dur(out):.1f}s")
+    print(f"썸네일 {stem}_thumb.jpg · 제목 {title}")
+
+
+def main_native(spec, segs, thumbs, tmp, out, en):
+    """2026-11-01 사장님 지시 '짜집기 티 금지': 썸네일 격자 인트로·검은 챕터 카드·영상별 엔딩·투표 카드·정지 화면 채우기 없이
+    후킹 인트로(사진 꽉) → 영상들(각자 엔딩 화면 잘라냄, 처음 1.6초 번호 칩) → 짧은 CTA 한 번."""
+    intro_s = spec.get("intro_s", 2.2); n = len(segs)
+    card_intro_native(spec, thumbs[0], f"{tmp}/intro.jpg")
+    card_cta_native(f"{tmp}/cta.jpg", spec)
+    parts = [("img", f"{tmp}/intro.jpg", intro_s, 0)]
+    for s in segs:
+        a, b = s.get("trim", [0, dur(s["file"]) - spec.get("cut_end", 3.0)])
+        parts.append(("vid", s["file"], b - a, a))
+    parts.append(("img", f"{tmp}/cta.jpg", spec.get("cta_s", 2.2), 0))
+    inputs, fl = [], []
+    for i, (k, p, d_, a) in enumerate(parts):
+        if k == "img":
+            inputs += ["-loop", "1", "-framerate", str(FPS), "-t", f"{d_:.3f}", "-i", p]
+            fl.append(f"[{i}:v]scale={W*1.03:.0f}:{H*1.03:.0f},zoompan=z='min(1+0.0008*on,1.03)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=1:s={W}x{H}:fps={FPS},setsar=1,format=yuv420p[v{i}]")
+        else:
+            inputs += ["-ss", f"{a:.2f}", "-t", f"{d_:.3f}", "-i", p]
+            fl.append(f"[{i}:v]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},fps={FPS},setsar=1,format=yuv420p[v{i}]")
+    fl.append("".join(f"[v{i}]" for i in range(len(parts))) + f"concat=n={len(parts)}:v=1:a=0[c0]")
+    last, t, ov = "c0", 0.0, []
+    for i, (k, p, d_, a) in enumerate(parts):
+        if k == "vid":
+            j = i  # 1..n
+            if spec.get("counter"):  # 기본 끔: 릴스 커버의 셀럽 이름과 겹침
+                png = f"{tmp}/cnt{j}.png"; counter_png(j, n, segs[j - 1].get("label", ""), png); ov.append((png, t + 0.05, t + 1.6, 20))
+            if en:
+                for sa, sb, txt in segs[j - 1].get("en", []):
+                    if sb - a > 0 and sa - a < d_:
+                        png2 = f"{tmp}/en{j}_{sa}.png"; sub_png(txt, png2); ov.append((png2, t + max(0, sa - a), t + min(d_, sb - a), SUB_Y))
+        elif en and p.endswith("intro.jpg") and spec.get("intro_en"):
+            png2 = f"{tmp}/en_intro.png"; sub_png(spec["intro_en"], png2); ov.append((png2, 0.1, d_, SUB_Y))
+        elif en and p.endswith("cta.jpg"):
+            png2 = f"{tmp}/en_cta.png"; sub_png(spec.get("outro_en", "Follow @zzebi.st for daily celeb style breakdowns"), png2); ov.append((png2, t, t + d_, SUB_Y))
+        t += d_
+    total = t
+    for q, (png, a, b, y) in enumerate(ov):
+        inputs += ["-i", png]; idx = len(parts) + q
+        fl.append(f"[{last}][{idx}:v]overlay=0:{y}:enable='between(t,{a:.2f},{b:.2f})'[o{q}]"); last = f"o{q}"
+    silent = f"{tmp}/silent.mp4"
+    subprocess.run(["ffmpeg", "-y", *inputs, "-filter_complex", ";".join(fl), "-map", f"[{last}]", "-c:v", "libx264",
+                    "-preset", "veryfast", "-crf", "21", "-pix_fmt", "yuv420p", "-r", str(FPS), silent],
+                   check=True, stdout=subprocess.DEVNULL, stderr=subprocess.PIPE)
+    bgm = f"{tmp}/bgm.wav"
+    sh(["python3", os.path.join(HERE, "chill_bgm.py"), bgm, f"{total + 0.5:.2f}", str(spec.get("seed", 1))])
+    sh(["ffmpeg", "-y", "-i", silent, "-i", bgm, "-map", "0:v", "-map", "1:a", "-c:v", "copy",
+        "-af", f"afade=t=out:st={total - 1.2:.2f}:d=1.2,loudnorm=I=-14:TP=-1.5:LRA=11,aresample=44100,alimiter=limit=0.6:level=false,volume=0.8",
+        "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", out])
+    stem = out.rsplit(".", 1)[0]
+    Image.open(f"{tmp}/intro.jpg").convert("RGB").save(stem + "_thumb.jpg", quality=92)
+    ko = " ".join(spec["title"]).strip()
+    title = ko + (f" | {spec['intro_en']}" if en and spec.get("intro_en") else "") + (" #shorts" if en else "")
+    if len(title) > 100: title = ko + (" #shorts" if en else "")
+    open(stem + "_title.txt", "w").write(title)
+    print(f"{out} {dur(out):.1f}s (네이티브)")
     print(f"썸네일 {stem}_thumb.jpg · 제목 {title}")
 
 
