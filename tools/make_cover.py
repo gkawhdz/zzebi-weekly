@@ -54,6 +54,10 @@ def main():
     F = looks[fid]; core = F['cores'][int(fno) - 1]
     tiers = core['tiers']
     lux, val = tiers.get('lux') or tiers.get('mid'), tiers.get('value') or tiers.get('mid')
+    top_lab = '명품' if tiers.get('lux') else '중가'   # 2026-11-02: 명품 칸이 비면 중가↔가성비로 비교(라벨도 맞춤)
+    any_lux = any(c['tiers'].get('lux') for L in looks.values() for c in L.get('cores', []))
+    hl = '명품부터<br>가성비까지' if any_lux else '사진 비교로<br>똑같이 사기'
+    inside1 = '명품→가성비 3단 가격' if any_lux else '사진 일치 4/5 이상만'
     deals = sorted((mk.get('deals_women', [])[:6] + mk.get('deals_men', [])[:6]), key=lambda p: -int(p.get('off') or 0))[:4]
     imgs = {i: img_uri(os.path.join(D, 'img', looks[i]['img']), 720, 82) for i in order}
     hero_img = img_uri(os.path.join(D, 'img', hero['img']), 1080, 88)
@@ -157,8 +161,8 @@ body{{background:#222;word-break:keep-all}}
 <div class="mast">ZZEBI<em>.</em>ST</div>
 <div class="per"><b>WEEKLY</b>{esc(per_en)}</div>
 <div class="ai">AI 재현 이미지</div>
-<div class="lines"><div class="kick">The Celeb Edit</div><div class="hl">셀럽 {n_look}룩,<br>명품부터<br>가성비까지</div></div>
-<div class="cl"><small>INSIDE</small><span>명품→가성비 3단 가격</span><span>무신사·29CM·지그재그 랭킹</span><span>핫딜 TOP 10 · 크림 신발</span></div>
+<div class="lines"><div class="kick">The Celeb Edit</div><div class="hl">셀럽 {n_look}룩,<br>{hl}</div></div>
+<div class="cl"><small>INSIDE</small><span>{inside1}</span><span>무신사·29CM·지그재그 랭킹</span><span>핫딜 TOP 10 · 크림 신발</span></div>
 <div class="bot"><span class="pill">{pill}</span><span class="bar">{bars}</span></div></section>'''
     g = ''.join(f'<div class="g" style="background-image:url({imgs[i]})"><em>{esc(looks[i]["ep"])}</em><span>{esc(looks[i]["who"].replace(" 무드 재현",""))}</span></div>' for i in order[:6])
     s2 = f'''<section class="s c2">{hd(vol + " · CONTENTS")}<h2>This Week<b>{esc(per_ko)}</b></h2>
@@ -167,10 +171,10 @@ body{{background:#222;word-break:keep-all}}
 {foot(2)}</section>'''
     s3 = f'''<section class="s c3"><div class="ph"></div><span class="ai">AI 재현 이미지</span>{hd("FEATURE")}
 <div class="tx"><div class="k">LOOK #{esc(F["ep"])} · {esc(F["who"].replace(" 무드 재현",""))}</div><h3>{esc(core["h"])},<br>얼마면 될까?</h3>
-<div class="row"><small>명품</small><span class="n">{esc(lux.get("brand"))} {esc(lux.get("name"))}</span><span class="p">{esc(won(lux["won"], lux.get("approx")))}</span></div>
+<div class="row"><small>{top_lab}</small><span class="n">{esc(lux.get("brand"))} {esc(lux.get("name"))}</span><span class="p">{esc(won(lux["won"], lux.get("approx")))}</span></div>
 <div class="ar">↓</div>
 <div class="row v"><small>가성비</small><span class="n">{esc(val.get("brand"))} {esc(val.get("name"))}</span><span class="p">{esc(won(val["won"]))}</span></div>
-<p style="font-size:24px;color:#57534C;margin-top:18px">중가 선택지와 나머지 아이템은 리포트에서</p></div>
+<p style="font-size:24px;color:#57534C;margin-top:18px">{"중가 선택지와 나머지 아이템은 리포트에서" if top_lab == "명품" else "사진 일치 점수와 나머지 아이템은 리포트에서"}</p></div>
 <div class="foot" style="left:580px"><span>@zzebi.st · {esc(per_en)}</span><span>3 / 5</span></div></section>'''
     its = ''.join(f'<div class="it"><span class="o">{int(p.get("off") or 0)}<small>%</small></span><div><div class="w">{esc((p.get("where") or "").split("·")[0].strip())}</div><div class="n">{esc(p.get("brand"))} {esc(p.get("name"))}</div><div class="pr">{esc(won(p["won"]))}</div></div></div>' for p in deals)
     s4 = f'''<section class="s c4">{hd("HOT DEALS")}<h2>Hot Deals<b>이번 주 할인 TOP 4</b></h2><div class="list">{its}</div>{foot(4)}</section>'''
