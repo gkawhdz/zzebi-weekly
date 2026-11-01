@@ -116,6 +116,9 @@ def dot(img, x, y, a, n):
 T_COVER, T_ITEM, T_END = 1.8, 2.3, 3.0
 HOOK = L.get("hook")  # v4.3: 첫 화면 후킹 문구(2줄까지). 있으면 커버 2.4초로 늘려 읽을 시간 확보
 if HOOK: T_COVER = 2.4
+T_ITEM = L.get("t_item", T_ITEM)  # v4.5: 아이템 장면 길이(리텐션 규칙 25초 이상 맞추기)
+PUSH = L.get("push", 0.0)  # v4.5: 카드가 뜬 뒤에도 천천히 밀어 들어가 정지 화면 방지
+CC = L.get("cover_center", None); CZ = L.get("cover_zoom", 1.0)  # v4.5: 커버를 훅이 말하는 부위로 확대
 
 def wrap_hook(d, s, maxw=820):
     """후킹 문구를 최대 2줄로 — '\\n'이 있으면 그대로, 없으면 폭에 맞춰 자르고 글씨 크기 자동 조절"""
@@ -133,22 +136,24 @@ def wrap_hook(d, s, maxw=820):
         if len(lines) <= 2 and all(d.textlength(l_, font=f) <= maxw for l_ in lines):
             return lines, f
     return lines[:2], F(54)
-segs = [("cover", T_COVER)] + [(i, T_ITEM) for i in range(4)] + [("end", T_END)]
+RC = L.get("recompare") if SPLIT else None  # v4.5: 엔딩 직전 ON/OFF 정답 공개 비교
+segs = [("cover", T_COVER)] + [(i, T_ITEM) for i in range(4)] + ([("compare", RC.get("dur", 3.4))] if RC else []) + [("end", T_END)]
 FR = OUT + "_frames"; shutil.rmtree(FR, ignore_errors=True); os.makedirs(FR)
 full_c = (IW / 2, IH * 0.48)
-n = 0; prev = (full_c[0], full_c[1], 1.0)
+if CC is None: CC = full_c
+n = 0; prev = (CC[0], CC[1], CZ)
 for kind, dur in segs:
     N = int(dur * FPS)
     for k in range(N):
         t = k / (N - 1)
         if kind == "cover":
-            z = lerp(1.06, 1.0, ease(t))
-            fr, _ = view(full_c[0], full_c[1], z)
+            z = lerp(CZ * 1.06, CZ, ease(t))
+            fr, _ = view(CC[0], CC[1], z)
             tsec = k / FPS
             if SPLIT:  # v4.4: 같은 룩 ON/OFF 비교 슬라이더 — 0초부터 분할, 1초 안에 경계선이 움직이고 끝에 ON으로 닦아내며 본편 시작
-                fo, _ = view(full_c[0], full_c[1], z, stage_off)
+                fo, _ = view(CC[0], CC[1], z, stage_off)
                 wipe = ease((tsec - (dur - 0.55)) / 0.5)
-                dx = int((540 + 70 * math.sin(2 * math.pi * min(tsec, 1.6) / 1.6)) * (1 - wipe))
+                dx = int((540 + L.get("split_amp", 70) * math.sin(2 * math.pi * min(tsec, 1.6) / 1.6)) * (1 - wipe))
                 if dx > 0: fr.paste(fo.crop((0, 0, dx, H)), (0, 0))
             fr = shade(fr, 200, 210, 640, 760)
             d = ImageDraw.Draw(fr)
@@ -193,6 +198,34 @@ for kind, dur in segs:
                 d.rounded_rectangle([60, 1250, 60 + w + 56, 1340], 45, fill=BRAND + (int(255 * b),))
                 txt(d, (88, 1295), s, f, WHITE + (int(255 * b),), "lm")
             prev = (full_c[0], full_c[1], 1.0)
+        elif kind == "compare":  # v4.5: 정답 공개 — 같은 구도 ON/OFF를 다시 보여주고 이번엔 진짜 아이템 이름을 공개
+            fr, _ = view(CC[0], CC[1], CZ)
+            fo, _ = view(CC[0], CC[1], CZ, stage_off)
+            tsec = k / FPS
+            p1 = ease(tsec / 0.9); p2 = ease((tsec - 1.1) / 0.9)
+            dx = int(lerp(lerp(980, 160, p1), 540, p2))
+            fr.paste(fo.crop((0, 0, dx, H)), (0, 0))
+            fr = shade(fr, 210, 200, 640, 700)
+            d = ImageDraw.Draw(fr)
+            d.line([(dx, 0), (dx, H)], fill=WHITE + (255,), width=6)
+            pw = int(max(d.textlength(RC.get("title", "정답 공개"), font=F(72)), d.textlength(RC["sub"], font=F(40, "Bold")))) + 70
+            pn = Image.new("RGBA", (pw, 190), (14, 14, 16, 200)); pn.putalpha(rr((pw, 190), 22).point(lambda v: int(v * 200 / 255)))
+            fr.alpha_composite(pn, (36, 226)); d = ImageDraw.Draw(fr)
+            d.rectangle([36, 236, 44, 406], fill=BRAND + (255,))
+            d.ellipse([dx - 34, 1010 - 34, dx + 34, 1010 + 34], fill=BRAND + (255,), outline=WHITE + (255,), width=4)
+            txt(d, (dx, 1010), "◀▶", F(22, "Bold"), WHITE + (255,), "mm")
+            txt(d, (60, 140), f"셀럽 스냅 해부  #{L['episode']}", F(40, "Bold"), WHITE + (255,))
+            d.line([(60, 200), (180, 200)], fill=BRAND, width=6)
+            txt(d, (60, 236), RC.get("title", "정답 공개"), F(72), WHITE + (255,))
+            txt(d, (60, 336), RC["sub"], F(40, "Bold"), (190, 228, 226, 255))
+            fl = F(42)
+            if dx > 380:
+                lab = RC["off"]; w_ = d.textlength(lab, font=fl); xo = min(60, dx - w_ - 110)
+                if xo >= 20:
+                    d.rounded_rectangle([xo, 1120, xo + w_ + 48, 1196], 38, fill=(40, 40, 44, 255)); txt(d, (xo + 24, 1158), RC["off"], fl, WHITE + (255,), "lm")
+            lab = RC["on"]; w_ = d.textlength(lab, font=fl); xn = max(dx + 40, 930 - w_ - 48)
+            if xn + w_ + 48 <= 932:
+                d.rounded_rectangle([xn, 1120, xn + w_ + 48, 1196], 38, fill=BRAND + (255,)); txt(d, (xn + 24, 1158), RC["on"], fl, WHITE + (255,), "lm")
         elif kind == "end":
             fr, _ = view(full_c[0], full_c[1], 1.0)
             fr = fr.filter(ImageFilter.GaussianBlur(18 * ease(t * 2)))
@@ -222,6 +255,11 @@ for kind, dur in segs:
                 w2 = td.textlength(sch, font=fs)
                 td.rounded_rectangle([246, 160, 246 + w2 + 36, 212], 26, fill=BRAND)
                 txt(td, (264, 186), sch, fs, WHITE, "lm")
+                if L.get("answer") == i:  # v4.5: 루프 엔딩 — 첫 화면 훅의 '정답' 줄을 틸 테두리 + 정답 배지로 강조
+                    td.rounded_rectangle([3, 3, 876, 232], 24, outline=BRAND, width=7)
+                    tg = F(32, "Bold"); lab = L.get("answer_label", "정답"); tw_ = td.textlength(lab, font=tg)
+                    td.rounded_rectangle([848 - tw_ - 40, 20, 852, 76], 28, fill=BRAND)
+                    txt(td, (850 - tw_ - 20, 48), lab, tg, WHITE, "lm")
                 row.putalpha(row.getchannel("A").point(lambda v: int(v * p)))
                 fr.alpha_composite(row, (gx, gy))
             b = ease(t * 2.5 - 1.2)
@@ -235,7 +273,7 @@ for kind, dur in segs:
             i = kind; it = L["items"][i]
             tx, ty = it["pt_xy"]
             m = eio(min(1, t / 0.45))
-            cx = lerp(prev[0], tx, m); cy = lerp(prev[1], ty, m); z = lerp(prev[2], 1.32, m)
+            cx = lerp(prev[0], tx, m); cy = lerp(prev[1], ty, m); z = lerp(prev[2], 1.32, m) + PUSH * ease((t - 0.45) / 0.55)
             fr, (x0, y0, s) = view(cx, cy, z)
             fr = shade(fr, 195, 120, 440, 520)  # v4.2: 헤더 보조글씨 대비 강화
             sx, sy = (tx - x0) * s, (ty - y0) * s
@@ -251,7 +289,7 @@ for kind, dur in segs:
                     c = CARDS[i].copy(); c.putalpha(c.getchannel("A").point(lambda v: int(v * ca)))
                     fr.alpha_composite(c, (60, int(cy0 + (1 - ca) * 50)))
                 dot(fr, sx, sy, da, i + 1)
-            if t > 0.9: prev = (tx, ty, 1.32)
+            if t > 0.9: prev = (tx, ty, z)
         fr.convert("RGB").save(os.path.join(FR, f"{n:04d}.jpg"), quality=92)
         if kind == "cover" and COVER_OUT and k == (min(N - 1, int(L.get("cover_t", 99) * FPS)) if SPLIT else N - 1): fr.convert("RGB").save(COVER_OUT, quality=94)
         n += 1

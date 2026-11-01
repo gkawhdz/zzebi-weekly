@@ -1,0 +1,101 @@
+{
+ "episode": "25",
+ "celeb": "PAUL POGBA",
+ "city": "PARIS",
+ "date": "2026.10",
+ "title": "블랙 소매 청청룩",
+ "image": "img25.jpg",
+ "accent": "#2E4A7A",
+ "hook": "청청 입을 때\n이 실수 하고 있나요?",
+ "hook_cta": "끊어줄 색은 마지막에 →",
+ "cover_sub": "왼쪽 vs 오른쪽, 뭐가 달라요?",
+ "cover_no_celeb": true,
+ "cover_t": 1.2,
+ "split": {
+  "image_off": "img25b.jpg",
+  "off_label": "전부 데님",
+  "on_label": "검정만 더함"
+ },
+ "answer": 2,
+ "answer_label": "정답",
+ "items": [
+  {
+   "cat": "TURTLENECK · 터틀넥",
+   "brand": "실착 · 브랜드 미상",
+   "name": "블랙 니트 터틀넥",
+   "pt": "청 사이 검정 한 줄",
+   "find": "블랙 니트 터틀넥",
+   "pt_xy": [
+    510,
+    250
+   ],
+   "crop": [
+    510,
+    260,
+    360
+   ]
+  },
+  {
+   "cat": "JEANS · 청바지",
+   "brand": "실착 · 브랜드 미상",
+   "name": "진청 스트레이트 진",
+   "pt": "재킷과 같은 진청으로",
+   "find": "생지 스트레이트 데님",
+   "pt_xy": [
+    520,
+    860
+   ],
+   "crop": [
+    520,
+    860,
+    640
+   ]
+  },
+  {
+   "cat": "JACKET · 재킷",
+   "brand": "실착 · 브랜드 미상",
+   "name": "블랙 소매 데님 재킷",
+   "pt": "소매만 검정으로 끊기",
+   "find": "배색 데님 자켓",
+   "pt_xy": [
+    745,
+    300
+   ],
+   "crop": [
+    520,
+    330,
+    720
+   ]
+  },
+  {
+   "cat": "BOOTS · 신발",
+   "brand": "스타일링 추천",
+   "name": "블랙 첼시 부츠",
+   "pt": "발목 덮어 깔끔하게",
+   "find": "블랙 첼시 부츠",
+   "pt_xy": [
+    575,
+    1370
+   ],
+   "crop": [
+    480,
+    1310,
+    440
+   ]
+  }
+ ],
+ "t_item": 4.1,
+ "push": 0.12,
+ "split_amp": 160,
+ "cover_center": [
+  512,
+  460
+ ],
+ "cover_zoom": 1.2,
+ "recompare": {
+  "title": "정답 공개",
+  "sub": "셔츠·소매를 블랙으로 끊었어요",
+  "off": "전부 데님",
+  "on": "블랙 소매+터틀넥"
+ }
+}

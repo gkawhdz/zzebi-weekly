@@ -1,0 +1,101 @@
+{
+ "episode": "24",
+ "celeb": "JAYLEN BROWN",
+ "city": "NEW YORK",
+ "date": "2026.10",
+ "title": "올블랙 레더 터틀넥룩",
+ "image": "img24.jpg",
+ "accent": "#B23A3A",
+ "hook": "가죽재킷 안에\n뭐 입었어요?",
+ "hook_cta": "정답은 마지막에 →",
+ "cover_sub": "어느 쪽이 더 비싸 보여요?",
+ "cover_no_celeb": true,
+ "cover_t": 1.2,
+ "split": {
+  "image_off": "img24b.jpg",
+  "off_label": "기본 이너",
+  "on_label": "이너만 바꿈"
+ },
+ "answer": 2,
+ "answer_label": "정답",
+ "items": [
+  {
+   "cat": "JACKET · 재킷",
+   "brand": "실착 · 브랜드 미상",
+   "name": "오버핏 레더 재킷",
+   "pt": "레드 배색선이 포인트",
+   "find": "오버핏 레더 자켓",
+   "pt_xy": [
+    730,
+    330
+   ],
+   "crop": [
+    512,
+    330,
+    700
+   ]
+  },
+  {
+   "cat": "PANTS · 바지",
+   "brand": "실착 · 브랜드 미상",
+   "name": "블랙 와이드 팬츠",
+   "pt": "발등 덮는 넉넉한 기장",
+   "find": "블랙 와이드 슬랙스",
+   "pt_xy": [
+    520,
+    880
+   ],
+   "crop": [
+    520,
+    900,
+    640
+   ]
+  },
+  {
+   "cat": "TURTLENECK · 터틀넥",
+   "brand": "실착 · 브랜드 미상",
+   "name": "블랙 골지 터틀넥",
+   "pt": "목까지 올려 V존 채우기",
+   "find": "블랙 골지 터틀넥",
+   "pt_xy": [
+    510,
+    240
+   ],
+   "crop": [
+    505,
+    300,
+    270
+   ]
+  },
+  {
+   "cat": "SNEAKERS · 신발",
+   "brand": "실착 · 브랜드 미상",
+   "name": "실버 메탈릭 스니커즈",
+   "pt": "올블랙에 빛 한 점",
+   "find": "실버 메탈릭 스니커즈",
+   "pt_xy": [
+    545,
+    1320
+   ],
+   "crop": [
+    480,
+    1280,
+    420
+   ]
+  }
+ ],
+ "t_item": 4.1,
+ "push": 0.12,
+ "split_amp": 160,
+ "cover_center": [
+  512,
+  430
+ ],
+ "cover_zoom": 1.3,
+ "recompare": {
+  "title": "정답 공개",
+  "sub": "흰 티 → 블랙 터틀넥, 이너만 바꿨어요",
+  "off": "흰 라운드 티",
+  "on": "블랙 터틀넥"
+ }
+}
