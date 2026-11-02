@@ -10,7 +10,7 @@ rm -rf r now; rm -f index.html 404.html og*.jpg .push_test
 cp -r "$SRC/r" "$SRC/index.html" "$SRC/404.html" "$SRC"/og*.jpg .
 [ -d "$SRC/now" ] && cp -r "$SRC/now" .
 touch .nojekyll
-printf '# zzebi-st.github.io\nZzebi.St 위클리 공개 사이트 (자동 생성 — 직접 수정하지 마세요). 원본: gkawhdz/zzebi-weekly\n' > README.md
+printf '# zzebi-st.github.io\nZzebi.St 위클리 공개 사이트 (자동 생성 — 직접 수정하지 마세요).\n' > README.md
 git add -A
 git commit -qm "${1:-위클리 사이트 갱신}
 
