@@ -14,7 +14,7 @@ import sys, os, json, shutil, subprocess, secrets, base64
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, 'tools'))
 import build_report as B
-SITE = 'https://gkawhdz.github.io/zzebi-weekly'
+SITE = 'https://zzebi-st.github.io'
 NOW = '''<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex"><meta name="referrer" content="no-referrer"><title>Zzebi.St 위클리 · __WEEK__</title>
 <meta property="og:title" content="Zzebi.St 위클리 · __WEEK__"><meta property="og:description" content="이번 주 셀럽 스냅 따라 사는 법 · 랭킹 · 핫딜 · 크림 인기 신발 (한국어·EN·中文)">

@@ -3,3 +3,4 @@ data/w*/
 __pycache__/
 data/*
 !data/SCHEMA.md
+data/current/
