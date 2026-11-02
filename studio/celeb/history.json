@@ -2,13 +2,66 @@
  "rule": "하루 여자, 하루 남자 번갈아. 마지막 날짜의 gender 반대로.",
  "posts": [
   {
+   "date": "2026-11-02",
+   "ep": "27",
+   "gender": "여자",
+   "celeb": "Dua Lipa",
+   "look": "벨벳 코트 청바지 데이트룩",
+   "slot": "18:00",
+   "hook": "청바지 그대로\n데이트룩 될까요?",
+   "hook_type": "07 가능성 확장형(질문 문법)",
+   "music": "오리지널 배경음(인스타 라이브러리 곡 연결 실패: Authorization Error), seed 2026110227",
+   "channels": [
+    "instagram",
+    "story",
+    "tiktok_native",
+    "youtube_native",
+    "tiktok_story_ready"
+   ],
+   "design_version": "v4.5",
+   "story_format": "필름 스트립 세로 스크롤 모션 + 기장 팁(7초 mp4)",
+   "image_file": "20261102_27.jpg.jpeg",
+   "image_id": "1b1xQoXal7DGCSdxkYeUQZZINi5kwv6eG",
+   "image_off_id": "1VLqMqHvs_4HSyAmXGnx7GSJJexQGuFmX",
+   "source": "Marie Claire, Where to Shop the Week's Best Celebrity Outfits, October 18, 2026",
+   "status": "예약됨"
+  },
+  {
+   "date": "2026-11-02",
+   "ep": "26",
+   "gender": "여자",
+   "celeb": "Gigi Hadid",
+   "look": "그레이 니트 셋업룩",
+   "slot": "12:30",
+   "hook": "니트 셋업이 잠옷 같다면?\n니트는 그대로 두세요",
+   "hook_type": "06 해결책 제시형(조건 문법)",
+   "music": "오리지널 배경음(인스타 라이브러리 곡 연결 실패: Authorization Error), seed 2026110226",
+   "channels": [
+    "instagram",
+    "story",
+    "tiktok_native",
+    "youtube_native",
+    "tiktok_story_ready"
+   ],
+   "design_version": "v4.5",
+   "story_format": "실착 가격표 태그 + '값보다 색' 메모(정지 jpg)",
+   "image_file": "20261102_26.jpg.jpeg",
+   "image_id": "11OUP3GMDdG1FVAFI35zAuIzlE8lIMgmk",
+   "image_off_id": "1l9iSGdr1N9FB6JqLccUTd4IPqPcQDBtr",
+   "source": "Marie Claire, Shop the Week's Best Celebrity Outfits: October 25, 2026",
+   "status": "예약됨",
+   "tiktok_hook": "입을 옷이 늘 똑같다면?",
+   "tiktok_hook_type": "11 감정 공감형(조건 문법)"
+  },
+  {
    "date": "2026-11-01",
    "gender": "남자",
    "music": "오리지널 배경음(인스타 라이브러리 곡 연결 실패: Authorization Error), seed 2026110125",
    "channels": [
     "instagram",
     "story",
-    "tiktok_comp_pending"
+    "tiktok_native",
+    "youtube_native"
    ],
    "design_version": "v4.5",
    "status": "예약됨",
@@ -32,7 +85,8 @@
    "channels": [
     "instagram",
     "story",
-    "tiktok_comp_pending"
+    "tiktok_native",
+    "youtube_native"
    ],
    "design_version": "v4.5",
    "status": "예약됨",

@@ -1,0 +1,47 @@
+{
+ "native": true,
+ "kicker": "따라 입기 쉬운 순",
+ "title": [
+  "입을 옷이",
+  "늘 똑같다면?"
+ ],
+ "sub": "마지막 룩이 제일 쉬워요 ↓",
+ "intro_img": "/home/claude/work/tt/img25.jpg",
+ "intro_y": 0.35,
+ "segments": [
+  {
+   "file": "/home/claude/work/tt/seg0.mp4",
+   "label": "폴 포그바",
+   "trim": [
+    0,
+    12.3
+   ]
+  },
+  {
+   "file": "/home/claude/work/tt/seg1.mp4",
+   "label": "제일런 브라운",
+   "trim": [
+    0,
+    12.3
+   ]
+  },
+  {
+   "file": "/home/claude/work/tt/seg2.mp4",
+   "label": "두아 리파",
+   "trim": [
+    0,
+    12.3
+   ]
+  },
+  {
+   "file": "/home/claude/work/tt/seg3.mp4",
+   "label": "지지 하디드",
+   "trim": [
+    0,
+    12.3
+   ]
+  }
+ ],
+ "seed": 20261102,
+ "cta_kicker": "내일 저녁 6시, 셀럽 룩 또 해부"
+}

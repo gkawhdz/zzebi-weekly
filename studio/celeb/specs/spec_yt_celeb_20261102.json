@@ -1,0 +1,118 @@
+{
+ "native": true,
+ "kicker": "따라 입기 쉬운 순",
+ "title": [
+  "입을 옷이",
+  "늘 똑같다면?"
+ ],
+ "sub": "마지막 룩이 제일 쉬워요 ↓",
+ "intro_img": "/home/claude/work/tt/img25.jpg",
+ "intro_y": 0.35,
+ "segments": [
+  {
+   "file": "/home/claude/work/tt/seg0.mp4",
+   "label": "폴 포그바",
+   "trim": [
+    0,
+    12.3
+   ],
+   "en": [
+    [
+     0.0,
+     4.1,
+     "01 Black knit turtleneck — a black line between the denim"
+    ],
+    [
+     4.1,
+     8.2,
+     "02 Dark straight jeans — same deep indigo as the jacket"
+    ],
+    [
+     8.2,
+     12.299999999999999,
+     "03 Denim jacket with black sleeves — break up the denim"
+    ]
+   ]
+  },
+  {
+   "file": "/home/claude/work/tt/seg1.mp4",
+   "label": "제일런 브라운",
+   "trim": [
+    0,
+    12.3
+   ],
+   "en": [
+    [
+     0.0,
+     4.1,
+     "01 Oversized leather jacket — the red piping is the accent"
+    ],
+    [
+     4.1,
+     8.2,
+     "02 Black wide pants — long enough to cover the top of the foot"
+    ],
+    [
+     8.2,
+     12.299999999999999,
+     "03 Black ribbed turtleneck — pull it up to fill the neckline"
+    ]
+   ]
+  },
+  {
+   "file": "/home/claude/work/tt/seg2.mp4",
+   "label": "두아 리파",
+   "trim": [
+    0,
+    12.3
+   ],
+   "en": [
+    [
+     0.0,
+     4.1,
+     "01 Cropped velvet coat — end it above the waist"
+    ],
+    [
+     4.1,
+     8.2,
+     "02 Dark-wash jeans — just your usual pair"
+    ],
+    [
+     8.2,
+     12.299999999999999,
+     "03 Zebra pumps (Louboutin) — keep the print to your feet"
+    ]
+   ]
+  },
+  {
+   "file": "/home/claude/work/tt/seg3.mp4",
+   "label": "지지 하디드",
+   "trim": [
+    0,
+    12.3
+   ],
+   "en": [
+    [
+     0.0,
+     4.1,
+     "01 Waxed suede jacket (Miu Miu) — toss it over the knit"
+    ],
+    [
+     4.1,
+     8.2,
+     "02 Gray cashmere pants — same gray as the cardigan"
+    ],
+    [
+     8.2,
+     12.299999999999999,
+     "03 Brown suede loafers — swap sneakers for brown loafers"
+    ]
+   ]
+  }
+ ],
+ "seed": 20261102,
+ "cta_kicker": "내일 저녁 6시, 셀럽 룩 또 해부",
+ "intro_en": "Same outfits every day? The last look is the easiest",
+ "outro_en": "Follow @zzebi_st for daily celeb style breakdowns",
+ "outro_handle": "@zzebi_st"
+}

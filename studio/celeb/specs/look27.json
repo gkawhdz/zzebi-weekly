@@ -1,0 +1,101 @@
+{
+ "episode": "27",
+ "celeb": "DUA LIPA",
+ "city": "DATE NIGHT",
+ "date": "2026.10",
+ "title": "벨벳 코트 청바지 데이트룩",
+ "image": "img27.jpg",
+ "accent": "#2B3A7A",
+ "hook": "청바지 그대로\n데이트룩 될까요?",
+ "hook_cta": "핵심 한 곳은 마지막에 →",
+ "cover_sub": "왼쪽과 오른쪽, 청바지는 같아요",
+ "cover_no_celeb": true,
+ "cover_t": 1.2,
+ "split": {
+  "image_off": "img27b.jpg",
+  "off_label": "후드+운동화",
+  "on_label": "청바지는 그대로"
+ },
+ "answer": 2,
+ "answer_label": "핵심",
+ "items": [
+  {
+   "cat": "COAT · 코트",
+   "brand": "실착 · 브랜드 미상",
+   "name": "크롭 벨벳 코트",
+   "pt": "허리선 위에서 끊기",
+   "find": "벨벳 크롭 자켓",
+   "pt_xy": [
+    330,
+    260
+   ],
+   "crop": [
+    490,
+    270,
+    620
+   ]
+  },
+  {
+   "cat": "JEANS · 청바지",
+   "brand": "실착 · 브랜드 미상",
+   "name": "다크워시 데님",
+   "pt": "평소 청바지 그대로",
+   "find": "다크워시 일자 데님",
+   "pt_xy": [
+    540,
+    720
+   ],
+   "crop": [
+    510,
+    760,
+    660
+   ]
+  },
+  {
+   "cat": "PUMPS · 구두",
+   "brand": "실착 · Christian Louboutin",
+   "name": "지브라 펌프스",
+   "pt": "무늬는 발끝 한 곳만",
+   "find": "지브라 펌프스",
+   "pt_xy": [
+    470,
+    1350
+   ],
+   "crop": [
+    520,
+    1290,
+    440
+   ]
+  },
+  {
+   "cat": "BAG · 가방",
+   "brand": "스타일링 추천",
+   "name": "블랙 미니 숄더백",
+   "pt": "짧은 끈으로 옆구리에",
+   "find": "블랙 미니 숄더백",
+   "pt_xy": [
+    615,
+    270
+   ],
+   "crop": [
+    620,
+    240,
+    340
+   ]
+  }
+ ],
+ "t_item": 4.1,
+ "push": 0.12,
+ "split_amp": 160,
+ "cover_center": [
+  512,
+  600
+ ],
+ "cover_zoom": 1.1,
+ "recompare": {
+  "title": "정답 공개",
+  "sub": "후드→벨벳, 운동화→지브라 힐, 가방까지",
+  "off": "후드+운동화",
+  "on": "벨벳+지브라 힐"
+ }
+}

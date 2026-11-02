@@ -134,7 +134,7 @@ def card_cta_native(out, spec):
     d.text((90, 700), spec.get("cta_kicker", "내일 저녁에도 셀럽 룩 해부"), font=font(52, False), fill="white")
     d.text((86, 790), "팔로우하고", font=font(140), fill="white")
     d.text((86, 960), "내일도 보기", font=font(140), fill="white")
-    d.text((90, 1160), "@zzebi.st", font=font(72), fill="white")
+    d.text((90, 1160), spec.get("outro_handle", "@zzebi.st"), font=font(72), fill="white")  # 11/2: 유튜브판 @zzebi_st
     im.save(out, quality=95)
 
 

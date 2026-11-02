@@ -1,0 +1,101 @@
+{
+ "episode": "26",
+ "celeb": "GIGI HADID",
+ "city": "NEW YORK",
+ "date": "2026.10",
+ "title": "그레이 니트 셋업룩",
+ "image": "img26.jpg",
+ "accent": "#8B5A2B",
+ "hook": "니트 셋업이 잠옷 같다면?\n니트는 그대로 두세요",
+ "hook_cta": "제일 쉬운 한 곳은 마지막에 →",
+ "cover_sub": "왼쪽 vs 오른쪽, 니트는 같아요",
+ "cover_no_celeb": true,
+ "cover_t": 1.2,
+ "split": {
+  "image_off": "img26b.jpg",
+  "off_label": "후드+운동화",
+  "on_label": "니트는 그대로"
+ },
+ "answer": 2,
+ "answer_label": "제일 쉬움",
+ "items": [
+  {
+   "cat": "JACKET · 재킷",
+   "brand": "실착 · Miu Miu",
+   "name": "왁스드 스웨이드 재킷",
+   "pt": "니트 위에 툭 걸치기",
+   "find": "빈티지 레더 자켓",
+   "pt_xy": [
+    262,
+    400
+   ],
+   "crop": [
+    500,
+    330,
+    720
+   ]
+  },
+  {
+   "cat": "KNIT PANTS · 니트 팬츠",
+   "brand": "실착 · Guest In Residence",
+   "name": "그레이 캐시미어 팬츠",
+   "pt": "카디건과 같은 회색으로",
+   "find": "니트 와이드 팬츠",
+   "pt_xy": [
+    530,
+    900
+   ],
+   "crop": [
+    520,
+    950,
+    660
+   ]
+  },
+  {
+   "cat": "LOAFERS · 로퍼",
+   "brand": "실착 · Miu Miu",
+   "name": "밤색 스웨이드 로퍼",
+   "pt": "운동화 대신 밤색 로퍼",
+   "find": "브라운 스웨이드 로퍼",
+   "pt_xy": [
+    485,
+    1405
+   ],
+   "crop": [
+    490,
+    1360,
+    380
+   ]
+  },
+  {
+   "cat": "BAG · 가방",
+   "brand": "실착 · Miu Miu",
+   "name": "밤색 레더 토트백",
+   "pt": "로퍼와 같은 브라운 톤",
+   "find": "브라운 레더 토트백",
+   "pt_xy": [
+    230,
+    960
+   ],
+   "crop": [
+    235,
+    900,
+    440
+   ]
+  }
+ ],
+ "t_item": 4.1,
+ "push": 0.12,
+ "split_amp": 160,
+ "cover_center": [
+  512,
+  700
+ ],
+ "cover_zoom": 1.1,
+ "recompare": {
+  "title": "정답 공개",
+  "sub": "겉옷·신발·가방을 브라운 가죽으로",
+  "off": "후드+운동화",
+  "on": "브라운 가죽 3개"
+ }
+}
