@@ -1,0 +1,475 @@
+{
+ "date": "2026-11-03",
+ "posts": [
+  {
+   "date": "2026-11-03",
+   "season": "가을",
+   "transition": true,
+   "metrics": {},
+   "status": "게시됨",
+   "series": "trend",
+   "format": "정보형",
+   "gender": "남자",
+   "title": "일교차 14℃ 출근 레이어링 3겹 순서",
+   "hook": "패딩 하나로 버티지 마세요",
+   "hook_type": "13 경고형",
+   "situation": "출근",
+   "weather": "서울 아침 3℃, 낮 17℃(일교차 14℃)",
+   "theme": "날씨·일교차 14℃ 출근 레이어링 3겹 순서(남성)",
+   "topic": "서울 아침 3℃·낮 17℃, 패딩 대신 모크넥 이너→니트 베스트→짧은 블루종",
+   "looks": [
+    {
+     "name": "3겹 레이어링 출근룩",
+     "items": [
+      {
+       "part": "상의",
+       "desc": "화이트 모크넥 긴팔",
+       "color_hex": "",
+       "tip": "맨 안쪽: 목 있는 얇은 이너"
+      },
+      {
+       "part": "상의",
+       "desc": "딥 틸 브이넥 니트 베스트",
+       "color_hex": "",
+       "tip": "실내에선 블루종 벗고 베스트까지만"
+      },
+      {
+       "part": "아우터",
+       "desc": "스톤 그레이 코튼 블루종",
+       "color_hex": "",
+       "tip": "엉덩이 위 짧은 기장 — 점심엔 벗어 들기 쉬움"
+      },
+      {
+       "part": "하의",
+       "desc": "라이트 그레이 울 와이드 팬츠",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "신발",
+       "desc": "브라운 스웨이드 로퍼",
+       "color_hex": "",
+       "tip": ""
+      }
+     ],
+     "palette": [],
+     "formula": "두꺼운 아우터 한 벌보다 얇게 세 겹(이너→베스트→짧은 아우터), 벗는 순서대로 입기"
+    }
+   ],
+   "colors": "화이트+딥 틸+스톤 그레이 / 라이트 그레이+브라운",
+   "tips": [
+    "일교차 큰 날엔 얇게 세 겹",
+    "실내에선 베스트까지만",
+    "엉덩이 위 짧은 블루종이 들고 다니기 쉬움"
+   ],
+   "caption": "아침엔 패딩, 점심엔 땀… 정답은 벗는 순서에 있어요.\n\n오늘 서울 아침 3℃, 낮 17℃(기상청 예보). 일교차 14℃ 날엔 두꺼운 아우터 한 벌보다 얇게 세 겹이 편해요.\n\n① 맨 안쪽: 목 있는 얇은 이너(모크넥 긴팔)\n② 가운데: 니트 베스트 — 실내에선 블루종 벗고 베스트까지만\n③ 맨 바깥: 엉덩이 위 짧은 블루종 — 점심엔 벗어 들기 쉬워요\n\n내일 아침 입을 순서, 저장해두세요. 매일 1분 코디는 @zzebi.st\n참고: 기상청 예보(M이코노미뉴스 11.2)\n\n#출근룩 #일교차코디 #레이어드룩 #남자출근룩 #니트베스트 #블루종 #가을코디 #오늘뭐입지 #데일리룩 #zzebist",
+   "sources": [
+    "기상청 예보(M이코노미뉴스 11.2)"
+   ],
+   "images": [
+    {
+     "drive_id": "1W9E8r34jx69Jxg4f1XaddBP89Ipf_DOW",
+     "name": "20261103_trend_ah1.jpg",
+     "kind": "원본일러스트"
+    },
+    {
+     "drive_id": "1PvSLc_adMHtskYqSfSoFPx6MWF1BZWQM",
+     "name": "20261103_trend_ah2.jpg",
+     "kind": "원본일러스트"
+    },
+    {
+     "drive_id": "1lRRzqTIwiASFjYtGTWzXxUxvDY7kmluh",
+     "name": "20261103_trend_ap1.jpg",
+     "kind": "원본일러스트"
+    },
+    {
+     "drive_id": "1xyo2ykk5ijKJGNWN2qGBgcBdP7VkQELc",
+     "name": "20261103_trend_ap2.jpg",
+     "kind": "원본일러스트"
+    },
+    {
+     "drive_id": "1P2Hdve91QhB4JcVr0xxwkJwEBAvtph4W",
+     "name": "20261103_trend_ap3.jpg",
+     "kind": "원본일러스트"
+    }
+   ],
+   "time": "08:30",
+   "media": [
+    "https://static.metricool.com/planner/202611/7607527-file-4504180955080451237.mp4"
+   ],
+   "video": "7607527-file-4504180955080451237.mp4",
+   "video_comp": "",
+   "instagram_url": "https://www.instagram.com/reel/DfQfeyEAjz8/",
+   "book_notes": "원본 그림 td20261103_ah1·ah2·ap1~ap3 (a편으로 추정 매칭). 비교용 블랙 롱패딩은 아이템 목록에만 있음. 겨울 초입 챕터에도 활용 가능"
+  },
+  {
+   "date": "2026-11-03",
+   "season": "가을",
+   "transition": true,
+   "metrics": {},
+   "status": "게시됨",
+   "series": "trend",
+   "format": "컬러조합",
+   "gender": "여자",
+   "title": "두 색 공식 — 에메랄드&카멜 / 탠저린&플럼 6벌",
+   "hook": "두 색만으로 6벌 코디 끝",
+   "hook_type": "24 기간 성과형",
+   "situation": "출근·데이트·주말",
+   "weather": "",
+   "theme": "두 색 공식 플랫레이·에메랄드&카멜 / 탠저린&플럼",
+   "topic": "검정 옷장 대신 두 색 2조합 6벌(출근·데이트·주말)",
+   "looks": [
+    {
+     "name": "에메랄드 × 카멜",
+     "items": [
+      {
+       "part": "아우터",
+       "desc": "에메랄드 울 블레이저",
+       "color_hex": "",
+       "tip": "출근"
+      },
+      {
+       "part": "상의",
+       "desc": "카멜 니트",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "하의",
+       "desc": "카멜 와이드 팬츠",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "하의",
+       "desc": "에메랄드 새틴 바이어스 미디 스커트",
+       "color_hex": "",
+       "tip": "데이트"
+      },
+      {
+       "part": "상의",
+       "desc": "카멜 청키 카디건",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "아우터",
+       "desc": "카멜 스웨이드 숏재킷",
+       "color_hex": "",
+       "tip": "주말"
+      },
+      {
+       "part": "상의",
+       "desc": "에메랄드 터틀넥",
+       "color_hex": "",
+       "tip": ""
+      }
+     ],
+     "palette": [],
+     "formula": "한 색은 아우터·하의로 크게, 다른 색은 상의·가방으로 한 점, 금색 귀걸이로 마무리"
+    },
+    {
+     "name": "탠저린 × 플럼",
+     "items": [
+      {
+       "part": "아우터",
+       "desc": "플럼 더블 블레이저",
+       "color_hex": "",
+       "tip": "출근"
+      },
+      {
+       "part": "상의",
+       "desc": "탠저린 실크 블라우스",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "상의",
+       "desc": "탠저린 모헤어 카디건",
+       "color_hex": "",
+       "tip": "데이트"
+      },
+      {
+       "part": "하의",
+       "desc": "플럼 플리츠 미디 스커트",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "아우터",
+       "desc": "탠저린 크롭 재킷",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "신발",
+       "desc": "탠저린 레더 로퍼",
+       "color_hex": "",
+       "tip": "주말"
+      }
+     ],
+     "palette": [],
+     "formula": "한 색은 아우터·하의로 크게, 다른 색은 상의·가방으로 한 점, 금색 귀걸이로 마무리"
+    }
+   ],
+   "colors": "에메랄드+카멜 / 탠저린+플럼",
+   "tips": [
+    "한 색은 크게, 다른 색은 한 점",
+    "금색 귀걸이로 마무리"
+   ],
+   "caption": "검정 대신 두 색만 정하면, 아침 고민이 사라져요. 2번은 생각보다 차분해요.\n\n오늘의 두 색 조합 2개, 6벌\n① 에메랄드 × 카멜 — 출근은 에메랄드 블레이저, 데이트는 새틴 스커트, 주말은 스웨이드 숏재킷\n② 탠저린 × 플럼 — 출근은 플럼 블레이저, 데이트는 모헤어 카디건, 주말은 탠저린 로퍼\n\n두 색 공식: 한 색은 아우터·하의로 크게, 다른 색은 상의·가방으로 한 점, 금색 귀걸이로 마무리.\n\n내일 입을 룩, 저장해두고 아침에 꺼내 보세요. 매일 1분 코디 @zzebi.st\n\n#컬러조합 #두색코디 #출근룩 #에메랄드그린 #카멜코디 #오렌지코디 #플럼 #가을코디 #코디추천 #zzebist",
+   "sources": [],
+   "images": [
+    {
+     "drive_id": "1c8-9YenwGlO-eQa4SDm1037nNvPZtjM5",
+     "name": "20261103_trend_bf1.jpg",
+     "kind": "원본일러스트"
+    },
+    {
+     "drive_id": "1v3V6LOH0x9rp8jGmmOXCKaUWadK8mewg",
+     "name": "20261103_trend_bf2.jpg",
+     "kind": "원본일러스트"
+    }
+   ],
+   "time": "10:00",
+   "media": [
+    "https://static.metricool.com/planner/202611/7607527-file-1644284288101534391.mp4"
+   ],
+   "video": "7607527-file-1644284288101534391.mp4",
+   "video_comp": "",
+   "instagram_url": "https://www.instagram.com/reel/DfQqBf3Euer/",
+   "book_notes": "원본 그림 td20261103_bf1·bf2 (b편 플랫레이로 추정 매칭). 성별은 아이템(스커트·블라우스) 기준 여자. 일부 룩 원본 없음 가능"
+  },
+  {
+   "date": "2026-11-03",
+   "season": "가을",
+   "transition": true,
+   "metrics": {},
+   "status": "게시됨",
+   "series": "trend",
+   "format": "코디룩북",
+   "gender": "여자",
+   "title": "상체가 신경 쓰일 때 니트 2룩",
+   "hook": "상체가 커 보인다면",
+   "hook_type": "06 해결책 제시형",
+   "situation": "출근·주말",
+   "weather": "",
+   "theme": "체형 고민·상체가 신경 쓰일 때 니트 2룩",
+   "topic": "브이넥 카디건 단독 출근룩 / 래글런 니트+셔츠 깃+코듀로이 맥시 주말룩",
+   "looks": [
+    {
+     "name": "LOOK 1 출근",
+     "items": [
+      {
+       "part": "상의",
+       "desc": "소프트 블루 브이넥 카디건(단독)",
+       "color_hex": "",
+       "tip": "깊은 V로 목선이 길어 보이게, 넣어 입기"
+      },
+      {
+       "part": "하의",
+       "desc": "블랙 와이드 팬츠 + 벨트",
+       "color_hex": "",
+       "tip": "벨트로 비율 정리"
+      },
+      {
+       "part": "신발",
+       "desc": "블랙 로퍼",
+       "color_hex": "",
+       "tip": ""
+      }
+     ],
+     "palette": [],
+     "formula": "목은 V로 열기 + 넣어 입고 벨트"
+    },
+    {
+     "name": "LOOK 2 주말",
+     "items": [
+      {
+       "part": "상의",
+       "desc": "민트 래글런 니트",
+       "color_hex": "",
+       "tip": "어깨선 없는 래글런 소매"
+      },
+      {
+       "part": "상의",
+       "desc": "흰 셔츠 깃 레이어드",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "하의",
+       "desc": "브라운 코듀로이 A라인 맥시 스커트",
+       "color_hex": "",
+       "tip": "하의에 볼륨"
+      },
+      {
+       "part": "신발",
+       "desc": "흰 스니커즈",
+       "color_hex": "",
+       "tip": ""
+      }
+     ],
+     "palette": [],
+     "formula": "어깨선 없는 래글런 + 하의에 볼륨"
+    }
+   ],
+   "colors": "소프트 블루+블랙 / 민트+브라운",
+   "tips": [
+    "목은 V로 열기",
+    "어깨선 없는 래글런",
+    "하의에 볼륨"
+   ],
+   "caption": "두꺼운 니트가 문제가 아니라, 어깨선이 문제였어요.\n\n상체가 신경 쓰이는 날 니트 고르는 법\nLOOK 1 출근: 브이넥 카디건 단독 — 깊은 V로 목선이 길어 보이고, 넣어 입고 벨트로 비율 정리\nLOOK 2 주말: 래글런 소매 니트 + 흰 셔츠 깃 + 코듀로이 맥시 스커트\n\n공식: 목은 V로 열기 · 어깨선 없는 래글런 · 하의에 볼륨\n\n체형보다 내 옷장부터. 니트 사기 전에 저장해두세요. 매일 1분 코디 @zzebi.st\n참고: 얼루어 코리아(2026.5.28) 넥라인·소매 가이드\n\n#상체커버 #체형별코디 #니트코디 #브이넥카디건 #래글런니트 #출근룩 #주말룩 #가을코디 #코디추천 #zzebist",
+   "sources": [
+    "얼루어 코리아(2026.5.28) 넥라인·소매 가이드"
+   ],
+   "images": [
+    {
+     "drive_id": "1BeS9RTAlfWaiA4quTaJqnnhLbdzQqgQH",
+     "name": "20261103_trend_c1.jpg",
+     "kind": "원본일러스트"
+    },
+    {
+     "drive_id": "10ZAkmY_G6ETReGOEZGcf7_qZQgOZCPIm",
+     "name": "20261103_trend_c2.jpg",
+     "kind": "원본일러스트"
+    }
+   ],
+   "time": "11:30",
+   "media": [
+    "https://static.metricool.com/planner/202611/7607527-file-9309361730901348499.mp4"
+   ],
+   "video": "7607527-file-9309361730901348499.mp4",
+   "video_comp": "tiktok·youtube 단독 영상 7607527-file-2897740763887697618.mp4 / 7607527-file-17525097422103661847.mp4 (훅 \"솔직히 니트 탓 아니에요\", 남자 V넥 베스트 포함)",
+   "instagram_url": "https://www.instagram.com/reel/DfQ0D1TFRRr/",
+   "book_notes": "원본 그림 td20261103_c1·c2 (c편으로 추정 매칭). 체형 챕터용"
+  },
+  {
+   "date": "2026-11-03",
+   "season": "가을",
+   "transition": true,
+   "metrics": {},
+   "status": "게시됨",
+   "series": "celeb",
+   "format": "셀럽스냅",
+   "gender": "남자",
+   "title": "셀럽 스냅 해부 #28 슬랙스+캔버스화 출근룩",
+   "celeb": "Kevin Durant",
+   "ep": "28",
+   "hook": "구두를 뺐는데 오히려 더 단정해 보이는 이유, 3번에 있어요",
+   "hook_type": "",
+   "situation": "출근",
+   "weather": "",
+   "looks": [
+    {
+     "name": "슬랙스+캔버스화 출근룩",
+     "items": [
+      {
+       "part": "상의",
+       "desc": "스트라이프 셔츠",
+       "color_hex": "",
+       "tip": "바지 속에 깔끔히"
+      },
+      {
+       "part": "하의",
+       "desc": "네이비 슬랙스",
+       "color_hex": "",
+       "tip": "주름선 있는 일자핏"
+      },
+      {
+       "part": "신발",
+       "desc": "캔버스 하이탑",
+       "color_hex": "",
+       "tip": "구두 자리에 그대로 (실착)"
+      },
+      {
+       "part": "액세서리",
+       "desc": "블랙 가죽 벨트",
+       "color_hex": "",
+       "tip": "신발과 색 맞추기 (스타일링 추천)"
+      }
+     ],
+     "palette": [],
+     "formula": "구두 대신 캔버스화 — 벨트를 신발 색에 맞추면 단정함 유지"
+    }
+   ],
+   "caption": "셀럽 스냅 해부 #28 | Kevin Durant in Dallas 🇺🇸\n구두를 뺐는데 오히려 더 단정해 보이는 이유, 3번에 있어요. 슬랙스+캔버스화 출근룩, 포인트 4개만 기억하세요\n\n01 스트라이프 셔츠 – 바지 속에 깔끔히\n02 네이비 슬랙스 – 주름선 있는 일자핏\n03 캔버스 하이탑 – 구두 자리에 그대로 (실착: Converse Chuck Taylor)\n04 블랙 가죽 벨트 – 신발과 색 맞추기 (스타일링 추천)\n\n시즌 개막 경기장에 들어서던 날의 룩이에요(The Root 10/25 기사 기준).\n남친·남편 출근룩이 늘 무겁다면, 구두 대신 캔버스화 한 켤레부터 권해 보세요.\n\n저장해두고 따라 입기 🔖\n※ 실제 착장을 바탕으로 AI로 재현한 이미지예요\n\n#남자출근룩 #슬랙스코디 #캔버스화 #남친룩 #셀럽패션 #NBA패션 #스트라이프셔츠 #남자코디 #가을코디 #오피스룩 #streetstyle #zzebi",
+   "sources": [
+    "The Root 10/25 기사"
+   ],
+   "book_notes": "셀럽 이름·닮은 이미지는 책에 그대로 쓰지 말고 스타일 공식만 활용. 원본 없음(셀럽 history에 11/3 항목·image_id 없음)",
+   "time": "12:30",
+   "images": [],
+   "media": [
+    "https://static.metricool.com/planner/202611/7607527-file-7532857770455589949.mp4"
+   ],
+   "video": "7607527-file-7532857770455589949.mp4",
+   "video_comp": "",
+   "instagram_url": "https://www.instagram.com/reel/DfQ66g5EvIA/"
+  },
+  {
+   "date": "2026-11-03",
+   "season": "가을",
+   "transition": true,
+   "metrics": {},
+   "status": "게시됨",
+   "series": "celeb",
+   "format": "셀럽스냅",
+   "gender": "남자",
+   "title": "셀럽 스냅 해부 #29 바람막이 진청 데님룩",
+   "celeb": "Peyton Watson",
+   "ep": "29",
+   "hook": "등산복 느낌을 지운 건 딱 한 벌이에요, 정답은 3번",
+   "hook_type": "",
+   "situation": "주말",
+   "weather": "",
+   "looks": [
+    {
+     "name": "바람막이 진청 데님룩",
+     "items": [
+      {
+       "part": "아우터",
+       "desc": "블루 바람막이",
+       "color_hex": "",
+       "tip": "지퍼 열어 가볍게"
+      },
+      {
+       "part": "상의",
+       "desc": "흰 크루넥 티",
+       "color_hex": "",
+       "tip": "안에 흰색 한 겹 (스타일링 추천)"
+      },
+      {
+       "part": "하의",
+       "desc": "진청 스트레이트 진",
+       "color_hex": "",
+       "tip": "트랙 팬츠 대신 이것 (실착)"
+      },
+      {
+       "part": "신발",
+       "desc": "흰 가죽 스니커즈",
+       "color_hex": "",
+       "tip": "새하얗게 깨끗하게 (실착)"
+      }
+     ],
+     "palette": [],
+     "formula": "바람막이엔 트랙 팬츠 대신 진청 스트레이트 진 + 흰 스니커즈"
+    }
+   ],
+   "caption": "셀럽 스냅 해부 #29 | Peyton Watson on game day 🇺🇸\n등산복 느낌을 지운 건 딱 한 벌이에요, 정답은 3번. 바람막이 진청 데님룩, 포인트 4개만 기억하세요\n\n01 블루 바람막이 – 지퍼 열어 가볍게\n02 흰 크루넥 티 – 안에 흰색 한 겹 (스타일링 추천)\n03 진청 스트레이트 진 – 트랙 팬츠 대신 이것 (실착: LOEWE)\n04 흰 가죽 스니커즈 – 새하얗게 깨끗하게 (실착: Nike Air Force 1)\n\n클리블랜드 캐벌리어스 데뷔전 날 경기장에 들어서던 룩이에요(The Root 10/25 기사 기준).\n주말에 남친이 바람막이를 꺼냈다면, 바지만 청바지로 바꿔 보자고 해 보세요.\n\n저장해두고 따라 입기 🔖\n※ 실제 착장을 바탕으로 AI로 재현한 이미지예요\n\n#바람막이코디 #남자주말룩 #청바지코디 #남친룩 #흰스니커즈 #셀럽패션 #NBA패션 #남자코디 #가을코디 #데일리룩 #streetstyle #zzebi",
+   "sources": [
+    "The Root 10/25 기사"
+   ],
+   "book_notes": "셀럽 이름·닮은 이미지는 책에 그대로 쓰지 말고 스타일 공식만 활용. 원본 없음(셀럽 history에 11/3 항목·image_id 없음)",
+   "time": "18:00",
+   "images": [],
+   "media": [
+    "https://static.metricool.com/planner/202611/7607527-file-1501935174594448269.mp4"
+   ],
+   "video": "7607527-file-1501935174594448269.mp4",
+   "video_comp": "",
+   "instagram_url": "https://www.instagram.com/reel/DfRhPYXDZUM/"
+  }
+ ]
+}
