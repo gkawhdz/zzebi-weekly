@@ -1,5 +1,12 @@
 # zzebi 셀럽 스냅 해부 · 디자인 변경 기록 (최신이 위)
 
+## 2026-11-04 · v5 '플랫레이 × 착장' 분할 사진 (사장님 지시 — "이제 패피릴스 만들 때 이렇게 만들어봐")
+- 레퍼런스: 사장님이 보낸 해외 계정 'Chic Fall Mini Skirt Outfits' 릴스(저장 1,949 · 공유 433). 한 화면 왼쪽 절반에 옷·가방·신발·액세서리를 펼쳐 놓은 플랫레이, 오른쪽 절반에 같은 옷을 입은 전신 사진. "이 옷들 = 이렇게 입는다"가 0.5초에 보여 저장이 많이 나옴. 형식만 참고, 그 계정 이미지·조합은 쓰지 않음.
+- 바꾼 점: ① 셀럽 룩 이미지를 '한 장 안의 좌우 분할'로 생성(왼쪽 플랫레이·오른쪽 착장, 위 24%는 빈 배경 = 후킹 자리, 얼굴 없음 — 목 아래로). 문장 틀은 아래. ② look.json 은 기존 v4.5 형식 그대로, 단 pt_xy 는 오른쪽 착장 속 아이템 위, crop 은 왼쪽 플랫레이 속 같은 아이템(카드에 깨끗한 상품 컷이 보임). ③ 이미지 자체가 분할 구도라 `split`(ON/OFF 비교 이미지 추가 생성)·`recompare` 는 기본으로 쓰지 않음 → 이미지 1장만 생성(비용 절약). 커버 후킹은 "펼쳐 둔 옷 = 입은 모습"을 잇는 시청자 문제형으로. ④ 플랫레이에 실착 아이템 + 스타일링 추천 액세서리(귀걸이·선글라스 등)까지 놓아 '따라 사기 리스트'처럼.
+- 이미지 문장 틀: "Photorealistic split-screen vertical fashion editorial image, divided exactly in half by a clean straight vertical seam at the center. The top 24 percent of the whole image is empty plain background on both halves. LEFT HALF: a flat lay product photograph viewed from directly above on a light warm greige plaster background, no person, items only in the lower 76 percent, neatly arranged top to bottom with small gaps: <액세서리, 아우터, 이너, 하의, 가방, 신발 — 색·소재·핏까지>. RIGHT HALF: a full-body street style photo of a <man/woman> wearing exactly the same items, <걷기 등 자세> in <배경: 미니멀 스튜디오 또는 도시 거리>, only in the lower 76 percent, cropped at the neck so the face is NOT visible at all. Identical items in both halves, realistic fabric textures, <조명>, 35mm film look. No text, no letters, no logos, no brand marks."
+- 검수 포인트: 좌우 아이템이 같은 색·종류인지, 얼굴(입·코)이 안 보이는지(턱이 살짝 보이면 목 아래로 다시), 커버 후킹 판이 플랫레이 아이템을 가리지 않는지.
+- 샘플: specs/look_example_v5.json (11/4 시안, 게시 안 함). 툴(make_reel.py v4.5) 수정 없음.
+
 
 ## 2026-11-02 · 틱톡·유튜브 네이티브 다듬기 (릴스는 v4.5 유지)
 - 바꾼 점: ① 25초 릴스 4개를 그대로 이으면 90초가 넘어서, 각 릴스에서 아이템 01~03 장면(2.4~14.7초)만 잘라 써 53.6초로. ② 이어 붙인 티를 줄이려고 각 장면 위쪽 '셀럽 스냅 해부 #NN' 줄을 부드럽게 흐리고(번호가 #25→#24→#27→#26로 섞여 보이던 문제), 그 자리 아래 '1 / 4' 진행 칩 하나만 표시. ③ make_tiktok_comp.py 네이티브 CTA 화면 아이디를 spec `outro_handle` 로 지정 가능(유튜브판 @zzebi_st).
