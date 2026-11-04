@@ -173,6 +173,11 @@ EXTRA_CSS = '''
 .fresh b{color:var(--ink);font-weight:700}
 html[lang="zh-CN"] body{word-break:normal;line-break:strict;font-family:"PingFang SC","Noto Sans SC","Microsoft YaHei",var(--body)}
 @media (max-width:460px){.brandbar{flex-wrap:wrap}.adtag{display:none}}
+/* v3.2 · 팔로우 CTA 버튼 (2026-11-04 본사 규칙) */
+.follow-cta{display:flex;align-items:center;justify-content:center;gap:6px;margin:12px 0 2px;padding:13px 16px;border-radius:999px;background:var(--brand);color:#fff;font-weight:800;font-size:15px;text-decoration:none;letter-spacing:-.01em;box-shadow:0 2px 10px rgba(0,168,168,.25)}
+.follow-cta:hover{background:var(--brand-strong)}
+.follow-cta::before{content:"";width:9px;height:9px;border-radius:50%;background:#fff;opacity:.9}
+.follow-cta:focus-visible{outline:2px solid var(--brand-ink);outline-offset:2px}
 .tabs{position:sticky}.tabs::after{content:"";position:absolute;top:0;right:0;bottom:1px;width:36px;pointer-events:none;background:linear-gradient(to right,transparent,var(--bg))}
 .tabs.end::after{opacity:0}
 /* v3.1 · 사진 일치 배지 + 비워 둔 칸 카드 (2026-11-02) */
@@ -245,8 +250,10 @@ def render(data_dir, i18n_path=None):
     b = []
     b.append('<div class="wrap">\n  <header>\n    <div class="brandbar">')
     b.append(f'      <a class="brand" href="https://www.instagram.com/zzebi.st/" target="_blank" rel="noopener" aria-label="Instagram @zzebi.st">{LOGO}<span class="wordmark">zzebi<em>.st</em></span></a>')
-    b.append(f'      <div class="brandbar-r"><span class="adtag">{T("구독자 전용")}</span>{LANG_UI}</div>')
+    b.append(f'      <div class="brandbar-r"><span class="adtag">{T("이번 주 무료 공개")}</span>{LANG_UI}</div>')
     b.append('    </div>')
+    # 2026-11-04 본사 규칙: 헤더 바로 아래 팔로우 버튼(프로필 전환 유도)
+    b.append(f'    <a class="follow-cta" href="https://www.instagram.com/zzebi.st/" target="_blank" rel="noopener">{T("@zzebi.st 팔로우하고 매일 코디 받기")}</a>')
     b.append(f'    <p class="masthead">WEEKLY <span>·</span> {T(meta["week"])} · {T(meta["issued"])}</p>')
     b.append(f'    <h1>{T(meta.get("h1a","이번 주 셀럽 스냅,"))}<br>{T(meta.get("h1b","지금 사는 법"))}</h1>')
     b.append(f'    <p class="lead">{T(meta.get("lead","여성·남성 셀럽 스냅을 명품부터 가성비까지 사는 법, 무신사·29CM·지그재그·크림의 이번 주 랭킹과 핫딜, 인기 신발을 메뉴별로 정리했어요."))}</p>')
@@ -302,7 +309,7 @@ def render(data_dir, i18n_path=None):
         '사진은 실제 셀럽 사진이 아닌 AI로 재현한 이미지예요. 상품은 같은 제품이 아니라 비슷한 디자인으로 고른 대체 상품이며, 명품은 실착 브랜드이거나 같은 급의 비슷한 제품이에요.',
         f'국내 가격은 {meta["checked"]} 각 판매처 표시 기준이며 쿠폰·회원 혜택에 따라 결제가가 다를 수 있고, 해외 가격은 1달러 약 1,400원 등으로 대략 환산했어요. 가격과 재고는 수시로 바뀌어요.',
         '이 리포트의 상품 링크는 제휴 링크가 아니에요.',
-        '이 링크는 이번 주 구독자 전용이에요. 매주 월요일 새 리포트가 나오면 지난 링크는 닫혀요.']
+        '이 리포트는 이번 주 무료 공개예요. 매주 월요일 새 리포트가 나오면 지난 링크는 닫혀요.']
     b.append('  <footer>' + ''.join(f'\n    <span>{T(x)}</span>' for x in foot) + '\n    <span>Instagram @zzebi.st</span>\n  </footer>\n</div>')
 
     title = f'Zzebi.St 위클리 {meta["week"]}'
@@ -352,7 +359,7 @@ SEAL = '''<!doctype html>
 <meta name="theme-color" content="#F5F1EA">
 <title>__TITLE__</title>
 <meta property="og:type" content="website"><meta property="og:site_name" content="Zzebi.St 위클리">
-<meta property="og:title" content="__TITLE__"><meta property="og:description" content="구독자 전용 · 이번 주 셀럽 스냅, 랭킹·핫딜, 크림 인기 신발">
+<meta property="og:title" content="__TITLE__"><meta property="og:description" content="이번 주 무료 공개 · 이번 주 셀럽 스냅, 랭킹·핫딜, 크림 인기 신발">
 __OGIMG__<meta name="twitter:card" content="summary_large_image">
 <style>body{margin:0;min-height:100vh;display:grid;place-items:center;background:#F5F1EA;color:#141414;font-family:system-ui,-apple-system,"Apple SD Gothic Neo",sans-serif;text-align:center;padding:24px}
 @media (prefers-color-scheme:dark){body{background:#111313;color:#F2F1ED}}

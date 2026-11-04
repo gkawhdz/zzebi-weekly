@@ -18,7 +18,7 @@ for i,p in enumerate(imgs):
 L=64
 d.rectangle([0,0,x0-1,H],fill=BG)
 d.text((L,60),'zzebi',font=F(SER,52),fill=INK); w=d.textlength('zzebi',font=F(SER,52)); d.text((L+w,60),'.st',font=F(SER,52),fill=(0,168,168))
-chip='구독자 전용' if generic else f'WEEKLY · {week}'
+chip='이번 주 무료 공개' if generic else f'WEEKLY · {week}'
 cf=F(B,24); cw=d.textlength(chip,font=cf)
 d.rounded_rectangle([L,170,L+cw+36,214],radius=22,fill=TEAL); d.text((L+18,176),chip,font=cf,fill=(255,255,255))
 d.text((L,240),'이번 주 셀럽 스냅,',font=F(B,50),fill=INK); d.text((L,306),'지금 사는 법',font=F(B,50),fill=INK)
