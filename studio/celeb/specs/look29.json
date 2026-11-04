@@ -1,0 +1,101 @@
+{
+ "episode": "29",
+ "celeb": "PEYTON WATSON",
+ "city": "GAME DAY",
+ "date": "2026.10",
+ "title": "블루 바람막이 청바지룩",
+ "image": "img29.jpg",
+ "accent": "#2440B8",
+ "hook": "요즘 다 입는 바람막이,\n등산룩 되는 이유는?",
+ "hook_cta": "범인은 3번 바지 →",
+ "cover_sub": "왼쪽과 오른쪽, 바람막이는 같아요",
+ "cover_no_celeb": true,
+ "cover_t": 1.2,
+ "split": {
+  "image_off": "img29b.jpg",
+  "off_label": "등산 갈 때",
+  "on_label": "아래만 바꿈"
+ },
+ "answer": 2,
+ "answer_label": "범인",
+ "t_item": 4.1,
+ "push": 0.12,
+ "split_amp": 160,
+ "cover_center": [
+  512,
+  768
+ ],
+ "cover_zoom": 1.0,
+ "recompare": {
+  "title": "정답 공개",
+  "sub": "나일론 바지 → 데님, 신발은 흰색으로",
+  "off": "나일론 바지",
+  "on": "데님"
+ },
+ "items": [
+  {
+   "cat": "WINDBREAKER · 바람막이",
+   "brand": "실착 · 브랜드 미상",
+   "name": "블루 바람막이",
+   "pt": "지퍼는 반쯤 열어서",
+   "find": "블루 나일론 바람막이",
+   "pt_xy": [
+    561,
+    301
+   ],
+   "crop": [
+    512,
+    322,
+    640
+   ]
+  },
+  {
+   "cat": "T-SHIRT · 이너",
+   "brand": "스타일링 추천",
+   "name": "흰 반팔 티",
+   "pt": "밑단이 살짝 보이게",
+   "find": "화이트 헤비 반팔티",
+   "pt_xy": [
+    468,
+    572
+   ],
+   "crop": [
+    499,
+    499,
+    420
+   ]
+  },
+  {
+   "cat": "JEANS · 청바지",
+   "brand": "실착 · Loewe",
+   "name": "로에베 청바지",
+   "pt": "나일론 바지 대신 데님",
+   "find": "와이드 데님",
+   "pt_xy": [
+    561,
+    926
+   ],
+   "crop": [
+    530,
+    894,
+    600
+   ]
+  },
+  {
+   "cat": "SNEAKERS · 신발",
+   "brand": "실착 · Nike Air Force 1",
+   "name": "흰 에어포스 1",
+   "pt": "등산화 대신 흰 스니커즈",
+   "find": "화이트 로우 스니커즈",
+   "pt_xy": [
+    660,
+    1229
+   ],
+   "crop": [
+    561,
+    1300,
+    480
+   ]
+  }
+ ]
+}
