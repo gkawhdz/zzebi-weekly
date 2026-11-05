@@ -1,0 +1,92 @@
+{
+ "cover_no_celeb": true,
+ "cover_sub": "",
+ "t_item": 5.0,
+ "push": 0.12,
+ "cover_center": [
+  512,
+  768
+ ],
+ "cover_zoom": 1.0,
+ "answer_label": "핵심",
+ "hook_max": 100,
+ "hook_w": 880,
+ "episode": "30",
+ "celeb": "ROSALÍA",
+ "city": "MIAMI",
+ "date": "2026.10",
+ "title": "어그 × 배기진 공항룩",
+ "image": "img30.jpg",
+ "accent": "#3E5C86",
+ "hook": "어그+배기진,\n바지 밑단 안? 밖?",
+ "hook_cta": "",
+ "answer": 2,
+ "items": [
+  {
+   "cat": "CARDIGAN · 아우터",
+   "brand": "브랜드 미상",
+   "name": "골지 롱 카디건",
+   "pt": "단추 풀고 길게 걸치기",
+   "find": "골지 롱 가디건",
+   "pt_xy": [
+    890,
+    440
+   ],
+   "crop": [
+    262,
+    600,
+    470
+   ]
+  },
+  {
+   "cat": "TOP · 이너",
+   "brand": "스타일링 추천",
+   "name": "흰 골지 크롭 나시",
+   "pt": "카디건 틈으로 살짝만",
+   "find": "골지 크롭 나시",
+   "pt_xy": [
+    760,
+    440
+   ],
+   "crop": [
+    262,
+    552,
+    250
+   ]
+  },
+  {
+   "cat": "JEANS · 하의",
+   "brand": "브랜드 미상",
+   "name": "배기 청바지",
+   "pt": "밑단은 부츠 안에 넣기",
+   "find": "배기 와이드 데님",
+   "pt_xy": [
+    770,
+    820
+   ],
+   "crop": [
+    262,
+    870,
+    370
+   ]
+  },
+  {
+   "cat": "BOOTS · 신발",
+   "brand": "실착: UGG × 크롬하츠",
+   "name": "블랙 양털 부츠",
+   "pt": "검정으로 무게 잡기",
+   "find": "블랙 어그부츠",
+   "pt_xy": [
+    730,
+    1150
+   ],
+   "crop": [
+    255,
+    1150,
+    400
+   ]
+  }
+ ],
+ "hook_y": 232,
+ "hook_alpha": 150
+}

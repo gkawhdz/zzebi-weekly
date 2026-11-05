@@ -2,6 +2,58 @@
  "rule": "하루 여자, 하루 남자 번갈아. 마지막 날짜의 gender 반대로.",
  "posts": [
   {
+   "date": "2026-11-05",
+   "ep": "30",
+   "gender": "여자",
+   "celeb": "Rosalía",
+   "look": "어그 × 배기진 공항룩",
+   "slot": "12:30",
+   "hook": "어그+배기진,\n바지 밑단 안? 밖?",
+   "hook_type": "14 실험 결과형(대결·질문 문법)",
+   "pillar": 1,
+   "music": "오리지널 배경음(인스타 라이브러리 곡 연결 실패: Authorization Error), seed 2026110530",
+   "channels": [
+    "instagram",
+    "story",
+    "tiktok_native",
+    "youtube_native",
+    "tiktok_story_ready"
+   ],
+   "design_version": "v5.1",
+   "story_format": "플랫레이→착장 와이프 리빌 모션(7초 mp4)",
+   "image_file": "20261105_30.jpg.jpeg",
+   "image_id": "1PWVN9lXIUPzHs5eXrO2JYIAy9Geen2Je",
+   "status": "예약됨",
+   "source": "Who What Wear 2026-10-23",
+   "tiktok_hook": "옷장 열고 한숨 나온다면?",
+   "tiktok_hook_type": "11 감정 공감형(조건 문법)"
+  },
+  {
+   "date": "2026-11-05",
+   "ep": "31",
+   "gender": "여자",
+   "celeb": "Kendall Jenner",
+   "look": "보트넥 × 펜슬 스커트룩",
+   "slot": "18:00",
+   "hook": "검정 상의+남색 치마,\n왜 비싸 보일까요?",
+   "hook_type": "01 결과 강조형(질문 문법)",
+   "pillar": 1,
+   "music": "오리지널 배경음(인스타 라이브러리 곡 연결 실패: Authorization Error), seed 2026110531",
+   "channels": [
+    "instagram",
+    "story",
+    "tiktok_native",
+    "youtube_native",
+    "tiktok_story_ready"
+   ],
+   "design_version": "v5.1",
+   "story_format": "매거진 표지형 큰 숫자 '1' 티저(정지 jpg)",
+   "image_file": "20261105_31.jpg.jpeg",
+   "image_id": "1eONF17YWv-KYZlkHFn6xlJHQJfMFE90K",
+   "status": "예약됨",
+   "source": "Who What Wear 2026-10-30"
+  },
+  {
    "date": "2026-11-04",
    "gender": "남자",
    "status": "예약됨",
@@ -18,7 +70,9 @@
    "channels": [
     "instagram",
     "story",
-    "tiktok_pending"
+    "tiktok_native",
+    "youtube_native",
+    "tiktok_story_ready"
    ],
    "story_format": "'이러면 등산룩' 체크리스트 + 소매 팁(정지 jpg)",
    "image_file": "20261104_29.jpg.jpeg",
@@ -45,7 +99,9 @@
    "channels": [
     "instagram",
     "story",
-    "tiktok_pending"
+    "tiktok_native",
+    "youtube_native",
+    "tiktok_story_ready"
    ],
    "story_format": "에디터 메모 대화 말풍선 모션(7초 mp4)",
    "image_file": "20261104_28.jpg.jpeg",

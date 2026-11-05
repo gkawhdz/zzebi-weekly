@@ -1,0 +1,47 @@
+{
+ "native": true,
+ "kicker": "갈수록 쉬워지는 순",
+ "title": [
+  "옷장 열고",
+  "한숨 나온다면?"
+ ],
+ "sub": "마지막 룩이 제일 쉬워요 ↓",
+ "intro_img": "/home/claude/work/img31.jpg",
+ "intro_y": 0.35,
+ "segments": [
+  {
+   "file": "/home/claude/work/tt/seg0.mp4",
+   "label": "켄달 제너",
+   "trim": [
+    0,
+    15
+   ]
+  },
+  {
+   "file": "/home/claude/work/tt/seg1.mp4",
+   "label": "데빈 부커",
+   "trim": [
+    0,
+    12.3
+   ]
+  },
+  {
+   "file": "/home/claude/work/tt/seg2.mp4",
+   "label": "페이튼 왓슨",
+   "trim": [
+    0,
+    12.3
+   ]
+  },
+  {
+   "file": "/home/claude/work/tt/seg3.mp4",
+   "label": "로살리아",
+   "trim": [
+    0,
+    20
+   ]
+  }
+ ],
+ "seed": 20261105,
+ "cta_kicker": "내일 저녁, 남자 셀럽 룩 해부"
+}

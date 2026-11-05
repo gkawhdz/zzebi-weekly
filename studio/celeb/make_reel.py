@@ -1,4 +1,4 @@
-"""셀럽 스냅 해부 릴스 (v4.4 — 첫 화면 ON/OFF 분할 슬라이더(split) + 커버에서 셀럽 이름 제거(훅 규칙 10/30), v4.3 — 첫 화면 후킹 문구(hook·hook_cta) + 0초부터 글자 표시, v4.2 — 큰 글씨 요약 리스트 + 카드 보조글씨 30px, 브랜드 틸 #00A8A8) — 9:16 화면을 꽉 채우는 네이티브 레이아웃
+"""셀럽 스냅 해부 릴스 (v5.1 — 커버 좌상단 틸 시리즈 배지 cover_badge·hook_max·hook_w·hook_y·hook_alpha, hook_cta "" 이면 커버 버튼 숨김(본사 커버 규칙 11/4), v4.4 — 첫 화면 ON/OFF 분할 슬라이더(split) + 커버에서 셀럽 이름 제거(훅 규칙 10/30), v4.3 — 첫 화면 후킹 문구(hook·hook_cta) + 0초부터 글자 표시, v4.2 — 큰 글씨 요약 리스트 + 카드 보조글씨 30px, 브랜드 틸 #00A8A8) — 9:16 화면을 꽉 채우는 네이티브 레이아웃
 사용: python3 make_reel.py look.json out_silent.mp4 [cover_out.jpg]
 look.json: episode, celeb, city, date, title, image, accent(옵션 HEX), source(옵션),
            items[4]: cat, brand, name, pt, find, pt_xy[x,y](원본 픽셀), crop[cx,cy,size]
@@ -115,6 +115,7 @@ def dot(img, x, y, a, n):
 # 타임라인
 T_COVER, T_ITEM, T_END = 1.8, 2.3, 3.0
 HOOK = L.get("hook")  # v4.3: 첫 화면 후킹 문구(2줄까지). 있으면 커버 2.4초로 늘려 읽을 시간 확보
+HOOK_MAX = L.get("hook_max", 70)  # v5.1: 커버 후킹 글씨 최대 크기(본사 규칙: 화면 폭 80% 이상)
 if HOOK: T_COVER = 2.4
 T_ITEM = L.get("t_item", T_ITEM)  # v4.5: 아이템 장면 길이(리텐션 규칙 25초 이상 맞추기)
 PUSH = L.get("push", 0.0)  # v4.5: 카드가 뜬 뒤에도 천천히 밀어 들어가 정지 화면 방지
@@ -122,7 +123,7 @@ CC = L.get("cover_center", None); CZ = L.get("cover_zoom", 1.0)  # v4.5: 커버�
 
 def wrap_hook(d, s, maxw=820):
     """후킹 문구를 최대 2줄로 — '\\n'이 있으면 그대로, 없으면 폭에 맞춰 자르고 글씨 크기 자동 조절"""
-    for fs in range(70, 52, -2):
+    for fs in range(HOOK_MAX, 52, -2):
         f = F(fs)
         if "\n" in s:
             lines = s.split("\n")[:2]
@@ -171,27 +172,31 @@ for kind, dur in segs:
                     d.rounded_rectangle([x_, 1120, x_ + w_ + 48, 1196], 38, fill=col + (ca,))
                     txt(d, (x_ + 24, 1158), lab, fl, WHITE + (ca,), "lm")
             # v4.3: 0초 첫 프레임부터 글자가 다 보이게(페이드인 없음) — 스크롤 멈추게 하는 건 첫 화면
-            txt(d, (60, 140), f"셀럽 스냅 해부  #{L['episode']}", F(40, "Bold"), WHITE + (255,))
-            d.line([(60, 200), (180, 200)], fill=BRAND, width=6)
+            # v5.1(11/5): 본사 커버 통일 규칙 — 좌상단 시리즈 표시 1개(틸 배경 흰 글자, 높이 90px 이상)
+            lab_s = L.get("cover_badge", f"셀럽 사복 해부 #{L['episode']}"); fb_ = F(50, "Bold")
+            bw_ = d.textlength(lab_s, font=fb_)
+            d.rounded_rectangle([60, 104, 60 + bw_ + 56, 200], 16, fill=BRAND + (255,))
+            txt(d, (88, 152), lab_s, fb_, WHITE + (255,), "lm")
             if not L.get("cover_no_celeb"):
                 fs_c = 88
                 while d.textlength(L["celeb"], font=F(fs_c)) > 820 and fs_c > 60: fs_c -= 2  # 이름이 길면 줄여서 오른쪽 140px 금지구역 보호
                 txt(d, (60, 232 + (88 - fs_c) // 2), L["celeb"], F(fs_c), WHITE + (255,))
             if HOOK:
-                hl, hf = wrap_hook(d, HOOK, 790)
+                hl, hf = wrap_hook(d, HOOK, L.get("hook_w", 790))
                 lh = int(hf.size * 1.24); bw = max(d.textlength(l_, font=hf) for l_ in hl)
-                hy0 = 250 if L.get("cover_no_celeb") else 362; hy1 = hy0 + lh * len(hl) + 70
+                hy0 = L.get("hook_y", 250) if L.get("cover_no_celeb") else 362; hy1 = hy0 + lh * len(hl) + 70
                 fr = fr.convert("RGBA"); ov = Image.new("RGBA", (W, H), (0, 0, 0, 0)); od = ImageDraw.Draw(ov)
-                od.rounded_rectangle([40, hy0 - 18, 40 + bw + 64, hy1], 22, fill=(12, 12, 14, 175))  # 사진 위에서도 잘 읽히게 어두운 판
+                od.rounded_rectangle([40, hy0 - 18, 40 + bw + 64, hy1], 22, fill=(12, 12, 14, L.get("hook_alpha", 175)))  # 사진 위에서도 잘 읽히게 어두운 판
                 od.rectangle([40, hy0 - 18, 50, hy1], fill=BRAND + (255,))  # 브랜드 틸 세로 막대
                 fr.alpha_composite(ov); d = ImageDraw.Draw(fr)
                 hy = hy0
                 for ln in hl:
                     txt(d, (70, hy), ln, hf, WHITE + (255,)); hy += lh
-                txt(d, (70, hy + 4), L.get("cover_sub", L["title"]), F(36, "Bold"), (190, 228, 226, 255))
+                if L.get("cover_sub", L["title"]): txt(d, (70, hy + 4), L.get("cover_sub", L["title"]), F(36, "Bold"), (190, 228, 226, 255))
             else:
                 txt(d, (60, 352), L["title"], F(52, "Bold"), (240, 236, 228, 255))
             b = 1.0 if HOOK else ease(t * 2.5 - .8)
+            if L.get("hook_cta", None) == "": b = 0  # v5.1: 본사 커버 규칙 — 커버엔 제목만
             if b > 0:
                 f = F(40, "Bold"); s = L.get("hook_cta", "포인트 4개만 기억하세요 →")
                 w = d.textlength(s, font=f)

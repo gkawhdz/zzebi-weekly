@@ -109,7 +109,7 @@ def card_intro_native(spec, seg_frame, out):
     im.alpha_composite(shade); d = ImageDraw.Draw(im)
     pill(d, 80, 210, spec.get("kicker", "끝까지 보기"), font(46), TEAL, "white")
     fs = 176
-    while fs > 110 and max(d.textlength(l, font=font(fs)) for l in spec["title"]) > 920: fs -= 4
+    while fs > 110 and max(d.textlength(l, font=font(fs)) for l in spec["title"]) > spec.get("title_w", 860): fs -= 4  # 11/5: 오른쪽 140px 금지구역 보호(76+860=936)
     y = 330
     for ln in spec["title"]:
         d.text((76, y), ln, font=font(fs), fill="white"); y += int(fs * 1.18)
