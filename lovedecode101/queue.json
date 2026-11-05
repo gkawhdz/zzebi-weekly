@@ -1,0 +1,52 @@
+{
+ "queue": [
+  {
+   "ep": "03",
+   "title": "쎄한가? 나르시시즘 분별법",
+   "dir": "lovedecode101/queue/ep03",
+   "sent": null
+  },
+  {
+   "ep": "04",
+   "title": "가스라이팅 초기에 잡는 법",
+   "dir": "lovedecode101/queue/ep04",
+   "sent": null
+  },
+  {
+   "ep": "05",
+   "title": "불안형이 사랑하는 세 가지 방식",
+   "dir": "lovedecode101/queue/ep05",
+   "sent": null
+  },
+  {
+   "ep": "06",
+   "title": "'혼자가 좋아'의 함정",
+   "dir": "lovedecode101/queue/ep06",
+   "sent": null
+  },
+  {
+   "ep": "07",
+   "title": "안정형이 지루해 보이는 이유",
+   "dir": "lovedecode101/queue/ep07",
+   "sent": null
+  },
+  {
+   "ep": "08",
+   "title": "돌봄에 지친 연인, 돌아오게 하는 법",
+   "dir": "lovedecode101/queue/ep08",
+   "sent": null
+  }
+ ],
+ "sent_log": [
+  {
+   "ep": "01",
+   "title": "회피형이 나에게 미치게 하는 법",
+   "sent": "2026-11-04"
+  },
+  {
+   "ep": "02",
+   "title": "MBTI별 회피형 공략 코드",
+   "sent": "2026-11-04"
+  }
+ ]
+}

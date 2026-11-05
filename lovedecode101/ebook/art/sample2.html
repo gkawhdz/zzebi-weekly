@@ -1,0 +1,207 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+body{margin:0;background:#000}
+.art{width:1600px;height:900px;background:#0b0a0d;position:relative;overflow:hidden;font-family:"Noto Sans CJK KR"}
+.grain{position:absolute;inset:0;opacity:.45;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.4'/%3E%3C/svg%3E")}
+.vig{position:absolute;inset:0;background:radial-gradient(75% 75% at 50% 50%,transparent 45%,rgba(0,0,0,.75) 100%)}
+.cap{position:absolute;left:80px;bottom:56px;color:#8c847c;font-size:26px;letter-spacing:.12em}
+.num{position:absolute;left:80px;top:56px;color:#c8332d;font-size:110px;font-weight:900;line-height:1}
+svg{position:absolute;inset:0}
+</style></head><body>
+
+<!-- 01: 새벽, 침대 끝, 폰 불빛, 열린 문 -->
+<div class="art" id="a1">
+<svg viewBox="0 0 1600 900">
+<defs>
+  <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#15121a"/><stop offset="1" stop-color="#0b0a0d"/></linearGradient>
+  <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0d0b10"/><stop offset="1" stop-color="#070609"/></linearGradient>
+  <radialGradient id="phoneglow" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#9fb4c8" stop-opacity=".55"/><stop offset=".35" stop-color="#6d7f94" stop-opacity=".22"/><stop offset="1" stop-color="#6d7f94" stop-opacity="0"/></radialGradient>
+  <linearGradient id="doorlight" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#c8332d" stop-opacity=".0"/><stop offset=".5" stop-color="#c8332d" stop-opacity=".55"/><stop offset="1" stop-color="#e9b1a8" stop-opacity=".9"/></linearGradient>
+  <linearGradient id="doorspill" x1="1" y1="0" x2="0" y2="0"><stop offset="0" stop-color="#c8332d" stop-opacity=".28"/><stop offset="1" stop-color="#c8332d" stop-opacity="0"/></linearGradient>
+  <linearGradient id="win" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1a2030"/><stop offset="1" stop-color="#0f1219"/></linearGradient>
+  <linearGradient id="blanket" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1c1820"/><stop offset="1" stop-color="#0f0d12"/></linearGradient>
+  <linearGradient id="body" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0a090c"/><stop offset=".7" stop-color="#121016"/><stop offset="1" stop-color="#2a2f3a"/></linearGradient>
+  <pattern id="rain" width="26" height="80" patternUnits="userSpaceOnUse" patternTransform="rotate(12)"><line x1="0" y1="0" x2="0" y2="34" stroke="#9fb4c8" stroke-opacity=".18" stroke-width="1.4"/></pattern>
+  <filter id="blur8"><feGaussianBlur stdDeviation="8"/></filter>
+  <filter id="blur3"><feGaussianBlur stdDeviation="3"/></filter>
+  <filter id="blur20"><feGaussianBlur stdDeviation="20"/></filter>
+</defs>
+<!-- 벽/바닥 -->
+<rect width="1600" height="620" fill="url(#wall)"/>
+<rect y="620" width="1600" height="280" fill="url(#floor)"/>
+<line x1="0" y1="620" x2="1600" y2="620" stroke="#1d1a22" stroke-width="2"/>
+<!-- 창문 -->
+<g transform="translate(180 110)">
+  <rect x="0" y="0" width="420" height="330" fill="url(#win)"/>
+  <!-- 도시 불빛 -->
+  <g filter="url(#blur3)">
+    <rect x="30" y="200" width="40" height="130" fill="#141a26"/><rect x="90" y="170" width="55" height="160" fill="#11161f"/><rect x="160" y="220" width="30" height="110" fill="#141a26"/><rect x="210" y="150" width="70" height="180" fill="#10141c"/><rect x="300" y="190" width="45" height="140" fill="#141a26"/><rect x="360" y="230" width="50" height="100" fill="#11161f"/>
+    <g fill="#e0c48a" opacity=".55"><rect x="98" y="190" width="6" height="6"/><rect x="118" y="212" width="6" height="6"/><rect x="226" y="175" width="6" height="6"/><rect x="250" y="205" width="6" height="6"/><rect x="238" y="240" width="6" height="6"/><rect x="312" y="215" width="6" height="6"/><rect x="40" y="230" width="6" height="6"/></g>
+    <circle cx="330" cy="60" r="26" fill="#c9d3dd" opacity=".35"/>
+  </g>
+  <rect x="0" y="0" width="420" height="330" fill="url(#rain)"/>
+  <!-- 창틀 -->
+  <g stroke="#2a2630" stroke-width="10" fill="none"><rect x="0" y="0" width="420" height="330"/><line x1="210" y1="0" x2="210" y2="330"/><line x1="0" y1="165" x2="420" y2="165"/></g>
+  <rect x="-16" y="326" width="452" height="18" fill="#221e28"/>
+</g>
+<!-- 창문 빛 바닥 반사 -->
+<path d="M160 620 L640 620 L700 820 L60 820 Z" fill="#9fb4c8" opacity=".045"/>
+<!-- 문 (오른쪽, 살짝 열림) -->
+<g transform="translate(1180 120)">
+  <rect x="0" y="0" width="300" height="500" fill="#161319"/>
+  <rect x="12" y="12" width="276" height="476" fill="#0f0d12"/>
+  <rect x="0" y="0" width="300" height="500" fill="none" stroke="#2a2630" stroke-width="10"/>
+  <!-- 문짝(열린 각도) -->
+  <path d="M20 10 L250 40 L250 470 L20 490 Z" fill="#1a161e"/>
+  <path d="M40 60 L230 80 L230 240 L40 236 Z" fill="none" stroke="#2a2530" stroke-width="4"/>
+  <path d="M40 270 L230 276 L230 450 L40 440 Z" fill="none" stroke="#2a2530" stroke-width="4"/>
+  <circle cx="215" cy="265" r="7" fill="#6a5a3a"/>
+  <!-- 문틈 빛 -->
+  <path d="M252 14 L292 14 L292 488 L252 486 Z" fill="url(#doorlight)"/>
+</g>
+<!-- 문틈 빛 바닥으로 쏟아짐 -->
+<path d="M1432 620 L1480 620 L1600 900 L1290 900 Z" fill="url(#doorspill)"/>
+<path d="M1432 620 L1480 620 L1600 900 L1290 900 Z" fill="#c8332d" opacity=".12" filter="url(#blur20)"/>
+<!-- 침대 -->
+<g transform="translate(560 470)">
+  <rect x="0" y="130" width="620" height="60" rx="6" fill="#141118"/>
+  <rect x="-10" y="110" width="640" height="40" rx="8" fill="#1a161e"/>
+  <path d="M-10 115 C120 60 300 80 420 60 C520 45 600 70 630 110 Z" fill="url(#blanket)"/>
+  <path d="M60 100 C150 70 260 95 340 78" stroke="#262030" stroke-width="3" fill="none"/>
+  <rect x="20" y="40" width="150" height="70" rx="20" fill="#1b1720"/>
+  <rect x="-30" y="-120" width="22" height="310" fill="#120f15"/>
+</g>
+<!-- 인물: 침대 끝에 앉아 폰을 봄 -->
+<g transform="translate(900 300)">
+  <!-- 폰 글로우 (얼굴/손 비춤) -->
+  <ellipse cx="60" cy="170" rx="190" ry="150" fill="url(#phoneglow)"/>
+  <!-- 다리 -->
+  <path d="M-30 250 C-40 320 -70 360 -110 400 C-130 420 -120 470 -90 480 L-10 480 C10 460 -10 420 10 380 C40 330 60 290 50 250 Z" fill="#0b0a0d"/>
+  <path d="M60 250 C80 320 60 360 30 400 C10 420 20 470 50 480 L130 480 C150 460 130 420 140 380 C160 330 160 290 140 250 Z" fill="#0d0c10"/>
+  <!-- 몸통 (앞으로 숙임) -->
+  <path d="M-40 250 C-50 160 -20 90 40 70 C110 50 160 90 165 170 C170 220 150 250 130 260 Z" fill="url(#body)"/>
+  <!-- 머리 (숙인) -->
+  <ellipse cx="80" cy="60" rx="56" ry="66" transform="rotate(18 80 60)" fill="#0a090c"/>
+  <!-- 얼굴 쪽 폰 불빛 림 -->
+  <path d="M110 100 C125 80 128 50 118 20" stroke="#8fa3b8" stroke-width="3" fill="none" opacity=".7"/>
+  <!-- 팔/손 -->
+  <path d="M20 160 C10 190 20 220 50 230 L80 230 C95 225 95 205 80 200 L60 198 C45 190 40 170 45 150 Z" fill="#0f0e12"/>
+  <path d="M150 150 C165 180 150 210 120 225 L95 228 C82 225 80 208 95 202 L115 198 C128 190 135 170 128 150 Z" fill="#101013"/>
+  <!-- 폰 -->
+  <g transform="translate(68 196) rotate(-12)">
+    <rect x="0" y="0" width="42" height="72" rx="6" fill="#0d1016" stroke="#2b3340" stroke-width="2"/>
+    <rect x="4" y="6" width="34" height="56" rx="3" fill="#9fb4c8" opacity=".85"/>
+    <rect x="8" y="14" width="22" height="4" fill="#0d1016" opacity=".6"/><rect x="8" y="24" width="26" height="4" fill="#0d1016" opacity=".6"/><rect x="8" y="34" width="18" height="4" fill="#0d1016" opacity=".6"/>
+  </g>
+  <!-- 손 하이라이트 -->
+  <path d="M60 228 C80 236 100 234 118 226" stroke="#9fb4c8" stroke-width="2.5" fill="none" opacity=".6"/>
+</g>
+<!-- 바닥 그림자 -->
+<ellipse cx="960" cy="790" rx="220" ry="26" fill="#000" opacity=".5" filter="url(#blur8)"/>
+<!-- 붉은 실: 폰에서 문틈으로 -->
+<path d="M985 520 C1100 560 1200 440 1300 520 C1360 560 1400 420 1445 300" stroke="#c8332d" stroke-width="3" fill="none" stroke-dasharray="10 12" opacity=".9"/>
+<circle cx="985" cy="520" r="6" fill="#c8332d"/>
+</svg>
+<div class="grain"></div><div class="vig"></div>
+<div class="num">01</div>
+<div class="cap">회피형이 나에게 미치게 하는 법</div>
+</div>
+
+<!-- 02: 하트 자물쇠와 네 개의 열쇠 -->
+<div class="art" id="a2">
+<svg viewBox="0 0 1600 900">
+<defs>
+  <radialGradient id="bg2" cx=".5" cy=".45" r=".6"><stop offset="0" stop-color="#2a1416"/><stop offset=".5" stop-color="#140f13"/><stop offset="1" stop-color="#0b0a0d"/></radialGradient>
+  <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f6f1e8"/><stop offset=".45" stop-color="#cfc7bb"/><stop offset=".55" stop-color="#9c9389"/><stop offset="1" stop-color="#e9e2d6"/></linearGradient>
+  <linearGradient id="metalDark" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7d756c"/><stop offset="1" stop-color="#3a3531"/></linearGradient>
+  <linearGradient id="shackle" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#5a544d"/><stop offset=".5" stop-color="#d9d2c6"/><stop offset="1" stop-color="#4a4540"/></linearGradient>
+  <linearGradient id="red" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e2493f"/><stop offset=".5" stop-color="#c8332d"/><stop offset="1" stop-color="#7a1e1a"/></linearGradient>
+  <linearGradient id="redDark" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a3281f"/><stop offset="1" stop-color="#4a1614"/></linearGradient>
+  <filter id="shadow"><feGaussianBlur stdDeviation="14"/></filter>
+  <filter id="glow"><feGaussianBlur stdDeviation="6"/></filter>
+  <linearGradient id="floor2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1a1518"/><stop offset="1" stop-color="#0b0a0d"/></linearGradient>
+</defs>
+<rect width="1600" height="900" fill="url(#bg2)"/>
+<rect y="700" width="1600" height="200" fill="url(#floor2)"/>
+<ellipse cx="800" cy="720" rx="520" ry="60" fill="#000" opacity=".55" filter="url(#shadow)"/>
+<!-- 뒤 광원 -->
+<circle cx="800" cy="420" r="220" fill="#c8332d" opacity=".16" filter="url(#shadow)"/>
+
+<!-- 자물쇠 고리 -->
+<path d="M700 330 L700 230 C700 150 760 100 820 100 C880 100 940 150 940 230 L940 330" stroke="url(#shackle)" stroke-width="40" fill="none" stroke-linecap="round"/>
+<path d="M700 330 L700 230 C700 150 760 100 820 100 C880 100 940 150 940 230 L940 330" stroke="#fff" stroke-opacity=".25" stroke-width="8" fill="none" stroke-linecap="round" transform="translate(-6 -4)"/>
+<!-- 하트 본체 -->
+<g transform="translate(800 480)">
+  <path d="M0 230 C-190 95 -250 20 -250 -70 C-250 -140 -200 -190 -135 -190 C-80 -190 -30 -160 0 -110 C30 -160 80 -190 135 -190 C200 -190 250 -140 250 -70 C250 20 190 95 0 230 Z" fill="url(#metal)"/>
+  <!-- 하트 하단 음영 -->
+  <path d="M0 230 C-190 95 -250 20 -250 -70 C-250 -100 -240 -125 -222 -145 C-200 -60 -120 30 0 150 C120 30 200 -60 222 -145 C240 -125 250 -100 250 -70 C250 20 190 95 0 230 Z" fill="#000" opacity=".22"/>
+  <!-- 상단 하이라이트 -->
+  <path d="M-200 -120 C-170 -175 -110 -185 -60 -150" stroke="#fff" stroke-width="10" fill="none" opacity=".55" stroke-linecap="round"/>
+  <!-- 리벳 -->
+  <g fill="url(#metalDark)"><circle cx="-160" cy="-60" r="9"/><circle cx="160" cy="-60" r="9"/><circle cx="-90" cy="80" r="9"/><circle cx="90" cy="80" r="9"/></g>
+  <!-- 열쇠구멍 -->
+  <circle cx="0" cy="-30" r="40" fill="#0b0a0d"/>
+  <path d="M-20 -10 L20 -10 L36 110 L-36 110 Z" fill="#0b0a0d"/>
+  <circle cx="0" cy="-30" r="40" fill="none" stroke="#5e574f" stroke-width="3"/>
+  <!-- 구멍 안 붉은 빛 -->
+  <circle cx="0" cy="-30" r="22" fill="#c8332d" opacity=".9" filter="url(#glow)"/>
+  <!-- 금 -->
+  <path d="M-130 -150 L-100 -70 L-120 -20" stroke="#6b645c" stroke-width="2.5" fill="none" opacity=".8"/>
+  <path d="M60 130 L110 60" stroke="#6b645c" stroke-width="2.5" fill="none" opacity=".6"/>
+</g>
+
+<!-- 네 개의 열쇠 (끈에 매달림) -->
+<g stroke-linecap="round">
+  <!-- IT: 각진 손잡이 -->
+  <g transform="translate(250 150)">
+    <line x1="60" y1="-150" x2="60" y2="0" stroke="#4a443f" stroke-width="2"/>
+    <g transform="rotate(-8 60 0)">
+      <rect x="20" y="0" width="80" height="80" rx="6" fill="none" stroke="url(#red)" stroke-width="14"/>
+      <rect x="44" y="24" width="32" height="32" fill="#0b0a0d" stroke="#7a1e1a" stroke-width="4"/>
+      <rect x="53" y="80" width="14" height="190" fill="url(#red)"/>
+      <rect x="67" y="200" width="30" height="14" fill="url(#red)"/><rect x="67" y="240" width="42" height="14" fill="url(#red)"/>
+    </g>
+    <text x="135" y="48" fill="#8c847c" font-size="24" letter-spacing="4">IT</text>
+  </g>
+  <!-- IF: 둥근 꽃잎 손잡이 -->
+  <g transform="translate(1250 150)">
+    <line x1="60" y1="-150" x2="60" y2="0" stroke="#4a443f" stroke-width="2"/>
+    <g transform="rotate(8 60 0)">
+      <circle cx="60" cy="40" r="40" fill="none" stroke="url(#red)" stroke-width="14"/>
+      <circle cx="60" cy="40" r="12" fill="#0b0a0d" stroke="#7a1e1a" stroke-width="4"/>
+      <g fill="url(#red)"><circle cx="60" cy="-8" r="10"/><circle cx="108" cy="40" r="10"/><circle cx="12" cy="40" r="10"/></g>
+      <rect x="53" y="80" width="14" height="190" fill="url(#red)"/>
+      <path d="M67 200 h30 v14 h-30 z M67 240 h42 v14 h-42 z" fill="url(#red)"/>
+    </g>
+    <text x="135" y="48" fill="#8c847c" font-size="24" letter-spacing="4">IF</text>
+  </g>
+  <!-- ET: 화살표/번개 손잡이 -->
+  <g transform="translate(250 470)">
+    <line x1="60" y1="-150" x2="60" y2="0" stroke="#4a443f" stroke-width="2"/>
+    <g transform="rotate(-6 60 0)">
+      <path d="M60 -5 L110 45 L60 95 L10 45 Z" fill="none" stroke="url(#red)" stroke-width="14" stroke-linejoin="round"/>
+      <path d="M68 20 L48 50 L66 50 L52 72" stroke="#0b0a0d" stroke-width="5" fill="none"/>
+      <rect x="53" y="90" width="14" height="180" fill="url(#red)"/>
+      <path d="M67 190 h30 v14 h-30 z M67 230 h42 v14 h-42 z" fill="url(#red)"/>
+    </g>
+    <text x="135" y="48" fill="#8c847c" font-size="24" letter-spacing="4">ET</text>
+  </g>
+  <!-- EF: 두 고리 손잡이 -->
+  <g transform="translate(1250 470)">
+    <line x1="60" y1="-150" x2="60" y2="0" stroke="#4a443f" stroke-width="2"/>
+    <g transform="rotate(6 60 0)">
+      <circle cx="38" cy="40" r="30" fill="none" stroke="url(#red)" stroke-width="12"/>
+      <circle cx="82" cy="40" r="30" fill="none" stroke="url(#red)" stroke-width="12"/>
+      <rect x="53" y="76" width="14" height="194" fill="url(#red)"/>
+      <path d="M67 200 h30 v14 h-30 z M67 240 h42 v14 h-42 z" fill="url(#red)"/>
+    </g>
+    <text x="135" y="48" fill="#8c847c" font-size="24" letter-spacing="4">EF</text>
+  </g>
+</g>
+<!-- 열쇠 바닥 반사 -->
+<g opacity=".12" fill="#c8332d"><ellipse cx="310" cy="740" rx="60" ry="10"/><ellipse cx="1310" cy="740" rx="60" ry="10"/></g>
+</svg>
+<div class="grain"></div><div class="vig"></div>
+<div class="num">02</div>
+<div class="cap">MBTI별 회피형 공략 코드</div>
+</div>
+</body></html>
