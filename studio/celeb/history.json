@@ -2,6 +2,55 @@
  "rule": "하루 여자, 하루 남자 번갈아. 마지막 날짜의 gender 반대로.",
  "posts": [
   {
+   "date": "2026-11-06",
+   "gender": "남자",
+   "pillar": 1,
+   "status": "예약됨",
+   "design_version": "v5.1",
+   "channels": [
+    "instagram",
+    "story",
+    "tiktok_pending"
+   ],
+   "ep": "32",
+   "celeb": "Trevor Lawrence",
+   "look": "청청 집업 × 모크넥룩",
+   "slot": "12:30",
+   "hook": "청청 입기 전\n꼭 맞출 1가지는?",
+   "hook_type": "12 필수 개념 강조형(질문 문법)",
+   "music": "오리지널 배경음(인스타 라이브러리 곡 연결 실패: Authorization Error), seed 2026110632",
+   "story_format": "매크로→전체 줌아웃 리빌 + 에디터 대체 팁(7초 mp4)",
+   "image_file": "20261106_32.jpg.jpeg",
+   "image_id": "1Nd4t-oq003SwJzsvHYjhkCW82QWLJGiT",
+   "source": "ESPN 2026-11-05 'NFL Week 9 fashionable arrivals'",
+   "reel_file": "20261106_32.mp4",
+   "idea_used": "셀럽의 '목 밑 한 겹' 레이어링 3공식"
+  },
+  {
+   "date": "2026-11-06",
+   "gender": "남자",
+   "pillar": 1,
+   "status": "예약됨",
+   "design_version": "v5.1",
+   "channels": [
+    "instagram",
+    "story",
+    "tiktok_pending"
+   ],
+   "ep": "33",
+   "celeb": "Kevin Durant",
+   "look": "스트라이프 셔츠 × 슬랙스룩",
+   "slot": "18:00",
+   "hook": "슬랙스에 운동화,\n출근룩 되는 조건은?",
+   "hook_type": "17 디테일 분석형(질문 문법)",
+   "music": "오리지널 배경음(인스타 라이브러리 곡 연결 실패: Authorization Error), seed 2026110633",
+   "story_format": "밑단 자(룰러) 3단계 가이드 + 양말 팁(정지 jpg)",
+   "image_file": "20261106_33.jpg.jpeg",
+   "image_id": "1ctLkNnjCt4fdKUk38JISNUwfd6AP5P-m",
+   "source": "The Root 2026-10-25 'The Most Stylish NBA Tunnel Fits from Opening Week'",
+   "reel_file": "20261106_33.mp4"
+  },
+  {
    "date": "2026-11-05",
    "ep": "30",
    "gender": "여자",
