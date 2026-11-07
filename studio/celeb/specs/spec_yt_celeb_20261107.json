@@ -1,0 +1,123 @@
+{
+ "native": true,
+ "kicker": "쉬운 건 마지막에",
+ "title": [
+  "내일 뭐 입지?",
+  "제일 쉬운 4개"
+ ],
+ "sub": "마지막 룩이 제일 쉬워요 ↓",
+ "intro_img": "/home/claude/work/img35.jpg",
+ "intro_y": 0.42,
+ "seed": 20261107,
+ "cta_kicker": "내일 저녁, 남자 아이돌 사복 해부",
+ "segments": [
+  {
+   "file": "/home/claude/work/tt/seg35.mp4",
+   "label": "김유정",
+   "trim": [
+    0,
+    15
+   ],
+   "en": [
+    [
+     0.8,
+     5.5,
+     "01 Fuzzy shearling jacket — short length, wear it open"
+    ],
+    [
+     5.5,
+     10.5,
+     "02 Ivory mock neck tee — a light layer brightens the look"
+    ],
+    [
+     10.5,
+     15,
+     "03 Glossy leather Boston bag — keep the shine to one spot"
+    ]
+   ]
+  },
+  {
+   "file": "/home/claude/work/tt/seg32.mp4",
+   "label": "트레버 로렌스",
+   "trim": [
+    0,
+    15
+   ],
+   "en": [
+    [
+     0.8,
+     5.5,
+     "01 Ivory mock neck — show just one layer at the neck"
+    ],
+    [
+     5.5,
+     10.5,
+     "02 Dark denim zip jacket — zip it only halfway"
+    ],
+    [
+     10.5,
+     15,
+     "03 Dark straight jeans — same wash depth as the jacket"
+    ]
+   ]
+  },
+  {
+   "file": "/home/claude/work/tt/seg33.mp4",
+   "label": "케빈 듀런트",
+   "trim": [
+    0,
+    15
+   ],
+   "en": [
+    [
+     0.8,
+     5.5,
+     "01 Striped shirt — tuck it in, roll the sleeves once"
+    ],
+    [
+     5.5,
+     10.5,
+     "02 Black leather belt — a thin belt cleans up the waist"
+    ],
+    [
+     10.5,
+     15,
+     "03 Navy slacks — let the hem break at the ankle"
+    ]
+   ]
+  },
+  {
+   "file": "/home/claude/work/tt/seg34.mp4",
+   "label": "차정원",
+   "trim": [
+    0,
+    20
+   ],
+   "en": [
+    [
+     0.8,
+     5.5,
+     "01 Sky blue windbreaker — roomy fit, wear it open"
+    ],
+    [
+     5.5,
+     10.5,
+     "02 Black top over a white tee — let the hem peek out"
+    ],
+    [
+     10.5,
+     15.5,
+     "03 Gray pleated mini skirt — kills the hiking-gear vibe"
+    ],
+    [
+     15.5,
+     20,
+     "04 White socks + white sneakers — pull the socks above the ankle"
+    ]
+   ]
+  }
+ ],
+ "intro_en": "What to wear tomorrow? The 4 easiest outfits",
+ "outro_handle": "@zzebi_st",
+ "outro_en": "Follow @zzebi_st for daily celeb style breakdowns"
+}

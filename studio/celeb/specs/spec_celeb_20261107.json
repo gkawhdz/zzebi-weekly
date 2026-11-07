@@ -1,0 +1,47 @@
+{
+ "native": true,
+ "kicker": "쉬운 건 마지막에",
+ "title": [
+  "내일 뭐 입지?",
+  "제일 쉬운 4개"
+ ],
+ "sub": "마지막 룩이 제일 쉬워요 ↓",
+ "intro_img": "/home/claude/work/img35.jpg",
+ "intro_y": 0.42,
+ "seed": 20261107,
+ "cta_kicker": "내일 저녁, 남자 아이돌 사복 해부",
+ "segments": [
+  {
+   "file": "/home/claude/work/tt/seg35.mp4",
+   "label": "김유정",
+   "trim": [
+    0,
+    15
+   ]
+  },
+  {
+   "file": "/home/claude/work/tt/seg32.mp4",
+   "label": "트레버 로렌스",
+   "trim": [
+    0,
+    15
+   ]
+  },
+  {
+   "file": "/home/claude/work/tt/seg33.mp4",
+   "label": "케빈 듀런트",
+   "trim": [
+    0,
+    15
+   ]
+  },
+  {
+   "file": "/home/claude/work/tt/seg34.mp4",
+   "label": "차정원",
+   "trim": [
+    0,
+    20
+   ]
+  }
+ ]
+}

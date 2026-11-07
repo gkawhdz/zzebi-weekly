@@ -1,0 +1,92 @@
+{
+ "cover_no_celeb": true,
+ "cover_sub": "",
+ "t_item": 5.0,
+ "push": 0.12,
+ "cover_center": [
+  512,
+  768
+ ],
+ "cover_zoom": 1.0,
+ "answer_label": "핵심",
+ "hook_max": 100,
+ "hook_w": 880,
+ "hook_cta": "",
+ "hook_y": 232,
+ "hook_alpha": 150,
+ "answer": 2,
+ "city": "SEOUL",
+ "date": "2026.10",
+ "episode": "34",
+ "celeb": "CHA JEONGWON",
+ "title": "바람막이 × 플리츠 미니룩",
+ "image": "img34.jpg",
+ "accent": "#6FA3D8",
+ "hook": "바람막이 입으면\n등산 가는 사람 같다면?",
+ "items": [
+  {
+   "cat": "WINDBREAKER · 아우터",
+   "brand": "브랜드 미상",
+   "name": "스카이블루 바람막이",
+   "pt": "넉넉한 핏, 앞은 열기",
+   "find": "스카이블루 바람막이",
+   "pt_xy": [
+    590,
+    520
+   ],
+   "crop": [
+    255,
+    640,
+    480
+   ]
+  },
+  {
+   "cat": "TOP · 이너",
+   "brand": "브랜드 미상",
+   "name": "블랙+화이트 레이어드",
+   "pt": "흰 티 밑단 살짝 보이게",
+   "find": "블랙 크롭 긴팔티",
+   "pt_xy": [
+    755,
+    610
+   ],
+   "crop": [
+    255,
+    670,
+    330
+   ]
+  },
+  {
+   "cat": "SKIRT · 하의",
+   "brand": "브랜드 미상",
+   "name": "그레이 플리츠 미니",
+   "pt": "운동복 느낌 지우는 치마",
+   "find": "그레이 플리츠 스커트",
+   "pt_xy": [
+    770,
+    775
+   ],
+   "crop": [
+    258,
+    945,
+    360
+   ]
+  },
+  {
+   "cat": "SNEAKERS · 신발",
+   "brand": "브랜드 미상",
+   "name": "흰 양말+흰 스니커즈",
+   "pt": "양말은 발목 위로 올려",
+   "find": "화이트 레더 스니커즈",
+   "pt_xy": [
+    690,
+    1305
+   ],
+   "crop": [
+    250,
+    1195,
+    380
+   ]
+  }
+ ]
+}

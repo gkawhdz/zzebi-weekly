@@ -2,6 +2,62 @@
  "rule": "하루 여자, 하루 남자 번갈아. 마지막 날짜의 gender 반대로.",
  "posts": [
   {
+   "date": "2026-11-07",
+   "ep": "34",
+   "gender": "여자",
+   "pillar": 1,
+   "status": "예약됨",
+   "design_version": "v5.1",
+   "channels": [
+    "instagram",
+    "story",
+    "tiktok_native",
+    "youtube_native",
+    "tiktok_story_ready"
+   ],
+   "celeb": "차정원(패션 인플루언서)",
+   "look": "바람막이 × 플리츠 미니룩",
+   "slot": "12:30",
+   "hook": "바람막이 입으면\n등산 가는 사람 같다면?",
+   "hook_type": "06 해결책 제시형(조건 문법)",
+   "music": "오리지널 배경음(인스타 라이브러리 곡 연결 실패: Authorization Error), seed 2026110734",
+   "story_format": "플랫레이 장바구니 체크리스트 틱 모션(7초 mp4)",
+   "image_file": "20261107_34b.jpg.jpeg",
+   "image_id": "1NpEpT1dIIEXFDXa2A4k_3JKmbYywyxwn",
+   "reel_file": "20261107_34.mp4",
+   "source": "하퍼스 바자 코리아 2026-10-14 '차정원, 카리나처럼 입어볼까? 올가을 바람막이 스타일링 5'",
+   "mood": "고프코어×프레피",
+   "tiktok_hook": "내일 뭐 입지? 제일 쉬운 4개",
+   "tiktok_hook_type": "26 쉬운 방법 제시형(질문 문법)"
+  },
+  {
+   "date": "2026-11-07",
+   "ep": "35",
+   "gender": "여자",
+   "pillar": 1,
+   "status": "예약됨",
+   "design_version": "v5.1",
+   "channels": [
+    "instagram",
+    "story",
+    "tiktok_native",
+    "youtube_native",
+    "tiktok_story_ready"
+   ],
+   "celeb": "김유정",
+   "look": "톤온톤 시어링 재킷룩",
+   "slot": "18:00",
+   "hook": "한 색으로 입으면\n심심하다고요?",
+   "hook_type": "05 상식 파괴형(질문 문법)",
+   "music": "오리지널 배경음(인스타 라이브러리 곡 연결 실패: Authorization Error), seed 2026110735",
+   "story_format": "질감 2x2 매크로 그리드(정지 jpg)",
+   "image_file": "20261107_35c.jpg.jpeg",
+   "image_id": "1v6Pxef6xPSfj4mruDRCpRcrfaV3TH_2e",
+   "reel_file": "20261107_35.mp4",
+   "source": "패션서울 2026-10-23 '김유정의 럭셔리 공항패션, 오늘은 톤온톤 룩'",
+   "mood": "미니멀 톤온톤"
+  },
+  {
    "date": "2026-11-06",
    "gender": "남자",
    "pillar": 1,
@@ -10,7 +66,8 @@
    "channels": [
     "instagram",
     "story",
-    "tiktok_pending"
+    "tiktok_native",
+    "youtube_native"
    ],
    "ep": "32",
    "celeb": "Trevor Lawrence",
@@ -35,7 +92,8 @@
    "channels": [
     "instagram",
     "story",
-    "tiktok_pending"
+    "tiktok_native",
+    "youtube_native"
    ],
    "ep": "33",
    "celeb": "Kevin Durant",

@@ -1,0 +1,92 @@
+{
+ "cover_no_celeb": true,
+ "cover_sub": "",
+ "t_item": 5.0,
+ "push": 0.12,
+ "cover_center": [
+  512,
+  768
+ ],
+ "cover_zoom": 1.0,
+ "answer_label": "핵심",
+ "hook_max": 100,
+ "hook_w": 880,
+ "hook_cta": "",
+ "hook_y": 232,
+ "hook_alpha": 150,
+ "answer": 2,
+ "city": "INCHEON AIRPORT",
+ "date": "2026.10",
+ "episode": "35",
+ "celeb": "KIM YOOJUNG",
+ "title": "톤온톤 시어링 재킷룩",
+ "image": "img35.jpg",
+ "accent": "#A8957E",
+ "hook": "한 색으로 입으면\n심심하다고요?",
+ "items": [
+  {
+   "cat": "SHEARLING · 아우터",
+   "brand": "실착: 브루넬로 쿠치넬리",
+   "name": "퍼지 시어링 재킷",
+   "pt": "짧은 기장, 앞은 열어",
+   "find": "뽀글이 크롭 재킷",
+   "pt_xy": [
+    640,
+    560
+   ],
+   "crop": [
+    258,
+    572,
+    460
+   ]
+  },
+  {
+   "cat": "MOCK NECK · 이너",
+   "brand": "실착: 브루넬로 쿠치넬리",
+   "name": "아이보리 모크넥 티",
+   "pt": "흰 이너로 톤 밝히기",
+   "find": "모크넥 긴팔티",
+   "pt_xy": [
+    745,
+    580
+   ],
+   "crop": [
+    260,
+    790,
+    340
+   ]
+  },
+  {
+   "cat": "BAG · 가방",
+   "brand": "실착: 브루넬로 쿠치넬리",
+   "name": "광택 레더 보스턴백",
+   "pt": "반짝이는 건 한 곳만",
+   "find": "레더 보스턴백",
+   "pt_xy": [
+    915,
+    995
+   ],
+   "crop": [
+    258,
+    1100,
+    320
+   ]
+  },
+  {
+   "cat": "TROUSERS · 하의",
+   "brand": "실착: 브루넬로 쿠치넬리",
+   "name": "플란넬 플레어 팬츠",
+   "pt": "로퍼 덮는 긴 기장",
+   "find": "울 플레어 슬랙스",
+   "pt_xy": [
+    715,
+    1180
+   ],
+   "crop": [
+    760,
+    1210,
+    360
+   ]
+  }
+ ]
+}
