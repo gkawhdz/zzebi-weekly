@@ -1,0 +1,92 @@
+{
+ "cover_no_celeb": true,
+ "cover_sub": "",
+ "t_item": 5.0,
+ "push": 0.12,
+ "cover_center": [
+  512,
+  768
+ ],
+ "cover_zoom": 1.0,
+ "answer_label": "핵심",
+ "hook_max": 100,
+ "hook_w": 880,
+ "hook_cta": "",
+ "hook_y": 232,
+ "hook_alpha": 150,
+ "answer": 3,
+ "city": "INCHEON AIRPORT",
+ "date": "2026.11",
+ "episode": "36",
+ "celeb": "JAY B",
+ "title": "블랙 집업 가디건 공항룩",
+ "image": "img36.jpg",
+ "accent": "#A0522D",
+ "hook": "흰 티+청바지에\n검정 신발 신나요?",
+ "items": [
+  {
+   "cat": "ZIP CARDIGAN · 아우터",
+   "brand": "브랜드 미상",
+   "name": "블랙 집업 가디건",
+   "pt": "지퍼 열고 재킷처럼",
+   "find": "블랙 골지 집업 가디건",
+   "pt_xy": [
+    600,
+    470
+   ],
+   "crop": [
+    240,
+    595,
+    420
+   ]
+  },
+  {
+   "cat": "TEE · 이너",
+   "brand": "브랜드 미상",
+   "name": "화이트 크루넥 티",
+   "pt": "목선 늘어지지 않게",
+   "find": "화이트 헤비 코튼 티",
+   "pt_xy": [
+    760,
+    620
+   ],
+   "crop": [
+    240,
+    862,
+    300
+   ]
+  },
+  {
+   "cat": "DENIM · 하의",
+   "brand": "브랜드 미상",
+   "name": "미드블루 스트레이트 진",
+   "pt": "밑단은 신발에 살짝",
+   "find": "스트레이트 청바지",
+   "pt_xy": [
+    760,
+    950
+   ],
+   "crop": [
+    240,
+    1060,
+    330
+   ]
+  },
+  {
+   "cat": "SNEAKERS · 신발",
+   "brand": "실착: MCM",
+   "name": "꼬냑 레더 스니커즈",
+   "pt": "검정 대신 따뜻한 갈색",
+   "find": "브라운 레더 스니커즈",
+   "pt_xy": [
+    800,
+    1330
+   ],
+   "crop": [
+    230,
+    1240,
+    330
+   ]
+  }
+ ]
+}

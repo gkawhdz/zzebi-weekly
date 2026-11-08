@@ -2,6 +2,57 @@
  "rule": "하루 여자, 하루 남자 번갈아. 마지막 날짜의 gender 반대로.",
  "posts": [
   {
+   "date": "2026-11-08",
+   "ep": "36",
+   "gender": "남자",
+   "pillar": 1,
+   "status": "예약됨",
+   "design_version": "v5.1",
+   "channels": [
+    "instagram",
+    "story",
+    "tiktok_pending"
+   ],
+   "celeb": "제이비(갓세븐)",
+   "look": "블랙 집업 가디건 공항룩",
+   "slot": "12:30",
+   "hook": "흰 티+청바지에\n검정 신발 신나요?",
+   "hook_type": "15 흔한 실수형(질문 문법)",
+   "music": "오리지널 배경음(인스타 라이브러리 곡 연결 실패: Authorization Error), seed 2026110836",
+   "story_format": "대체템 플랜 A·B·C 사다리 모션(6.5초 mp4)",
+   "image_file": "20261108_36.jpg.jpeg",
+   "image_id": "1mH8BYIt4Y20nklSzr_aLXnJAdUScX5TH",
+   "reel_file": "20261108_36.mp4",
+   "source": "패션서울 2026-11-04 '갓세븐 제이비, 꾸안꾸 남친룩의 정석'(11/3 인천공항 출국)",
+   "mood": "꾸안꾸 미니멀"
+  },
+  {
+   "date": "2026-11-08",
+   "ep": "37",
+   "gender": "남자",
+   "pillar": 1,
+   "status": "예약됨",
+   "design_version": "v5.1",
+   "channels": [
+    "instagram",
+    "story",
+    "tiktok_pending"
+   ],
+   "celeb": "재현(NCT)",
+   "look": "블랙 니트 × 카고 시티보이룩",
+   "slot": "18:00",
+   "hook": "검정 니트 밑에\n흰 티 1cm만 보이면?",
+   "hook_type": "21 작은 행동 큰 결과형(조건 문법)",
+   "music": "오리지널 배경음(Authorization Error), seed 2026110837",
+   "story_format": "폴라로이드 3장 에디터 메모 콜라주(정지 jpg)",
+   "image_file": "20261108_37.jpg.jpeg",
+   "image_id": "1gSs7nEutZtzZ96D-tuMy6WPImQ1UTlJa",
+   "reel_file": "20261108_37.mp4",
+   "source": "에스콰이어 코리아 2026-10-06 '남자 아이돌 사복에서 찾은 니트 스타일 추천 5'(마카오 일상)",
+   "mood": "시티보이 스트릿",
+   "idea_used": "셀럽 발끝 한 끗, 양말+로퍼(로퍼+흰 양말 스타일링 추천)"
+  },
+  {
    "date": "2026-11-07",
    "ep": "34",
    "gender": "여자",

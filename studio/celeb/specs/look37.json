@@ -1,0 +1,92 @@
+{
+ "cover_no_celeb": true,
+ "cover_sub": "",
+ "t_item": 5.0,
+ "push": 0.12,
+ "cover_center": [
+  512,
+  768
+ ],
+ "cover_zoom": 1.0,
+ "answer_label": "핵심",
+ "hook_max": 100,
+ "hook_w": 880,
+ "hook_cta": "",
+ "hook_y": 232,
+ "hook_alpha": 130,
+ "answer": 1,
+ "city": "MACAU",
+ "date": "2026.10",
+ "episode": "37",
+ "celeb": "JAEHYUN",
+ "title": "블랙 니트 × 카고 시티보이룩",
+ "image": "img37.jpg",
+ "accent": "#6B6B3A",
+ "hook": "검정 니트 밑에\n흰 티 1cm만 보이면?",
+ "items": [
+  {
+   "cat": "CROSSBODY · 가방",
+   "brand": "브랜드 미상",
+   "name": "블랙 나일론 크로스백",
+   "pt": "가슴 높이로 짧게",
+   "find": "블랙 나일론 크로스백",
+   "pt_xy": [
+    720,
+    460
+   ],
+   "crop": [
+    365,
+    410,
+    240
+   ]
+  },
+  {
+   "cat": "KNIT · 상의",
+   "brand": "브랜드 미상",
+   "name": "블랙 니트+흰 티",
+   "pt": "흰 티 밑단 1cm만 보이게",
+   "find": "블랙 크루넥 니트",
+   "pt_xy": [
+    720,
+    662
+   ],
+   "crop": [
+    255,
+    700,
+    440
+   ]
+  },
+  {
+   "cat": "CARGO · 하의",
+   "brand": "브랜드 미상",
+   "name": "카키 와이드 카고",
+   "pt": "밑단은 발목에 모이게",
+   "find": "카키 와이드 카고팬츠",
+   "pt_xy": [
+    905,
+    800
+   ],
+   "crop": [
+    790,
+    1000,
+    400
+   ]
+  },
+  {
+   "cat": "LOAFERS · 신발",
+   "brand": "스타일링 추천",
+   "name": "흰 양말+블랙 로퍼",
+   "pt": "운동화 대신 양말 보이게",
+   "find": "블랙 페니 로퍼",
+   "pt_xy": [
+    850,
+    1250
+   ],
+   "crop": [
+    250,
+    1210,
+    330
+   ]
+  }
+ ]
+}
