@@ -2,6 +2,31 @@
  "rule": "하루 여자, 하루 남자 번갈아. 마지막 날짜의 gender 반대로.",
  "posts": [
   {
+   "date": "2026-11-09",
+   "ep": "38",
+   "gender": "여자",
+   "pillar": 1,
+   "status": "예약됨",
+   "design_version": "v5.1",
+   "channels": [
+    "instagram",
+    "story"
+   ],
+   "celeb": "슬기(레드벨벳)",
+   "look": "브라운 후드 니트 공항룩",
+   "slot": "18:00",
+   "hook": "후드+청바지엔\n가방 무슨 색 들어요?",
+   "hook_type": "26 쉬운 방법 제시형(질문 문법)",
+   "music": "오리지널 배경음(인스타 라이브러리 곡 연결 실패: Authorization Error), seed 2026110938",
+   "story_format": "가방만 가린 미스터리 크롭 티저(정지 jpg)",
+   "image_file": "20261109_38.jpg.jpeg",
+   "image_id": "1oAgxzYWnsxnPOiMvQED6elNW8DmS3h6Q",
+   "reel_file": "20261109_38.mp4",
+   "source": "톱스타뉴스 2026-10-17 '[HD포토] 레드벨벳 슬기, 하이슬기 여유로운 가을 공항 패션'(10/17 인천공항 제1터미널 출국)",
+   "mood": "꾸안꾸 캐주얼",
+   "note": "11/9 정규 작업 중단으로 대리 제작, 하루 1편(11/9부터 하루 3개 규칙). 목 부분 생성 잔상은 배경으로 덮음(블러)."
+  },
+  {
    "date": "2026-11-08",
    "ep": "36",
    "gender": "남자",

@@ -1,0 +1,29 @@
+{
+ "cover_no_celeb": true,
+ "cover_sub": "",
+ "t_item": 5.0,
+ "push": 0.12,
+ "cover_center": [512, 768],
+ "cover_zoom": 1.0,
+ "answer_label": "정답",
+ "hook_max": 100,
+ "hook_w": 880,
+ "hook_cta": "",
+ "hook_y": 232,
+ "hook_alpha": 130,
+ "answer": 2,
+ "city": "INCHEON AIRPORT",
+ "date": "2026.10",
+ "episode": "38",
+ "celeb": "SEULGI",
+ "title": "브라운 후드 니트 공항룩",
+ "image": "img38.jpg",
+ "accent": "#7A4A2A",
+ "hook": "후드+청바지엔\n가방 무슨 색 들어요?",
+ "items": [
+  {"cat": "HOOD KNIT · 상의", "brand": "브랜드 미상", "name": "브라운 후드 니트", "pt": "아이보리 이너 살짝 보이게", "find": "브라운 후드 니트", "pt_xy": [760, 380], "crop": [252, 465, 390]},
+  {"cat": "DENIM · 하의", "brand": "브랜드 미상", "name": "블루 와이드 데님", "pt": "밑단은 운동화 덮게", "find": "와이드 데님 팬츠", "pt_xy": [700, 900], "crop": [165, 900, 280]},
+  {"cat": "SHOULDER BAG · 가방", "brand": "브랜드 미상", "name": "브라운 숄더백", "pt": "니트와 같은 브라운 톤", "find": "브라운 숄더백", "pt_xy": [940, 600], "crop": [362, 935, 330]},
+  {"cat": "SNEAKERS · 신발", "brand": "브랜드 미상", "name": "그레이 청키 운동화", "pt": "흰색 대신 그레이로", "find": "그레이 청키 운동화", "pt_xy": [790, 1330], "crop": [383, 1215, 250]}
+ ]
+}
