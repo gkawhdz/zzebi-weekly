@@ -1,0 +1,149 @@
+{
+ "brand": "TREND DAILY · 11.09",
+ "paintings": {
+  "h1": "ah1.jpg",
+  "h2": "ah2.jpg",
+  "p1": "ap1.jpg",
+  "p2": "ap2.jpg",
+  "p3": "ap3.jpg"
+ },
+ "scenes": [
+  {
+   "type": "pcompare",
+   "left": "h1",
+   "right": "h2",
+   "dur": 3.4,
+   "band": "#1d2b3a",
+   "badge": "저장 필수",
+   "kicker": "서울 첫눈 지난 월요일",
+   "title": "어깨 좁은 남자\n뭐 입죠?",
+   "title_size": 84,
+   "body": "제일 쉬운 건 2번 →",
+   "accent": "#7FE3E3",
+   "left_stamp": [
+    "tri",
+    "어깨가 흘러내려요"
+   ],
+   "right_stamp": [
+    "o",
+    "칼라가 넓혀줘요"
+   ],
+   "stamp_y": 900
+  },
+  {
+   "type": "wboard",
+   "img": "p1",
+   "oy": 393,
+   "dur": 7.6,
+   "t_board": 3.0,
+   "t_item": 2.3,
+   "head": {
+    "num": "01",
+    "total": "03",
+    "kicker": "칼라는 크게",
+    "title": "넓은 양털 칼라\n어깨까지",
+    "body": "시어링 칼라 트러커 재킷"
+   },
+   "chip": "01 · 넓은 칼라",
+   "items": [
+    {
+     "xy": [
+      499,
+      425
+     ],
+     "name": "크림 시어링 칼라",
+     "sub": "칼라 폭만큼 어깨가 넓어 보여요",
+     "swatch": "#efe4cf",
+     "zoom": 2.2
+    },
+    {
+     "xy": [
+      628,
+      478
+     ],
+     "name": "어깨선은 딱 맞게",
+     "sub": "봉제선이 내 어깨 끝에 오게",
+     "swatch": "#1f2e4f",
+     "zoom": 2.2
+    }
+   ]
+  },
+  {
+   "type": "wboard",
+   "img": "p2",
+   "oy": 460,
+   "dur": 5.3,
+   "t_board": 3.0,
+   "t_item": 2.3,
+   "head": {
+    "num": "02",
+    "total": "03",
+    "kicker": "제일 쉬운 방법",
+    "title": "코트 위로\n후디 꺼내기",
+    "body": "모자가 어깨에 가로선을 그려요"
+   },
+   "chip": "02 · 후디 레이어드",
+   "items": [
+    {
+     "xy": [
+      512,
+      390
+     ],
+     "name": "오트밀 후디 모자",
+     "sub": "코트 깃 위에 얹기만 하면 끝",
+     "swatch": "#d9d2c5",
+     "zoom": 2.2
+    }
+   ]
+  },
+  {
+   "type": "wboard",
+   "img": "p3",
+   "oy": 406,
+   "dur": 7.6,
+   "t_board": 3.0,
+   "t_item": 2.3,
+   "head": {
+    "num": "03",
+    "total": "03",
+    "kicker": "단추는 두 줄로",
+    "title": "더블 피코트\n가로로 넓게",
+    "body": "넓은 라펠 + 단추 두 줄"
+   },
+   "chip": "03 · 더블 피코트",
+   "items": [
+    {
+     "xy": [
+      540,
+      545
+     ],
+     "name": "차콜 더블 피코트",
+     "sub": "단추 두 줄이 상체 폭을 넓혀요",
+     "swatch": "#3a3a3e",
+     "zoom": 2.1
+    },
+    {
+     "xy": [
+      488,
+      1040
+     ],
+     "name": "브라운 일자 울 바지",
+     "sub": "아래는 곧게, 위만 넓어 보이게",
+     "swatch": "#4a3428",
+     "zoom": 2.0
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "dur": 2.6,
+   "bg": "#00A8A8",
+   "fg": "#ffffff",
+   "accent": "#ffffff",
+   "kicker": "정답은 2번, 후디 하나면 끝",
+   "title": "저장 & 팔로우",
+   "body": "@zzebi.st 매일 1분 코디",
+   "source": "서울 첫눈 11.8 · 기상청(서울신문 11.09)"
+  }
+ ]
+}
