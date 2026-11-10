@@ -1,0 +1,714 @@
+{
+ "date": "2026-11-08",
+ "posts": [
+  {
+   "date": "2026-11-08",
+   "season": "가을",
+   "transition": true,
+   "metrics": {
+    "views": 130,
+    "saves": null,
+    "shares": null,
+    "reach": 117,
+    "view_rate_3s_pct": 48.3,
+    "save_rate_pct": 0.0
+   },
+   "status": "게시됨",
+   "series": "trend",
+   "format": "정보형",
+   "gender": "공용",
+   "time": "08:30",
+   "title": "얼굴 긴 사람, 비니·목도리·모자로 가로선 만드는 3가지",
+   "hook": "얼굴이 길다면 가로선 하나만",
+   "hook_type": "21 작은 행동 큰 결과형(일요일 비교형)",
+   "tiktok_hook": "가로선만 더해봤어요",
+   "tiktok_hook_type": "14 실험 결과형",
+   "situation": "데일리",
+   "weather": "일요일 서울 아침 2℃·오후부터 비(낮 8℃)",
+   "theme": "체형 고민·얼굴 긴 사람, 비니·목도리·모자로 가로선 만드는 3가지",
+   "topic": "비니 접어 눈썹 위까지 / 청키 목도리 턱까지(제일 쉬움) / 낮고 둥근 버킷햇",
+   "looks": [
+    {
+     "name": "(비교) 세로로 길게 vs 가로선 완성",
+     "items": [
+      {
+       "part": "액세서리",
+       "desc": "러스트 리브 비니(비교 △)",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "아우터",
+       "desc": "블랙 숏패딩",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "하의",
+       "desc": "인디고 스트레이트 진",
+       "color_hex": "",
+       "tip": ""
+      }
+     ],
+     "palette": [],
+     "formula": "뾰족한 비니·긴 목도리 대신 가로선 더하기"
+    },
+    {
+     "name": "01 접는 비니",
+     "items": [
+      {
+       "part": "액세서리",
+       "desc": "크림 케이블 비니(접어서)",
+       "color_hex": "#efe8dc",
+       "tip": "두껍게 접어 가로 띠 만들기·눈썹 위까지 낮게"
+      },
+      {
+       "part": "상의",
+       "desc": "헤더 그레이 알파카 숏 카디건",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "하의",
+       "desc": "블랙 플리츠 미디스커트",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "신발",
+       "desc": "블랙 롱부츠",
+       "color_hex": "",
+       "tip": ""
+      }
+     ],
+     "palette": [
+      "#efe8dc",
+      "#3a2a22"
+     ],
+     "formula": "비니는 접어서 눈썹 위까지(정수리 높이 없애기), 머리는 풀어 양옆으로"
+    },
+    {
+     "name": "02 청키 목도리(제일 쉬움)",
+     "items": [
+      {
+       "part": "액세서리",
+       "desc": "파우더 블루 청키 목도리",
+       "color_hex": "#7fa6d8",
+       "tip": "두 번 감아 턱까지"
+      },
+      {
+       "part": "아우터",
+       "desc": "블랙 레더 봄버",
+       "color_hex": "#2a2a2e",
+       "tip": "허리 기장이라 비율도 깔끔"
+      },
+      {
+       "part": "하의",
+       "desc": "차콜 와이드 울 팬츠",
+       "color_hex": "",
+       "tip": ""
+      }
+     ],
+     "palette": [
+      "#7fa6d8",
+      "#2a2a2e"
+     ],
+     "formula": "목도리 두 번 감아 턱 끝까지 — 얼굴 아래 가로 볼륨"
+    },
+    {
+     "name": "03 버킷햇",
+     "items": [
+      {
+       "part": "액세서리",
+       "desc": "블랙 부클 버킷햇",
+       "color_hex": "#2a2828",
+       "tip": "챙이 눈썹 높이에 오게"
+      },
+      {
+       "part": "아우터",
+       "desc": "크림 숏패딩",
+       "color_hex": "#f0ebe0",
+       "tip": ""
+      },
+      {
+       "part": "상의",
+       "desc": "블랙 터틀넥",
+       "color_hex": "",
+       "tip": "목까지 덮어 얼굴선 짧게"
+      },
+      {
+       "part": "하의",
+       "desc": "브라운 코듀로이 와이드 팬츠",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "신발",
+       "desc": "브라운 페니 로퍼",
+       "color_hex": "",
+       "tip": ""
+      }
+     ],
+     "palette": [
+      "#2a2828",
+      "#f0ebe0"
+     ],
+     "formula": "모자는 낮고 둥근 버킷햇, 챙이 가로선"
+    }
+   ],
+   "colors": "러스트+블랙 / 크림+헤더 그레이+블랙 / 파우더 블루+블랙+차콜 / 블랙+크림+브라운",
+   "tips": [
+    "01 비니는 두껍게 접어 눈썹 위까지 낮게",
+    "02 목도리는 두 번 감아 턱 끝까지(제일 쉬움)",
+    "03 모자는 낮고 둥근 버킷햇"
+   ],
+   "first_comment": "1·2·3번 중 내일 바로 해볼 건 몇 번이에요? 번호로 남겨주세요",
+   "sources": [
+    "보그 코리아(26.01.26)",
+    "경향신문(25.08.02)",
+    "기상청 예보(톱스타뉴스 11.7)"
+   ],
+   "images": [
+    {
+     "drive_id": "1lKatG5FKsDXWftPGCIevthmNINem8yxN",
+     "name": "20261108_trend_ah1.jpg",
+     "kind": "원본일러스트"
+    },
+    {
+     "drive_id": "16XjC1IGm8GoTeKSc5j1cfL65dKA9aOlR",
+     "name": "20261108_trend_ah2.jpg",
+     "kind": "원본일러스트"
+    },
+    {
+     "drive_id": "1e698cndH0XCH7EsbPGoYz9M1Ed-v1F6z",
+     "name": "20261108_trend_ap1.jpg",
+     "kind": "원본일러스트"
+    },
+    {
+     "drive_id": "1HEIyF7ttzINE9ep9B4dNbjtmWJKGa6nn",
+     "name": "20261108_trend_ap2.jpg",
+     "kind": "원본일러스트"
+    },
+    {
+     "drive_id": "1YT3zmCn-MvBiorSzJmKItTUuGul6fbDX",
+     "name": "20261108_trend_ap3.jpg",
+     "kind": "원본일러스트"
+    }
+   ],
+   "video": "7607527-file-11511420858620988060.mp4",
+   "extra_videos": [
+    "tiktok: 7607527-file-4380400198199098536.mp4",
+    "youtube: 7607527-file-12525856686706709562.mp4"
+   ],
+   "instagram_url": "https://www.instagram.com/reel/DfdXcv5DyT-/",
+   "book_notes": "ah1=비교 △, ah2=비교 ⭕, ap1~3=01~03 · 얼굴형 커버(겨울 소품) 페이지용",
+   "caption": "가로선은 세 군데에 만들 수 있어요. 2번은 나가기 전 10초면 돼요.\n얼굴이 길어 보일 때는 세로선을 줄이고 가로선을 하나 더하면 돼요.\n\n01 비니는 두껍게 접어 눈썹 위까지 낮게\n02 목도리는 두 번 감아 턱 끝까지 (제일 쉬워요)\n03 모자를 쓴다면 낮고 둥근 버킷햇\n\n오늘 서울 아침 2℃, 오후부터 비 소식이에요. 나가기 전에 목도리부터 챙겨 보세요.\n내일 입을 룩, 저장해두세요.\n\n참고(목도리·버킷햇): 보그 코리아(26.01.26), 경향신문(25.08.02) · 날씨: 기상청 예보(톱스타뉴스 11.7)\nAI로 그린 일러스트예요.\n\n#얼굴형별코디 #비니코디 #목도리코디 #버킷햇 #겨울코디 #데일리룩 #코디추천 #체형커버 #zzebist\n내일은 발목이 신경 쓰인다면, 앵클부츠 고르는 법 → 팔로우하고 매일 받기"
+  },
+  {
+   "date": "2026-11-08",
+   "season": "가을",
+   "transition": true,
+   "metrics": {},
+   "status": "게시됨",
+   "series": "trend",
+   "format": "코디룩북",
+   "gender": "공용",
+   "time": "10:00",
+   "title": "오후부터 비 오는 일요일, 전시 나들이 남녀 2룩",
+   "hook": "트렌치 입는 날 오후엔 비라면?",
+   "hook_type": "04 트렌드+문제 제기형",
+   "situation": "전시 나들이(커플)",
+   "weather": "일요일 서울 아침 2℃·오후부터 비(낮 8℃)",
+   "theme": "날씨·오후부터 비 오는 일요일, 전시 나들이 남녀 2룩",
+   "topic": "밖은 발수, 안에선 가볍게",
+   "looks": [
+    {
+     "name": "LOOK 1 그녀의 전시 나들이",
+     "items": [
+      {
+       "part": "아우터",
+       "desc": "실버 그레이 나일론 트렌치",
+       "color_hex": "#b8bcc0",
+       "tip": "물방울을 털어 내기 쉬운 발수 소재"
+      },
+      {
+       "part": "상의",
+       "desc": "체리 레드 램스울 니트",
+       "color_hex": "#b3232b",
+       "tip": "회색 날씨엔 안쪽에 한 점 컬러"
+      },
+      {
+       "part": "하의",
+       "desc": "블랙 스트레이트 진",
+       "color_hex": "#1f1f22",
+       "tip": ""
+      },
+      {
+       "part": "신발",
+       "desc": "블랙 러버 첼시 부츠",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "가방",
+       "desc": "블랙 나일론 숄더백",
+       "color_hex": "#1b1b1d",
+       "tip": "젖어도 닦기 쉬운 나일론"
+      }
+     ],
+     "palette": [
+      "#b8bcc0",
+      "#b3232b",
+      "#1f1f22"
+     ],
+     "formula": "발수 트렌치 + 안쪽 컬러 니트 한 점"
+    },
+    {
+     "name": "LOOK 2 그의 전시 나들이",
+     "items": [
+      {
+       "part": "아우터",
+       "desc": "카멜 발수 발마칸 코트",
+       "color_hex": "#c8ac80",
+       "tip": "발수 코팅 면이라 벗어 들어도 가벼워요"
+      },
+      {
+       "part": "상의",
+       "desc": "스카이 블루 옥스퍼드 셔츠",
+       "color_hex": "#b9cde6",
+       "tip": "카멜엔 하늘색 셔츠 한 장"
+      },
+      {
+       "part": "하의",
+       "desc": "차콜 와이드 울 팬츠",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "신발",
+       "desc": "브라운 러그솔 더비",
+       "color_hex": "#4a2e20",
+       "tip": "두꺼운 고무 밑창이라 젖은 길도"
+      }
+     ],
+     "palette": [
+      "#c8ac80",
+      "#b9cde6",
+      "#4a2e20"
+     ],
+     "formula": "카멜 발수 코트 + 하늘색 셔츠 + 러그솔"
+    }
+   ],
+   "colors": "실버 그레이+체리 레드+블랙 / 카멜+스카이 블루+차콜",
+   "tips": [
+    "겉옷은 물방울 털기 쉬운 소재",
+    "전시장 안에선 벗어 들기 쉽게",
+    "안쪽엔 컬러 한 점"
+   ],
+   "first_comment": "비 오는 날 1번 나일론 트렌치 vs 2번 카멜 발마칸, 하나만 고른다면? 번호로 남겨주세요",
+   "sources": [
+    "기상청 예보(톱스타뉴스 11.7)"
+   ],
+   "images": [
+    {
+     "drive_id": "1xeYtquPgc0PG7goc4AKc6zpCa1ueiBu3",
+     "name": "20261108_trend_b1.jpg",
+     "kind": "원본일러스트"
+    },
+    {
+     "drive_id": "1PmzJB3HHs7wNUAVMIWFz6qKaqUOhe5qO",
+     "name": "20261108_trend_b2.jpg",
+     "kind": "원본일러스트"
+    },
+    {
+     "drive_id": "1OrvJ25aWDJuLqXTUrfWiy8ewOpahW5ls",
+     "name": "20261108_trend_b2v2.jpg",
+     "kind": "원본일러스트"
+    }
+   ],
+   "video": "7607527-file-8970408982295141853.mp4",
+   "instagram_url": "https://www.instagram.com/reel/Dfdh_VggYvM/",
+   "book_notes": "b1=LOOK1(그녀), b2·b2v2=LOOK2(그, v2는 수정본 — 영상에 쓴 쪽 확인 필요) · 비 오는 날 나들이 페이지용",
+   "caption": "전시장 안은 따뜻하고 밖은 비, 그래서 오늘은 겉옷 고르는 기준이 달라져요.\n서울은 오후부터 비 소식(낮 8℃)이에요. 물방울을 털어 내기 쉽고, 안에서는 벗어 들기 편한 겉옷으로 골랐어요.\n\nLOOK 1 그녀: 실버 그레이 나일론 트렌치 + 체리 레드 니트 + 블랙 데님 + 나일론 숄더백\nLOOK 2 그: 카멜 발수 발마칸 코트 + 스카이 블루 옥스퍼드 셔츠 + 러그솔 더비\n\n공식: 밖은 발수, 안에선 가볍게. 회색 날씨일수록 안쪽 색 한 점이 사진을 살려요.\n나가기 전에 저장해두세요.\n\n참고: 기상청 예보(톱스타뉴스 11.7)\nAI로 그린 일러스트예요.\n\n#비오는날코디 #트렌치코트 #발마칸코트 #전시회룩 #커플룩 #주말코디 #데일리룩 #코디추천 #가을겨울코디 #zzebist\n내일은 발목이 신경 쓰인다면, 앵클부츠 고르는 법 → 팔로우하고 매일 받기"
+  },
+  {
+   "date": "2026-11-08",
+   "season": "가을",
+   "transition": true,
+   "metrics": {
+    "views": 135,
+    "saves": null,
+    "shares": null,
+    "reach": 116,
+    "view_rate_3s_pct": 13.0,
+    "save_rate_pct": 0.0
+   },
+   "status": "게시됨",
+   "series": "trend",
+   "format": "컬러조합",
+   "gender": "공용",
+   "time": "11:30",
+   "title": "두 색 공식 — 포레스트 그린&에크루 / 네이비&초콜릿",
+   "hook": "내일 아침 입을 게 없다면",
+   "hook_type": "11 감정 공감형",
+   "situation": "①출근 ②약속 ③주말",
+   "weather": "",
+   "theme": "두 색 공식 플랫레이·포레스트 그린&에크루 / 네이비&초콜릿(다음 주 6벌)",
+   "topic": "같은 두 색을 서로 바꿔 입기, 제일 쉬운 건 ③ 주말룩",
+   "looks": [
+    {
+     "name": "FOREST & ECRU ① 출근",
+     "items": [
+      {
+       "part": "상의",
+       "desc": "에크루 케이블 니트 베스트",
+       "color_hex": "#efe9dc",
+       "tip": "그린 셔츠 위에 한 겹"
+      },
+      {
+       "part": "상의",
+       "desc": "포레스트 그린 포플린 셔츠",
+       "color_hex": "#1f4a36",
+       "tip": ""
+      },
+      {
+       "part": "하의",
+       "desc": "에크루 코듀로이 와이드 팬츠",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "신발",
+       "desc": "그린 스웨이드 로퍼",
+       "color_hex": "",
+       "tip": ""
+      }
+     ],
+     "palette": [
+      "#1f4a36",
+      "#efe9dc"
+     ],
+     "formula": "그린 셔츠 + 에크루 베스트"
+    },
+    {
+     "name": "FOREST & ECRU ② 약속",
+     "items": [
+      {
+       "part": "상의",
+       "desc": "그린 골지 니트 원피스",
+       "color_hex": "#1f4a36",
+       "tip": ""
+      },
+      {
+       "part": "아우터",
+       "desc": "에크루 롱 카디건",
+       "color_hex": "#efe9dc",
+       "tip": ""
+      },
+      {
+       "part": "신발",
+       "desc": "에크루 앵클부츠",
+       "color_hex": "",
+       "tip": ""
+      }
+     ],
+     "palette": [
+      "#1f4a36",
+      "#efe9dc"
+     ],
+     "formula": "그린 원피스 + 에크루 롱 카디건·부츠"
+    },
+    {
+     "name": "FOREST & ECRU ③ 주말",
+     "items": [
+      {
+       "part": "아우터",
+       "desc": "그린 플리스 집업",
+       "color_hex": "#1f4a36",
+       "tip": ""
+      },
+      {
+       "part": "상의",
+       "desc": "에크루 터틀넥",
+       "color_hex": "#efe9dc",
+       "tip": ""
+      },
+      {
+       "part": "하의",
+       "desc": "그린 바지",
+       "color_hex": "",
+       "tip": ""
+      }
+     ],
+     "palette": [
+      "#1f4a36",
+      "#efe9dc"
+     ],
+     "formula": "그린 플리스 + 에크루 터틀넥"
+    },
+    {
+     "name": "NAVY & CHOCO ① 출근",
+     "items": [
+      {
+       "part": "아우터",
+       "desc": "초콜릿 코듀로이 블레이저",
+       "color_hex": "#4a2c1d",
+       "tip": ""
+      },
+      {
+       "part": "상의",
+       "desc": "네이비 터틀넥",
+       "color_hex": "#1d2846",
+       "tip": ""
+      },
+      {
+       "part": "하의",
+       "desc": "네이비 플리츠 와이드 팬츠",
+       "color_hex": "",
+       "tip": ""
+      }
+     ],
+     "palette": [
+      "#1d2846",
+      "#4a2c1d"
+     ],
+     "formula": "네이비 셋업 + 초콜릿 블레이저"
+    },
+    {
+     "name": "NAVY & CHOCO ② 약속",
+     "items": [
+      {
+       "part": "상의",
+       "desc": "초콜릿 니트",
+       "color_hex": "#4a2c1d",
+       "tip": ""
+      },
+      {
+       "part": "하의",
+       "desc": "네이비 플리츠 미디스커트",
+       "color_hex": "#1d2846",
+       "tip": "네이비 타이츠와 함께"
+      },
+      {
+       "part": "신발",
+       "desc": "초콜릿 메리제인",
+       "color_hex": "",
+       "tip": ""
+      }
+     ],
+     "palette": [
+      "#1d2846",
+      "#4a2c1d"
+     ],
+     "formula": "초콜릿 니트 + 네이비 플리츠"
+    },
+    {
+     "name": "NAVY & CHOCO ③ 주말",
+     "items": [
+      {
+       "part": "아우터",
+       "desc": "네이비 셔츠 재킷",
+       "color_hex": "#1d2846",
+       "tip": ""
+      },
+      {
+       "part": "상의",
+       "desc": "초콜릿 와플 헨리",
+       "color_hex": "",
+       "tip": ""
+      },
+      {
+       "part": "하의",
+       "desc": "초콜릿 카고 팬츠",
+       "color_hex": "#4a2c1d",
+       "tip": ""
+      },
+      {
+       "part": "신발",
+       "desc": "네이비 하이탑",
+       "color_hex": "",
+       "tip": ""
+      }
+     ],
+     "palette": [
+      "#1d2846",
+      "#4a2c1d"
+     ],
+     "formula": "네이비 셔츠 재킷 + 초콜릿 헨리·카고"
+    }
+   ],
+   "colors": "포레스트 그린+에크루 / 네이비+초콜릿",
+   "tips": [
+    "셋업이면 안쪽만 다른 색",
+    "니트·재킷은 서로 바꿔 입기",
+    "가방·신발로 색 한 번 더"
+   ],
+   "first_comment": "초록&에크루 vs 네이비&초콜릿, 이번 주에 입을 조합은? 1 또는 2로 남겨주세요",
+   "sources": [
+    "보그 코리아(26.11.03 겨울 컬러 조합 기사 — 네이비+초콜릿)"
+   ],
+   "images": [
+    {
+     "drive_id": "1svz2qs2zohYjB1DWlxngKD1izvmEBCnW",
+     "name": "20261108_trend_c1.jpg",
+     "kind": "원본일러스트"
+    },
+    {
+     "drive_id": "1oVzitZV-VZfqiVEksKbZ1HnZzZ5PHZl_",
+     "name": "20261108_trend_c2.jpg",
+     "kind": "원본일러스트"
+    },
+    {
+     "drive_id": "1FUnToCMOuJdRRRMBrCETU5HpcOknPle3",
+     "name": "20261108_trend_c1v2.jpg",
+     "kind": "원본일러스트"
+    },
+    {
+     "drive_id": "196hvwW96-NT4wq-vvjETbvdB4_lbJvuS",
+     "name": "20261108_trend_c2v2.jpg",
+     "kind": "원본일러스트"
+    }
+   ],
+   "video": "7607527-file-8155312925539511907.mp4",
+   "instagram_url": "https://www.instagram.com/reel/DfdsCBpjAjy/",
+   "book_notes": "c1·c1v2=FOREST&ECRU 플랫레이, c2·c2v2=NAVY&CHOCO 플랫레이(v2는 수정본) · 두 색 공식·캡슐옷장 페이지용",
+   "caption": "①②③ 중 제일 쉬운 건 하나예요. 영상 끝 공식에서 알려드려요.\n조합마다 같은 두 색만 서로 바꿔 입었어요(①출근 ②약속 ③주말).\n\nFOREST & ECRU: 에크루 니트 베스트+그린 셔츠 / 그린 니트 원피스+에크루 롱 카디건 / 그린 플리스 집업+에크루 터틀넥\nNAVY & CHOCO: 초콜릿 코듀로이 블레이저+네이비 터틀넥 / 초콜릿 니트+네이비 플리츠 스커트 / 네이비 셔츠 재킷+초콜릿 카고\n\n저장해두고 아침에 꺼내 보기.\n\n참고: 보그 코리아(26.11.03 겨울 컬러 조합 기사 — 네이비+초콜릿)\nAI로 만든 이미지예요.\n\n#컬러조합 #두색코디 #출근룩 #그린코디 #네이비코디 #브라운코디 #겨울코디 #코디추천 #캡슐옷장 #zzebist\n내일은 발목이 신경 쓰인다면, 앵클부츠 고르는 법 → 팔로우하고 매일 받기"
+  },
+  {
+   "date": "2026-11-08",
+   "season": "가을",
+   "transition": true,
+   "metrics": {},
+   "status": "게시됨",
+   "series": "celeb",
+   "format": "셀럽스냅",
+   "gender": "남자",
+   "time": "12:30",
+   "title": "셀럽 스냅 해부 #36 블랙 집업 가디건 공항룩",
+   "hook": "흰 티+청바지에\n검정 신발 신나요?",
+   "hook_type": "15 흔한 실수형(질문 문법)",
+   "situation": "공항·여행(남친룩)",
+   "weather": "",
+   "celeb": "제이비(갓세븐)",
+   "mood": "꾸안꾸 미니멀",
+   "looks": [
+    {
+     "name": "블랙 집업 가디건 공항룩",
+     "items": [
+      {
+       "part": "아우터",
+       "desc": "블랙 집업 가디건",
+       "color_hex": "",
+       "tip": "지퍼 열고 재킷처럼"
+      },
+      {
+       "part": "상의",
+       "desc": "화이트 크루넥 티",
+       "color_hex": "",
+       "tip": "목선 늘어지지 않게"
+      },
+      {
+       "part": "하의",
+       "desc": "미드블루 스트레이트 진",
+       "color_hex": "",
+       "tip": "밑단은 신발에 살짝"
+      },
+      {
+       "part": "신발",
+       "desc": "꼬냑 스니커즈",
+       "color_hex": "",
+       "tip": "검정 대신 따뜻한 갈색"
+      }
+     ],
+     "palette": [],
+     "formula": "흰 티+청바지엔 검정 대신 꼬냑 스니커즈"
+    }
+   ],
+   "first_comment": "평소 흰 티+청바지엔 1 검정 신발 2 흰 신발 3 갈색 신발, 몇 번이에요?",
+   "sources": [
+    "패션서울 2026-11-04 '갓세븐 제이비, 꾸안꾸 남친룩의 정석'(11/3 인천공항 출국)"
+   ],
+   "images": [
+    {
+     "drive_id": "1JHZ2Je_rpYJTh4XVkZNIMLy_sRFobyUr",
+     "name": "20261108_celeb_36.jpg",
+     "kind": "원본일러스트"
+    }
+   ],
+   "video": "7607527-file-11583670604284357810.mp4",
+   "reel_file": "20261108_36.mp4",
+   "instagram_url": "https://www.instagram.com/reel/Dfdy46Aj0dY/",
+   "book_notes": "셀럽 이름·닮은 이미지는 책에 그대로 쓰지 말고 스타일 공식만 활용 · 실착 브랜드명(MCM)도 책에선 빼기",
+   "caption": "셀럽 스냅 해부 #36 | 제이비(갓세븐) · 인천공항 출국길 🇰🇷\n답은 마지막 4번 카드, 발끝에 있어요. 블랙 집업 가디건 공항룩, 포인트 4개만 기억하세요\n\n01 블랙 집업 가디건 – 지퍼 열고 재킷처럼\n02 화이트 크루넥 티 – 목선 늘어지지 않게\n03 미드블루 스트레이트 진 – 밑단은 신발에 살짝\n04 꼬냑 스니커즈 – 검정 대신 따뜻한 갈색 (실착: MCM 모노그램, 영상은 무지로 재현)\n\n남자친구 여행룩 고민이라면 이 4개 그대로 보내주세요.\n저장해두고 따라 입기 🔖\n※ 실제 착장을 바탕으로 AI로 재현한 이미지예요\n참고: 패션서울(26.11.04, 11/3 인천공항 출국)\n\n#공항패션 #아이돌사복 #남자공항패션 #20대코디 #남친룩 #집업가디건 #가디건코디 #청바지코디 #스니커즈코디 #갓세븐 #streetstyle #zzebi\n내일은 여자 아이돌 사복 해부 → 팔로우하고 매일 받기"
+  },
+  {
+   "date": "2026-11-08",
+   "season": "가을",
+   "transition": true,
+   "metrics": {
+    "view_rate_3s_pct": 35.1
+   },
+   "status": "게시됨",
+   "series": "celeb",
+   "format": "셀럽스냅",
+   "gender": "남자",
+   "time": "18:00",
+   "title": "셀럽 스냅 해부 #37 블랙 니트 × 카고 시티보이룩",
+   "hook": "검정 니트 밑에\n흰 티 1cm만 보이면?",
+   "hook_type": "21 작은 행동 큰 결과형(조건 문법)",
+   "situation": "성수·한남 나들이",
+   "weather": "",
+   "celeb": "재현(NCT)",
+   "mood": "시티보이 스트릿",
+   "looks": [
+    {
+     "name": "블랙 니트 × 카고 시티보이룩",
+     "items": [
+      {
+       "part": "가방",
+       "desc": "블랙 나일론 크로스백",
+       "color_hex": "",
+       "tip": "가슴 높이로 짧게"
+      },
+      {
+       "part": "상의",
+       "desc": "블랙 니트+흰 티",
+       "color_hex": "",
+       "tip": "흰 티 밑단 1cm만 보이게"
+      },
+      {
+       "part": "하의",
+       "desc": "카키 와이드 카고",
+       "color_hex": "",
+       "tip": "밑단은 발목에 모이게"
+      },
+      {
+       "part": "신발",
+       "desc": "흰 양말+블랙 로퍼",
+       "color_hex": "",
+       "tip": "운동화 대신 양말 보이게(스타일링 추천)"
+      }
+     ],
+     "palette": [],
+     "formula": "검정 니트 밑 흰 티 1cm + 카고엔 흰 양말 로퍼"
+    }
+   ],
+   "first_comment": "검정 니트 입을 때 1 다 넣어 입기 2 흰 티 살짝 보이기, 어느 쪽이에요?",
+   "sources": [
+    "에스콰이어 코리아 2026-10-06 '남자 아이돌 사복에서 찾은 니트 스타일 추천 5'(마카오 일상)"
+   ],
+   "images": [
+    {
+     "drive_id": "1-wVVqSVjuiFlkrnFEHmke3zd9eoVLKV3",
+     "name": "20261108_celeb_37.jpg",
+     "kind": "원본일러스트"
+    }
+   ],
+   "video": "7607527-file-9861506898935136293.mp4",
+   "reel_file": "20261108_37.mp4",
+   "instagram_url": "https://www.instagram.com/reel/DfeZQVujvj0/",
+   "book_notes": "셀럽 이름·닮은 이미지는 책에 그대로 쓰지 말고 스타일 공식만 활용 · 4번(흰 양말+로퍼)은 실착 아닌 스타일링 추천",
+   "caption": "셀럽 스냅 해부 #37 | 재현(NCT) · 마카오 일상룩 🇰🇷\n검정이 덜 무거워 보이는 이유는 2번 카드에서. 블랙 니트 × 카고 시티보이룩, 포인트 4개만 기억하세요\n\n01 블랙 나일론 크로스백 – 가슴 높이로 짧게\n02 블랙 니트+흰 티 – 흰 티 밑단 1cm만 보이게\n03 카키 와이드 카고 – 밑단은 발목에 모이게\n04 흰 양말+블랙 로퍼 – 운동화 대신 양말 보이게 (스타일링 추천)\n\n성수·한남 나들이 가는 날, 카고에 운동화만 신었다면 4번도 꼭 보세요.\n저장해두고 따라 입기 🔖\n※ 실제 착장을 바탕으로 AI로 재현한 이미지예요\n참고: 에스콰이어 코리아(26.10.06 '남자 아이돌 사복에서 찾은 니트 스타일')\n\n#아이돌사복 #남자코디 #시티보이룩 #카고팬츠 #카고바지코디 #니트코디 #로퍼코디 #양말코디 #20대코디 #NCT #streetstyle #zzebi\n내일은 여자 아이돌 사복 해부 → 팔로우하고 매일 받기"
+  }
+ ]
+}
