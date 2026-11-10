@@ -102,6 +102,15 @@ def render_look(L, n, T, data_dir, eager):
          f'        <p class="point">{T(L.get("point",""))}</p>']
     if L.get('real'):
         h.append(f'        <p class="real"><b>{T("실착 포인트")}</b> {T(L["real"])}</p>')
+    # v3.3 · 룩별 매칭 요약 줄 (2026-11-09): 찾은 상품 수 + 평균 사진 일치 + 5칸 미터
+    ps = [p for c in L.get('cores', []) for p in c['tiers'].values() if p] + [w['p'] for w in L.get('with', []) if w.get('p')]
+    sc = [p['match'] for p in ps if p.get('match')]
+    if sc:
+        av = sum(sc) / len(sc); full = round(av)
+        dots = ''.join(f'<i class="{"on" if i < full else ""}"></i>' for i in range(5))
+        h.append(f'        <p class="msum"><span class="msum-k">{T("찾은 상품")}</span><b class="msum-v">{len(ps)}</b>'
+                 f'<span class="msum-sep" aria-hidden="true"></span><span class="msum-k">{T("평균 사진 일치")}</span><b class="msum-v">{av:.1f}/5</b>'
+                 f'<span class="msum-dots" aria-hidden="true">{dots}</span></p>')
     h += ['      </div>', '    </div>']
     marks = ['①', '②', '③']
     cores = [c for c in L.get('cores', []) if any(c['tiers'].get(k) for k in ('lux', 'mid', 'value'))]   # 빈 코어는 번호에서 제외
@@ -162,6 +171,15 @@ LANG_UI = '''<div class="lang" role="group" aria-label="Language">
 LOGO = '''<svg class="logo-mark" viewBox="20 0 580 360" aria-hidden="true"><path d="M310 150 L40 300 c-22 12-14 40 10 40 h520 c24 0 32-28 10-40 L310 150" fill="none" stroke="currentColor" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/><path d="M310 70 c0-34 26-50 46-50 s44 18 44 44 c0 30-26 38-44 52 L310 150" fill="none" stroke="currentColor" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/><path d="M310 150 Q296 186 306 214" fill="none" stroke="currentColor" stroke-width="7"/><g transform="rotate(-10 310 262)"><path d="M246 214 h104 l36 34 v70 h-176 v-70 Z" fill="#00A8A8"/><circle cx="310" cy="240" r="11" fill="var(--bg)"/></g></svg>'''
 
 EXTRA_CSS = '''
+/* v3.3 · 룩별 매칭 요약 줄 (2026-11-09) */
+.msum{display:flex;align-items:center;flex-wrap:wrap;gap:6px 8px;margin:10px 0 0;padding:9px 12px;border-radius:10px;background:var(--brand-soft);font-size:13px;line-height:1.4;color:var(--ink)}
+.msum-k{color:var(--ink);opacity:.85}
+.msum-v{font-weight:800;color:var(--brand-ink);font-variant-numeric:tabular-nums}
+.msum-sep{width:1px;height:12px;background:var(--line)}
+.msum-dots{display:inline-flex;gap:3px;margin-left:auto}
+.msum-dots i{width:8px;height:8px;border-radius:50%;border:1.5px solid var(--brand-ink);box-sizing:border-box}
+.msum-dots i.on{background:var(--brand-ink)}
+@media (max-width:460px){.tier .mt{grid-column:2/-1;justify-self:start}}
 /* v3.0 · 언어 전환 + 점검 배지 (2026-10-29) */
 .brandbar-r{display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:flex-end}
 .lang{display:inline-flex;border:1px solid var(--line);border-radius:999px;background:var(--surface);padding:2px}
@@ -231,6 +249,7 @@ JS = r'''
   lang(o.l||saved||'ko');
   var ti=document.querySelector('.tabs-in'),tb=document.querySelector('.tabs');function ed(){if(ti&&tb)tb.classList.toggle('end',ti.scrollLeft+ti.clientWidth>=ti.scrollWidth-4)}if(ti){ti.addEventListener('scroll',ed,{passive:true});ed()}
   show(o.t||'',false);
+  try{var sel=document.querySelector('.tabs a[aria-selected="true"]'); if(sel){var r=sel.getBoundingClientRect(),c=(sel.closest('.tabs-in')||sel.parentNode);while(c&&c.scrollWidth<=c.clientWidth)c=c.parentNode;if(c&&c.scrollBy&&r.right>window.innerWidth-8)c.scrollBy(r.right-window.innerWidth+32,0);ed()}}catch(_){}
   window.addEventListener('hashchange',function(){var o=hp();show(o.t||'',true)});
 })();
 '''
