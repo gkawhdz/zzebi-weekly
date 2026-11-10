@@ -2,6 +2,7 @@
 # 이미지 생성 (Zapier 대체, 2026-11-10). GitHub imgreq 브랜치에 요청을 올리면 Actions가 OpenAI로 생성.
 # 사용: bash tools/gen_image.sh <요청.json> <받을 폴더>
 #   요청.json = {"images":[{"name":"01","prompt":"...","size":"1024x1536","quality":"medium"}, ...]}  (최대 8장)
+#   같은 인물(전속 모델)로: 항목에 "refs":["models/model_W.jpg"] 추가 — studio/models/README.md 참고
 # 결과: <받을 폴더>/<name>.jpg, 실패 목록은 <받을 폴더>/_done.json. 끝까지 기다림(최대 8분).
 set -euo pipefail
 REQ="$1"; OUT="$2"; REPO=gkawhdz/zzebi-weekly
