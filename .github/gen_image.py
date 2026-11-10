@@ -7,11 +7,27 @@ def changed():
         if out: return out
     except Exception: pass
     return sorted(glob.glob("req/*.json"))[-1:]
+def edit(job):
+    # 기준 사진(refs)을 넣어 같은 인물로 생성 — /v1/images/edits (multipart)
+    import uuid
+    bd = uuid.uuid4().hex; parts = []
+    fields = {"model": job.get("model", "gpt-image-1.5"), "prompt": job["prompt"], "size": job.get("size", "1024x1536"),
+              "quality": job.get("quality", "medium"), "n": "1", "output_format": job.get("format", "jpeg"),
+              "input_fidelity": job.get("fidelity", "high")}
+    for k, v in fields.items():
+        parts.append(f'--{bd}\r\nContent-Disposition: form-data; name="{k}"\r\n\r\n{v}\r\n'.encode())
+    for r in job["refs"][:4]:
+        data = open(r, "rb").read(); mt = "image/png" if r.endswith(".png") else "image/jpeg"
+        parts.append(f'--{bd}\r\nContent-Disposition: form-data; name="image[]"; filename="{os.path.basename(r)}"\r\nContent-Type: {mt}\r\n\r\n'.encode() + data + b"\r\n")
+    parts.append(f"--{bd}--\r\n".encode())
+    return urllib.request.Request("https://api.openai.com/v1/images/edits", data=b"".join(parts),
+          headers={"Authorization": "Bearer " + key, "Content-Type": f"multipart/form-data; boundary={bd}"})
 def gen(job):
     body = {"model": job.get("model", "gpt-image-1.5"), "prompt": job["prompt"], "size": job.get("size", "1024x1536"),
             "quality": job.get("quality", "medium"), "n": 1, "output_format": job.get("format", "jpeg")}
     req = urllib.request.Request("https://api.openai.com/v1/images/generations", data=json.dumps(body).encode(),
           headers={"Authorization": "Bearer " + key, "Content-Type": "application/json"})
+    if job.get("refs"): req = edit(job)
     last = ""
     for attempt in range(2):
         try:
