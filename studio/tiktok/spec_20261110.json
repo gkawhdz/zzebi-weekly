@@ -1,0 +1,40 @@
+{
+ "tools_dir": "/home/claude/td",
+ "brand": "TREND DAILY · 11.10",
+ "parts": [
+  {
+   "spec": "/home/claude/td/A_tt.json",
+   "keep": [
+    1,
+    2,
+    3
+   ]
+  }
+ ],
+ "hook": {
+  "part": 0,
+  "img": "p1",
+  "oy": 455,
+  "badge": "끝까지 보기",
+  "kicker": "패딩만 입으면 부해 보인다면",
+  "title": "1분 만에\n패딩 덜 부하게",
+  "body": "2번은 10초면 끝 ↓",
+  "dur": 2.8
+ },
+ "cta": {
+  "kicker": "내일 아침 패딩 입기 전에",
+  "title": "팔로우하고\n내일도 보기",
+  "body": "@zzebi.st",
+  "source": "하퍼스 바자 코리아(25.11.27) · 얼루어 코리아(25.12.02)"
+ },
+ "seed": 20261113,
+ "en": {
+  "hook": "Puffer looks bulky? Fix it in 1 min",
+  "scenes": [
+   "1. Cinch the waist with a belt so the shape doesn't turn boxy",
+   "2. Let 1cm of knit cuff peek out — the easiest fix",
+   "3. Dark bottoms and\npointed-toe boots"
+  ],
+  "cta": "Follow @zzebi.st for 1-min style tips · Sources: Harper's Bazaar Korea, Allure Korea"
+ }
+}
