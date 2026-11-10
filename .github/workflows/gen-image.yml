@@ -1,0 +1,31 @@
+name: gen-image
+on:
+  push:
+    branches: [imgreq]
+    paths: ['req/**.json']
+permissions:
+  contents: write
+concurrency:
+  group: gen-image
+  cancel-in-progress: false
+jobs:
+  gen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: imgreq
+          fetch-depth: 2
+      - name: Generate images
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          BEFORE: ${{ github.event.before }}
+        run: python3 .github/gen_image.py
+      - name: Commit results
+        run: |
+          git config user.name "zzebi-image-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add out
+          git commit -m "image results" || exit 0
+          for i in 1 2 3 4 5; do git pull --rebase -q origin imgreq && git push -q origin HEAD:imgreq && break; sleep 5; done
