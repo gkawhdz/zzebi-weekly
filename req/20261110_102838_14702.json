@@ -1,0 +1,34 @@
+{
+ "images": [
+  {
+   "name": "h1",
+   "prompt": "Vertical full-body street style photograph, camera at chest height from about 5 meters away, 50mm lens. COMPOSITION IS CRITICAL: the top 35 percent of the image is empty background only (plain pale wall and soft sky), her head starts at about 37 percent of the image height, the whole figure from the top of her hair down to both shoes is fully visible, shoes end about 4 percent above the bottom edge, figure centered horizontally. The subject is a young Korean woman in her 20s (not resembling any real celebrity), ordinary everyday look, shoulder-length dark brown hair, natural light makeup, relaxed natural expression, wearing a glossy black puffer jacket long enough to cover her hips completely, black skin-tight leggings, plain white low sneakers. She stands still facing the camera, both arms relaxed straight down at her sides with hands loosely closed. Quiet Seoul residential side street in late autumn, a few fallen leaves on the pavement, soft overcast daylight, natural skin texture, realistic fabric textures, 35mm film look, candid magazine street snap. No text, no letters, no signs, no logos, no brand marks.",
+   "size": "1024x1536",
+   "quality": "medium"
+  },
+  {
+   "name": "h2",
+   "prompt": "Vertical full-body street style photograph, camera at chest height from about 5 meters away, 50mm lens. COMPOSITION IS CRITICAL: the top 35 percent of the image is empty background only (plain pale wall and soft sky), her head starts at about 37 percent of the image height, the whole figure from the top of her hair down to both shoes is fully visible, shoes end about 4 percent above the bottom edge, figure centered horizontally. The subject is a young Korean woman in her 20s (not resembling any real celebrity), ordinary everyday look, shoulder-length dark brown hair, natural light makeup, relaxed natural expression, wearing an ivory cropped puffer jacket whose hem ends exactly at her natural waistline, a light gray crew-neck top, high-waisted straight-leg medium blue jeans reaching the shoes, dark brown leather penny loafers. She stands facing the camera with weight on one leg, both hands tucked into the jacket side pockets. Quiet Seoul residential side street in late autumn, a few fallen leaves on the pavement, soft overcast daylight, natural skin texture, realistic fabric textures, 35mm film look, candid magazine street snap. No text, no letters, no signs, no logos, no brand marks.",
+   "size": "1024x1536",
+   "quality": "medium"
+  },
+  {
+   "name": "p1",
+   "prompt": "Vertical full-body street style photograph, camera at chest height from about 5 meters away, 50mm lens. COMPOSITION IS CRITICAL: the top 35 percent of the image is empty background only (plain pale wall and soft sky), her head starts at about 37 percent of the image height, the whole figure from the top of her hair down to both shoes is fully visible, shoes end about 4 percent above the bottom edge, figure centered horizontally. The subject is a young Korean woman in her 20s (not resembling any real celebrity), ordinary everyday look, shoulder-length dark brown hair, natural light makeup, relaxed natural expression, wearing a matte black cropped puffer jacket ending at the waist, a black turtleneck, black wide-leg tailored slacks falling straight from the thigh to the floor, black leather loafers. She walks slowly toward the camera mid-stride, one hand in her trouser pocket, the other arm relaxed. Quiet Seoul residential side street in late autumn, a few fallen leaves on the pavement, soft overcast daylight, natural skin texture, realistic fabric textures, 35mm film look, candid magazine street snap. No text, no letters, no signs, no logos, no brand marks.",
+   "size": "1024x1536",
+   "quality": "medium"
+  },
+  {
+   "name": "p2",
+   "prompt": "Vertical full-body street style photograph, camera at chest height from about 5 meters away, 50mm lens. COMPOSITION IS CRITICAL: the top 35 percent of the image is empty background only (plain pale wall and soft sky), her head starts at about 37 percent of the image height, the whole figure from the top of her hair down to both shoes is fully visible, shoes end about 4 percent above the bottom edge, figure centered horizontally. The subject is a young Korean woman in her 20s (not resembling any real celebrity), ordinary everyday look, shoulder-length dark brown hair, natural light makeup, relaxed natural expression, wearing an olive khaki cropped puffer jacket ending at the waist, an ivory knit top, ivory high-waisted wide-leg pants, dark brown chunky round-toe ankle boots with a low block heel. She stands facing the camera, both hands relaxed at her sides, feet slightly apart so both boots are clearly visible. Quiet Seoul residential side street in late autumn, a few fallen leaves on the pavement, soft overcast daylight, natural skin texture, realistic fabric textures, 35mm film look, candid magazine street snap. No text, no letters, no signs, no logos, no brand marks.",
+   "size": "1024x1536",
+   "quality": "medium"
+  },
+  {
+   "name": "c38",
+   "prompt": "Photorealistic split-screen vertical fashion editorial image, divided exactly in half by a clean straight vertical seam at the center. The top 32 percent of the whole image is empty plain background on both halves. LEFT HALF: a flat lay product photograph viewed from directly above on a light warm greige plaster background, no person, items only in the lower 68 percent, neatly arranged top to bottom with small gaps: a brown chunky knit hooded sweater, an ivory crew-neck cotton top, light blue wide-leg denim jeans, a brown leather slouchy shoulder bag, a pair of gray chunky sneakers, small silver hoop earrings. RIGHT HALF: a natural full-body street style photo of a young Korean woman in her 20s (not resembling any real celebrity), wearing exactly the same items: the brown hooded knit sweater with the ivory top peeking at the hem and neckline, the light blue wide-leg jeans whose hems cover the tops of the gray chunky sneakers, the brown shoulder bag on her shoulder. She walks toward the camera with a relaxed natural posture, one hand holding the bag strap, in a bright minimal modern terminal hallway with a plain light concrete wall. Her whole body from the top of her head to her shoes is visible in the lower 68 percent of the right half, head starting at about 34 percent of the image height, natural face. Identical items in both halves, realistic fabric textures, soft daylight, 35mm film look. No text, no letters, no signs, no logos, no brand marks.",
+   "size": "1024x1536",
+   "quality": "medium"
+  }
+ ]
+}
