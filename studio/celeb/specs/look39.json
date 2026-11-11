@@ -1,0 +1,92 @@
+{
+ "cover_no_celeb": true,
+ "cover_sub": "",
+ "t_item": 5.0,
+ "push": 0.12,
+ "cover_center": [
+  512,
+  768
+ ],
+ "cover_zoom": 1.0,
+ "answer_label": "정답",
+ "hook_max": 100,
+ "hook_w": 880,
+ "hook_cta": "",
+ "hook_y": 232,
+ "hook_alpha": 130,
+ "answer": 2,
+ "city": "OFF-DUTY",
+ "date": "2026.11",
+ "episode": "39",
+ "celeb": "YEONJUN",
+ "title": "퍼카라 크롭 재킷 공항룩",
+ "image": "img39.jpg",
+ "accent": "#7A2E35",
+ "hook": "크롭 재킷 밑에\n셔츠 한 뼘만 보이면?",
+ "items": [
+  {
+   "cat": "CROPPED JACKET · 아우터",
+   "brand": "브랜드 미상",
+   "name": "퍼카라 크롭 재킷",
+   "pt": "기장은 허리선 위로",
+   "find": "퍼카라 크롭 자켓",
+   "pt_xy": [
+    640,
+    340
+   ],
+   "crop": [
+    250,
+    420,
+    470
+   ]
+  },
+  {
+   "cat": "SHOULDER BAG · 가방",
+   "brand": "브랜드 미상",
+   "name": "버건디 숄더백",
+   "pt": "회색·네이비에 색 한 점",
+   "find": "버건디 숄더백",
+   "pt_xy": [
+    925,
+    470
+   ],
+   "crop": [
+    255,
+    640,
+    270
+   ]
+  },
+  {
+   "cat": "SHIRT LAYER · 이너",
+   "brand": "브랜드 미상",
+   "name": "하늘색 셔츠 레이어드",
+   "pt": "밑단을 재킷 밖으로",
+   "find": "스카이블루 셔츠",
+   "pt_xy": [
+    690,
+    635
+   ],
+   "crop": [
+    255,
+    830,
+    300
+   ]
+  },
+  {
+   "cat": "WIDE PANTS · 하의",
+   "brand": "브랜드 미상",
+   "name": "네이비 와이드 팬츠",
+   "pt": "밑단이 신발 덮게",
+   "find": "네이비 와이드 팬츠",
+   "pt_xy": [
+    800,
+    920
+   ],
+   "crop": [
+    258,
+    1070,
+    330
+   ]
+  }
+ ]
+}
