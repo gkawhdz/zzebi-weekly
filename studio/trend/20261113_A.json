@@ -1,0 +1,17 @@
+{"brand":"TREND DAILY · 11.13",
+"paintings":{"a1":"img/a1.jpg","a2":"img/a2.jpg","a3":"img/a3.jpg"},
+"scenes":[
+{"type":"rcompare","left":"a1","right":"a2","dur":3.4,"band":"#1d2430","title":"하체 고민이면\n롱니트 금지","title_size":118,"body":"대신 바꿀 건 딱 3곳 →","left_stamp":["tri","엉덩이 덮기"],"right_stamp":["o","앞만 넣기"],"stamp_y":1220,"src_top":120,"left_cx":530,"right_cx":516},
+{"type":"rboard","img":"a2","dur":7.6,"t_board":3.0,"t_item":2.3,"head":{"num":"01","total":"03","kicker":"하의 고르기","title":"진한 색 일자로\n쭉 떨어지게","body":"허벅지에서 발목까지 한 줄로"},"chip":"01 · 하의","items":[
+ {"xy":[516,980],"name":"진청 스트레이트 데님","sub":"허벅지에 붙지 않고 일자로","swatch":"#1c2333","zoom":1.4},
+ {"xy":[556,1430],"name":"앞코 뾰족한 앵클부츠","sub":"발끝까지 길게 이어지게","swatch":"#151515","zoom":1.4,"ring":110,"sy":1660}],"home":[0.86,512,440]},
+{"type":"rboard","img":"a2","dur":5.3,"t_board":3.0,"t_item":2.3,"head":{"num":"02","total":"03","kicker":"10초면 끝","title":"니트는\n앞만 쏙","body":"허리선이 보이면 다리가 길어 보여요"},"chip":"02 · 앞만 넣기","items":[
+ {"xy":[506,740],"name":"니트 앞단만 넣기","sub":"옆·뒤는 자연스럽게 내려두기","swatch":"#8f8f8f","zoom":2.0}],"home":[0.86,512,440]},
+{"type":"rboard","img":"a3","dur":5.3,"t_board":3.0,"t_item":2.3,"head":{"num":"03","total":"03","kicker":"시선 올리기","title":"밝은 색은\n얼굴 가까이","body":"아이보리 머플러로 시선을 위로"},"chip":"03 · 시선","items":[
+ {"xy":[572,420],"name":"아이보리 청키 머플러","sub":"밝은 색은 위에, 진한 색은 아래","swatch":"#efe9dc","zoom":2.0}],"home":[0.86,512,440]},
+{"type":"rformula","bg":"a3","dur":4.4,"kicker":"롱니트 대신, 저장해두고 아침에","title":"하체 고민\n3곳 공식","rows":[
+ {"img":"a2","box":[400,900,640,1300],"text":"진한 일자 하의","sub":"발끝까지 한 줄"},
+ {"img":"a2","box":[400,640,620,840],"text":"니트는 앞만 넣기","sub":"허리선 보이게"},
+ {"img":"a3","box":[470,320,690,560],"text":"밝은 색은 위로","sub":"머플러·이너"}]},
+{"type":"text","dur":2.6,"bg":"#00A8A8","fg":"#ffffff","accent":"#ffffff","kicker":"롱니트 대신 3곳만","title":"저장 & 팔로우","body":"@zzebi.st 매일 1분 코디"}
+]}

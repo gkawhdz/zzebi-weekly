@@ -1,0 +1,18 @@
+{"brand":"TREND DAILY · 11.13",
+"paintings":{"b1":"img/b1.jpg","b2":"img/b2.jpg","b3":"img/b3.jpg"},
+"scenes":[
+{"type":"rcompare","left":"b1","right":"b2","dur":3.4,"band":"#22232a","title":"퇴근 후 약속\n2개만 바꾸기","title_size":118,"body":"옷은 그대로, 바꾼 건 뭘까? →","left_stamp":["tri","출근 그대로"],"right_stamp":["o","2개만 바꿈"],"stamp_y":1076,"src_top":120,"left_cx":524,"right_cx":672},
+{"type":"rboard","img":"b2","dur":5.3,"t_board":3.0,"t_item":2.3,"head":{"num":"01","total":"03","kicker":"가방 바꾸기","title":"큰 토트 대신\n작은 숄더백","body":"서류 가방은 회사에 두고 나오기"},"chip":"01 · 가방","items":[
+ {"xy":[672,580],"name":"버터 옐로 미니 숄더백","sub":"니트와 같은 색이라 튀지 않아요","swatch":"#e8d48e","zoom":2.2}],"home":[0.86,512,440]},
+{"type":"rboard","img":"b2","dur":7.6,"t_board":3.0,"t_item":2.3,"head":{"num":"02","total":"03","kicker":"30초면 끝","title":"묶은 머리 풀고\n귀걸이 하나","body":"얼굴 주변이 바뀌면 저녁 느낌"},"chip":"02 · 얼굴 주변","items":[
+ {"xy":[456,380],"name":"로우번 풀기","sub":"출근 땐 묶고, 퇴근 후엔 내리기","swatch":"#1a1716","zoom":2.0},
+ {"xy":[588,270],"name":"골드 후프 귀걸이","sub":"파우치에 넣어 다니기 좋은 크기","swatch":"#c9a45a","zoom":2.4}],"home":[0.86,512,440]},
+{"type":"rboard","img":"b3","dur":7.6,"t_board":3.0,"t_item":2.3,"head":{"num":"03","total":"03","kicker":"옷은 그대로","title":"차콜 + 버터 옐로\n두 색만","body":"옷이 단정하니 소품만 바꿔도 돼요"},"chip":"+ 그대로 둘 것","items":[
+ {"xy":[552,540],"name":"버터 옐로 니트","sub":"얼굴을 환하게 해주는 밝은 색","swatch":"#efe0a0","zoom":2.0},
+ {"xy":[532,980],"name":"차콜 와이드 슬랙스","sub":"출근·저녁 다 되는 기본 하의","swatch":"#2e2f33","zoom":1.4}],"home":[0.86,512,440]},
+{"type":"rformula","bg":"b3","dur":4.4,"kicker":"정답은 가방과 머리, 저장해두기","title":"퇴근 후 약속\n바꿀 2곳","rows":[
+ {"img":"b2","box":[580,460,780,700],"text":"가방은 작게","sub":"큰 토트는 회사에"},
+ {"img":"b2","box":[420,180,720,460],"text":"머리 풀고 귀걸이","sub":"얼굴 주변만"},
+ {"img":"b3","box":[420,380,700,700],"text":"옷은 두 색 그대로","sub":"차콜 + 버터 옐로"}]},
+{"type":"text","dur":2.6,"bg":"#00A8A8","fg":"#ffffff","accent":"#ffffff","kicker":"옷은 그대로, 2개만","title":"저장 & 팔로우","body":"@zzebi.st 매일 1분 코디"}
+]}
