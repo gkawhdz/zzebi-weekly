@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><title>render</title>
+<style>
+:root{--slide:#0e0c10;--ink:#f4efe6;--mute:#a39a92;--blood:#c8332d;--dim:#4a1614}
+*{box-sizing:border-box}
+body{margin:0;background:#000;font-family:"Noto Sans CJK KR","Noto Sans KR",sans-serif;color:var(--ink)}
+.slide{width:1080px;height:1350px;position:relative;overflow:hidden;background:var(--slide);margin:0 0 20px}
+.bg{position:absolute;inset:0}
+.grain{position:absolute;inset:0;opacity:.55;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.4'/%3E%3C/svg%3E")}
+.vig{position:absolute;inset:0;background:radial-gradient(90% 70% at 50% 40%,transparent 40%,rgba(0,0,0,.75) 100%)}
+.body{position:absolute;inset:0;padding:150px 130px 235px;display:flex;flex-direction:column;justify-content:flex-end;gap:34px}
+.chip{position:absolute;top:158px;left:130px;font-size:28px;font-weight:700;letter-spacing:.14em;color:var(--blood)}
+.num{display:none}
+.brand{position:absolute;top:158px;right:130px;font-size:26px;color:var(--mute);letter-spacing:.06em}
+.bar{position:absolute;bottom:165px;left:130px;height:6px;background:var(--blood);max-width:820px}
+h1{margin:0;font-size:100px;line-height:1.08;font-weight:900;letter-spacing:-.03em}
+h1 em{font-style:normal;color:var(--blood)}
+h2{margin:0;font-size:64px;line-height:1.16;font-weight:900;letter-spacing:-.025em}
+h2 em{font-style:normal;color:var(--blood)}
+p{margin:0;font-size:37px;line-height:1.44}
+p.sub{color:var(--mute);font-size:33px}
+.quote{font-family:"Noto Serif CJK KR","Noto Serif KR",serif;font-size:50px;line-height:1.5;font-weight:700}
+.quote::before{content:"“";display:block;color:var(--blood);font-size:140px;line-height:.4;margin-bottom:30px}
+ol,ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:16px}
+li{font-size:35px;line-height:1.32;padding-left:72px;position:relative}
+li::before{content:attr(data-n);position:absolute;left:0;top:0;color:var(--blood);font-weight:900}
+li small{display:block;color:var(--mute);font-size:34px;margin-top:4px}
+.steps{display:flex;flex-direction:column;gap:20px}
+.step{display:grid;grid-template-columns:150px 1fr;gap:24px;align-items:baseline;font-size:37px;line-height:1.4}
+.step b{color:var(--blood);font-size:34px;letter-spacing:.06em}
+.temp{display:flex;gap:14px;align-items:flex-end;height:110px}
+.temp i{flex:1;background:var(--dim);border-top:4px solid var(--blood)}
+.temp i:nth-child(1){height:28%}.temp i:nth-child(2){height:52%}.temp i:nth-child(3){height:76%}.temp i:nth-child(4){height:100%}
+.rule{height:2px;width:140px;background:var(--blood)}
+.cta{display:flex;gap:18px;flex-wrap:wrap}
+.cta span{border:2px solid var(--blood);padding:16px 30px;font-size:36px;font-weight:700}
+.big{font-size:48px;font-weight:900;line-height:1.3}
+.en{font-family:"Noto Sans",sans-serif;font-size:22px;line-height:1.4;color:#8c847c;letter-spacing:.01em;border-top:1px solid rgba(244,239,230,.14);padding-top:22px;margin-top:6px}
+.body{gap:24px}
+/* backgrounds */
+.bg.spot{background:radial-gradient(55% 45% at 72% 22%,rgba(200,51,45,.34),transparent 62%),radial-gradient(45% 40% at 18% 85%,rgba(74,22,20,.5),transparent 60%),var(--slide)}
+.bg.cold{background:radial-gradient(70% 55% at 28% 18%,rgba(125,135,160,.26),transparent 60%),var(--slide)}
+.bg.sil{background:radial-gradient(50% 55% at 50% 42%,rgba(200,51,45,.26),transparent 66%),var(--slide)}
+.bg.sil svg{position:absolute;left:50%;bottom:-40px;transform:translateX(-50%);width:760px;height:900px}
+.bg.door{background:linear-gradient(90deg,var(--slide) 0 58%,rgba(200,51,45,.08) 58% 60%,#06050711 60%),var(--slide)}
+.bg.door::after{content:"";position:absolute;left:58%;top:0;width:3px;height:100%;background:linear-gradient(180deg,transparent,rgba(244,239,230,.55) 40%,rgba(244,239,230,.55) 60%,transparent)}
+.bg.lines{background:repeating-linear-gradient(180deg,transparent 0 46px,rgba(244,239,230,.045) 46px 47px),var(--slide)}
+.bg.cat svg{position:absolute;right:60px;top:120px;width:520px;height:520px;opacity:.9}
+.bg.glass{background:radial-gradient(60% 50% at 50% 30%,rgba(200,51,45,.22),transparent 60%),linear-gradient(180deg,rgba(125,135,160,.12),transparent 50%),var(--slide)}
+.bg.hands svg{position:absolute;left:0;top:80px;width:1080px;height:700px}
+#s10 .body{gap:16px}#s10 .step{font-size:28px;line-height:1.28}#s10 .step b{font-size:30px}#s10 .big{font-size:38px}#s10 .cta span{font-size:28px;padding:10px 20px}#s10 .en{font-size:21px;padding-top:14px}#s10 p.sub{font-size:30px}
+#s7 .body{gap:12px}#s7 .steps{gap:8px}#s7 .step{font-size:31px}#s7 .temp{height:56px}#s7 h2{font-size:58px}#s7 p{font-size:33px}#s7 p.sub{font-size:30px}#s7 .en{font-size:20px;line-height:1.35;padding-top:12px}
+</style></head><body>
+
+<!-- 1 -->
+<section class="slide" id="s1">
+  <div class="bg sil"><svg viewBox="0 0 760 900"><defs><linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#050406"/><stop offset="1" stop-color="#0e0c10"/></linearGradient></defs><ellipse cx="380" cy="230" rx="150" ry="175" fill="url(#g1)"/><path d="M60 900 C80 560 230 470 380 470 C530 470 680 560 700 900 Z" fill="url(#g1)"/></svg></div><div class="grain"></div><div class="vig"></div>
+  <span class="chip">독립 편</span><span class="num">1 / 10</span>
+  <div class="body">
+    <h1>부모와<br><em>거리두기</em><br>필요한<br>신호</h1>
+    <p class="sub">끊어내는 게 아니라<br>내 자리를 다시 긋는 일</p>
+    <p class="en">Signs you need distance from your parents. Not cutting them off, but redrawing where you stand.</p>
+  </div>
+  <span class="brand">@lovedecode101</span><div class="bar" style="width:calc(820px * 10 / 100)"></div>
+</section>
+
+<!-- 2 -->
+<section class="slide" id="s2">
+  <div class="bg cold"></div><div class="grain"></div><div class="vig"></div>
+  <span class="chip">어느 DM</span><span class="num">2 / 10</span>
+  <div class="body">
+    <h2>서른인데도 부모님 전화 한 통에<br><em>무너져요</em></h2>
+    <p class="quote">독립한 지 오래인데<br>"결혼은 언제", "그 직장으로"<br>한마디에 하루가 망가져요.<br>연애에도 번지는 것 같고요.</p>
+    <p class="sub">부모와의 관계는 성인이 돼도 연애의 밑그림으로 남습니다.</p>
+    <p class="en">"I'm thirty and one call from my parents wrecks my day. 'When will you marry?' 'That job won't do.' It spills into my dating." The parent bond stays the sketch under every relationship.</p>
+  </div>
+  <span class="brand">@lovedecode101</span><div class="bar" style="width:calc(820px * 20 / 100)"></div>
+</section>
+
+<!-- 3 -->
+<section class="slide" id="s3">
+  <div class="bg lines"></div><div class="grain"></div><div class="vig"></div>
+  <span class="chip">되묻기</span><span class="num">3 / 10</span>
+  <div class="body">
+    <h2>부모 앞의 내가<br>연인 앞의 <em>나</em>가 됩니다</h2>
+    <p>인정받으려 애쓰던 아이는 연인 앞에서도 평가를 기다립니다. 간섭을 피하던 아이는 연인의 관심도 침범으로 느낍니다.</p>
+    <p class="sub">그래서 연애가 반복해서 같은 데서 꼬인다면, 시작점은 그 전 관계일 수 있습니다.</p>
+    <p class="en">Who you are with your parents becomes who you are with a partner. A child chasing approval waits to be graded. A child dodging control feels a partner's care as intrusion. Repeating knots may start there.</p>
+  </div>
+  <span class="brand">@lovedecode101</span><div class="bar" style="width:calc(820px * 30 / 100)"></div>
+</section>
+
+<!-- 4 -->
+<section class="slide" id="s4">
+  <div class="bg spot"></div><div class="grain"></div><div class="vig"></div>
+  <span class="chip">신호</span><span class="num">4 / 10</span>
+  <div class="body">
+    <h2>이럴 때가<br>거리두기 <em>신호</em>입니다</h2>
+    <ul>
+      <li data-n="1">통화 후 분노나 무기력이 남는다</li>
+      <li data-n="2">큰 결정마다 부모 반응부터 상상</li>
+      <li data-n="3">칭찬 한마디에 하루가 좌우된다</li>
+      <li data-n="4">연인 말에서 부모 목소리가 들린다</li>
+    </ul>
+    <p class="sub">두 개 이상이라면 잔소리 수준을 넘어 자존감까지 닿아 있는 겁니다.</p>
+    <p class="en">Signals: anger or numbness lingers after calls; you imagine their reaction before every big decision; one compliment decides your day; you hear their voice in your partner's words. Two or more: it has reached self-worth.</p>
+  </div>
+  <span class="brand">@lovedecode101</span><div class="bar" style="width:calc(820px * 40 / 100)"></div>
+</section>
+
+<!-- 5 -->
+<section class="slide" id="s5">
+  <div class="bg glass"></div><div class="grain"></div><div class="vig"></div>
+  <span class="chip">오해</span><span class="num">5 / 10</span>
+  <div class="body">
+    <h2>거리두기는<br><em>절연</em>이 아닙니다</h2>
+    <div class="steps">
+      <div class="step"><b>절연</b><span>관계를 끊는 것. 원망이 남습니다</span></div>
+      <div class="step"><b>거리두기</b><span>내 영역의 선을 긋는 것. 관계는 남습니다</span></div>
+    </div>
+    <p>부모를 바꾸는 게 목표가 아닙니다. 부모의 말이 내 안에서 울리는 크기를 줄이는 게 목표입니다.</p>
+    <p class="en">Distance isn't disowning. Cutting off ends the bond and leaves resentment. Setting distance draws a line around your space and keeps the bond. The goal isn't changing them, it's turning down their volume inside you.</p>
+  </div>
+  <span class="brand">@lovedecode101</span><div class="bar" style="width:calc(820px * 50 / 100)"></div>
+</section>
+
+<!-- 6 -->
+<section class="slide" id="s6">
+  <div class="bg lines"></div><div class="grain"></div><div class="vig"></div>
+  <span class="chip">경계 문장</span><span class="num">6 / 10</span>
+  <div class="body">
+    <h2>선은<br><em>짧고 담담하게</em></h2>
+    <ul>
+      <li data-n="○">"그 얘기는 제가 정할게요"</li>
+      <li data-n="○">"걱정해주셔서 고마워요. 근데 괜찮아요"</li>
+      <li data-n="○">"오늘은 여기까지 얘기할게요"</li>
+    </ul>
+    <p class="sub">설득하지 마세요. 이해받으려 할수록 다시 평가의 자리로 돌아갑니다. 선은 설명이 아니라 반복으로 지켜집니다.</p>
+    <p class="en">Boundaries, short and calm: "I'll decide that one." "Thanks for worrying, but I'm okay." "Let's stop here for today." Don't try to convince. Seeking approval puts you back on trial. Boundaries hold by repetition.</p>
+  </div>
+  <span class="brand">@lovedecode101</span><div class="bar" style="width:calc(820px * 60 / 100)"></div>
+</section>
+
+<!-- 7 -->
+<section class="slide" id="s7">
+  <div class="bg hands"><svg viewBox="0 0 1080 700"><path d="M-20 520 C200 480 330 430 470 400 C520 390 560 400 590 420" stroke="#07060a" stroke-width="150" stroke-linecap="round" fill="none"/><path d="M1100 300 C900 330 780 360 690 380 C650 390 620 400 600 420" stroke="#07060a" stroke-width="150" stroke-linecap="round" fill="none"/></svg></div><div class="grain"></div><div class="vig"></div>
+  <span class="chip">가장 실용적인 것</span><span class="num">7 / 10</span>
+  <div class="body">
+    <h2>아침 1분,<br>내 목소리부터 <em>먼저</em></h2>
+    <ul>
+      <li data-n="1">숨 4초 들이쉬고 6초 내쉬기</li>
+      <li data-n="2">"나는 부모의 자화상이 아니다"</li>
+      <li data-n="3">"나는 내 선택으로 사는 성인이다"</li>
+      <li data-n="4">"오늘은 내 방식대로"</li>
+    </ul>
+    <p class="sub">하루의 첫 문장을 내가 정하면, 그날 들어오는 남의 문장이 약해집니다. 가슴에 손을 얹고 소리 내서.</p>
+    <p class="en">The most practical step: one minute every morning. Breathe in 4, out 6. Say aloud, hand on chest: "I am not my parents' portrait." "I live by my own choices." "Today, my way." Your first sentence weakens theirs.</p>
+  </div>
+  <span class="brand">@lovedecode101</span><div class="bar" style="width:calc(820px * 70 / 100)"></div>
+</section>
+
+<!-- 8 -->
+<section class="slide" id="s8">
+  <div class="bg glass"></div><div class="grain"></div><div class="vig"></div>
+  <span class="chip">연애에서</span><span class="num">8 / 10</span>
+  <div class="body">
+    <h2>연인에게<br>이렇게 <em>말해</em>두세요</h2>
+    <p>혼자 감당하면 부모 문제가 연인 문제로 번집니다. 미리 지도를 건네세요.</p>
+    <ul>
+      <li data-n="○">"부모님 통화 뒤엔 좀 예민해져"</li>
+      <li data-n="○">"그땐 해결 말고 옆에만 있어줘"</li>
+    </ul>
+    <p class="sub">설명받은 연인은 오해 대신 편이 됩니다.</p>
+    <p class="en">Tell your partner in advance: "I get edgy after calls with my parents. When that happens, don't fix it, just stay close." A partner given the map becomes an ally instead of a casualty.</p>
+  </div>
+  <span class="brand">@lovedecode101</span><div class="bar" style="width:calc(820px * 80 / 100)"></div>
+</section>
+
+<!-- 9 -->
+<section class="slide" id="s9">
+  <div class="bg spot"></div><div class="grain"></div><div class="vig"></div>
+  <span class="chip">절대 금지</span><span class="num">9 / 10</span>
+  <div class="body">
+    <h2>이건 거리두기가<br>아니라 <em>되돌이표</em></h2>
+    <ul>
+      <li data-n="✕"><b>통화 때마다 논쟁으로 이기려 하기</b><small>인정받고 싶은 마음의 다른 얼굴</small></li>
+      <li data-n="✕"><b>연인에게 부모 대신 화풀이</b><small>같은 상처를 다른 사람에게</small></li>
+      <li data-n="✕"><b>연락 끊고 죄책감에 다시 매달리기</b><small>선이 아니라 진자 운동</small></li>
+    </ul>
+    <p class="en">Not distance, just a loop: trying to win every argument (still craving approval), venting at your partner instead (passing on the wound), cutting contact then rushing back in guilt (a pendulum, not a line).</p>
+  </div>
+  <span class="brand">@lovedecode101</span><div class="bar" style="width:calc(820px * 90 / 100)"></div>
+</section>
+
+<!-- 10 -->
+<section class="slide" id="s10">
+  <div class="bg cold"></div><div class="grain"></div><div class="vig"></div>
+  <span class="chip">3초 진단</span><span class="num">10 / 10</span>
+  <div class="body">
+    <ul>
+      <li data-n="1">부모 말이 → 잔소리 vs 자존감 타격</li>
+      <li data-n="2">대화 후 → 가벼움 vs 분노·무기력</li>
+      <li data-n="3">내 선택을 → 내가 vs 눈치 보며</li>
+    </ul>
+    <div class="rule"></div>
+    <p class="big">원망이 아니라 경계,<br>단절이 아니라 독립.</p>
+    <p class="sub">가장 어려운 문을 여는 중입니다. 오늘 아침 문장, 당신은 뭐라고 말할 건가요?</p>
+    <div class="cta"><span>저장 → 부모님 통화 전에 다시 보기</span><span>다음 편: 외향형 vs 불안형 구분법</span></div>
+    <p class="en">Check: do their words feel like nagging or hit your self-worth? After talks, lighter or angry and numb? Do you choose freely or watch their reaction? Not resentment but boundaries. Not cutting off but growing up.</p>
+  </div>
+  <span class="brand">@lovedecode101</span><div class="bar" style="width:calc(820px * 100 / 100)"></div>
+</section>
+
+</body></html>

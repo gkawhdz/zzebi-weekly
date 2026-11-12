@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><title>render</title>
+<style>
+:root{--slide:#0e0c10;--ink:#f4efe6;--mute:#a39a92;--blood:#c8332d;--dim:#4a1614}
+*{box-sizing:border-box}
+body{margin:0;background:#000;font-family:"Noto Sans CJK KR","Noto Sans KR",sans-serif;color:var(--ink)}
+.slide{width:1080px;height:1350px;position:relative;overflow:hidden;background:var(--slide);margin:0 0 20px}
+.bg{position:absolute;inset:0}
+.grain{position:absolute;inset:0;opacity:.55;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.4'/%3E%3C/svg%3E")}
+.vig{position:absolute;inset:0;background:radial-gradient(90% 70% at 50% 40%,transparent 40%,rgba(0,0,0,.75) 100%)}
+.body{position:absolute;inset:0;padding:150px 130px 235px;display:flex;flex-direction:column;justify-content:flex-end;gap:34px}
+.chip{position:absolute;top:158px;left:130px;font-size:28px;font-weight:700;letter-spacing:.14em;color:var(--blood)}
+.num{display:none}
+.brand{position:absolute;top:158px;right:130px;font-size:26px;color:var(--mute);letter-spacing:.06em}
+.bar{position:absolute;bottom:165px;left:130px;height:6px;background:var(--blood);max-width:820px}
+h1{margin:0;font-size:100px;line-height:1.08;font-weight:900;letter-spacing:-.03em}
+h1 em{font-style:normal;color:var(--blood)}
+h2{margin:0;font-size:64px;line-height:1.16;font-weight:900;letter-spacing:-.025em}
+h2 em{font-style:normal;color:var(--blood)}
+p{margin:0;font-size:37px;line-height:1.44}
+p.sub{color:var(--mute);font-size:33px}
+.quote{font-family:"Noto Serif CJK KR","Noto Serif KR",serif;font-size:50px;line-height:1.5;font-weight:700}
+.quote::before{content:"“";display:block;color:var(--blood);font-size:140px;line-height:.4;margin-bottom:30px}
+ol,ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:16px}
+li{font-size:35px;line-height:1.32;padding-left:72px;position:relative}
+li::before{content:attr(data-n);position:absolute;left:0;top:0;color:var(--blood);font-weight:900}
+li small{display:block;color:var(--mute);font-size:34px;margin-top:4px}
+.steps{display:flex;flex-direction:column;gap:20px}
+.step{display:grid;grid-template-columns:150px 1fr;gap:24px;align-items:baseline;font-size:37px;line-height:1.4}
+.step b{color:var(--blood);font-size:34px;letter-spacing:.06em}
+.temp{display:flex;gap:14px;align-items:flex-end;height:110px}
+.temp i{flex:1;background:var(--dim);border-top:4px solid var(--blood)}
+.temp i:nth-child(1){height:28%}.temp i:nth-child(2){height:52%}.temp i:nth-child(3){height:76%}.temp i:nth-child(4){height:100%}
+.rule{height:2px;width:140px;background:var(--blood)}
+.cta{display:flex;gap:18px;flex-wrap:wrap}
+.cta span{border:2px solid var(--blood);padding:16px 30px;font-size:36px;font-weight:700}
+.big{font-size:48px;font-weight:900;line-height:1.3}
+.en{font-family:"Noto Sans",sans-serif;font-size:22px;line-height:1.4;color:#8c847c;letter-spacing:.01em;border-top:1px solid rgba(244,239,230,.14);padding-top:22px;margin-top:6px}
+.body{gap:24px}
+/* backgrounds */
+.bg.spot{background:radial-gradient(55% 45% at 72% 22%,rgba(200,51,45,.34),transparent 62%),radial-gradient(45% 40% at 18% 85%,rgba(74,22,20,.5),transparent 60%),var(--slide)}
+.bg.cold{background:radial-gradient(70% 55% at 28% 18%,rgba(125,135,160,.26),transparent 60%),var(--slide)}
+.bg.sil{background:radial-gradient(50% 55% at 50% 42%,rgba(200,51,45,.26),transparent 66%),var(--slide)}
+.bg.sil svg{position:absolute;left:50%;bottom:-40px;transform:translateX(-50%);width:760px;height:900px}
+.bg.door{background:linear-gradient(90deg,var(--slide) 0 58%,rgba(200,51,45,.08) 58% 60%,#06050711 60%),var(--slide)}
+.bg.door::after{content:"";position:absolute;left:58%;top:0;width:3px;height:100%;background:linear-gradient(180deg,transparent,rgba(244,239,230,.55) 40%,rgba(244,239,230,.55) 60%,transparent)}
+.bg.lines{background:repeating-linear-gradient(180deg,transparent 0 46px,rgba(244,239,230,.045) 46px 47px),var(--slide)}
+.bg.cat svg{position:absolute;right:60px;top:120px;width:520px;height:520px;opacity:.9}
+.bg.glass{background:radial-gradient(60% 50% at 50% 30%,rgba(200,51,45,.22),transparent 60%),linear-gradient(180deg,rgba(125,135,160,.12),transparent 50%),var(--slide)}
+.bg.hands svg{position:absolute;left:0;top:80px;width:1080px;height:700px}
+#s10 .body{gap:16px}#s10 .step{font-size:28px;line-height:1.28}#s10 .step b{font-size:30px}#s10 .big{font-size:38px}#s10 .cta span{font-size:28px;padding:10px 20px}#s10 .en{font-size:21px;padding-top:14px}#s10 p.sub{font-size:30px}
+#s7 .body{gap:12px}#s7 .steps{gap:8px}#s7 .step{font-size:31px}#s7 .temp{height:56px}#s7 h2{font-size:58px}#s7 p{font-size:33px}#s7 p.sub{font-size:30px}#s7 .en{font-size:20px;line-height:1.35;padding-top:12px}
+</style></head><body>
+
+<!-- 1 -->
+<section class="slide" id="s1">
+  <div class="bg sil"><svg viewBox="0 0 760 900"><defs><linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#050406"/><stop offset="1" stop-color="#0e0c10"/></linearGradient></defs><ellipse cx="380" cy="230" rx="150" ry="175" fill="url(#g1)"/><path d="M60 900 C80 560 230 470 380 470 C530 470 680 560 700 900 Z" fill="url(#g1)"/></svg></div><div class="grain"></div><div class="vig"></div>
+  <span class="chip">방어기제 편</span><span class="num">1 / 10</span>
+  <div class="body">
+    <h1>방어기제,<br><em>세련되게</em><br>바꾸는<br>법</h1>
+    <p class="sub">없애는 게 아니라<br>지금의 나에게 맞게 업데이트하는 것</p>
+    <p class="en">How to upgrade your defense mechanisms. Not deleting them, updating them to fit who you are now.</p>
+  </div>
+  <span class="brand">@lovedecode101</span><div class="bar" style="width:calc(820px * 10 / 100)"></div>
+</section>
+
+<!-- 2 -->
+<section class="slide" id="s2">
+  <div class="bg cold"></div><div class="grain"></div><div class="vig"></div>
+  <span class="chip">어느 DM</span><span class="num">2 / 10</span>
+  <div class="body">
+    <h2>좋은 사람인데<br>왜 <em>오래</em> 못 갈까요</h2>
+    <p class="quote">처음엔 다들 좋아해요.<br>그런데 몇 달 지나면<br>"너랑 있으면 피곤해"<br>라는 말을 들어요.</p>
+    <p class="sub">성격 문제가 아닐 수 있습니다. 오래된 보호막이 아직 켜져 있는 겁니다.</p>
+    <p class="en">"People like me at first, but months later they say I'm exhausting." It may not be personality. It may be an old shield that never got switched off.</p>
+  </div>
+  <span class="brand">@lovedecode101</span><div class="bar" style="width:calc(820px * 20 / 100)"></div>
+</section>
+
+<!-- 3 -->
+<section class="slide" id="s3">
+  <div class="bg lines"></div><div class="grain"></div><div class="vig"></div>
+  <span class="chip">되묻기</span><span class="num">3 / 10</span>
+  <div class="body">
+    <h2>방어기제는 나쁜 게 아니라<br><em>낡은</em> 겁니다</h2>
+    <p>어릴 때 상처받지 않으려고 뇌가 깔아둔 생존 프로그램. 그땐 나를 지켰습니다. 문제는 어른이 된 지금도 같은 버전으로 돌고 있다는 것.</p>
+    <p class="sub">지울 필요 없습니다. 업데이트하면 됩니다.</p>
+    <p class="en">Defenses aren't bad, just outdated. They're survival programs your brain installed as a kid. Back then they protected you. The issue is running the same version as an adult. Don't delete it. Update it.</p>
+  </div>
+  <span class="brand">@lovedecode101</span><div class="bar" style="width:calc(820px * 30 / 100)"></div>
+</section>
+
+<!-- 4 -->
+<section class="slide" id="s4">
+  <div class="bg spot"></div><div class="grain"></div><div class="vig"></div>
+  <span class="chip">유형 1 · 2</span><span class="num">4 / 10</span>
+  <div class="body">
+    <h2>말이 넘치거나,<br>뭐든 <em>괜찮다</em>거나</h2>
+    <div class="steps">
+      <div class="step"><b>수다형</b><span>침묵이 불안해 말로 덮는 과보상. "내 얘기 말고, 오늘 어땠어?"</span></div>
+      <div class="step"><b>착한형</b><span>거절이 버림받음 같아 다 맞추는 순응. 하루 하나 내 취향 말하기</span></div>
+    </div>
+    <p class="sub">침묵 3초는 위험이 아니라 신뢰입니다. 작은 취향 하나가 경계를 세웁니다.</p>
+    <p class="en">Types 1 and 2. The over-talker fills silence to hide anxiety: hand the turn back with "How was your day?" The people-pleaser agrees to everything: state one small preference a day. Three seconds of silence is trust.</p>
+  </div>
+  <span class="brand">@lovedecode101</span><div class="bar" style="width:calc(820px * 40 / 100)"></div>
+</section>
+
+<!-- 5 -->
+<section class="slide" id="s5">
+  <div class="bg glass"></div><div class="grain"></div><div class="vig"></div>
+  <span class="chip">유형 3 · 4</span><span class="num">5 / 10</span>
+  <div class="body">
+    <h2>쿨한 척하거나,<br><em>센</em> 척하거나</h2>
+    <div class="steps">
+      <div class="step"><b>쿨병형</b><span>신경 쓰이는데 "괜찮아". 감정을 잘라내는 격리</span></div>
+      <div class="step"><b>허세형</b><span>약해 보일까 부풀리는 과시. 실은 인정받고 싶은 마음</span></div>
+    </div>
+    <ul>
+      <li data-n="○">"사실 좀 신경 쓰였어"</li>
+      <li data-n="○">"이건 아직 잘 몰라. 알려줄래?"</li>
+    </ul>
+    <p class="en">Types 3 and 4. The fake-cool says "it's fine" while hurting; the show-off inflates to avoid looking weak. Updated versions: "Honestly, that bothered me a bit." "I don't know this well yet, can you show me?"</p>
+  </div>
+  <span class="brand">@lovedecode101</span><div class="bar" style="width:calc(820px * 50 / 100)"></div>
+</section>
+
+<!-- 6 -->
+<section class="slide" id="s6">
+  <div class="bg lines"></div><div class="grain"></div><div class="vig"></div>
+  <span class="chip">유형 5 · 6</span><span class="num">6 / 10</span>
+  <div class="body">
+    <h2>해명부터 하거나,<br><em>남 탓</em>부터 하거나</h2>
+    <div class="steps">
+      <div class="step"><b>해명봇</b><span>잘못을 인정하면 무너질 것 같아 이유부터 쌓는 합리화</span></div>
+      <div class="step"><b>남탓형</b><span>내 불편을 상대 문제로 돌리는 투사</span></div>
+    </div>
+    <p class="sub">둘 다 "내가 틀리면 끝"이라는 공포에서 나옵니다. 틀려도 끝나지 않는다는 경험이 해독제입니다.</p>
+    <p class="en">Types 5 and 6. The explainer stacks reasons instead of owning it; the blamer projects discomfort onto the partner. Both fear "if I'm wrong, it's over." The antidote: learning that being wrong isn't the end.</p>
+  </div>
+  <span class="brand">@lovedecode101</span><div class="bar" style="width:calc(820px * 60 / 100)"></div>
+</section>
+
+<!-- 7 -->
+<section class="slide" id="s7">
+  <div class="bg hands"><svg viewBox="0 0 1080 700"><path d="M-20 520 C200 480 330 430 470 400 C520 390 560 400 590 420" stroke="#07060a" stroke-width="150" stroke-linecap="round" fill="none"/><path d="M1100 300 C900 330 780 360 690 380 C650 390 620 400 600 420" stroke="#07060a" stroke-width="150" stroke-linecap="round" fill="none"/></svg></div><div class="grain"></div><div class="vig"></div>
+  <span class="chip">세 문장 공식</span><span class="num">7 / 10</span>
+  <div class="body">
+    <h2>어떤 유형이든<br>이 <em>세 문장</em>이면 됩니다</h2>
+    <ul>
+      <li data-n="1"><b>감정 이름 붙이기</b><small>"지금 좀 긴장했어"</small></li>
+      <li data-n="2"><b>책임과 경계</b><small>"방금 건 내 실수야 / 이건 불편해"</small></li>
+      <li data-n="3"><b>함께 다음 수</b><small>"다음엔 이렇게 해볼게. 넌 어때?"</small></li>
+    </ul>
+    <p class="sub">이 순서로 말하는 사람은 갈등 중에도 성숙해 보입니다.</p>
+    <p class="en">A three-line formula for any type: name the feeling ("I got tense just now"), own it or set a boundary ("That was my mistake / this bothers me"), propose a next step together ("Next time I'll try this. You?").</p>
+  </div>
+  <span class="brand">@lovedecode101</span><div class="bar" style="width:calc(820px * 70 / 100)"></div>
+</section>
+
+<!-- 8 -->
+<section class="slide" id="s8">
+  <div class="bg glass"></div><div class="grain"></div><div class="vig"></div>
+  <span class="chip">비교</span><span class="num">8 / 10</span>
+  <div class="body">
+    <h2>같은 상황,<br>다른 <em>버전</em></h2>
+    <div class="steps">
+      <div class="step"><b>실수</b><span>구버전 "억울해, 어쩔 수 없었어" → 새 버전 "내 실수야. 다음엔 이렇게"</span></div>
+      <div class="step"><b>취향</b><span>구버전 "아무거나" → 새 버전 "난 A가 좋아. B도 열려 있어"</span></div>
+    </div>
+    <p>전자는 "아직 자라는 중", 후자는 "같이 미래를 그릴 사람"으로 읽힙니다.</p>
+    <p class="en">Same moment, different versions. Mistake: "It wasn't my fault" vs "My mistake, next time I'll do this." Asked your opinion: "Whatever" vs "I'd like A, but I'm open to B." One reads as still growing, one as a partner.</p>
+  </div>
+  <span class="brand">@lovedecode101</span><div class="bar" style="width:calc(820px * 80 / 100)"></div>
+</section>
+
+<!-- 9 -->
+<section class="slide" id="s9">
+  <div class="bg spot"></div><div class="grain"></div><div class="vig"></div>
+  <span class="chip">주의</span><span class="num">9 / 10</span>
+  <div class="body">
+    <h2>상대 방어기제를<br><em>진단</em>하지 마세요</h2>
+    <ul>
+      <li data-n="✕"><b>"너 지금 투사하는 거야"</b><small>분석은 공격으로 들립니다</small></li>
+      <li data-n="✕"><b>"그거 방어기제잖아"</b><small>라벨은 대화를 닫습니다</small></li>
+      <li data-n="○"><b>"내가 먼저 바꿔볼게"</b><small>거울은 따라 움직입니다</small></li>
+    </ul>
+    <p class="en">Don't diagnose your partner's defenses. "You're projecting" and "That's your defense mechanism" land as attacks and shut the talk down. Change yours first. Mirrors move when you move.</p>
+  </div>
+  <span class="brand">@lovedecode101</span><div class="bar" style="width:calc(820px * 90 / 100)"></div>
+</section>
+
+<!-- 10 -->
+<section class="slide" id="s10">
+  <div class="bg cold"></div><div class="grain"></div><div class="vig"></div>
+  <span class="chip">3초 진단</span><span class="num">10 / 10</span>
+  <div class="body">
+    <ul>
+      <li data-n="1">침묵이 오면 → 견딘다 vs 채운다</li>
+      <li data-n="2">틀렸을 때 → 인정 vs 해명</li>
+      <li data-n="3">불편할 때 → 말한다 vs 쿨한 척</li>
+    </ul>
+    <div class="rule"></div>
+    <p class="big">나를 지키던 방패를<br>이제는 내려놓아도 되는<br>나이가 됐습니다.</p>
+    <p class="sub">여섯 가지 중 내 버전은 몇 번인가요? 댓글로 번호만 남겨주세요.</p>
+    <div class="cta"><span>저장 → 다툰 날 밤에 다시 보기</span><span>다음 편: 사랑받고 자란 사람 구분법</span></div>
+    <p class="en">Check: when silence comes, do you sit with it or fill it? When wrong, admit or explain? When uncomfortable, say it or play cool? You're old enough now to lower the shield that once kept you safe.</p>
+  </div>
+  <span class="brand">@lovedecode101</span><div class="bar" style="width:calc(820px * 100 / 100)"></div>
+</section>
+
+</body></html>
