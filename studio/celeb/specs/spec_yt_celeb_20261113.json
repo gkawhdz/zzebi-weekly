@@ -1,0 +1,78 @@
+{
+ "native": true,
+ "kicker": "남녀 겨울 사복 2",
+ "title": [
+  "겨울 사복,",
+  "가방이 다 했다"
+ ],
+ "sub": "두 번째 룩 가방 색 보세요 ↓",
+ "intro_img": "/home/claude/work/img40.jpg",
+ "intro_y": 0.45,
+ "seed": 20261113,
+ "cta_kicker": "내일 저녁, 남자 아이돌 사복 해부",
+ "segments": [
+  {
+   "file": "/home/claude/work/tt/seg40.mp4",
+   "label": "채령",
+   "trim": [
+    0,
+    23
+   ],
+   "en": [
+    [
+     0,
+     5,
+     "01 Navy knit shawl — just drape it over your shoulders"
+    ],
+    [
+     5,
+     10,
+     "02 Bulky cardigan — wear it open to keep it light"
+    ],
+    [
+     10,
+     15,
+     "03 Mini bag + big suede bag — make size and texture clearly different"
+    ],
+    [
+     15,
+     20,
+     "04 Grey joggers — a cropped top makes legs look longer"
+    ]
+   ]
+  },
+  {
+   "file": "/home/claude/work/tt/seg39.mp4",
+   "label": "연준",
+   "trim": [
+    0,
+    20
+   ],
+   "en": [
+    [
+     0,
+     5,
+     "01 Fur-collar cropped jacket — hem above the waist"
+    ],
+    [
+     5,
+     10,
+     "02 Burgundy shoulder bag — one pop of color on grey and navy"
+    ],
+    [
+     10,
+     15,
+     "03 Sky-blue shirt layer — let the hem show under the jacket"
+    ],
+    [
+     15,
+     20,
+     "04 Navy wide pants — let the hem cover your shoes"
+    ]
+   ]
+  }
+ ],
+ "intro_en": "Winter outfits? The bag does all the work",
+ "outro_en": "Follow @zzebi.st for daily celeb style breakdowns",
+ "outro_handle": "@zzebi_st"
+}

@@ -1,0 +1,92 @@
+{
+ "cover_no_celeb": true,
+ "cover_sub": "",
+ "t_item": 5.0,
+ "push": 0.12,
+ "cover_center": [
+  512,
+  768
+ ],
+ "cover_zoom": 1.0,
+ "answer_label": "핵심",
+ "hook_max": 100,
+ "hook_w": 880,
+ "hook_cta": "",
+ "hook_y": 232,
+ "hook_alpha": 130,
+ "answer": 2,
+ "city": "OFF-DUTY",
+ "date": "2026.11",
+ "episode": "40",
+ "celeb": "CHAERYEONG",
+ "title": "투 백 여행룩",
+ "image": "img40.jpg",
+ "accent": "#1F2C4F",
+ "hook": "가방 2개 들면\n촌스럽다고요?",
+ "items": [
+  {
+   "cat": "KNIT SHAWL · 숄",
+   "brand": "실착: 브랜드 미상",
+   "name": "네이비 니트 숄",
+   "pt": "어깨에 툭 걸치기",
+   "find": "니트 숄 머플러",
+   "pt_xy": [
+    770,
+    370
+   ],
+   "crop": [
+    256,
+    425,
+    250
+   ]
+  },
+  {
+   "cat": "BULKY CARDIGAN · 아우터",
+   "brand": "실착: 브랜드 미상",
+   "name": "벌키 카디건",
+   "pt": "앞은 열어서 가볍게",
+   "find": "벌키 케이블 가디건",
+   "pt_xy": [
+    930,
+    520
+   ],
+   "crop": [
+    262,
+    655,
+    320
+   ]
+  },
+  {
+   "cat": "TWO BAGS · 가방",
+   "brand": "실착: 브랜드 미상",
+   "name": "미니백+스웨이드백",
+   "pt": "작은 건 밝게 큰 건 진하게",
+   "find": "스웨이드 숄더백",
+   "pt_xy": [
+    855,
+    680
+   ],
+   "crop": [
+    258,
+    905,
+    300
+   ]
+  },
+  {
+   "cat": "JOGGER PANTS · 하의",
+   "brand": "실착: 브랜드 미상",
+   "name": "그레이 조거 팬츠",
+   "pt": "짧은 상의로 다리 길게",
+   "find": "그레이 조거팬츠",
+   "pt_xy": [
+    745,
+    960
+   ],
+   "crop": [
+    140,
+    1120,
+    260
+   ]
+  }
+ ]
+}

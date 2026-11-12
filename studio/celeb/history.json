@@ -2,6 +2,34 @@
  "rule": "하루 여자, 하루 남자 번갈아. 마지막 날짜의 gender 반대로.",
  "posts": [
   {
+   "date": "2026-11-13",
+   "ep": "40",
+   "gender": "여자",
+   "pillar": 1,
+   "status": "예약됨",
+   "design_version": "v5.1",
+   "channels": [
+    "instagram",
+    "story",
+    "tiktok_native",
+    "youtube_native"
+   ],
+   "celeb": "채령(있지)",
+   "look": "투 백 여행룩",
+   "slot": "18:00",
+   "hook": "가방 2개 들면\n촌스럽다고요?",
+   "hook_type": "05 상식 파괴형(질문 문법)",
+   "tiktok_hook": "겨울 사복,\n가방이 다 했다",
+   "tiktok_hook_type": "01 결과 강조형",
+   "music": "오리지널 배경음(seed 2026111340, 라이브러리 곡 미연결 — 이전 Authorization Error)",
+   "story_format": "투 백 O/X 규칙 카드 '이것만 지키면 안 촌스러워요'(정지 jpg)",
+   "image_file": "20261113_40.jpg",
+   "reel_file": "20261113_40.mp4",
+   "source": "보그 코리아 2026-10-30 '옷 잘 입는 아이돌의 좋은 예! 있지 채령의 패션 코드'(여행 룩: 벌키 카디건·화이트 크롭트 톱·그레이 조거 팬츠·네이비 니트 숄·아이보리 미니 백+빅사이즈 스웨이드 백 투 백, 사진 출처 본인 인스타그램)",
+   "mood": "꾸안꾸 여행 캐주얼",
+   "note": "11/12 밤 23:17 전날 제작(가벼운 모드). 목 위 흐림 처리. 신발(화이트 스니커즈)·카디건/스웨이드백 색은 AI 재현·스타일링 추천. 검수 FIX 반영: 블러 확대·카드 크롭 좁힘·'정답'→'핵심'·캡션 #공항패션→#여행코디."
+  },
+  {
    "date": "2026-11-12",
    "ep": "39",
    "gender": "남자",
@@ -11,7 +39,8 @@
    "channels": [
     "instagram",
     "story",
-    "tiktok_pending"
+    "tiktok_native",
+    "youtube_native"
    ],
    "celeb": "연준(투모로우바이투게더)",
    "look": "퍼카라 크롭 재킷 공항룩",
