@@ -1,0 +1,16 @@
+# 모임 대진표 서버(Supabase 무료 플랜)가 일주일 동안 쓰이지 않아 잠드는 것을 막아요.
+# 사흘마다 가벼운 ping 함수를 한 번 불러요.
+name: moim-bracket keepalive
+on:
+  schedule:
+    - cron: '17 3 */3 * *'
+  workflow_dispatch:
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Supabase
+        run: |
+          curl -fsS -X POST "https://pluzaffpmiytejgmtfjn.supabase.co/rest/v1/rpc/ping" \
+            -H "apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBsdXphZmZwbWl5dGVqZ210ZmpuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTQ0ODI0NDIsImV4cCI6MjExMDA1ODQ0Mn0.Ppoi8fMTx4NeegLfywkYQ7z8P1_miuh1RAB7yEQ8zxE" \
+            -H "Content-Type: application/json" -d '{}'
