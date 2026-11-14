@@ -1,0 +1,9 @@
+{"native": true, "kicker": "남녀 부츠 사복 2", "title": ["부츠 신는 날,", "흔한 실수 2개"], "sub": "두 번째 룩 신발 끝까지 보세요 ↓",
+ "intro_img": "/home/claude/work/img42.jpg", "intro_y": 0.45, "seed": 20261115,
+ "cta_kicker": "내일 저녁, 남자 아이돌 사복 해부",
+ "segments": [{"file": "/home/claude/work/tt/seg42.mp4", "label": "노지선", "trim": [0, 20],
+   "en": [[0,5,"01 Burgundy V-neck knit — the V neckline adds a vertical line"],[5,10,"02 Black mini shoulder bag — match it to your boots"],[10,15,"03 Mini shorts — leave a generous gap above the boots"],[15,20,"04 Buckle knee-high boots — wear them right up to below the knee"]]},
+  {"file": "/home/claude/work/tt/seg41.mp4", "label": "앤톤", "trim": [0, 20],
+   "en": [[0,5,"01 Long grey muffler — let both ends hang long"],[5,10,"02 Charcoal tailored jacket — leave it open to show the knit"],[10,15,"03 Dark grey denim — same tone as the jacket"],[15,20,"04 Black lace-up boots — keep the dark tone all the way down"]]}],
+ "intro_en": "Wearing boots? Two common mistakes",
+ "outro_en": "Follow @zzebi.st for daily celeb style breakdowns"}

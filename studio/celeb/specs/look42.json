@@ -1,0 +1,92 @@
+{
+ "cover_no_celeb": true,
+ "cover_sub": "",
+ "t_item": 5.0,
+ "push": 0.12,
+ "cover_center": [
+  512,
+  768
+ ],
+ "cover_zoom": 1.0,
+ "answer_label": "핵심",
+ "hook_max": 100,
+ "hook_w": 840,
+ "hook_cta": "",
+ "hook_y": 232,
+ "hook_alpha": 130,
+ "answer": 2,
+ "city": "OFF-DUTY",
+ "date": "2026.11",
+ "episode": "42",
+ "celeb": "ROH JISUN",
+ "title": "버건디 니트 × 버클 롱부츠룩",
+ "image": "img42.jpg",
+ "accent": "#7A1F2B",
+ "hook": "쇼츠에 롱부츠,\n다리 짧아 보인다면?",
+ "items": [
+  {
+   "cat": "KNIT · 상의",
+   "brand": "실착: 브랜드 미상",
+   "name": "버건디 V넥 니트",
+   "pt": "V넥으로 세로선 만들기",
+   "find": "버건디 브이넥 니트",
+   "pt_xy": [
+    760,
+    380
+   ],
+   "crop": [
+    262,
+    490,
+    410
+   ]
+  },
+  {
+   "cat": "BAG · 가방",
+   "brand": "스타일링 추천",
+   "name": "블랙 미니 숄더백",
+   "pt": "부츠와 같은 블랙으로",
+   "find": "블랙 미니 숄더백",
+   "pt_xy": [
+    628,
+    455
+   ],
+   "crop": [
+    268,
+    760,
+    300
+   ]
+  },
+  {
+   "cat": "SHORTS · 하의",
+   "brand": "실착: 브랜드 미상",
+   "name": "미니 쇼츠",
+   "pt": "부츠 위 간격 넉넉히",
+   "find": "블랙 미니 쇼츠",
+   "pt_xy": [
+    770,
+    650
+   ],
+   "crop": [
+    256,
+    970,
+    330
+   ]
+  },
+  {
+   "cat": "BOOTS · 신발",
+   "brand": "실착: 브랜드 미상",
+   "name": "버클 롱부츠",
+   "pt": "무릎 아래까지 높게",
+   "find": "블랙 버클 롱부츠",
+   "pt_xy": [
+    700,
+    1150
+   ],
+   "crop": [
+    225,
+    1235,
+    320
+   ]
+  }
+ ]
+}
