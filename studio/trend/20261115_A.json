@@ -1,0 +1,10 @@
+{"brand":"TREND DAILY · 11.15",
+"paintings":{"a1":"img/a1.jpg","a2":"img/a2.jpg","a3":"img/a3.jpg"},
+"scenes":[
+{"type":"rcompare","left":"a1","right":"a2","dur":3.4,"band":"#1f2328","title":"키 작으면\n와이드 금지?","title_size":120,"body":"오히려 길어 보이는 3곳 →","left_stamp":["tri","허리 덮는 긴 상의"],"right_stamp":["o","허리에 올리기"],"stamp_y":1220,"src_top":120,"left_cx":520,"right_cx":540},
+{"type":"rboard","img":"a2","dur":5.3,"t_board":3.0,"t_item":2.3,"head":{"num":"01","total":"03","kicker":"허리선","title":"바지는 허리에\n상의는 짧게","body":"다리가 허리부터 시작돼 보여요"},"chip":"01 · 허리선","items":[{"xy":[516,600],"name":"아이보리 크롭 니트","sub":"바지 허리선에서 끝나는 기장","swatch":"#ece5d6","zoom":2.0}],"home":[0.86,512,440]},
+{"type":"rboard","img":"a3","dur":7.6,"t_board":3.0,"t_item":2.3,"head":{"num":"02","total":"03","kicker":"신발 색","title":"바지·신발\n같은 색으로","body":"끊기는 선이 없으면 길어 보여요"},"chip":"02 · 색 잇기","items":[{"xy":[652,600],"name":"얇은 브라운 벨트","sub":"허리 위치를 한 번 더 표시","swatch":"#3b2418","zoom":2.0},{"xy":[600,1400],"name":"초콜릿 굽 로퍼","sub":"바지와 같은 색 신발","swatch":"#2e1c14","zoom":1.4,"ring":110,"sy":1660}],"home":[0.86,512,440]},
+{"type":"rboard","img":"a2","dur":5.3,"t_board":3.0,"t_item":2.3,"head":{"num":"03","total":"03","kicker":"밑단 기장","title":"앞코만\n살짝 보이게","body":"바닥에 끌리면 오히려 짧아 보여요"},"chip":"03 · 기장","items":[{"xy":[556,1400],"name":"신발 앞을 덮는 밑단","sub":"앞코 뾰족한 신발 + 긴 기장","swatch":"#2b2b2e","zoom":1.4,"ring":110,"sy":1660}],"home":[0.86,512,440]},
+{"type":"rformula","bg":"a3","dur":4.4,"kicker":"저장해두고 바지 살 때 꺼내 보기","title":"키 작은 사람\n와이드 공식","rows":[{"img":"a2","box":[400,480,640,720],"text":"허리에 올리기","sub":"상의는 짧게"},{"img":"a3","box":[500,1300,860,1480],"text":"바지=신발 색","sub":"선이 안 끊기게"},{"img":"a2","box":[420,1300,680,1480],"text":"앞코만 보이게","sub":"끌리면 짧아 보여요"}]},
+{"type":"text","dur":2.6,"bg":"#00A8A8","fg":"#ffffff","accent":"#ffffff","kicker":"와이드 팬츠, 3곳만 기억","title":"저장 & 팔로우","body":"@zzebi.st 매일 1분 코디"}
+]}
