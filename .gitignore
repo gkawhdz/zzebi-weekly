@@ -4,3 +4,10 @@ __pycache__/
 data/*
 !data/SCHEMA.md
 data/current/
+lovedecode101/pipeline/out_*/
+lovedecode101/pipeline/render_*/
+lovedecode101/pipeline/contact_*.png
+apps/*/node_modules/
+apps/*/dist/
+apps/*/*.ait
+apps/lovedecode/public/posts/
