@@ -338,6 +338,11 @@ export const POSTS = [
   { ep: 'ep11', title: '방어기제 세련되게 바꾸는 법' },
   { ep: 'ep12', title: '사랑받고 자란 사람 구분법' },
   { ep: 'ep13', title: '부모와 거리두기가 필요한 신호' },
+  { ep: 'ep14', title: '외향형 vs 불안형 구분법' },
+  { ep: 'ep15', title: '회피형이 안정형으로 가는 길' },
+  { ep: 'ep16', title: '불안형이 안정형으로 가는 길' },
+  { ep: 'ep17', title: '혼란형이 안정형으로 가는 길' },
+  { ep: 'ep18', title: '연인을 안정형으로 만드는 대화법' },
 ];
 export const FREE_COUNT = 3;
 export const SLIDES_PER_POST = 10;

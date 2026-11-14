@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><title>render</title>
+<style>
+:root{--slide:#0e0c10;--ink:#f4efe6;--mute:#a39a92;--blood:#c8332d;--dim:#4a1614}
+*{box-sizing:border-box}
+body{margin:0;background:#000;font-family:"Noto Sans CJK KR","Noto Sans KR",sans-serif;color:var(--ink)}
+.slide{width:1080px;height:1350px;position:relative;overflow:hidden;background:var(--slide);margin:0 0 20px}
+.bg{position:absolute;inset:0}
+.grain{position:absolute;inset:0;opacity:.55;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.4'/%3E%3C/svg%3E")}
+.vig{position:absolute;inset:0;background:radial-gradient(90% 70% at 50% 40%,transparent 40%,rgba(0,0,0,.75) 100%)}
+.body{position:absolute;inset:0;padding:150px 130px 235px;display:flex;flex-direction:column;justify-content:flex-end;gap:34px}
+.chip{position:absolute;top:158px;left:130px;font-size:28px;font-weight:700;letter-spacing:.14em;color:var(--blood)}
+.num{display:none}
+.brand{position:absolute;top:158px;right:130px;font-size:26px;color:var(--mute);letter-spacing:.06em}
+.bar{position:absolute;bottom:165px;left:130px;height:6px;background:var(--blood);max-width:820px}
+h1{margin:0;font-size:100px;line-height:1.08;font-weight:900;letter-spacing:-.03em}
+h1 em{font-style:normal;color:var(--blood)}
+h2{margin:0;font-size:64px;line-height:1.16;font-weight:900;letter-spacing:-.025em}
+h2 em{font-style:normal;color:var(--blood)}
+p{margin:0;font-size:37px;line-height:1.44}
+p.sub{color:var(--mute);font-size:33px}
+.quote{font-family:"Noto Serif CJK KR","Noto Serif KR",serif;font-size:50px;line-height:1.5;font-weight:700}
+.quote::before{content:"“";display:block;color:var(--blood);font-size:140px;line-height:1;margin:16px 0 -24px}
+.body{word-break:keep-all;overflow-wrap:break-word}
+ol,ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:16px}
+li{font-size:35px;line-height:1.32;padding-left:72px;position:relative}
+li::before{content:attr(data-n);position:absolute;left:0;top:0;color:var(--blood);font-weight:900}
+li small{display:block;color:var(--mute);font-size:34px;margin-top:4px}
+.steps{display:flex;flex-direction:column;gap:20px}
+.step{display:grid;grid-template-columns:150px 1fr;gap:24px;align-items:baseline;font-size:37px;line-height:1.4}
+.step b{color:var(--blood);font-size:34px;letter-spacing:.06em}
+.temp{display:flex;gap:14px;align-items:flex-end;height:110px}
+.temp i{flex:1;background:var(--dim);border-top:4px solid var(--blood)}
+.temp i:nth-child(1){height:28%}.temp i:nth-child(2){height:52%}.temp i:nth-child(3){height:76%}.temp i:nth-child(4){height:100%}
+.rule{height:2px;width:140px;background:var(--blood)}
+.cta{display:flex;gap:18px;flex-wrap:wrap}
+.cta span{border:2px solid var(--blood);padding:16px 30px;font-size:36px;font-weight:700}
+.big{font-size:48px;font-weight:900;line-height:1.3}
+.en{font-family:"Noto Sans",sans-serif;font-size:22px;line-height:1.4;color:#8c847c;letter-spacing:.01em;border-top:1px solid rgba(244,239,230,.14);padding-top:22px;margin-top:6px}
+.body{gap:24px}
+/* backgrounds */
+.bg.spot{background:radial-gradient(55% 45% at 72% 22%,rgba(200,51,45,.34),transparent 62%),radial-gradient(45% 40% at 18% 85%,rgba(74,22,20,.5),transparent 60%),var(--slide)}
+.bg.cold{background:radial-gradient(70% 55% at 28% 18%,rgba(125,135,160,.26),transparent 60%),var(--slide)}
+.bg.sil{background:radial-gradient(50% 55% at 50% 42%,rgba(200,51,45,.26),transparent 66%),var(--slide)}
+.bg.sil svg{position:absolute;left:50%;bottom:-40px;transform:translateX(-50%);width:760px;height:900px}
+.bg.door{background:linear-gradient(90deg,var(--slide) 0 58%,rgba(200,51,45,.08) 58% 60%,#06050711 60%),var(--slide)}
+.bg.door::after{content:"";position:absolute;left:58%;top:0;width:3px;height:100%;background:linear-gradient(180deg,transparent,rgba(244,239,230,.55) 40%,rgba(244,239,230,.55) 60%,transparent)}
+.bg.lines{background:repeating-linear-gradient(180deg,transparent 0 46px,rgba(244,239,230,.045) 46px 47px),var(--slide)}
+.bg.cat svg{position:absolute;right:60px;top:120px;width:520px;height:520px;opacity:.9}
+.bg.glass{background:radial-gradient(60% 50% at 50% 30%,rgba(200,51,45,.22),transparent 60%),linear-gradient(180deg,rgba(125,135,160,.12),transparent 50%),var(--slide)}
+.bg.hands svg{position:absolute;left:0;top:80px;width:1080px;height:700px}
+#s10 .body{gap:16px}#s10 .step{font-size:28px;line-height:1.28}#s10 .step b{font-size:30px}#s10 .big{font-size:38px}#s10 .cta span{font-size:28px;padding:10px 20px}#s10 .en{font-size:21px;padding-top:14px}#s10 p.sub{font-size:30px}
+#s7 .body{gap:12px}#s7 .steps{gap:8px}#s7 .step{font-size:31px}#s7 .temp{height:56px}#s7 h2{font-size:58px}#s7 p{font-size:33px}#s7 p.sub{font-size:30px}#s7 .en{font-size:20px;line-height:1.35;padding-top:12px}
+</style></head><body>
+
+<!-- 1 -->
+<section class="slide" id="s1">
+  <div class="bg sil"><svg viewBox="0 0 760 900"><defs><linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#050406"/><stop offset="1" stop-color="#0e0c10"/></linearGradient></defs><ellipse cx="380" cy="230" rx="150" ry="175" fill="url(#g1)"/><path d="M60 900 C80 560 230 470 380 470 C530 470 680 560 700 900 Z" fill="url(#g1)"/></svg></div><div class="grain"></div><div class="vig"></div>
+  <span class="chip">불안형 편</span><span class="num">1 / 10</span>
+  <div class="body">
+    <h1>불안형,<br><em>안정형</em><br>으로<br>가는 길</h1>
+    <p class="sub">사랑을 확인하는 사람에서<br>사랑을 믿는 사람으로</p>
+    <p class="en">The path from anxious to secure. From someone who keeps checking for love to someone who can trust it.</p>
+  </div>
+  <span class="brand">@lovedecode101</span><div class="bar" style="width:calc(820px * 10 / 100)"></div>
+</section>
+
+<!-- 2 -->
+<section class="slide" id="s2">
+  <div class="bg cold"></div><div class="grain"></div><div class="vig"></div>
+  <span class="chip">어느 DM</span><span class="num">2 / 10</span>
+  <div class="body">
+    <h2>답장 하나에<br>하루가 <em>흔들려요</em></h2>
+    <p class="quote">한 시간만 답이 없어도<br>머릿속에 이별 장면이<br>다 그려져요.<br>저 너무 피곤해요.</p>
+    <p class="sub">그 피로는 사랑이 커서가 아니라, 경보기가 예민해서입니다.</p>
+    <p class="en">"One hour without a reply and I've already pictured the breakup. I'm exhausted." That exhaustion isn't about how much you love. It's about how sensitive your alarm is.</p>
+  </div>
+  <span class="brand">@lovedecode101</span><div class="bar" style="width:calc(820px * 20 / 100)"></div>
+</section>
+
+<!-- 3 -->
+<section class="slide" id="s3">
+  <div class="bg lines"></div><div class="grain"></div><div class="vig"></div>
+  <span class="chip">되묻기</span><span class="num">3 / 10</span>
+  <div class="body">
+    <h2>불안은 사랑의 크기가<br>아니라 <em>경보기</em>입니다</h2>
+    <p>언제 올지 모르는 다정함을 기다리던 경험이 뇌에 예민한 경보기를 달았습니다. 작은 변화에도 울립니다.</p>
+    <p class="sub">경보기를 부술 필요는 없습니다. 감도만 낮추면 됩니다.</p>
+    <p class="en">Anxiety isn't the size of your love, it's an alarm. Waiting for affection that came unpredictably installed a sensitive one in your brain. Don't smash it. Turn the sensitivity down.</p>
+  </div>
+  <span class="brand">@lovedecode101</span><div class="bar" style="width:calc(820px * 30 / 100)"></div>
+</section>
+
+<!-- 4 -->
+<section class="slide" id="s4">
+  <div class="bg spot"></div><div class="grain"></div><div class="vig"></div>
+  <span class="chip">패턴</span><span class="num">4 / 10</span>
+  <div class="body">
+    <h2>이럴 때<br><em>경보</em>가 울립니다</h2>
+    <ul>
+      <li data-n="·">연락 간격이 평소보다 벌어질 때</li>
+      <li data-n="·">상대 표정이 조금 굳었을 때</li>
+      <li data-n="·">상대가 혼자 시간을 원할 때</li>
+      <li data-n="·">칭찬이 평소보다 짧을 때</li>
+    </ul>
+    <p class="sub">사건은 작은데, 해석은 늘 최악으로 달려갑니다.</p>
+    <p class="en">When the alarm goes off: replies come slower than usual, their face looks a little tense, they want time alone, a compliment is shorter than usual. Small events, worst-case interpretations.</p>
+  </div>
+  <span class="brand">@lovedecode101</span><div class="bar" style="width:calc(820px * 40 / 100)"></div>
+</section>
+
+<!-- 5 -->
+<section class="slide" id="s5">
+  <div class="bg glass"></div><div class="grain"></div><div class="vig"></div>
+  <span class="chip">1단계</span><span class="num">5 / 10</span>
+  <div class="body">
+    <h2>울릴 때마다<br><em>기록</em>하기</h2>
+    <p>불안이 올라오면 연락보다 기록이 먼저. 무슨 일이 있었고, 무슨 생각이 들었고, 몇 점짜리인지.</p>
+    <div class="steps">
+      <div class="step"><b>사건</b><span>답장이 두 시간째 없음</span></div>
+      <div class="step"><b>생각</b><span>"나한테 질렸나"</span></div>
+      <div class="step"><b>점수</b><span>10점 중 8점</span></div>
+    </div>
+    <p class="en">Step 1: log every alarm before you text. What happened ("no reply for two hours"), what you thought ("they're tired of me"), how strong it is (8 out of 10). Writing it down slows the spiral.</p>
+  </div>
+  <span class="brand">@lovedecode101</span><div class="bar" style="width:calc(820px * 50 / 100)"></div>
+</section>
+
+<!-- 6 -->
+<section class="slide" id="s6">
+  <div class="bg lines"></div><div class="grain"></div><div class="vig"></div>
+  <span class="chip">2단계</span><span class="num">6 / 10</span>
+  <div class="body">
+    <h2>확인 대신<br><em>내 하루</em>로 돌아오기</h2>
+    <p>불안형의 하루는 상대를 중심으로 돕니다. 상대가 조용하면 내 하루도 멈춥니다.</p>
+    <ul>
+      <li data-n="○">연락과 상관없는 내 일정 하나</li>
+      <li data-n="○">혼자 해도 즐거운 취미 하나</li>
+      <li data-n="○">연인 말고 기댈 사람 한 명</li>
+    </ul>
+    <p class="en">Step 2: come back to your own day instead of checking. Anxious days orbit the partner; when they go quiet, everything stops. Keep one plan unrelated to texting, one solo hobby, one person besides your partner.</p>
+  </div>
+  <span class="brand">@lovedecode101</span><div class="bar" style="width:calc(820px * 60 / 100)"></div>
+</section>
+
+<!-- 7 -->
+<section class="slide" id="s7">
+  <div class="bg hands"><svg viewBox="0 0 1080 700"><path d="M-20 520 C200 480 330 430 470 400 C520 390 560 400 590 420" stroke="#07060a" stroke-width="150" stroke-linecap="round" fill="none"/><path d="M1100 300 C900 330 780 360 690 380 C650 390 620 400 600 420" stroke="#07060a" stroke-width="150" stroke-linecap="round" fill="none"/></svg></div><div class="grain"></div><div class="vig"></div>
+  <span class="chip">가장 실용적인 것</span><span class="num">7 / 10</span>
+  <div class="body">
+    <h2>보내기 전<br><em>30분</em> 규칙</h2>
+    <p>서운한 메시지는 써도 됩니다. 다만 30분 뒤에 다시 읽고 보내세요. 대부분은 고쳐 쓰거나 지우게 됩니다.</p>
+    <ul>
+      <li data-n="✕">"왜 연락 안 해? 나 이제 싫어?"</li>
+      <li data-n="○">"오늘 바빴어? 저녁에 통화할래?"</li>
+    </ul>
+    <p class="en">The most practical rule: write the hurt message, then wait 30 minutes and reread before sending. Most get rewritten or deleted. Not "Why aren't you texting? Over me?" but "Busy day? Call tonight?"</p>
+  </div>
+  <span class="brand">@lovedecode101</span><div class="bar" style="width:calc(820px * 70 / 100)"></div>
+</section>
+
+<!-- 8 -->
+<section class="slide" id="s8">
+  <div class="bg glass"></div><div class="grain"></div><div class="vig"></div>
+  <span class="chip">3단계</span><span class="num">8 / 10</span>
+  <div class="body">
+    <h2>요구 말고<br><em>요청</em>으로</h2>
+    <div class="steps">
+      <div class="step"><b>요구</b><span>"매일 연락해. 안 하면 서운해"</span></div>
+      <div class="step"><b>요청</b><span>"자기 전 한 줄이면 안심될 것 같아"</span></div>
+    </div>
+    <p>원하는 걸 정확히 말하는 건 집착이 아니라 자기표현입니다.</p>
+    <p class="en">Step 3: request, don't demand. "Text me every day or I'll be hurt" is a demand. "One line before bed would really settle me" is a request. Saying exactly what you need is self-expression, not clinginess.</p>
+  </div>
+  <span class="brand">@lovedecode101</span><div class="bar" style="width:calc(820px * 80 / 100)"></div>
+</section>
+
+<!-- 9 -->
+<section class="slide" id="s9">
+  <div class="bg spot"></div><div class="grain"></div><div class="vig"></div>
+  <span class="chip">함정</span><span class="num">9 / 10</span>
+  <div class="body">
+    <h2>이렇게 하면<br>불안이 <em>더 커집니다</em></h2>
+    <ul>
+      <li data-n="✕"><b>상대 접속 시간 확인하기</b><small>확인할수록 경보는 예민해집니다</small></li>
+      <li data-n="✕"><b>불안을 숨기고 괜찮은 척</b><small>참다 터지면 더 크게 흔들립니다</small></li>
+      <li data-n="✕"><b>시험하듯 먼저 거리 두기</b><small>상대도 나도 지쳐 갑니다</small></li>
+    </ul>
+    <p class="en">Traps that make anxiety louder: checking when they were last online (it sharpens the alarm), hiding it and acting fine (it bursts later), pulling away to test them (it wears you both out).</p>
+  </div>
+  <span class="brand">@lovedecode101</span><div class="bar" style="width:calc(820px * 90 / 100)"></div>
+</section>
+
+<!-- 10 -->
+<section class="slide" id="s10">
+  <div class="bg cold"></div><div class="grain"></div><div class="vig"></div>
+  <span class="chip">3초 진단</span><span class="num">10 / 10</span>
+  <div class="body">
+    <ul>
+      <li data-n="1">연락이 늦으면 → 기록 vs 추궁</li>
+      <li data-n="2">하루의 중심 → 나 vs 상대</li>
+      <li data-n="3">원하는 게 있을 때 → 요청 vs 요구</li>
+    </ul>
+    <div class="rule"></div>
+    <p class="big">불안이 사라지는 게 아니라<br>불안보다 내가 커지는 것.</p>
+    <p class="sub">오늘 내 불안은 10점 중 몇 점? 댓글로 숫자만 남겨주세요.</p>
+    <div class="cta"><span>저장 → 답장 기다리는 날 다시 보기</span><span>다음 편: 혼란형이 안정형으로 가는 길</span></div>
+    <p class="en">Check: when replies are late, do you log it or interrogate? Is your day centered on you or them? Do you request or demand? Secure isn't anxiety disappearing. It's you growing bigger than it.</p>
+  </div>
+  <span class="brand">@lovedecode101</span><div class="bar" style="width:calc(820px * 100 / 100)"></div>
+</section>
+
+</body></html>
