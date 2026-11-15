@@ -1,0 +1,163 @@
+[
+  {
+    "week_start": "2026-11-09",
+    "week_end": "2026-11-15",
+    "reported_at": "2026-11-16T08:55+09:00",
+    "source": "Metricool blogId 7607527 (Python 집계, 게시 시각 UTC→KST 변환)",
+    "core": {
+      "reels": 14,
+      "reels_planned": 21,
+      "avg_saves_per_reel": 0.14,
+      "saves_total": 2,
+      "prev_avg_saves_per_reel": 0.57,
+      "followers_end": 90,
+      "followers_net": -3,
+      "prev_followers_net": -1,
+      "account_reach": 1721,
+      "prev_account_reach": 6801,
+      "reel_views": 1754,
+      "prev_reel_views": 9434,
+      "avg_reach_per_reel": 115.9,
+      "prev_avg_reach_per_reel": 245.5,
+      "save_rate_pct": 0.123,
+      "prev_save_rate_pct": 0.233,
+      "share_rate_pct": 0.0,
+      "prev_share_rate_pct": 0.07,
+      "view_rate_3s_pct": 33.5,
+      "prev_view_rate_3s_pct": 27.9,
+      "avg_watch_sec": 3.93,
+      "prev_avg_watch_sec": 3.69,
+      "follows_per_post": "릴스 데이터 없음(피드 캐러셀 1건 팔로우 0)"
+    },
+    "baseline_2026_11_03_09": {
+      "reels": 32,
+      "avg_saves_per_reel": 0.41,
+      "note": "새 전략 첫 주 베이스라인(11/3~11/9). 11/9 보고가 실행되지 않아 이번에 소급 기록"
+    },
+    "series": {
+      "trend": {
+        "n": 9,
+        "avg_saves": 0.22,
+        "avg_views": 127.4,
+        "save_rate_pct": 0.188,
+        "vr3s": 38.7
+      },
+      "celeb": {
+        "n": 5,
+        "avg_saves": 0.0,
+        "avg_views": 121.4,
+        "save_rate_pct": 0.0,
+        "vr3s": 24.2
+      }
+    },
+    "pillars": {
+      "1_celeb": {
+        "n": 5,
+        "avg_saves": 0.0
+      },
+      "2_situation_body": {
+        "n": 7,
+        "avg_saves": 0.29,
+        "vr3s": 40.1
+      },
+      "3_kkuankku": {
+        "n": 2,
+        "avg_saves": 0.0,
+        "vr3s": 33.7
+      },
+      "4_hotdeal": {
+        "n": 0
+      },
+      "5_threads": "인스타 릴스 아님"
+    },
+    "slots": {
+      "08:30": {
+        "n": 2,
+        "avg_saves": 0.0,
+        "vr3s": 40.6
+      },
+      "11:30": {
+        "n": 3,
+        "avg_saves": 0.67,
+        "vr3s": 37.8
+      },
+      "18:00": {
+        "n": 5,
+        "avg_saves": 0.0,
+        "vr3s": 24.2
+      },
+      "off_slot": {
+        "n": 4,
+        "times": [
+          "11/9 16:04",
+          "11/10 16:32",
+          "11/11 12:31",
+          "11/11 19:05"
+        ],
+        "avg_saves": 0.0
+      }
+    },
+    "top3": [
+      {
+        "title": "패딩 부해 보일 때 3곳",
+        "at": "11/10 11:31",
+        "views": 144,
+        "saves": 1,
+        "vr3s": 44.9,
+        "url": "https://www.instagram.com/reel/Dfi1oZQq040/"
+      },
+      {
+        "title": "남자 데이트룩 3곳만 바꾸기",
+        "at": "11/15 11:32",
+        "views": 108,
+        "saves": 1,
+        "vr3s": 25.2,
+        "url": "https://www.instagram.com/reel/Dfvtmi8B6xH/"
+      },
+      {
+        "title": "팔뚝 신경 쓰일 때 니트",
+        "at": "11/11 12:31",
+        "views": 139,
+        "saves": 0,
+        "vr3s": 50.0,
+        "url": "https://www.instagram.com/reel/DflhR_wvXlM/"
+      }
+    ],
+    "last_experiment": {
+      "name": "08:30 Trend 첫 장면 비교형 vs 질문형 (11/3~11/9)",
+      "result": "데이터 부족",
+      "detail": "비교형 3편 3초 시청 평균 39.9% vs 질문형 2편 39.95% — 차이 없음, 11/9 08:30 게시 누락으로 표본 5편"
+    },
+    "experiment_proposal": {
+      "team": "trend",
+      "hypothesis": "'같은 옷으로 N번 돌려입기' 포맷이 저장 수를 높인다",
+      "change": "Trend B(11:30)를 화·목·토 돌려입기 포맷(한 화면에 한 룩씩 풀스크린)으로, 나머지 요일은 기존 정보형",
+      "metric": "편당 저장 수(돌려입기 vs 나머지 Trend), 보조 도달",
+      "evidence": "11/2~15 돌려입기 4편 편당 저장 1.75·조회 439 vs 다른 Trend 26편 0.50·272 (n 작음)"
+    },
+    "time_change": "유지 — 18:00이 2주 연속 최약(저장 0.14→0)이지만 지난주 12:30 셀럽도 0.14로 같아 시간보다 콘텐츠 영향. 정시 게시 미준수 4건이 더 큰 문제",
+    "frequency_check": {
+      "rule": "베이스라인 대비 저장 상승 여부",
+      "baseline": 0.41,
+      "this_week": 0.14,
+      "result": "오르지 않음",
+      "note": "빈도는 11/8 대표님 지시로 이미 하루 3개. 실제 게시는 하루 평균 2개(14/21). 추가 축소 제안 안 함 — 3개 정시 준수가 먼저",
+      "exposure_shrink_signal": true
+    },
+    "monetization": {
+      "stage": 1,
+      "followers": 90,
+      "to_next": 4910,
+      "avg_net_4w": "측정 가능한 2주 -1, -3 (10/27~28 지인 +90 제외)",
+      "eta": "현재 추세로는 도달 불가"
+    },
+    "tiktok": {
+      "videos": 5,
+      "views": 617,
+      "prev_videos": 10,
+      "prev_views": 1750,
+      "note": "11/13·11/15 4편이 28~47초로 '1분 이상' 규칙 미달"
+    },
+    "status_board": "상황판 아티팩트 접근 실패(404) — 기록 생략"
+  }
+]
