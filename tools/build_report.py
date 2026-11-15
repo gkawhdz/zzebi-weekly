@@ -73,6 +73,27 @@ def brand_name(p, T, br_cls='br', br_break=True):
 A = lambda url: f'href="{esc(url)}" target="_blank" rel="noopener"'
 
 # ---------------------------------------------------------------- 이미지
+def thumb_uri(path, q=78):
+    # v3.4: 룩 바로가기용 — 오른쪽 절반(착장 사진)만 잘라 작은 세로 썸네일
+    from PIL import Image
+    im = Image.open(path).convert('RGB')
+    w, h = im.size
+    im = im.crop((w // 2, int(h * .08), w, int(h * .08) + int(w / 2 * 1.25))).resize((160, 200), Image.LANCZOS)
+    b = io.BytesIO(); im.save(b, 'JPEG', quality=q, optimize=True)
+    return 'data:image/jpeg;base64,' + base64.b64encode(b.getvalue()).decode()
+
+def look_jump(arr, T, data_dir):
+    out = [f'    <nav class="jump"><p class="jump-h">{T("룩 바로가기")}</p><div class="jump-row">']
+    for i, L in enumerate(arr, 1):
+        img = os.path.join(data_dir, 'img', L['img'])
+        src = thumb_uri(img) if os.path.exists(img) else ''
+        ps = [t for c in L.get('cores', []) for t in c.get('tiers', {}).values() if t] + [w['p'] for w in L.get('with', []) if w.get('p')]
+        out.append(f'      <button type="button" class="jump-c" onclick="var e=document.getElementById(\'look-{esc(L["id"])}\');if(e)e.scrollIntoView({{behavior:\'smooth\',block:\'start\'}})">'
+                   f'<img src="{src}" alt="" loading="lazy"><span class="jump-n">{i:02d}</span><span class="jump-t">{T(L["title"])}</span>'
+                   f'<span class="jump-k">{T("찾은 상품")} {len(ps)}</span></button>')
+    out.append('    </div></nav>')
+    return '\n'.join(out)
+
 def data_uri(path, width=820, q=82):
     from PIL import Image
     im = Image.open(path).convert('RGB')
@@ -171,6 +192,15 @@ LANG_UI = '''<div class="lang" role="group" aria-label="Language">
 LOGO = '''<svg class="logo-mark" viewBox="20 0 580 360" aria-hidden="true"><path d="M310 150 L40 300 c-22 12-14 40 10 40 h520 c24 0 32-28 10-40 L310 150" fill="none" stroke="currentColor" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/><path d="M310 70 c0-34 26-50 46-50 s44 18 44 44 c0 30-26 38-44 52 L310 150" fill="none" stroke="currentColor" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/><path d="M310 150 Q296 186 306 214" fill="none" stroke="currentColor" stroke-width="7"/><g transform="rotate(-10 310 262)"><path d="M246 214 h104 l36 34 v70 h-176 v-70 Z" fill="#00A8A8"/><circle cx="310" cy="240" r="11" fill="var(--bg)"/></g></svg>'''
 
 EXTRA_CSS = '''
+.jump{margin:4px 0 18px}
+.jump-h{margin:0 0 8px;font-size:12px;font-weight:800;letter-spacing:.08em;color:var(--brand-ink)}
+.jump-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.jump-c{position:relative;display:flex;flex-direction:column;align-items:stretch;gap:4px;padding:0 0 8px;margin:0;border:1px solid var(--line);border-radius:12px;background:var(--surface);color:var(--ink);font:inherit;text-align:left;cursor:pointer;overflow:hidden;min-width:0}
+.jump-c img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;background:var(--line)}
+.jump-n{position:absolute;top:6px;left:6px;padding:1px 6px;border-radius:6px;background:#00A8A8;color:#fff;font-size:11px;font-weight:800;line-height:1.5}
+.jump-t{padding:0 8px;font-size:12.5px;font-weight:700;line-height:1.3;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;word-break:keep-all;overflow-wrap:anywhere}
+.jump-k{padding:0 8px;font-size:11px;color:var(--ink);opacity:.75}
+.jump-c:focus-visible{outline:2px solid var(--brand-ink);outline-offset:2px}
 /* v3.3 · 룩별 매칭 요약 줄 (2026-11-09) */
 .msum{display:flex;align-items:center;flex-wrap:wrap;gap:6px 8px;margin:10px 0 0;padding:9px 12px;border-radius:10px;background:var(--brand-soft);font-size:13px;line-height:1.4;color:var(--ink)}
 .msum-k{color:var(--ink);opacity:.85}
@@ -290,6 +320,7 @@ def render(data_dir, i18n_path=None):
     for pid, lab, arr, note in [('women', '여성', W, meta.get('women_note')), ('men', '남성', M, meta.get('men_note'))]:
         b.append(f'  <section class="panel" id="{pid}">')
         b.append(f'    <div class="panel-head"><h2 class="panel-h">{T(f"{lab} 셀럽 스냅 {len(arr)}룩")}</h2>{howto}</div>')
+        if len(arr) > 1: b.append(look_jump(arr, T, data_dir))
         for i, L in enumerate(arr, 1):
             b.append(render_look(L, i, T, data_dir, first)); first = False
         if note: b.append(f'    <p class="note-m">{T(note)}</p>')
