@@ -1,0 +1,77 @@
+{
+ "native": true,
+ "kicker": "남녀 코트 사복 2",
+ "title": [
+  "코트 코디,",
+  "45초면 끝"
+ ],
+ "sub": "두 번째 룩 바지 색 끝까지 ↓",
+ "intro_img": "/home/claude/work/img44.jpg",
+ "intro_y": 0.45,
+ "seed": 20261117,
+ "cta_kicker": "내일 저녁, 남자 셀럽 사복 해부",
+ "segments": [
+  {
+   "file": "/home/claude/work/tt/seg44.mp4",
+   "label": "효민",
+   "trim": [
+    0,
+    20
+   ],
+   "en": [
+    [
+     0,
+     5,
+     "01 Camel long coat — wear it open for a long vertical line"
+    ],
+    [
+     5,
+     10,
+     "02 Plain white tee — tuck in just the front"
+    ],
+    [
+     10,
+     15,
+     "03 Light-wash straight jeans — ankle-length so the shoes show"
+    ],
+    [
+     15,
+     20,
+     "04 Red satin pumps — keep the color to your feet only"
+    ]
+   ]
+  },
+  {
+   "file": "/home/claude/work/tt/seg43.mp4",
+   "label": "박형식",
+   "trim": [
+    0,
+    20
+   ],
+   "en": [
+    [
+     0,
+     5,
+     "01 Brown suede coat — leave it open for a vertical line"
+    ],
+    [
+     5,
+     10,
+     "02 Grey V-neck cardigan — let just the white shirt collar peek out"
+    ],
+    [
+     10,
+     15,
+     "03 Ivory corduroy pants — a lighter bottom takes the weight off"
+    ],
+    [
+     15,
+     20,
+     "04 Brown suede boots — same brown as the coat"
+    ]
+   ]
+  }
+ ],
+ "intro_en": "Coat outfits, sorted in 45 seconds",
+ "outro_en": "Follow @zzebi.st for daily celeb style breakdowns"
+}

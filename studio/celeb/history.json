@@ -2,6 +2,34 @@
  "rule": "하루 여자, 하루 남자 번갈아. 마지막 날짜의 gender 반대로.",
  "posts": [
   {
+   "date": "2026-11-17",
+   "ep": "44",
+   "gender": "여자",
+   "pillar": 1,
+   "status": "예약됨",
+   "design_version": "v5.1",
+   "channels": [
+    "instagram",
+    "story",
+    "tiktok_native",
+    "youtube_native"
+   ],
+   "celeb": "효민",
+   "look": "흰 티 × 레드 새틴 구두룩",
+   "slot": "18:00",
+   "hook": "흰 티+청바지,\n구두만 빨강이면?",
+   "hook_type": "21 작은 행동 큰 결과형(조건 질문 문법)",
+   "tiktok_hook": "코트 코디,\n45초면 끝",
+   "tiktok_hook_type": "22 빠른 이해형",
+   "music": "오리지널 배경음(seed 2026111744, 라이브러리 곡 미연결)",
+   "story_format": "색 면적 막대 '빨강은 손톱만큼, 시선은 전부 여기로'(정지 jpg)",
+   "image_file": "20261117_44.jpg(img44.jpg)",
+   "reel_file": "20261117_44.mp4",
+   "source": "마이데일리 2026-11-14 ''공항패션의 정석' 효민…'(11/13 공항 사진: 오버사이즈 보잉 선글라스·흰 티·청바지·코트·빨간 새틴 구두)",
+   "mood": "뉴트럴 베이스 + 레드 원포인트 꾸안꾸",
+   "note": "11/16 밤 전날 제작(가벼운 모드). 목 부위 흐림 처리. 코트 색·기장, 청바지 색·핏은 재현, 가방은 스타일링 추천. 검수 PASS(권장 반영: 캡션 재현 표기, 03 카드 크롭). 틱톡·유튜브 묶음 = #44+#43, 44.4초."
+  },
+  {
    "date": "2026-11-16",
    "ep": "43",
    "gender": "남자",
@@ -11,7 +39,8 @@
    "channels": [
     "instagram",
     "story",
-    "tiktok_pending"
+    "tiktok_native",
+    "youtube_native"
    ],
    "celeb": "박형식(배우)",
    "look": "브라운 스웨이드 코트 × 아이보리 코듀로이룩",
