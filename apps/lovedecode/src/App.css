@@ -137,3 +137,6 @@ img { display: block; max-width: 100%; }
 .loading.inline.ready p { line-height: 1.6; margin: 0 0 14px; }
 .loading.inline.ready b { color: #e0554e; }
 .loading.inline.ready .cta { width: 100%; max-width: 320px; }
+
+.refund-note { font-size: 12px; color: #8a8290; line-height: 1.5; margin: 12px 0 0; }
+.refund-note a { color: #b9b2bd; }

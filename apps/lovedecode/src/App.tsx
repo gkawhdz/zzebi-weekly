@@ -293,6 +293,12 @@ export default function App() {
               <li>매주 새 글 추가, 추가분도 계속 열람</li>
               <li>광고 없이 보기</li>
             </ul>
+            <p className="refund-note">
+              결제 후 7일 안에 유료 글을 열지 않았다면 환불할 수 있어요. 유료 글을 열면 청약철회가 제한될 수 있어요.{' '}
+              <a href="https://zzebi-st.github.io/terms/lovedecode.html" target="_blank" rel="noreferrer">
+                이용약관
+              </a>
+            </p>
             <button className="cta" onClick={buy}>
               평생 소장하기
             </button>
