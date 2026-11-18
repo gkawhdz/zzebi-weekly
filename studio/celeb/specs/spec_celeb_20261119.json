@@ -1,0 +1,77 @@
+{
+ "native": true,
+ "kicker": "남녀 겨울 사복 2",
+ "title": [
+  "겨울 아우터",
+  "부해 보인다면"
+ ],
+ "sub": "남녀 2룩, 마지막 가방까지 ↓",
+ "intro_img": "/home/claude/work46/img46.jpg",
+ "intro_y": 0.5,
+ "seed": 20261119,
+ "cta_kicker": "내일 저녁, 남자 셀럽 스냅 해부",
+ "segments": [
+  {
+   "file": "/home/claude/work46/tt/seg46.mp4",
+   "label": "김채원",
+   "trim": [
+    0,
+    20
+   ],
+   "en": [
+    [
+     0,
+     5,
+     "01 White knit beanie — a bright color up top lifts the look"
+    ],
+    [
+     5,
+     10,
+     "02 Brown faux fur coat — keep it short, just over the hips"
+    ],
+    [
+     10,
+     15,
+     "03 Small black crossbody — small, flat, worn diagonally"
+    ],
+    [
+     15,
+     20,
+     "04 Black straight trousers — keep the bottom slim"
+    ]
+   ]
+  },
+  {
+   "file": "/home/claude/work46/tt/seg45.mp4",
+   "label": "마크",
+   "trim": [
+    0,
+    20
+   ],
+   "en": [
+    [
+     0,
+     5,
+     "01 Blue patterned fleece — unzip it so the tee shows"
+    ],
+    [
+     5,
+     10,
+     "02 Beige wide pants — a light bottom takes the weight off"
+    ],
+    [
+     10,
+     15,
+     "03 Brown leather tote — one leather piece makes it look polished"
+    ],
+    [
+     15,
+     20,
+     "04 Off-white sneakers — match them to your white tee"
+    ]
+   ]
+  }
+ ],
+ "intro_en": "Winter outerwear looking bulky? Here's the fix",
+ "outro_en": "Follow @zzebi.st for daily celeb style breakdowns"
+}

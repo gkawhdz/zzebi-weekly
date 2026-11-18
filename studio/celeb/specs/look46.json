@@ -1,0 +1,93 @@
+{
+ "cover_no_celeb": true,
+ "cover_sub": "",
+ "t_item": 5.0,
+ "push": 0.12,
+ "cover_center": [
+  512,
+  768
+ ],
+ "cover_zoom": 1.0,
+ "answer_label": "핵심",
+ "hook_max": 100,
+ "hook_w": 840,
+ "hook_cta": "",
+ "hook_y": 232,
+ "hook_alpha": 130,
+ "answer": 2,
+ "city": "AIRPORT",
+ "date": "2026.11",
+ "episode": "46",
+ "celeb": "KIM CHAEWON",
+ "title": "브라운 퍼 코트 × 화이트 비니룩",
+ "image": "img46.jpg",
+ "accent": "#8A5A3B",
+ "hook": "퍼 코트 입을 때\n제일 흔한 실수 1개",
+ "items": [
+  {
+   "cat": "BEANIE · 모자",
+   "brand": "실착: 화이트 니트 비니",
+   "name": "화이트 니트 비니",
+   "pt": "밝은 색으로 얼굴 쪽 환하게",
+   "find": "화이트 니트 비니",
+   "pt_xy": [
+    765,
+    320
+   ],
+   "crop": [
+    258,
+    318,
+    280
+   ]
+  },
+  {
+   "cat": "FUR COAT · 아우터",
+   "brand": "실착: 브라운 퍼 코트",
+   "name": "브라운 퍼 코트",
+   "pt": "엉덩이 덮는 짧은 기장",
+   "find": "브라운 페이크퍼 코트",
+   "pt_xy": [
+    860,
+    690
+   ],
+   "crop": [
+    258,
+    640,
+    520
+   ]
+  },
+  {
+   "cat": "CROSSBODY · 가방",
+   "brand": "실착: 블랙 크로스백",
+   "name": "작은 블랙 크로스백",
+   "pt": "작고 납작하게, 대각선으로",
+   "find": "블랙 미니 크로스백",
+   "pt_xy": [
+    660,
+    730
+   ],
+   "crop": [
+    175,
+    745,
+    240
+   ]
+  },
+  {
+   "cat": "PANTS · 하의",
+   "brand": "스타일링 추천",
+   "name": "블랙 일자 슬랙스",
+   "pt": "하의는 슬림하게",
+   "find": "블랙 일자 슬랙스",
+   "pt_xy": [
+    765,
+    980
+   ],
+   "crop": [
+    262,
+    1095,
+    470
+   ]
+  }
+ ],
+ "cover_badge": "셀럽 스냅 해부 #46"
+}

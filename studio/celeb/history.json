@@ -2,6 +2,34 @@
  "rule": "하루 여자, 하루 남자 번갈아. 마지막 날짜의 gender 반대로.",
  "posts": [
   {
+   "date": "2026-11-19",
+   "ep": "46",
+   "gender": "여자",
+   "pillar": 1,
+   "status": "예약됨",
+   "design_version": "v5.1",
+   "channels": [
+    "instagram",
+    "story",
+    "tiktok_native",
+    "youtube_native"
+   ],
+   "celeb": "김채원(르세라핌)",
+   "look": "브라운 퍼 코트 × 화이트 비니룩",
+   "slot": "18:00",
+   "hook": "퍼 코트 입을 때\n제일 흔한 실수 1개",
+   "hook_type": "15 흔한 실수형",
+   "tiktok_hook": "겨울 아우터\n부해 보인다면",
+   "tiktok_hook_type": "06 해결책 제시형(조건 문법)",
+   "music": "오리지널 배경음(seed 2026111946, 라이브러리 곡 미연결)",
+   "story_format": "확대 컷 + 메모 카드 '퍼 코트엔 손바닥 가방'(정지 jpg)",
+   "image_file": "20261119_46.jpg(img46.jpg)",
+   "reel_file": "20261119_46.mp4",
+   "source": "톱스타뉴스 2026-11-10 '르세라핌 김채원, 퍼 코트 공항룩…'(브라운 퍼 코트·화이트 니트 비니·크로스로 멘 블랙 가방)",
+   "mood": "퍼 코트 + 니트 비니 윈터 캐주얼",
+   "note": "11/18 밤 전날 제작(가벼운 모드). 뒷모습 생성으로 얼굴 안 보임. 슬랙스·앵클부츠·귀걸이는 스타일링 추천. 독립 검수 FIX 반영(커버 배지 '사복'→'스냅 해부', 캡션 통일·부츠 추천 표기). 틱톡·유튜브 묶음 = #46+#45, 44.4초."
+  },
+  {
    "date": "2026-11-18",
    "ep": "45",
    "gender": "남자",
@@ -11,7 +39,8 @@
    "channels": [
     "instagram",
     "story",
-    "tiktok_pending"
+    "tiktok_native",
+    "youtube_native"
    ],
    "celeb": "마크(NCT)",
    "look": "블루 플리스 × 베이지 와이드룩",
