@@ -27,8 +27,8 @@
     "tiktok",
     "youtube"
    ],
-   "tiktok_hook": "종아리 고민이면 이 기장 금지",
-   "tiktok_hook_type": "13 경고형(인스타 A 그대로)",
+   "tiktok_hook": "1분 만에 종아리 커버",
+   "tiktok_hook_type": "22 빠른 이해형",
    "design_version": "v7-real",
    "status": "예약됨",
    "image_file": [
@@ -36,7 +36,8 @@
     "a2.jpg",
     "a3.jpg",
     "a4.jpg"
-   ]
+   ],
+   "tiktok_note": "틱톡 전용 61.8초판(팁 5개+원인, 그림 a5·a6 추가) — 사장님 지시 11/18"
   },
   {
    "date": "2026-11-19",
