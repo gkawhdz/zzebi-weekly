@@ -13,7 +13,7 @@ import {
   health,
   weakest,
 } from './data';
-import { preloadAd, showAdThen, adReady } from './ads';
+import { preloadAd, showAdThen, adReady, attachBottomBanner, bannerSupported } from './ads';
 import { checkUnlocked, purchase, restorePurchase } from './iap';
 import './App.css';
 
@@ -170,6 +170,8 @@ export default function App() {
         <span className="guide-sub">최근 3개월을 떠올리며 체크하면 영역별 상태와 개선법을 알려드려요 · 결과 전 짧은 광고</span>
         <span className="arrow">시작 ›</span>
       </button>
+
+      {!unlocked && <BottomBanner />}
 
       <section className="library">
         <div className="lib-head">
@@ -340,6 +342,17 @@ function Viewer({ ep, onClose }: { ep: string; onClose: () => void }) {
       </div>
     </div>
   );
+}
+
+function BottomBanner() {
+  const ref = useRef<HTMLDivElement>(null);
+  const [failed, setFailed] = useState(false);
+  useEffect(() => {
+    if (!ref.current) return;
+    return attachBottomBanner(ref.current, () => setFailed(true));
+  }, []);
+  if (failed || !bannerSupported()) return null;
+  return <div className="banner-slot" ref={ref} />;
 }
 
 function LockIcon() {

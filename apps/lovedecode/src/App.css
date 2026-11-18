@@ -140,3 +140,5 @@ img { display: block; max-width: 100%; }
 
 .refund-note { font-size: 12px; color: #8a8290; line-height: 1.5; margin: 12px 0 0; }
 .refund-note a { color: #b9b2bd; }
+
+.banner-slot { margin: 22px 0 0; min-height: 60px; }
