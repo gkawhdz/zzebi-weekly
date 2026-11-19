@@ -2,7 +2,7 @@ import { IAP, Storage, type CompletedOrRefundedOrdersResult } from '@apps-in-tos
 
 // ▼ 앱인토스 콘솔 > 수익화 > 인앱 결제에서 '비소모성(한 번 사면 평생)' 상품을 만들고
 //   발급된 상품 SKU를 여기에 넣어주세요. 비어 있으면 결제 버튼이 안내 문구만 보여줘요.
-export const PRODUCT_SKU = '';
+export const PRODUCT_SKU = 'ait.0000100767.c48c1f03.5eeac6dfd6.5096499987';
 
 const KEY = 'lovedecode_unlocked_v1';
 
