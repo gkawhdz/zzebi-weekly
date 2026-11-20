@@ -1,0 +1,44 @@
+{
+ "images": [
+  {
+   "name": "a1",
+   "refs": [
+    "models/face_W.jpg",
+    "models/street_bg.jpg"
+   ],
+   "prompt": "Street style photo of the Korean woman whose face is shown in the first reference photo (keep exactly the same face: almond eyes, straight nose, full natural lips, calm chic expression, same long straight black hair with a center part), slender build, 168cm tall, standing relaxed facing camera, wearing an oversized bulky cream chunky cable-knit wool turtleneck sweater with a very thick high rolled collar, worn loose and untucked, falling to mid-hip, dark navy straight-leg wool slacks, and brown leather penny loafers, no outerwear, hands relaxed at sides. Outfit clearly visible, no bag. Background: the same street and building facade as in the LAST reference photo (warm brown brick building with white sash windows, deep bottle-green shopfront, brass wall lantern, stone sidewalk) but now it is FAR BEHIND the model, about 12-15 meters away across the street, appearing smaller and softly out of focus. Shot on a full-frame DSLR with an 85mm f/1.8 lens wide open: tack-sharp focus on the model, strong natural background bokeh blur, creamy shallow depth of field, the facade details melt into soft shapes and the lantern becomes a soft glowing bokeh orb; the road surface in front of and behind the model also falls gently out of focus. The model stands in the middle of the asphalt road, full body head to toe visible, camera at waist-to-chest height about 6 meters from the model, natural candid street-snap posture, realistic scale and perspective between the model and the distant building. Lighting: natural overcast daylight only, soft ambient light from the sky, no flash, no studio light, no front fill, natural subtle shadows and soft contrast like a real candid street photo; muted cinematic European film tones. Real photograph, natural skin texture, not CGI, no text, no letters, no logos",
+   "size": "1024x1536",
+   "quality": "medium"
+  },
+  {
+   "name": "a2",
+   "refs": [
+    "models/face_W.jpg",
+    "models/street_bg.jpg"
+   ],
+   "prompt": "Street style photo of the Korean woman whose face is shown in the first reference photo (keep exactly the same face: almond eyes, straight nose, full natural lips, calm chic expression, same long straight black hair with a center part), slender build, 168cm tall, standing relaxed facing camera, wearing a slim-fitting fine-gauge oatmeal merino wool henley knit sweater with the top two buttons open forming a soft V neckline, a thin brown leather belt worn over the knit at the natural waist, dark navy straight-leg wool slacks, and brown leather penny loafers, no outerwear, hands relaxed at sides. Outfit clearly visible, no bag. Background: the same street and building facade as in the LAST reference photo (warm brown brick building with white sash windows, deep bottle-green shopfront, brass wall lantern, stone sidewalk) but now it is FAR BEHIND the model, about 12-15 meters away across the street, appearing smaller and softly out of focus. Shot on a full-frame DSLR with an 85mm f/1.8 lens wide open: tack-sharp focus on the model, strong natural background bokeh blur, creamy shallow depth of field, the facade details melt into soft shapes and the lantern becomes a soft glowing bokeh orb; the road surface in front of and behind the model also falls gently out of focus. The model stands in the middle of the asphalt road, full body head to toe visible, camera at waist-to-chest height about 6 meters from the model, natural candid street-snap posture, realistic scale and perspective between the model and the distant building. Lighting: natural overcast daylight only, soft ambient light from the sky, no flash, no studio light, no front fill, natural subtle shadows and soft contrast like a real candid street photo; muted cinematic European film tones. Real photograph, natural skin texture, not CGI, no text, no letters, no logos",
+   "size": "1024x1536",
+   "quality": "medium"
+  },
+  {
+   "name": "a3",
+   "refs": [
+    "models/face_W.jpg",
+    "models/street_bg.jpg"
+   ],
+   "prompt": "Street style photo of the Korean woman whose face is shown in the first reference photo (keep exactly the same face: almond eyes, straight nose, full natural lips, calm chic expression, same long straight black hair with a center part), slender build, 168cm tall, standing three-quarter angle, one hand lightly in pocket, wearing a thin fine-gauge burgundy merino wool crewneck sweater with a smooth flat knit surface that skims the body, sleeves pushed slightly up the forearms, black straight-leg wool slacks, and black leather pointed ankle boots, no outerwear. Outfit clearly visible, no bag. Background: the same street and building facade as in the LAST reference photo (warm brown brick building with white sash windows, deep bottle-green shopfront, brass wall lantern, stone sidewalk) but now it is FAR BEHIND the model, about 12-15 meters away across the street, appearing smaller and softly out of focus. Shot on a full-frame DSLR with an 85mm f/1.8 lens wide open: tack-sharp focus on the model, strong natural background bokeh blur, creamy shallow depth of field, the facade details melt into soft shapes and the lantern becomes a soft glowing bokeh orb; the road surface in front of and behind the model also falls gently out of focus. The model stands in the middle of the asphalt road, full body head to toe visible, camera at waist-to-chest height about 6 meters from the model, natural candid street-snap posture, realistic scale and perspective between the model and the distant building. Lighting: natural overcast daylight only, soft ambient light from the sky, no flash, no studio light, no front fill, natural subtle shadows and soft contrast like a real candid street photo; muted cinematic European film tones. Real photograph, natural skin texture, not CGI, no text, no letters, no logos",
+   "size": "1024x1536",
+   "quality": "medium"
+  },
+  {
+   "name": "a4",
+   "refs": [
+    "models/face_W.jpg",
+    "models/street_bg.jpg"
+   ],
+   "prompt": "Street style photo of the Korean woman whose face is shown in the first reference photo (keep exactly the same face: almond eyes, straight nose, full natural lips, calm chic expression, same long straight black hair with a center part), slender build, 168cm tall, walking slowly toward camera, natural candid stride, wearing a fine-gauge charcoal grey wool cardigan buttoned up and worn as a top, a thin cognac brown leather belt cinched at the natural waist over the cardigan, a black wool A-line midi skirt, and black leather knee-high boots, no outerwear. Outfit clearly visible, no bag. Background: the same street and building facade as in the LAST reference photo (warm brown brick building with white sash windows, deep bottle-green shopfront, brass wall lantern, stone sidewalk) but now it is FAR BEHIND the model, about 12-15 meters away across the street, appearing smaller and softly out of focus. Shot on a full-frame DSLR with an 85mm f/1.8 lens wide open: tack-sharp focus on the model, strong natural background bokeh blur, creamy shallow depth of field, the facade details melt into soft shapes and the lantern becomes a soft glowing bokeh orb; the road surface in front of and behind the model also falls gently out of focus. The model stands in the middle of the asphalt road, full body head to toe visible, camera at waist-to-chest height about 6 meters from the model, natural candid street-snap posture, realistic scale and perspective between the model and the distant building. Lighting: natural overcast daylight only, soft ambient light from the sky, no flash, no studio light, no front fill, natural subtle shadows and soft contrast like a real candid street photo; muted cinematic European film tones. Real photograph, natural skin texture, not CGI, no text, no letters, no logos",
+   "size": "1024x1536",
+   "quality": "medium"
+  }
+ ]
+}
