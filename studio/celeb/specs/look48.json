@@ -1,0 +1,93 @@
+{
+ "cover_no_celeb": true,
+ "cover_sub": "",
+ "t_item": 5.0,
+ "push": 0.12,
+ "cover_center": [
+  512,
+  768
+ ],
+ "cover_zoom": 1.0,
+ "answer_label": "핵심",
+ "hook_max": 100,
+ "hook_w": 840,
+ "hook_cta": "",
+ "hook_y": 232,
+ "hook_alpha": 130,
+ "answer": 2,
+ "city": "SBS MOKDONG",
+ "date": "2026.11",
+ "episode": "48",
+ "celeb": "JOY",
+ "title": "그레이 코트 × 체크 스커트룩",
+ "image": "img48.jpg",
+ "accent": "#6E6A66",
+ "hook": "겨울 미니스커트,\n맨다리로 입지 마세요",
+ "items": [
+  {
+   "cat": "WOOL COAT · 아우터",
+   "brand": "실착: 라이트 그레이 더블 코트",
+   "name": "그레이 더블 코트",
+   "pt": "허리 리본으로 한 번 잡기",
+   "find": "그레이 벨티드 코트",
+   "pt_xy": [
+    700,
+    430
+   ],
+   "crop": [
+    265,
+    520,
+    470
+   ]
+  },
+  {
+   "cat": "CHECK SKIRT · 하의",
+   "brand": "실착: 체크 미니스커트",
+   "name": "체크 미니스커트",
+   "pt": "코트 밑으로 살짝만",
+   "find": "체크 미니스커트",
+   "pt_xy": [
+    720,
+    770
+   ],
+   "crop": [
+    355,
+    875,
+    290
+   ]
+  },
+  {
+   "cat": "TIGHTS · 스타킹",
+   "brand": "실착: 블랙 시스루 스타킹",
+   "name": "블랙 시스루 스타킹",
+   "pt": "불투명 말고 비치게",
+   "find": "블랙 시스루 스타킹",
+   "pt_xy": [
+    735,
+    920
+   ],
+   "crop": [
+    130,
+    1040,
+    270
+   ]
+  },
+  {
+   "cat": "LONG BOOTS · 신발",
+   "brand": "실착: 스웨이드 롱부츠",
+   "name": "스웨이드 롱부츠",
+   "pt": "무릎 아래까지 올라오게",
+   "find": "스웨이드 롱부츠",
+   "pt_xy": [
+    760,
+    1150
+   ],
+   "crop": [
+    350,
+    1130,
+    340
+   ]
+  }
+ ],
+ "cover_badge": "셀럽 스냅 해부 #48"
+}

@@ -1,0 +1,77 @@
+{
+ "native": true,
+ "kicker": "남녀 겨울 사복 2",
+ "title": [
+  "겨울 사복",
+  "가장 쉬운 공식"
+ ],
+ "sub": "남녀 2룩, 마지막이 제일 쉬워요 ↓",
+ "intro_img": "/home/claude/work/img48.jpg",
+ "intro_y": 0.55,
+ "seed": 20261121,
+ "cta_kicker": "내일 저녁, 남자 셀럽 스냅 해부",
+ "segments": [
+  {
+   "file": "/home/claude/work/tt/seg48.mp4",
+   "label": "조이",
+   "trim": [
+    0,
+    20
+   ],
+   "en": [
+    [
+     0,
+     5,
+     "01 Light grey double coat — cinch the waist once with the tie"
+    ],
+    [
+     5,
+     10,
+     "02 Check mini skirt — let just a little peek out under the coat"
+    ],
+    [
+     10,
+     15,
+     "03 Black sheer tights — sheer, not opaque"
+    ],
+    [
+     15,
+     20,
+     "04 Suede long boots — high, just below the knee"
+    ]
+   ]
+  },
+  {
+   "file": "/home/claude/work/tt/seg47.mp4",
+   "label": "성현",
+   "trim": [
+    0,
+    20
+   ],
+   "en": [
+    [
+     0,
+     5,
+     "01 Black leather jacket — short length, stand collar"
+    ],
+    [
+     5,
+     10,
+     "02 Patterned shoulder bag — just one patterned piece"
+    ],
+    [
+     10,
+     15,
+     "03 Grey washed denim — dark grey instead of indigo"
+    ],
+    [
+     15,
+     20,
+     "04 Black derby shoes — same leather shine as the jacket"
+    ]
+   ]
+  }
+ ],
+ "intro_en": "The easiest winter outfit formula, for her and him",
+ "outro_en": "Follow @zzebi.st for daily celeb style breakdowns"
+}
