@@ -1,0 +1,44 @@
+{
+ "images": [
+  {
+   "name": "b1",
+   "refs": [
+    "models/model_M.jpg",
+    "models/street_bg.jpg"
+   ],
+   "prompt": "Street style photo of the Korean man from the first reference photo (same face, same short two-block black hair, same slim build, 182cm tall), standing relaxed facing camera, wearing a glossy black puffer short down jacket zipped open, black crewneck sweatshirt, grey wool slacks, and black leather derby shoes, hands relaxed at sides, looking a bit too casual for a wedding. Outfit clearly visible, no bag. Background: the same street and building facade as in the LAST reference photo (warm brown brick building with white sash windows, deep bottle-green shopfront, brass wall lantern, stone sidewalk) but now it is FAR BEHIND the model, about 12-15 meters away across the street, appearing smaller and softly out of focus. Shot on a full-frame DSLR with an 85mm f/1.8 lens wide open: tack-sharp focus on the model, strong natural background bokeh blur, creamy shallow depth of field, the facade details melt into soft shapes and the lantern becomes a soft glowing bokeh orb; the road surface in front of and behind the model also falls gently out of focus. The model stands in the middle of the asphalt road, full body head to toe visible, camera at waist-to-chest height about 6 meters from the model, natural candid street-snap posture, realistic scale and perspective between the model and the distant building. Lighting: natural overcast daylight only, soft ambient light from the sky, no flash, no studio light, no front fill, natural subtle shadows and soft contrast like a real candid street photo; muted cinematic European film tones. Real photograph, natural skin texture, not CGI, no text, no letters, no logos",
+   "size": "1024x1536",
+   "quality": "medium"
+  },
+  {
+   "name": "b2",
+   "refs": [
+    "models/model_M.jpg",
+    "models/street_bg.jpg"
+   ],
+   "prompt": "Street style photo of the Korean man from the first reference photo (same face, same short two-block black hair, same slim build, 182cm tall), standing relaxed facing camera, wearing a tailored charcoal grey wool single-breasted chesterfield overcoat falling to the knee, worn open, a light blue cotton dress shirt with no tie, a navy fine-gauge crewneck knit layered over the shirt with the collar showing, mid grey wool straight slacks, and polished black leather derby shoes, hands relaxed. Outfit clearly visible, no bag. Background: the same street and building facade as in the LAST reference photo (warm brown brick building with white sash windows, deep bottle-green shopfront, brass wall lantern, stone sidewalk) but now it is FAR BEHIND the model, about 12-15 meters away across the street, appearing smaller and softly out of focus. Shot on a full-frame DSLR with an 85mm f/1.8 lens wide open: tack-sharp focus on the model, strong natural background bokeh blur, creamy shallow depth of field, the facade details melt into soft shapes and the lantern becomes a soft glowing bokeh orb; the road surface in front of and behind the model also falls gently out of focus. The model stands in the middle of the asphalt road, full body head to toe visible, camera at waist-to-chest height about 6 meters from the model, natural candid street-snap posture, realistic scale and perspective between the model and the distant building. Lighting: natural overcast daylight only, soft ambient light from the sky, no flash, no studio light, no front fill, natural subtle shadows and soft contrast like a real candid street photo; muted cinematic European film tones. Real photograph, natural skin texture, not CGI, no text, no letters, no logos",
+   "size": "1024x1536",
+   "quality": "medium"
+  },
+  {
+   "name": "b3",
+   "refs": [
+    "models/model_M.jpg",
+    "models/street_bg.jpg"
+   ],
+   "prompt": "Street style photo of the Korean man from the first reference photo (same face, same short two-block black hair, same slim build, 182cm tall), standing three-quarter angle, one hand in trouser pocket, wearing a brown herringbone tweed wool blazer, a cream fine-gauge merino turtleneck, dark chocolate brown pleated wool trousers, and dark brown suede chelsea boots, no overcoat. Outfit clearly visible, no bag. Background: the same street and building facade as in the LAST reference photo (warm brown brick building with white sash windows, deep bottle-green shopfront, brass wall lantern, stone sidewalk) but now it is FAR BEHIND the model, about 12-15 meters away across the street, appearing smaller and softly out of focus. Shot on a full-frame DSLR with an 85mm f/1.8 lens wide open: tack-sharp focus on the model, strong natural background bokeh blur, creamy shallow depth of field, the facade details melt into soft shapes and the lantern becomes a soft glowing bokeh orb; the road surface in front of and behind the model also falls gently out of focus. The model stands in the middle of the asphalt road, full body head to toe visible, camera at waist-to-chest height about 6 meters from the model, natural candid street-snap posture, realistic scale and perspective between the model and the distant building. Lighting: natural overcast daylight only, soft ambient light from the sky, no flash, no studio light, no front fill, natural subtle shadows and soft contrast like a real candid street photo; muted cinematic European film tones. Real photograph, natural skin texture, not CGI, no text, no letters, no logos",
+   "size": "1024x1536",
+   "quality": "medium"
+  },
+  {
+   "name": "b4",
+   "refs": [
+    "models/model_M.jpg",
+    "models/street_bg.jpg"
+   ],
+   "prompt": "Street style photo of the Korean man from the first reference photo (same face, same short two-block black hair, same slim build, 182cm tall), walking toward camera, natural candid stride, wearing a long dark navy wool overcoat worn open over a brown herringbone tweed blazer and a cream fine-gauge merino turtleneck, dark chocolate brown pleated wool trousers, dark brown suede chelsea boots, and a grey cashmere scarf loosely draped around the neck. Outfit clearly visible, no bag. Background: the same street and building facade as in the LAST reference photo (warm brown brick building with white sash windows, deep bottle-green shopfront, brass wall lantern, stone sidewalk) but now it is FAR BEHIND the model, about 12-15 meters away across the street, appearing smaller and softly out of focus. Shot on a full-frame DSLR with an 85mm f/1.8 lens wide open: tack-sharp focus on the model, strong natural background bokeh blur, creamy shallow depth of field, the facade details melt into soft shapes and the lantern becomes a soft glowing bokeh orb; the road surface in front of and behind the model also falls gently out of focus. The model stands in the middle of the asphalt road, full body head to toe visible, camera at waist-to-chest height about 6 meters from the model, natural candid street-snap posture, realistic scale and perspective between the model and the distant building. Lighting: natural overcast daylight only, soft ambient light from the sky, no flash, no studio light, no front fill, natural subtle shadows and soft contrast like a real candid street photo; muted cinematic European film tones. Real photograph, natural skin texture, not CGI, no text, no letters, no logos",
+   "size": "1024x1536",
+   "quality": "medium"
+  }
+ ]
+}
