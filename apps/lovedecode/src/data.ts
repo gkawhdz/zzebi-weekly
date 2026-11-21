@@ -343,6 +343,11 @@ export const POSTS = [
   { ep: 'ep16', title: '불안형이 안정형으로 가는 길' },
   { ep: 'ep17', title: '혼란형이 안정형으로 가는 길' },
   { ep: 'ep18', title: '연인을 안정형으로 만드는 대화법' },
+  { ep: 'ep19', title: '퀀텀점프 원리: 관계가 한 번에 바뀌는 순간' },
+  { ep: 'ep20', title: '5분 저널링으로 감정 정리하는 법' },
+  { ep: 'ep21', title: '뇌를 재구성하는 21일 프로젝트' },
+  { ep: 'ep22', title: 'ISFP는 회피형일까? MBTI와 애착' },
+  { ep: 'ep23', title: '설렘의 정체, 로맨스의 실체' },
 ];
 export const FREE_COUNT = 3;
 export const SLIDES_PER_POST = 10;
