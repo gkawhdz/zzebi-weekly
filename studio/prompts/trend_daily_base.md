@@ -1,3 +1,6 @@
+## ★★★★ 2026-11-21 사장님 지시 — 배경음은 사장님 노래 3곡 돌려쓰기 (이 파일의 make_bgm·chill_bgm 지시보다 우선)
+저장소 studio/music/README.md 를 읽고 따르세요: 모든 영상 배경음 = tools/song_bgm.py (song1→2→3 공용 순번, rotation.json 커밋).
+
 ## ★★★★ 2026-11-21 사장님 지시 — 모든 릴스 끝에 '팔로우 이유' 엔딩 (이 파일의 CTA·엔딩 지시보다 우선)
 저장소 studio/prompts/follow_ending_rule.md 를 처음부터 끝까지 읽고 그대로 따르세요(도구 tools/follow_end.py, 예고 장부 studio/plan/next_episodes.json — 그날 자기 팀 예고 항목이 있으면 그 주제가 1순위).
 
