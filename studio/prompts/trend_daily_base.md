@@ -1,3 +1,6 @@
+## ★★★★ 2026-11-21 사장님 지시 — 모든 릴스 끝에 '팔로우 이유' 엔딩 (이 파일의 CTA·엔딩 지시보다 우선)
+저장소 studio/prompts/follow_ending_rule.md 를 처음부터 끝까지 읽고 그대로 따르세요(도구 tools/follow_end.py, 예고 장부 studio/plan/next_episodes.json — 그날 자기 팀 예고 항목이 있으면 그 주제가 1순위).
+
 ## ★★★ 실사 전환 (2026-11-10 사장님 확정 · 아래의 '웹툰풍 v6'·make_webtoon·크로키·플랫레이 그림 지시보다 모두 우선)
 사장님: "이제부터 실사화로" — 웹툰풍 일러스트는 더 이상 쓰지 않습니다. 모든 트렌드 릴스(A·B)는 '전속 모델이 고정 해외 거리에서 찍힌 실사 사진'으로 만듭니다.
 1. 먼저 저장소 studio/models/README.md(모델·거리·사장님 비선호)와 tools/real/README.md 를 읽으세요.
