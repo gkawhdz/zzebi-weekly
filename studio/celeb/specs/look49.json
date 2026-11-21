@@ -1,0 +1,93 @@
+{
+ "cover_no_celeb": true,
+ "cover_sub": "",
+ "t_item": 5.0,
+ "push": 0.12,
+ "cover_center": [
+  512,
+  768
+ ],
+ "cover_zoom": 1.0,
+ "answer_label": "핵심",
+ "hook_max": 100,
+ "hook_w": 840,
+ "hook_cta": "",
+ "hook_y": 232,
+ "hook_alpha": 130,
+ "answer": 2,
+ "end_cta": false,
+ "city": "OFF-DUTY",
+ "date": "2026.11",
+ "episode": "49",
+ "celeb": "KIM JAEWON",
+ "title": "베이지 블레이저 × 연청 와이드룩",
+ "image": "img49.jpg",
+ "accent": "#9C8468",
+ "hook": "출근용 블레이저,\n주말엔 어떻게 입죠?",
+ "items": [
+  {
+   "cat": "BLAZER · 아우터",
+   "brand": "실착: 도톰한 베이지 블레이저",
+   "name": "도톰한 베이지 블레이저",
+   "pt": "단추 풀고 걸치듯",
+   "find": "베이지 블레이저",
+   "pt_xy": [
+    880,
+    330
+   ],
+   "crop": [
+    270,
+    600,
+    470
+   ]
+  },
+  {
+   "cat": "COLLAR KNIT · 상의",
+   "brand": "실착: 아이보리 칼라 니트",
+   "name": "아이보리 칼라 니트",
+   "pt": "셔츠 대신 칼라 니트",
+   "find": "칼라 니트",
+   "pt_xy": [
+    765,
+    300
+   ],
+   "crop": [
+    265,
+    650,
+    300
+   ]
+  },
+  {
+   "cat": "WIDE DENIM · 하의",
+   "brand": "실착: 통 넓은 연청 청바지",
+   "name": "연청 와이드 데님",
+   "pt": "슬랙스 대신 연청",
+   "find": "연청 와이드 데님",
+   "pt_xy": [
+    770,
+    820
+   ],
+   "crop": [
+    290,
+    1048,
+    340
+   ]
+  },
+  {
+   "cat": "SLIP-ON · 신발",
+   "brand": "실착: 퍼 트리밍 슬립온",
+   "name": "퍼 트리밍 슬립온",
+   "pt": "구두 대신 털 슬립온",
+   "find": "퍼 슬립온",
+   "pt_xy": [
+    770,
+    1270
+   ],
+   "crop": [
+    145,
+    1190,
+    240
+   ]
+  }
+ ]
+}

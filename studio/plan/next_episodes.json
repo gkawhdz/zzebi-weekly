@@ -1,4 +1,5 @@
 {"items":[
-{"date":"2026-11-23","team":"trend","slot":"08:30","promise":"팔뚝 고민 직장인을 위한 니트 소매 공식","format":"정보형(체형 고민)","promised_by":"2026-11-22 08:30 트렌드 A","status":"promised","delivered_note":""},
-{"date":"2026-11-23","team":"trend","slot":"11:30","promise":"출근룩 두 색 공식 — 그레이와 버건디","format":"컬러조합(월요일)","promised_by":"2026-11-22 11:30 트렌드 B","status":"promised","delivered_note":""}
+{"date": "2026-11-23", "team": "trend", "slot": "08:30", "promise": "팔뚝 고민 직장인을 위한 니트 소매 공식", "format": "정보형(체형 고민)", "promised_by": "2026-11-22 08:30 트렌드 A", "status": "promised", "delivered_note": ""},
+{"date": "2026-11-23", "team": "trend", "slot": "11:30", "promise": "출근룩 두 색 공식 — 그레이와 버건디", "format": "컬러조합(월요일)", "promised_by": "2026-11-22 11:30 트렌드 B", "status": "promised", "delivered_note": ""},
+{"date": "2026-11-23", "team": "celeb", "slot": "18:00", "promise": "패딩도 가볍게 입는 공식", "format": "셀럽 스냅(여자 셀럽 패딩룩 — 부피감 줄이는 코디)", "promised_by": "2026-11-22 18:00 셀럽 #49", "status": "promised", "delivered_note": ""}
 ]}

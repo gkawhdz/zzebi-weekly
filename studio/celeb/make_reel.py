@@ -268,7 +268,7 @@ for kind, dur in segs:
                 row.putalpha(row.getchannel("A").point(lambda v: int(v * p)))
                 fr.alpha_composite(row, (gx, gy))
             b = ease(t * 2.5 - 1.2)
-            if b > 0:
+            if b > 0 and L.get("end_cta", True):  # 11/22: 팔로우 엔딩(follow_end.py)으로 대체할 땐 end_cta false
                 f = F(42); s = "저장하고 따라 입기"
                 w = d.textlength(s, font=f)
                 d.rounded_rectangle([60, 1326, 60 + w + 64, 1414], 44, fill=BRAND + (int(255 * b),))
