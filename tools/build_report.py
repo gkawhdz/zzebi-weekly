@@ -132,6 +132,16 @@ def render_look(L, n, T, data_dir, eager):
         h.append(f'        <p class="msum"><span class="msum-k">{T("찾은 상품")}</span><b class="msum-v">{len(ps)}</b>'
                  f'<span class="msum-sep" aria-hidden="true"></span><span class="msum-k">{T("평균 사진 일치")}</span><b class="msum-v">{av:.1f}/5</b>'
                  f'<span class="msum-dots" aria-hidden="true">{dots}</span></p>')
+    # v3.5 · 아이템 지도 (2026-11-23): 룩의 아이템마다 명품·중가·가성비 칸을 찾음/비움 칩으로 한 줄씩 — 빈 칸이 어디인지 바로 보이게
+    rows = []
+    for c in L.get('cores', []):
+        chips = ''.join(f'<i class="{"on" if c["tiers"].get(k) else "off"}">{T(TIER_TAG[k])}</i>' for k in ('lux', 'mid', 'value'))
+        rows.append(f'<li><span class="imap-n">{T(c["h"])}</span><span class="imap-c">{chips}</span></li>')
+    for w in L.get('with', []):
+        nm = (w.get('role') or '').split(' · ')[-1].strip()
+        rows.append(f'<li><span class="imap-n">{T(nm)}</span><span class="imap-c"><i class="{"on" if w.get("p") else "off"}">{T("함께 입기")}</i></span></li>')
+    if rows:
+        h.append(f'        <div class="imap"><p class="imap-h">{T("아이템 지도")} <span>{T("색 칸 = 찾음 · 점선 = 비움")}</span></p><ul>' + ''.join(rows) + '</ul></div>')
     h += ['      </div>', '    </div>']
     marks = ['①', '②', '③']
     cores = [c for c in L.get('cores', []) if any(c['tiers'].get(k) for k in ('lux', 'mid', 'value'))]   # 빈 코어는 번호에서 제외
@@ -192,6 +202,17 @@ LANG_UI = '''<div class="lang" role="group" aria-label="Language">
 LOGO = '''<svg class="logo-mark" viewBox="20 0 580 360" aria-hidden="true"><path d="M310 150 L40 300 c-22 12-14 40 10 40 h520 c24 0 32-28 10-40 L310 150" fill="none" stroke="currentColor" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/><path d="M310 70 c0-34 26-50 46-50 s44 18 44 44 c0 30-26 38-44 52 L310 150" fill="none" stroke="currentColor" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/><path d="M310 150 Q296 186 306 214" fill="none" stroke="currentColor" stroke-width="7"/><g transform="rotate(-10 310 262)"><path d="M246 214 h104 l36 34 v70 h-176 v-70 Z" fill="#00A8A8"/><circle cx="310" cy="240" r="11" fill="var(--bg)"/></g></svg>'''
 
 EXTRA_CSS = '''
+.imap{margin:12px 0 2px;padding:10px 12px;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+.imap-h{margin:0 0 6px;font-size:12px;font-weight:800;letter-spacing:.04em;color:var(--brand-ink)}
+.imap-h span{font-weight:500;letter-spacing:0;color:var(--ink);opacity:.7;margin-left:4px}
+.imap ul{list-style:none;margin:0;padding:0}
+.imap li{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:5px 0;border-top:1px dashed var(--line)}
+.imap li:first-child{border-top:0}
+.imap-n{font-size:13px;font-weight:700;line-height:1.3;min-width:0;word-break:keep-all;overflow-wrap:anywhere}
+.imap-c{display:flex;gap:4px;flex-shrink:0}
+.imap-c i{font-style:normal;font-size:11px;font-weight:700;line-height:1;padding:4px 7px;border-radius:999px;white-space:nowrap}
+.imap-c i.on{background:#007A7A;color:#fff}
+.imap-c i.off{border:1px dashed currentColor;color:var(--muted);padding:3px 6px;text-decoration:line-through}
 .jump{margin:4px 0 18px}
 .jump-h{margin:0 0 8px;font-size:12px;font-weight:800;letter-spacing:.08em;color:var(--brand-ink)}
 .jump-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
