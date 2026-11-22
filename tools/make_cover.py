@@ -41,6 +41,12 @@ def main():
     D = a.data
     meta = json.load(open(os.path.join(D, 'meta.json')))
     mk = json.load(open(os.path.join(D, 'market.json')))
+    # 2026-11-23: 랭킹 판매처 이름을 market.json 에서 자동으로(이번 주처럼 무신사·지그재그가 빠지면 표지에서도 빠지게)
+    shops = []
+    for g in mk.get('ranking', []):
+        sh = g['h'].split()[0]
+        if sh not in shops: shops.append(sh)
+    rk_shops = '·'.join(shops) or '이번 주'
     looks = {os.path.basename(f)[5:-5]: json.load(open(f)) for f in glob.glob(os.path.join(D, 'look_*.json'))}
     order = meta['women'] + meta['men']
     y, rest = a.period.split('.', 1)
@@ -84,7 +90,7 @@ body{{background:#222;word-break:keep-all}}
 .c1 .per{{position:absolute;left:0;right:0;top:300px;text-align:center;color:#fff;font:400 30px Bod,serif;letter-spacing:.12em}}
 .c1 .per b{{font:700 21px Inter,sans-serif;letter-spacing:.3em;margin-right:14px;padding:6px 12px;border:1.5px solid #fff}}
 .c1 .lines{{position:absolute;left:56px;bottom:200px;color:#fff;max-width:640px}}
-.c1 .kick{{font:400 italic 34px Bod,serif;margin-bottom:10px;color:#5FE0DC}}
+.c1 .kick{{font:400 italic 34px Bod,serif;margin-bottom:10px;color:#fff;display:inline-block;padding:2px 14px 4px;background:rgba(0,122,122,.88);border-radius:4px}}
 .c1 .hl{{font-family:"Noto Serif CJK KR",serif;font-weight:900;font-size:86px;line-height:1.12;letter-spacing:-.02em;text-shadow:0 2px 24px rgba(0,0,0,.35)}}
 .c1 .cl{{position:absolute;right:56px;bottom:214px;text-align:right;color:#fff;font-size:27px;font-weight:700;line-height:1.55}}
 .c1 .cl span{{display:block;border-top:1.5px solid rgba(255,255,255,.7);padding-top:6px;margin-top:10px}}
@@ -162,12 +168,12 @@ body{{background:#222;word-break:keep-all}}
 <div class="per"><b>WEEKLY</b>{esc(per_en)}</div>
 <div class="ai">AI 재현 이미지</div>
 <div class="lines"><div class="kick">The Celeb Edit</div><div class="hl">셀럽 {n_look}룩,<br>{hl}</div></div>
-<div class="cl"><small>INSIDE</small><span>{inside1}</span><span>무신사·29CM·지그재그 랭킹</span><span>핫딜 TOP 10 · 크림 신발</span></div>
+<div class="cl"><small>INSIDE</small><span>{inside1}</span><span>{rk_shops} 랭킹</span><span>핫딜 TOP 10 · 크림 신발</span></div>
 <div class="bot"><span class="pill">{pill}</span><span class="bar">{bars}</span></div></section>'''
     g = ''.join(f'<div class="g" style="background-image:url({imgs[i]})"><em>{esc(looks[i]["ep"])}</em><span>{esc(looks[i]["who"].replace(" 무드 재현",""))}</span></div>' for i in order[:6])
     s2 = f'''<section class="s c2">{hd(vol + " · CONTENTS")}<h2>This Week<b>{esc(per_ko)}</b></h2>
 <div class="grid">{g}</div>
-<div class="toc"><div><small>01 · LOOKS</small>여성·남성 셀럽 {n_look}룩 따라 사기</div><div><small>02 · RANKING</small>무신사·29CM·지그재그 이번 주 랭킹</div><div><small>03 · DEALS</small>핫딜 TOP 10 · 크림 인기 신발</div></div>
+<div class="toc"><div><small>01 · LOOKS</small>여성·남성 셀럽 {n_look}룩 따라 사기</div><div><small>02 · RANKING</small>{rk_shops} 이번 주 랭킹</div><div><small>03 · DEALS</small>핫딜 TOP 10 · 크림 인기 신발</div></div>
 {foot(2)}</section>'''
     s3 = f'''<section class="s c3"><div class="ph"></div><span class="ai">AI 재현 이미지</span>{hd("FEATURE")}
 <div class="tx"><div class="k">LOOK #{esc(F["ep"])} · {esc(F["who"].replace(" 무드 재현",""))}</div><h3>{esc(core["h"])},<br>얼마면 될까?</h3>
