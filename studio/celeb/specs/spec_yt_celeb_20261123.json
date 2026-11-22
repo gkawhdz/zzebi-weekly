@@ -1,0 +1,78 @@
+{
+ "native": true,
+ "kicker": "남녀 겨울 사복 2",
+ "title": [
+  "겨울룩 가벼운",
+  "비결은 바지"
+ ],
+ "sub": "남녀 2룩, 둘 다 같은 답 ↓",
+ "intro_img": "/home/claude/work50/tt/intro50.jpg",
+ "intro_y": 0.55,
+ "seed": 20261123,
+ "cta_kicker": "내일 저녁, 남친 코트룩",
+ "segments": [
+  {
+   "file": "/home/claude/work50/tt/seg50.mp4",
+   "label": "슬기",
+   "trim": [
+    0,
+    20
+   ],
+   "en": [
+    [
+     0,
+     5,
+     "01 Grey lightweight puffer — wear it unzipped"
+    ],
+    [
+     5,
+     10,
+     "02 Ivory ribbed turtleneck — a bright inner for a long line"
+    ],
+    [
+     10,
+     15,
+     "03 Light-wash wide denim — light pants make it feel lighter"
+    ],
+    [
+     15,
+     20,
+     "04 Black loafers — keep only your feet dark"
+    ]
+   ]
+  },
+  {
+   "file": "/home/claude/work50/tt/seg49.mp4",
+   "label": "김재원",
+   "trim": [
+    0,
+    20
+   ],
+   "en": [
+    [
+     0,
+     5,
+     "01 Thick beige blazer — unbuttoned, worn loosely"
+    ],
+    [
+     5,
+     10,
+     "02 Ivory collar knit — a collar knit instead of a shirt"
+    ],
+    [
+     10,
+     15,
+     "03 Light-wash wide denim — light denim instead of slacks"
+    ],
+    [
+     15,
+     20,
+     "04 Fur-trim slip-ons — cozy slip-ons instead of dress shoes"
+    ]
+   ]
+  }
+ ],
+ "intro_en": "The secret to a lighter winter look? It's the pants",
+ "outro_en": "Follow @zzebi.st for daily celeb style breakdowns",
+ "outro_handle": "@zzebi_st"
+}
