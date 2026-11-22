@@ -1,5 +1,189 @@
 [
   {
+    "week_start": "2026-11-16",
+    "week_end": "2026-11-22",
+    "reported_at": "2026-11-23T08:55+09:00",
+    "source": "Metricool blogId 7607527 (Python 집계, 게시 시각 UTC→KST 변환)",
+    "core": {
+      "reels": 19,
+      "reels_planned": 21,
+      "avg_saves_per_reel": 0.05,
+      "saves_total": 1,
+      "prev_avg_saves_per_reel": 0.14,
+      "followers_end": 91,
+      "followers_end_note": "11/21 기준(11/22 값 미집계)",
+      "followers_net": 1,
+      "prev_followers_net": -3,
+      "account_reach": 3754,
+      "prev_account_reach": 1941,
+      "reel_views": 3950,
+      "prev_reel_views": 1814,
+      "avg_reach_per_reel": 195.2,
+      "prev_avg_reach_per_reel": 119.9,
+      "median_views_per_reel": 125,
+      "prev_median_views_per_reel": 127.5,
+      "save_rate_pct": 0.027,
+      "prev_save_rate_pct": 0.119,
+      "share_rate_pct": 0.0,
+      "prev_share_rate_pct": 0.0,
+      "view_rate_3s_pct": 33.1,
+      "prev_view_rate_3s_pct": 34.0,
+      "avg_watch_sec": 3.59,
+      "prev_avg_watch_sec": 4.01,
+      "likes_total": 6,
+      "prev_likes_total": 6,
+      "follows_per_post": "릴스별 팔로우 데이터 없음(피드 캐러셀 위클리 VOL.04 팔로우 0, 조회 24)"
+    },
+    "series": {
+      "trend": {
+        "n": 12,
+        "avg_saves": 0.0,
+        "avg_views": 257.2,
+        "median_views": 126.5,
+        "save_rate_pct": 0.0,
+        "vr3s": 39.3,
+        "awt": 3.95
+      },
+      "celeb": {
+        "n": 7,
+        "avg_saves": 0.14,
+        "avg_views": 123.4,
+        "save_rate_pct": 0.123,
+        "vr3s": 22.6,
+        "awt": 2.99
+      }
+    },
+    "pillars": {
+      "1_celeb": {
+        "n": 7,
+        "avg_saves": 0.14,
+        "vr3s": 22.6
+      },
+      "2_situation_body": {
+        "n": 10,
+        "avg_saves": 0.0,
+        "avg_views": 285.1,
+        "vr3s": 41.6
+      },
+      "3_kkuankku": {
+        "n": 2,
+        "avg_saves": 0.0,
+        "vr3s": 27.9
+      },
+      "4_hotdeal": {
+        "n": 0
+      },
+      "5_threads": "인스타 릴스 아님"
+    },
+    "slots": {
+      "08:30": {
+        "n": 6,
+        "avg_saves": 0.0,
+        "avg_views": 282.8,
+        "vr3s": 41.8
+      },
+      "11:30": {
+        "n": 6,
+        "avg_saves": 0.0,
+        "avg_views": 231.7,
+        "vr3s": 36.8
+      },
+      "18:00": {
+        "n": 7,
+        "avg_saves": 0.14,
+        "avg_views": 123.4,
+        "vr3s": 22.6
+      },
+      "off_slot": {
+        "n": 0
+      },
+      "missing": "11/18 Trend A·B 2편 미게시"
+    },
+    "top3": [
+      {
+        "title": "롱코트에 몸 묻힐 때 3곳",
+        "at": "11/20 08:31",
+        "views": 1076,
+        "saves": 0,
+        "vr3s": 52.6,
+        "url": "https://www.instagram.com/reel/Df8Q_K3Smkx/"
+      },
+      {
+        "title": "송년회 숏 무스탕",
+        "at": "11/22 11:31",
+        "views": 770,
+        "saves": 0,
+        "vr3s": 53.9,
+        "url": "https://www.instagram.com/reel/DgBvK-buCEm/"
+      },
+      {
+        "title": "셀럽 #43 박형식 스웨이드 코트",
+        "at": "11/16 18:07",
+        "views": 129,
+        "saves": 1,
+        "vr3s": 27.9,
+        "url": "https://www.instagram.com/reel/Dfy_k1Eu5eK/"
+      }
+    ],
+    "bottom3": [
+      {
+        "title": "셀럽 #49 김재원",
+        "at": "11/22 18:06",
+        "views": 117,
+        "vr3s": 9.3
+      },
+      {
+        "title": "셀럽 #47 성현",
+        "at": "11/20 18:09",
+        "views": 113,
+        "vr3s": 14.0
+      },
+      {
+        "title": "셀럽 #48 조이",
+        "at": "11/21 18:04",
+        "views": 121,
+        "vr3s": 17.0
+      }
+    ],
+    "last_experiment": {
+      "name": "Trend B 화·목·토 돌려입기 포맷 (11/16 제안)",
+      "result": "데이터 부족",
+      "detail": "제안 승인·적용 기록 없음. 이번 주 돌려입기 1편(11/19 11:31 필드재킷 4일) 조회 111·저장 0·3초 30.8% — 이번 주 Trend 평균 이하"
+    },
+    "experiment_proposal": {
+      "team": "trend",
+      "hypothesis": "마지막 장면을 '저장용 요약 1장'(큰 글씨 3줄, 2초 이상 정지)으로 바꾸면 저장 수가 오른다",
+      "change": "Trend A·B 마지막 장면을 정답 공개 루프 대신 핵심 3줄 요약 카드 풀스크린으로(큰 글씨, 빠른 전환 없음), 7일간",
+      "metric": "Trend 편당 저장 수(직전 2주 2/21=0.10 → 목표 0.3+), 보조 저장률·평균 시청 시간",
+      "evidence": "이번 주 조회 1,076·770 히트 2편도 저장 0. 도달은 늘었는데 저장할 '꺼내 볼 화면'이 없음(추정)"
+    },
+    "time_change": "유지 — 08:30이 저장 0으로 2주 연속 최약이지만 전 슬롯 저장이 0~1건이라 차이가 잡음 수준, 08:30은 3초 시청 41.8%로 최고·히트작(1,076뷰) 배출",
+    "frequency_check": {
+      "rule": "베이스라인 대비 저장 상승 여부",
+      "baseline": 0.41,
+      "this_week": 0.05,
+      "result": "오르지 않음",
+      "note": "이미 하루 3개(11/8). 이번 주 정시 게시 19/21로 개선, 도달·팔로워는 회복 → 노출 축소 신호 아님. 추가 축소 대신 저장 장치 실험 제안",
+      "exposure_shrink_signal": false
+    },
+    "monetization": {
+      "stage": 1,
+      "followers": 91,
+      "to_next": 4909,
+      "avg_net_recent": "측정 가능한 3주 -1, -3, +1 (평균 -1.0)",
+      "eta": "현재 추세로는 도달 불가"
+    },
+    "tiktok": {
+      "videos": 9,
+      "views": 2929,
+      "prev_videos": 5,
+      "prev_views": 1436,
+      "under_60s": 8,
+      "note": "11/17 19:13 1,635뷰가 절반 이상. 9편 중 8편이 60초 미만"
+    },
+    "status_board": "상황판 아티팩트 접근 실패(쓰기 거부) — 기록 생략"
+  },
+  {
     "week_start": "2026-11-09",
     "week_end": "2026-11-15",
     "reported_at": "2026-11-16T08:55+09:00",
