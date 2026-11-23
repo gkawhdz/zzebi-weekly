@@ -1,0 +1,17 @@
+{"brand": "TREND DAILY · 11.24", "paintings": {"a1": "img/a1.jpg", "a2": "img/a2.jpg", "a3": "img/a3.jpg", "a4": "img/a4.jpg"},
+"scenes": [
+{"type": "rcompare", "left": "a1", "right": "a2", "dur": 3.4, "band": "#1d2228", "title": "허리 짧다면\n이 벨트 금지", "title_size": 112, "body": "위치·색·폭 3가지만 →", "left_stamp": ["tri", "넓게·높게"], "right_stamp": ["o", "가늘게·낮게"], "stamp_y": 1190, "src_top": 120, "left_cx": 510, "right_cx": 530},
+{"type": "rboard", "img": "a2", "dur": 7.6, "t_board": 3.0, "t_item": 2.3, "head": {"num": "01", "total": "03", "kicker": "위치", "title": "허리선보다\n살짝 아래로", "body": "벨트 위 상체 칸이 길어져요"}, "chip": "01 · 위치",
+ "items": [{"xy": [530, 668], "name": "가는 네이비 벨트", "sub": "배꼽 아래, 골반 위에 걸치기", "swatch": "#1c2233", "zoom": 2.0},
+           {"xy": [540, 980], "name": "미드라이즈 일자 바지", "sub": "하이웨이스트 대신 중간 허리", "swatch": "#1a1f2e", "zoom": 1.5}], "home": [0.86, 512, 440]},
+{"type": "rboard", "img": "a3", "dur": 7.6, "t_board": 3.0, "t_item": 2.3, "head": {"num": "02", "total": "03", "kicker": "색", "title": "벨트 색은\n상의와 같게", "body": "허리선이 끊기지 않고 이어져요"}, "chip": "02 · 색",
+ "items": [{"xy": [625, 610], "name": "블랙 니트 + 블랙 벨트", "sub": "위·벨트 한 색으로 상체 길게", "swatch": "#141414", "zoom": 2.0},
+           {"xy": [640, 1000], "name": "카멜 A라인 미디스커트", "sub": "색 대비는 벨트 아래에서", "swatch": "#b08552", "zoom": 1.5}], "home": [0.86, 512, 440]},
+{"type": "rboard", "img": "a4", "dur": 7.6, "t_board": 3.0, "t_item": 2.3, "head": {"num": "03", "total": "03", "kicker": "폭", "title": "벨트 폭은\n가늘수록 좋아요", "body": "짧은 허리 칸을 덜 차지해요"}, "chip": "03 · 폭",
+ "items": [{"xy": [553, 686], "name": "1.5cm 브라운 벨트", "sub": "원피스와 같은 색, 얇게", "swatch": "#3b2418", "zoom": 2.0},
+           {"xy": [565, 1425], "name": "브라운 앵클부츠", "sub": "원피스 색을 발끝까지", "swatch": "#3a241a", "zoom": 1.4, "ring": 110, "sy": 1660}], "home": [0.86, 512, 440]},
+{"type": "rformula", "bg": "a3", "dur": 4.4, "kicker": "저장해두고 벨트 맬 때 보기", "title": "허리 짧은 직장인\n벨트 공식",
+ "rows": [{"img": "a2", "box": [380, 560, 700, 820], "text": "살짝 아래", "sub": "골반 위에 걸치기"},
+          {"img": "a3", "box": [470, 480, 790, 760], "text": "상의와 같은 색", "sub": "허리선 이어지게"},
+          {"img": "a4", "box": [400, 580, 720, 820], "text": "가는 폭", "sub": "2cm 안팎"}]}
+]}

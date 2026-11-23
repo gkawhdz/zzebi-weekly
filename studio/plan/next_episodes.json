@@ -37,8 +37,8 @@
    "promise": "허리 짧은 직장인 벨트 위치 공식",
    "format": "정보형(체형 고민)",
    "promised_by": "2026-11-23 08:30 트렌드 A",
-   "status": "promised",
-   "delivered_note": ""
+   "status": "delivered",
+   "delivered_note": "11/24 08:30 인스타 예약 완료(11/23 밤 제작)"
   },
   {
    "date": "2026-11-24",
@@ -47,8 +47,8 @@
    "promise": "카디건 하나로 출근룩 4가지",
    "format": "4가지코디(화요일)",
    "promised_by": "2026-11-23 11:30 트렌드 B",
-   "status": "promised",
-   "delivered_note": ""
+   "status": "delivered",
+   "delivered_note": "11/24 11:30 인스타 예약 완료(11/23 밤 제작)"
   },
   {
    "date": "2026-11-24",
@@ -57,6 +57,26 @@
    "promise": "남친 겨울 코트룩 따라 입기 공식",
    "format": "셀럽 스냅(남자 셀럽 코트룩 — 따라 입기 리스트)",
    "promised_by": "2026-11-23 18:00 셀럽 #50",
+   "status": "promised",
+   "delivered_note": ""
+  },
+  {
+   "date": "2026-11-25",
+   "team": "trend",
+   "slot": "08:30",
+   "promise": "골반 넓은 직장인 슬랙스 고르는 법",
+   "format": "정보형(체형 고민)",
+   "promised_by": "2026-11-24 08:30 트렌드 A",
+   "status": "promised",
+   "delivered_note": ""
+  },
+  {
+   "date": "2026-11-25",
+   "team": "trend",
+   "slot": "11:30",
+   "promise": "롱부츠 신는 출근룩 2가지",
+   "format": "코디룩북(수요일)",
+   "promised_by": "2026-11-24 11:30 트렌드 B",
    "status": "promised",
    "delivered_note": ""
   }

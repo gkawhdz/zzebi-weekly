@@ -1,0 +1,17 @@
+{"brand": "TREND DAILY · 11.24", "paintings": {"b1": "img/b1.jpg", "b2": "img/b2.jpg", "b3": "img/b3.jpg", "b4": "img/b4.jpg"},
+"scenes": [
+{"type": "rcompare", "left": "b1", "right": "b3", "dur": 3.4, "band": "#2b2620", "title": "같은 카디건,\n4번 입어봤어요", "title_size": 104, "body": "3번이 제일 쉬워요 →", "left_stamp": ["o", "① 니트처럼"], "right_stamp": ["o", "③ 어깨에"], "stamp_y": 1020, "src_top": 120, "left_cx": 520, "right_cx": 540},
+{"type": "rboard", "img": "b1", "dur": 5.3, "t_board": 3.0, "t_item": 2.3, "head": {"num": "01", "total": "04", "kicker": "① 월 · 니트처럼", "title": "단추 다 잠그고\n니트처럼", "body": "셔츠 없이 한 장으로 단정하게"}, "chip": "01 · 니트처럼",
+ "items": [{"xy": [522, 600], "name": "아이보리 V넥 카디건", "sub": "단추 끝까지, 밑단은 바지 위로", "swatch": "#ece4d3", "zoom": 1.9}], "home": [0.86, 512, 440]},
+{"type": "rboard", "img": "b2", "dur": 5.3, "t_board": 3.0, "t_item": 2.3, "head": {"num": "02", "total": "04", "kicker": "② 화 · 원피스 위", "title": "열어서\n원피스 위에", "body": "어두운 원피스에 밝은 세로선 두 줄"}, "chip": "02 · 원피스 위",
+ "items": [{"xy": [560, 1000], "name": "차콜 터틀넥 니트 원피스", "sub": "카디건은 열고, 롱부츠로 마무리", "swatch": "#2f3033", "zoom": 1.6}], "home": [0.86, 512, 440]},
+{"type": "rboard", "img": "b3", "dur": 5.3, "t_board": 3.0, "t_item": 2.3, "head": {"num": "03", "total": "04", "kicker": "③ 수 · 어깨에", "title": "입지 말고\n어깨에 묶기", "body": "흰 셔츠 위에 소매만 앞으로"}, "chip": "03 · 어깨에",
+ "items": [{"xy": [553, 583], "name": "소매 가볍게 묶기", "sub": "꽉 말고 느슨하게 한 번만", "swatch": "#ece4d3", "zoom": 2.0}], "home": [0.86, 512, 440]},
+{"type": "rboard", "img": "b4", "dur": 5.3, "t_board": 3.0, "t_item": 2.3, "head": {"num": "04", "total": "04", "kicker": "④ 목 · 코트 속", "title": "코트 속\n이너로 잠그기", "body": "검은 코트 안에 밝은 칸 하나"}, "chip": "04 · 코트 속",
+ "items": [{"xy": [550, 590], "name": "카디건 = 코트 속 니트", "sub": "코트는 열어서 아이보리 보이게", "swatch": "#ece4d3", "zoom": 1.9}], "home": [0.86, 512, 440]},
+{"type": "rformula", "bg": "b4", "dur": 4.6, "kicker": "저장해두고 출근 전에 보기", "title": "카디건 하나\n4가지 공식",
+ "rows": [{"img": "b1", "box": [340, 360, 700, 760], "text": "잠그면 니트", "sub": "바지 위로 단정하게"},
+          {"img": "b2", "box": [330, 380, 760, 900], "text": "열면 원피스 위", "sub": "롱부츠까지"},
+          {"img": "b3", "box": [350, 360, 730, 760], "text": "어깨에 묶기", "sub": "흰 셔츠 위"},
+          {"img": "b4", "box": [330, 360, 780, 860], "text": "코트 속 이너", "sub": "코트는 열기"}]}
+]}
