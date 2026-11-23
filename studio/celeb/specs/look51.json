@@ -1,0 +1,93 @@
+{
+ "cover_no_celeb": true,
+ "cover_sub": "",
+ "t_item": 5.0,
+ "push": 0.12,
+ "cover_center": [
+  512,
+  768
+ ],
+ "cover_zoom": 1.0,
+ "answer_label": "핵심",
+ "hook_max": 100,
+ "hook_w": 840,
+ "hook_cta": "",
+ "hook_y": 232,
+ "hook_alpha": 130,
+ "answer": 1,
+ "end_cta": false,
+ "city": "INCHEON AIRPORT",
+ "date": "2026.11",
+ "episode": "51",
+ "celeb": "S.COUPS",
+ "title": "블랙 코트 댄디룩 재해석",
+ "image": "img51.jpg",
+ "accent": "#9AA0A6",
+ "hook": "남친 검정 코트룩,\n칙칙하면 이것만 바꿔요",
+ "items": [
+  {
+   "cat": "LONG COAT · 아우터",
+   "brand": "실착: 블랙 코트",
+   "name": "블랙 울 코트",
+   "pt": "앞은 열어 세로선",
+   "find": "블랙 울 코트",
+   "pt_xy": [
+    925,
+    830
+   ],
+   "crop": [
+    255,
+    455,
+    420
+   ]
+  },
+  {
+   "cat": "KNIT · 상의",
+   "brand": "스타일링 추천",
+   "name": "라이트그레이 니트",
+   "pt": "밝은 이너로 숨통",
+   "find": "라이트그레이 니트",
+   "pt_xy": [
+    752,
+    570
+   ],
+   "crop": [
+    255,
+    690,
+    300
+   ]
+  },
+  {
+   "cat": "SLACKS · 하의",
+   "brand": "실착: 팬츠 · 차콜은 추천",
+   "name": "차콜 일자 슬랙스",
+   "pt": "검정 대신 차콜",
+   "find": "차콜 울 슬랙스",
+   "pt_xy": [
+    740,
+    1010
+   ],
+   "crop": [
+    258,
+    888,
+    330
+   ]
+  },
+  {
+   "cat": "MINI BAG · 가방",
+   "brand": "실착: 작은 가방 · 메는 법 추천",
+   "name": "블랙 미니 크로스백",
+   "pt": "코트 위로 사선 메기",
+   "find": "블랙 미니 크로스백",
+   "pt_xy": [
+    870,
+    670
+   ],
+   "crop": [
+    218,
+    1048,
+    300
+   ]
+  }
+ ]
+}
