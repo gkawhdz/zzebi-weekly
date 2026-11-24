@@ -87,8 +87,8 @@
       "promise": "머플러 하나로 겨울룩 완성하는 공식",
       "format": "셀럽 스냅(여자 셀럽 머플러룩 — 머플러 두르는 법·색 공식)",
       "promised_by": "2026-11-24 18:00 셀럽 #51",
-      "status": "promised",
-      "delivered_note": ""
+      "status": "delivered",
+      "delivered_note": "11/25 18:00 인스타 #52 김지원 네이비 체크 머플러룩 예약 완료(11/24 밤 제작)"
     },
     {
       "date": "2026-11-26",
@@ -107,6 +107,16 @@
       "promise": "니트 베스트 하나로 출근룩 4가지",
       "format": "4가지코디(목요일)",
       "promised_by": "2026-11-25 11:30 트렌드 B",
+      "status": "promised",
+      "delivered_note": ""
+    },
+    {
+      "date": "2026-11-26",
+      "team": "celeb",
+      "slot": "18:00",
+      "promise": "남친 데이트룩, 니트 하나로 끝내는 법",
+      "format": "셀럽 스냅(남자 셀럽 니트룩 — 니트 한 장 중심 데이트룩)",
+      "promised_by": "2026-11-25 18:00 셀럽 #52",
       "status": "promised",
       "delivered_note": ""
     }
