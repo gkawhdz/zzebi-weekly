@@ -1,94 +1,114 @@
 {
-  "items": [
-    {
-      "date": "2026-11-23",
-      "team": "trend",
-      "slot": "08:30",
-      "promise": "팔뚝 고민 직장인을 위한 니트 소매 공식",
-      "format": "정보형(체형 고민)",
-      "promised_by": "2026-11-22 08:30 트렌드 A",
-      "status": "delivered",
-      "delivered_note": "11/23 08:30 인스타 예약 완료(11/22 밤 제작)"
-    },
-    {
-      "date": "2026-11-23",
-      "team": "trend",
-      "slot": "11:30",
-      "promise": "출근룩 두 색 공식 — 그레이와 버건디",
-      "format": "컬러조합(월요일)",
-      "promised_by": "2026-11-22 11:30 트렌드 B",
-      "status": "delivered",
-      "delivered_note": "11/23 11:30 인스타 예약 완료(11/22 밤 제작)"
-    },
-    {
-      "date": "2026-11-23",
-      "team": "celeb",
-      "slot": "18:00",
-      "promise": "패딩도 가볍게 입는 공식",
-      "format": "셀럽 스냅(여자 셀럽 패딩룩 — 부피감 줄이는 코디)",
-      "promised_by": "2026-11-22 18:00 셀럽 #49",
-      "status": "delivered",
-      "delivered_note": "11/23 18:00 인스타 #50 슬기 경량패딩룩 예약 완료(11/22 밤 제작)"
-    },
-    {
-      "date": "2026-11-24",
-      "team": "trend",
-      "slot": "08:30",
-      "promise": "허리 짧은 직장인 벨트 위치 공식",
-      "format": "정보형(체형 고민)",
-      "promised_by": "2026-11-23 08:30 트렌드 A",
-      "status": "delivered",
-      "delivered_note": "11/24 08:30 인스타 예약 완료(11/23 밤 제작)"
-    },
-    {
-      "date": "2026-11-24",
-      "team": "trend",
-      "slot": "11:30",
-      "promise": "카디건 하나로 출근룩 4가지",
-      "format": "4가지코디(화요일)",
-      "promised_by": "2026-11-23 11:30 트렌드 B",
-      "status": "delivered",
-      "delivered_note": "11/24 11:30 인스타 예약 완료(11/23 밤 제작)"
-    },
-    {
-      "date": "2026-11-24",
-      "team": "celeb",
-      "slot": "18:00",
-      "promise": "남친 겨울 코트룩 따라 입기 공식",
-      "format": "셀럽 스냅(남자 셀럽 코트룩 — 따라 입기 리스트)",
-      "promised_by": "2026-11-23 18:00 셀럽 #50",
-      "status": "delivered",
-      "delivered_note": "11/24 18:00 인스타 #51 에스쿱스 블랙 코트 댄디룩 예약 완료(11/23 밤 제작)"
-    },
-    {
-      "date": "2026-11-25",
-      "team": "trend",
-      "slot": "08:30",
-      "promise": "골반 넓은 직장인 슬랙스 고르는 법",
-      "format": "정보형(체형 고민)",
-      "promised_by": "2026-11-24 08:30 트렌드 A",
-      "status": "promised",
-      "delivered_note": ""
-    },
-    {
-      "date": "2026-11-25",
-      "team": "trend",
-      "slot": "11:30",
-      "promise": "롱부츠 신는 출근룩 2가지",
-      "format": "코디룩북(수요일)",
-      "promised_by": "2026-11-24 11:30 트렌드 B",
-      "status": "promised",
-      "delivered_note": ""
-    },
-    {
-      "date": "2026-11-25",
-      "team": "celeb",
-      "slot": "18:00",
-      "promise": "머플러 하나로 겨울룩 완성하는 공식",
-      "format": "셀럽 스냅(여자 셀럽 머플러룩 — 머플러 두르는 법·색 공식)",
-      "promised_by": "2026-11-24 18:00 셀럽 #51",
-      "status": "promised",
-      "delivered_note": ""
-    }
-  ]
+ "items": [
+  {
+   "date": "2026-11-23",
+   "team": "trend",
+   "slot": "08:30",
+   "promise": "팔뚝 고민 직장인을 위한 니트 소매 공식",
+   "format": "정보형(체형 고민)",
+   "promised_by": "2026-11-22 08:30 트렌드 A",
+   "status": "delivered",
+   "delivered_note": "11/23 08:30 인스타 예약 완료(11/22 밤 제작)"
+  },
+  {
+   "date": "2026-11-23",
+   "team": "trend",
+   "slot": "11:30",
+   "promise": "출근룩 두 색 공식 — 그레이와 버건디",
+   "format": "컬러조합(월요일)",
+   "promised_by": "2026-11-22 11:30 트렌드 B",
+   "status": "delivered",
+   "delivered_note": "11/23 11:30 인스타 예약 완료(11/22 밤 제작)"
+  },
+  {
+   "date": "2026-11-23",
+   "team": "celeb",
+   "slot": "18:00",
+   "promise": "패딩도 가볍게 입는 공식",
+   "format": "셀럽 스냅(여자 셀럽 패딩룩 — 부피감 줄이는 코디)",
+   "promised_by": "2026-11-22 18:00 셀럽 #49",
+   "status": "delivered",
+   "delivered_note": "11/23 18:00 인스타 #50 슬기 경량패딩룩 예약 완료(11/22 밤 제작)"
+  },
+  {
+   "date": "2026-11-24",
+   "team": "trend",
+   "slot": "08:30",
+   "promise": "허리 짧은 직장인 벨트 위치 공식",
+   "format": "정보형(체형 고민)",
+   "promised_by": "2026-11-23 08:30 트렌드 A",
+   "status": "delivered",
+   "delivered_note": "11/24 08:30 인스타 예약 완료(11/23 밤 제작)"
+  },
+  {
+   "date": "2026-11-24",
+   "team": "trend",
+   "slot": "11:30",
+   "promise": "카디건 하나로 출근룩 4가지",
+   "format": "4가지코디(화요일)",
+   "promised_by": "2026-11-23 11:30 트렌드 B",
+   "status": "delivered",
+   "delivered_note": "11/24 11:30 인스타 예약 완료(11/23 밤 제작)"
+  },
+  {
+   "date": "2026-11-24",
+   "team": "celeb",
+   "slot": "18:00",
+   "promise": "남친 겨울 코트룩 따라 입기 공식",
+   "format": "셀럽 스냅(남자 셀럽 코트룩 — 따라 입기 리스트)",
+   "promised_by": "2026-11-23 18:00 셀럽 #50",
+   "status": "delivered",
+   "delivered_note": "11/24 18:00 인스타 #51 에스쿱스 블랙 코트 댄디룩 예약 완료(11/23 밤 제작)"
+  },
+  {
+   "date": "2026-11-25",
+   "team": "trend",
+   "slot": "08:30",
+   "promise": "골반 넓은 직장인 슬랙스 고르는 법",
+   "format": "정보형(체형 고민)",
+   "promised_by": "2026-11-24 08:30 트렌드 A",
+   "status": "delivered",
+   "delivered_note": "11/25 08:30 인스타 예약 완료(11/24 밤 제작)"
+  },
+  {
+   "date": "2026-11-25",
+   "team": "trend",
+   "slot": "11:30",
+   "promise": "롱부츠 신는 출근룩 2가지",
+   "format": "코디룩북(수요일)",
+   "promised_by": "2026-11-24 11:30 트렌드 B",
+   "status": "delivered",
+   "delivered_note": "11/25 11:30 인스타 예약 완료(11/24 밤 제작)"
+  },
+  {
+   "date": "2026-11-25",
+   "team": "celeb",
+   "slot": "18:00",
+   "promise": "머플러 하나로 겨울룩 완성하는 공식",
+   "format": "셀럽 스냅(여자 셀럽 머플러룩 — 머플러 두르는 법·색 공식)",
+   "promised_by": "2026-11-24 18:00 셀럽 #51",
+   "status": "promised",
+   "delivered_note": ""
+  },
+  {
+   "date": "2026-11-26",
+   "team": "trend",
+   "slot": "08:30",
+   "promise": "어깨 좁은 직장인 코트 고르는 법",
+   "format": "정보형(체형 고민)",
+   "promised_by": "2026-11-25 08:30 트렌드 A",
+   "status": "promised",
+   "delivered_note": ""
+  },
+  {
+   "date": "2026-11-26",
+   "team": "trend",
+   "slot": "11:30",
+   "promise": "니트 베스트 하나로 출근룩 4가지",
+   "format": "4가지코디(목요일)",
+   "promised_by": "2026-11-25 11:30 트렌드 B",
+   "status": "promised",
+   "delivered_note": ""
+  }
+ ]
 }
