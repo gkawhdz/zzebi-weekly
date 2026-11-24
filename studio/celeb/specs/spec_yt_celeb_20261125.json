@@ -1,0 +1,78 @@
+{
+ "native": true,
+ "kicker": "남녀 겨울 코트 2",
+ "title": [
+  "검정 코트",
+  "칙칙하다면"
+ ],
+ "sub": "남녀 2룩, 바꾼 곳은 딱 한 곳 ↓",
+ "intro_img": "/home/claude/work/img52.jpg",
+ "intro_y": 0.45,
+ "seed": 20261125,
+ "cta_kicker": "내일 저녁, 남친 니트 데이트룩",
+ "segments": [
+  {
+   "file": "/home/claude/work/tt/seg52.mp4",
+   "label": "김지원",
+   "trim": [
+    0,
+    20
+   ],
+   "en": [
+    [
+     0,
+     5,
+     "01 Black wool long coat — leave it unbuttoned"
+    ],
+    [
+     5,
+     10,
+     "02 Ivory knit — one bright block under your face"
+    ],
+    [
+     10,
+     15,
+     "03 Navy check muffler — wrap it thick and full"
+    ],
+    [
+     15,
+     20,
+     "04 Black shoulder bag — same color as the coat"
+    ]
+   ]
+  },
+  {
+   "file": "/home/claude/work/tt/seg51.mp4",
+   "label": "에스쿱스",
+   "trim": [
+    0,
+    20
+   ],
+   "en": [
+    [
+     0,
+     5,
+     "01 Black wool coat — wear it open for a long line"
+    ],
+    [
+     5,
+     10,
+     "02 Light grey knit — a bright inner to lift the black"
+    ],
+    [
+     10,
+     15,
+     "03 Charcoal straight slacks — charcoal instead of black"
+    ],
+    [
+     15,
+     20,
+     "04 Black mini crossbody — worn diagonally over the coat"
+    ]
+   ]
+  }
+ ],
+ "intro_en": "Black coat looking dull? Change just one spot",
+ "outro_en": "Follow @zzebi.st for daily celeb style breakdowns",
+ "outro_handle": "@zzebi_st"
+}
