@@ -1,0 +1,93 @@
+{
+ "cover_no_celeb": true,
+ "cover_sub": "",
+ "t_item": 5.0,
+ "push": 0.12,
+ "cover_center": [
+  512,
+  768
+ ],
+ "cover_zoom": 1.0,
+ "answer_label": "핵심",
+ "hook_max": 100,
+ "hook_w": 840,
+ "hook_cta": "",
+ "hook_y": 232,
+ "hook_alpha": 130,
+ "answer": 3,
+ "end_cta": false,
+ "city": "OFF-DUTY",
+ "date": "2026.10",
+ "episode": "53",
+ "celeb": "BYEON WOO SEOK",
+ "title": "블랙 니트 데이트룩",
+ "image": "img53.jpg",
+ "accent": "#5A3A28",
+ "hook": "검정 니트에 회색 바지,\n신발은 검정? 갈색?",
+ "items": [
+  {
+   "cat": "KNIT · 상의",
+   "brand": "실착: 블랙 니트",
+   "name": "블랙 크루넥 니트",
+   "pt": "넣지 말고 빼서 입기",
+   "find": "블랙 울 크루넥 니트",
+   "pt_xy": [
+    780,
+    420
+   ],
+   "crop": [
+    247,
+    452,
+    330
+   ]
+  },
+  {
+   "cat": "WATCH · 시계",
+   "brand": "스타일링 추천",
+   "name": "블랙 스트랩 시계",
+   "pt": "소매 살짝 걷어 보이게",
+   "find": "블랙 가죽 스트랩 시계",
+   "pt_xy": [
+    922,
+    630
+   ],
+   "crop": [
+    250,
+    640,
+    200
+   ]
+  },
+  {
+   "cat": "PANTS · 하의",
+   "brand": "실착: 헐렁한 그레이 팬츠",
+   "name": "그레이 와이드 팬츠",
+   "pt": "밝은 회색으로 무게 덜기",
+   "find": "그레이 투턱 와이드 슬랙스",
+   "pt_xy": [
+    740,
+    880
+   ],
+   "crop": [
+    260,
+    860,
+    410
+   ]
+  },
+  {
+   "cat": "SHOES · 신발",
+   "brand": "실착: 브라운 스웨이드 슈즈",
+   "name": "브라운 스웨이드 로퍼",
+   "pt": "검정 대신 갈색으로",
+   "find": "브라운 스웨이드 로퍼",
+   "pt_xy": [
+    712,
+    1300
+   ],
+   "crop": [
+    252,
+    1200,
+    300
+   ]
+  }
+ ]
+}
