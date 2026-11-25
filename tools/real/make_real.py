@@ -105,7 +105,7 @@ def r_compare(sc, T, P, prog):
         d.text((56, y), ln, font=ft, fill=WHITE); y += int(ft.size * 1.13)
     if sc.get("body"):
         d.text((60, y + 22), sc["body"], font=LB.F(True, 48), fill=(127, 227, 227))
-    for (kind, lab), cx in ((sc["left_stamp"], 270), (sc["right_stamp"], 810)):
+    for (kind, lab), cx in ((sc["left_stamp"], sc.get("left_sx", 270)), (sc["right_stamp"], sc.get("right_sx", 810))):
         LB.stamp(img, cx, sc.get("stamp_y", 1150), kind, lab, 1.0, scale=1.0 + 0.04 * math.sin(T * 2 * math.pi * 1.2))  # 0초부터 완성 + 살짝 맥박
     return img
 
