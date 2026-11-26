@@ -1,0 +1,93 @@
+{
+ "cover_no_celeb": true,
+ "cover_sub": "",
+ "t_item": 5.0,
+ "push": 0.12,
+ "cover_center": [
+  512,
+  768
+ ],
+ "cover_zoom": 1.0,
+ "answer_label": "핵심",
+ "hook_max": 100,
+ "hook_w": 840,
+ "hook_cta": "",
+ "hook_y": 232,
+ "hook_alpha": 130,
+ "answer": 1,
+ "end_cta": false,
+ "city": "AIRPORT",
+ "date": "2026.11",
+ "episode": "54",
+ "celeb": "HYOMIN",
+ "title": "겨울 청바지 공항룩",
+ "image": "img54.jpg",
+ "accent": "#B5803F",
+ "hook": "청바지가 추운 날,\n바지 말고 3곳만 덮으세요",
+ "items": [
+  {
+   "cat": "MUFFLER · 머플러",
+   "brand": "스타일링 추천",
+   "name": "아이보리 울 머플러",
+   "pt": "목까지 감싸 두르기",
+   "find": "아이보리 울 머플러",
+   "pt_xy": [
+    770,
+    290
+   ],
+   "crop": [
+    360,
+    420,
+    240
+   ]
+  },
+  {
+   "cat": "COAT · 아우터",
+   "brand": "실착: 코트(색·기장 재현)",
+   "name": "카멜 롱 코트",
+   "pt": "무릎 아래 기장으로",
+   "find": "카멜 울 롱코트",
+   "pt_xy": [
+    900,
+    720
+   ],
+   "crop": [
+    175,
+    640,
+    330
+   ]
+  },
+  {
+   "cat": "JEANS · 하의",
+   "brand": "실착: 청바지(색·핏 재현)",
+   "name": "중청 일자 청바지",
+   "pt": "발목 덮는 길이로",
+   "find": "중청 일자 데님",
+   "pt_xy": [
+    770,
+    860
+   ],
+   "crop": [
+    160,
+    1010,
+    300
+   ]
+  },
+  {
+   "cat": "SHOES · 신발",
+   "brand": "실착: 빨간색 새틴 구두",
+   "name": "빨간 구두",
+   "pt": "색 포인트는 한 곳만",
+   "find": "레드 새틴 펌프스",
+   "pt_xy": [
+    755,
+    1290
+   ],
+   "crop": [
+    385,
+    1120,
+    240
+   ]
+  }
+ ]
+}
