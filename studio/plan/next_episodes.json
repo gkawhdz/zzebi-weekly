@@ -127,8 +127,8 @@
    "promise": "니트 베스트 하나로 출근룩 4가지",
    "format": "4가지코디(정보형 슬롯 A 안에서)",
    "promised_by": "2026-11-25 11:30 트렌드 B → 2026-11-26 10:00 트렌드 A 엔딩에서 재예고",
-   "status": "promised",
-   "delivered_note": ""
+   "status": "delivered",
+   "delivered_note": "11/27 10:00 인스타 예약 완료(11/26 밤 제작)"
   },
   {
    "date": "2026-11-27",
@@ -137,6 +137,16 @@
    "promise": "겨울 청바지 따뜻하게 입는 공식",
    "format": "셀럽 스냅(여자 셀럽 데님룩 — 겨울에 청바지 따뜻하게 입는 코디)",
    "promised_by": "2026-11-26 18:00 셀럽 #53",
+   "status": "promised",
+   "delivered_note": ""
+  },
+  {
+   "date": "2026-11-28",
+   "team": "trend",
+   "slot": "10:00",
+   "promise": "웜톤 직장인 겨울 니트 색 공식",
+   "format": "정보형(퍼스널 톤 고민)",
+   "promised_by": "2026-11-27 10:00 트렌드 A",
    "status": "promised",
    "delivered_note": ""
   }
