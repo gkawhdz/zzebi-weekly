@@ -348,6 +348,11 @@ export const POSTS = [
   { ep: 'ep21', title: '뇌를 재구성하는 21일 프로젝트' },
   { ep: 'ep22', title: 'ISFP는 회피형일까? MBTI와 애착' },
   { ep: 'ep23', title: '설렘의 정체, 로맨스의 실체' },
+  { ep: 'ep24', title: '혼란형 애착, 다가오다 밀어내는 이유' },
+  { ep: 'ep25', title: '안정형 연애가 잘 깨지지 않는 이유' },
+  { ep: 'ep26', title: '실패하지 않는 연애 공식' },
+  { ep: 'ep27', title: 'ISTJ의 연애, 말보다 약속' },
+  { ep: 'ep28', title: 'ISFJ의 연애, 기억으로 하는 사랑' },
 ];
 export const FREE_COUNT = 3;
 export const SLIDES_PER_POST = 10;
