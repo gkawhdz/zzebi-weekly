@@ -167,6 +167,16 @@
    "promise": "쿨톤 직장인 겨울 니트 색 공식",
    "format": "정보형(퍼스널 톤 고민)",
    "promised_by": "2026-11-28 10:00 트렌드 A",
+   "status": "delivered",
+   "delivered_note": "11/29 10:00 인스타 예약 완료(11/28 밤 제작)"
+  },
+  {
+   "date": "2026-11-30",
+   "team": "trend",
+   "slot": "10:00",
+   "promise": "목 짧은 직장인 겨울 니트 목선 공식",
+   "format": "정보형(체형 고민)",
+   "promised_by": "2026-11-29 10:00 트렌드 A",
    "status": "promised",
    "delivered_note": ""
   }
